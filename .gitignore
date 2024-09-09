@@ -1,0 +1,9 @@
+# Ignore the virtual environment
+parsley_env/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore system files
+.DS_Store
