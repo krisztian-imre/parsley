@@ -102,7 +102,7 @@ def save_data(data, filename='gateio_article_list.tsv'):
 # Main function to scrape multiple URLs
 def scrape_website(urls_dict):
     all_articles = []
-    for url, category in tqdm(urls_dict.items(), desc="Scraping categories"):
+    for url, category in tqdm(urls_dict.items(), desc="Scraping categories", ncols = 100):
         print(f"Scraping {category}: {url}")
         html = get_html(url)
         if html:
