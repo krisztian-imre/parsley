@@ -39,11 +39,18 @@ gateio_urls = {
 
 # Function to clean the title
 def clean_title(title):
-    # Remove all quotation marks
+    # Removes quotation marks and tabs
     title = re.sub(r'["“”‘’]', '', title)
-    
-    # Remove tabs
     title = re.sub(r'\t+', ' ', title)
+
+    # Replaces
+    title = title.replace('：', ': ')
+    title = title.replace('..', '.')
+    title = title.replace(' –', '–')
+    title = title.replace('– ', '–')
+    title = title.replace(' ,', ',')
+    title = title.replace(' :', ':')
+    title = re.sub(r'\s+!', '!', title)
     
     # Replace double or more spaces with a single space
     title = re.sub(r'\s{2,}', ' ', title)
@@ -53,6 +60,12 @@ def clean_title(title):
     
     # Add space after ')' if no space after it (e.g., ')b' becomes ') b')
     title = re.sub(r'\)(\S)', r') \1', title)
+
+    # Remove unwanted space after '(' (e.g., '( 07' becomes '(07')
+    title = re.sub(r'\(\s+', '(', title)
+    
+    # Remove unwanted space before ')' (e.g., '16: 10 )' becomes '16: 10)')
+    title = re.sub(r'\s+\)', ')', title)
     
     return title.strip()  # Ensure no leading or trailing spaces
 
@@ -97,11 +110,14 @@ def parse_html(html, category):
 
             # Add scraping time and set processed to 'No'
             article_data.append({
-                'title': title,
+                
+                'exchange': 'Gate.io',
                 'link': full_link,
                 'category': category,
+                'title': title,
                 'scraping_time': current_time,  # Use current scraping time
                 'processed': 'No'  # Default value for processed
+                
             })
 
     return article_data
