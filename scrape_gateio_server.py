@@ -17,29 +17,22 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
 }
 
-# List of URLs and categories with full URLs
-gateio_urls = {
-    "https://www.gate.io/announcements/activity": "Activities",
-    "https://www.gate.io/announcements/dau": "Bi-Weekly Report",
-    "https://www.gate.io/announcements/institutional": "Institutional & VIP",
-    "https://www.gate.io/announcements/gate-learn": "Gate Learn",
-    "https://www.gate.io/announcements/delisted": "Delisting",
-    "https://www.gate.io/announcements/wealth": "Gate Wealth",
-    "https://www.gate.io/announcements/newlisted": "New Cryptocurrency Listings",
-    "https://www.gate.io/announcements/charity": "Gate Charity",
-    "https://www.gate.io/announcements/finance": "Finance",
-    "https://www.gate.io/announcements/trade-match": "Trading Competitions",
-    "https://www.gate.io/announcements/deposit-withdrawal": "Deposit & Withdrawal",
-    "https://www.gate.io/announcements/etf": "ETF",
-    "https://www.gate.io/announcements/fee": "Fee",
-    "https://www.gate.io/announcements/lives": "Live",
-    "https://www.gate.io/announcements/gatecard": "Gate Card",
-    "https://www.gate.io/announcements/rename": "Token Rename",
-    "https://www.gate.io/announcements/engine-upgrade": "Engine Upgrade",
-    "https://www.gate.io/announcements/fiat": "Fiat",
-    "https://www.gate.io/announcements/precision": "Precision",
-    "https://www.gate.io/announcements/p2p": "P2P Trading"
-}
+# Function to load URLs and categories from the txt file
+def load_gateio_urls(filename='gateio_urls.txt'):
+    gateio_urls = {}
+    with open(filename, 'r') as file:
+        for line in file:
+            url, category = line.strip().split('\t')  # Split by tab
+            gateio_urls[url] = category
+    return gateio_urls
+
+# Load the URLs from the file
+gateio_urls = load_gateio_urls()
+
+# Display the loaded URLs and categories
+print("Loaded URLs and categories:")
+for url, category in gateio_urls.items():
+    print(f"{url}: {category}")
 
 # Function to clean title
 def clean_title(title):
