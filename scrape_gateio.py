@@ -84,10 +84,10 @@ def parse_html(html, category):
 
     return article_data
 
-# Function to save data to CSV
-def save_data(data, filename='gateio_article_list.csv'):
+# Function to save data to TSV
+def save_data(data, filename='gateio_article_list.tsv'):
     df = pd.DataFrame(data)
-    df.to_csv(filename, index=False)
+    df.to_csv(filename, sep='\t', index=False)  # Use tab-separated format
     print(f"Data saved to {filename}")
 
 # Main function to scrape multiple URLs
@@ -97,9 +97,6 @@ def scrape_website(urls_dict):
         print(f"Scraping {category}: {url}")  # Log the current URL being scraped
         html = get_html(url)
         if html:
-            # Optionally print the HTML to inspect it if there's an issue
-            if category == "Finance":
-                print("Finance HTML:", html[:1000])  # Print first 1000 chars of finance page HTML for inspection
             data = parse_html(html, category=category)
             if data:
                 all_articles.extend(data)
@@ -107,7 +104,7 @@ def scrape_website(urls_dict):
                 print(f"No articles found for {category}")
         else:
             print(f"Failed to fetch {category}: {url}")
-        time.sleep(random.uniform(0.5, 1.5))  # Add a delay to avoid overwhelming the server
+        time.sleep(random.uniform(1, 1.75))  # Add a delay to avoid overwhelming the server (Bad Gateway Error)
     return all_articles
 
 # Start scraping
@@ -129,4 +126,3 @@ styled_table = df_scraped_data.style.set_table_styles(
 
 # Display the styled table
 styled_table
-
