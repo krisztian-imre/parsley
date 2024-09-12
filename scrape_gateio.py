@@ -5,6 +5,8 @@ from tqdm import tqdm
 import random
 import time
 from urllib.parse import urljoin  # To handle URLs properly
+from datetime import datetime  # For capturing the current scraping time
+import re
 
 # Set headers to mimic a browser
 headers = {
@@ -35,6 +37,25 @@ gateio_urls = {
     "https://www.gate.io/announcements/p2p": "P2P Trading"
 }
 
+# Function to clean the title
+def clean_title(title):
+    # Remove all quotation marks
+    title = re.sub(r'["“”‘’]', '', title)
+    
+    # Remove tabs
+    title = re.sub(r'\t+', ' ', title)
+    
+    # Replace double or more spaces with a single space
+    title = re.sub(r'\s{2,}', ' ', title)
+    
+    # Add space before '(' if no space before it (e.g., 'a(' becomes 'a (')
+    title = re.sub(r'(\S)\(', r'\1 (', title)
+    
+    # Add space after ')' if no space after it (e.g., ')b' becomes ') b')
+    title = re.sub(r'\)(\S)', r') \1', title)
+    
+    return title.strip()  # Ensure no leading or trailing spaces
+
 # Function to get HTML content
 def get_html(url):
     try:
@@ -58,28 +79,29 @@ def parse_html(html, category):
     articles = article_list_box.find_all('div', class_='article-list-item')
     article_data = []
 
+    # Capture the current time for each scraping action
+    current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
     for article in articles:
         title_tag = article.find('a', class_='article-list-item-title')
         if title_tag:
             # Extract the title from the <span> inside the <h3>
             title = title_tag.find('h3').get_text(strip=True)
 
+            # Clean the title using the new clean_title function
+            title = clean_title(title)
+
             # Extract the partial link and create the full link using urljoin
             partial_link = title_tag['href']
             full_link = urljoin('https://www.gate.io', partial_link)
 
-            # Extract publication time
-            time_info = article.find('span', class_='article-list-info-timer').get_text(strip=True)
-
-            # Extract number of readers
-            readers_info = article.find('span', class_='article-list-info-reader').get_text(strip=True)
-
+            # Add scraping time and set processed to 'No'
             article_data.append({
                 'title': title,
                 'link': full_link,
                 'category': category,
-                'publication_time': time_info,
-                'readers': readers_info
+                'scraping_time': current_time,  # Use current scraping time
+                'processed': 'No'  # Default value for processed
             })
 
     return article_data
@@ -114,15 +136,6 @@ scraped_data = scrape_website(gateio_urls)
 if scraped_data:
     save_data(scraped_data)
 
-# Display the extracted data in a tabular format using Pandas Styler
+# Display the first 5 records of the scraped data
 df_scraped_data = pd.DataFrame(scraped_data)
-df_scraped_data = df_scraped_data[['title', 'link', 'category']]
-
-# Create a Styler object and apply some formatting
-styled_table = df_scraped_data.style.set_table_styles(
-    [{'selector': 'thead th', 'props': [('background-color', '#f2f2f2'), ('color', '#333')]},
-     {'selector': 'tbody tr:nth-child(even)', 'props': [('background-color', '#f9f9f9')]}]
-).set_properties(**{'text-align': 'left'})
-
-# Display the styled table
-styled_table
+print(df_scraped_data[['title', 'link', 'category', 'scraping_time', 'processed']].head())
