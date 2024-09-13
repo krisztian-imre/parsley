@@ -38,23 +38,23 @@ for url, category in gateio_urls.items():
 
 # Function to clean title
 def clean_title(title):
+    
+    title = re.sub(r'[\U0001F600-\U0001F64F\U0001F300-\U0001F5FF\U0001F680-\U0001F6FF\U0001F700-\U0001F77F\u2700-\u27BF\uFE0F]', '', title)
+
+    title = re.sub(r'：', ': ', title)
+    title = re.sub(r'\.\.', '.', title)
+    title = re.sub(r' ,', ',', title)
+    title = re.sub(r' :', ':', title)
+
+    title = re.sub(r'\u2013', '-', title)  # Replaces en dash with a hyphen
     title = re.sub(r'["“”‘’]', '', title)
     title = re.sub(r'\t+', ' ', title)
-    title = title.replace('：', ': ').replace('..', '.').replace(' –', '–').replace('– ', '–').replace(' ,', ',').replace(' :', ':')
-    title = re.sub(r'\s+!', '!', title)
-    title = re.sub(r'\s{2,}', ' ', title)
-    title = re.sub(r'(\S)\(', r'\1 (', title)
-    title = re.sub(r'\)(\S)', r') \1', title)
-    title = re.sub(r'\(\s+', '(', title)
-    title = re.sub(r'\s+\)', ')', title)
-    title = re.sub(r'\u2013', '-', title)
     title = re.sub(r'&', 'and', title)
-    
-    # Asian full-width
+
+    title = re.sub(r'【.*?】', '', title)  # Remove text within 【 and 】
     title = re.sub(r'＆', 'and', title)
     title = re.sub(r'（', '(', title)
     title = re.sub(r'）', ')', title)
-
 
     return title.strip()
 
@@ -113,18 +113,19 @@ def save_data(data, filename='gateio_article_list.tsv'):
 # Main function to scrape multiple URLs
 def scrape_website(urls_dict):
     all_articles = []
-    for url, category in tqdm(urls_dict.items(), desc="Scraping categories", ncols = 100):
-        print(f"Scraping {category}: {url}")
-        html = get_html(url)
-        if html:
-            data = parse_html(html, category=category)
-            if data:
-                all_articles.extend(data)
+    with tqdm(urls_dict.items(), desc="Scraping categories", ncols=100, leave=False) as progress_bar:
+        for url, category in progress_bar:
+            progress_bar.set_postfix_str(f"Scraping {category}")
+            html = get_html(url)
+            if html:
+                data = parse_html(html, category=category)
+                if data:
+                    all_articles.extend(data)
+                else:
+                    print(f"No articles found for {category}")
             else:
-                print(f"No articles found for {category}")
-        else:
-            print(f"Failed to fetch {category}: {url}")
-        time.sleep(random.uniform(1, 1.75))  # Delay to avoid overwhelming the server
+                print(f"Failed to fetch {category}: {url}")
+            time.sleep(random.uniform(1, 1.75))  # Delay to avoid overwhelming the server
     return all_articles
 
 # Check if file exists

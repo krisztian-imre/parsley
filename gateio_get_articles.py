@@ -36,26 +36,25 @@ def get_html(url, max_retries=3, delay=3):
     print(f"Failed to fetch {url} after {max_retries} attempts.")
     return None
 
-# Function to clean body content using regex
+# Function to clean main_content (body) content using regex
 def clean_body(main_content):
     
     main_content = re.sub(r'\[([^\]]+)\]\((?:[^\s\)]+)(?:\s+"[^"]+")?\)', r'\1', main_content)  # Remove markdown links
-    main_content = re.sub(r'【.*?】', '', main_content)  # Remove text within 【 and 】
     main_content = re.sub(r'!\[.*?\]\(.*?\)', '', main_content)  # Remove markdown images
     
     main_content = re.sub(r'[\U0001F600-\U0001F64F\U0001F300-\U0001F5FF\U0001F680-\U0001F6FF\U0001F700-\U0001F77F\u2700-\u27BF\uFE0F]', '', main_content)
 
-    main_content = main_content.replace('：', ': ')
-    main_content = main_content.replace('..', '.')
-    main_content = main_content.replace(' ,', ',')
-    main_content = main_content.replace(' :', ':')
+    main_content = re.sub(r'：', ': ', main_content)
+    main_content = re.sub(r'\.\.', '.', main_content)
+    main_content = re.sub(r' ,', ',', main_content)
+    main_content = re.sub(r' :', ':', main_content)
 
     main_content = re.sub(r'\u2013', '-', main_content)  # Replaces en dash with a hyphen
     main_content = re.sub(r'["“”‘’]', '', main_content)
     main_content = re.sub(r'\t+', ' ', main_content)
-
     main_content = re.sub(r'&', 'and', main_content)
 
+    main_content = re.sub(r'【.*?】', '', main_content)  # Remove text within 【 and 】
     main_content = re.sub(r'＆', 'and', main_content)
     main_content = re.sub(r'（', '(', main_content)
     main_content = re.sub(r'）', ')', main_content)
@@ -68,7 +67,7 @@ def clean_body(main_content):
 
     main_content = re.sub(r'(?:\r\n|\r|\n|\u2028|\u2029)+', '///', main_content)
 
-    return main_content
+    return main_content #body
 
 # Function to parse article HTML content
 def parse_article_html(html):
@@ -107,7 +106,7 @@ def process_articles(article_list_file='gateio_article_list.tsv', articles_file=
     if os.path.exists(articles_file):
         existing_articles_df = pd.read_csv(articles_file, sep='\t')
     else:
-        existing_articles_df = pd.DataFrame(columns=['exchange', 'link', 'category', 'title', 'publish_time', 'scraping_time', 'llm_processed', 'markdowns', 'body'])
+        existing_articles_df = pd.DataFrame(columns=['exchange', 'link', 'category', 'title', 'publish_time', 'scraping_time', 'llm_processed', 'body'])
 
     # Initialize a list to hold new article data
     new_articles = []
@@ -129,7 +128,6 @@ def process_articles(article_list_file='gateio_article_list.tsv', articles_file=
                     'publish_time': publish_time,
                     'scraping_time': row['scraping_time'],
                     'llm_processed': 'No',  # default value
-                    'markdowns': 'No',
                     'body': body
                 }
                 new_articles.append(new_article)

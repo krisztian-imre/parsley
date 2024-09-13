@@ -32,10 +32,10 @@ for url in urls:
     
     main_content = re.sub(r'[\U0001F600-\U0001F64F\U0001F300-\U0001F5FF\U0001F680-\U0001F6FF\U0001F700-\U0001F77F\u2700-\u27BF\uFE0F]', '', main_content)
 
-    main_content = main_content.replace('：', ': ')
-    main_content = main_content.replace('..', '.')
-    main_content = main_content.replace(' ,', ',')
-    main_content = main_content.replace(' :', ':')
+    main_content = re.sub(r'：', ': ', main_content)
+    main_content = re.sub(r'\.\.', '.', main_content)
+    main_content = re.sub(r' ,', ',', main_content)
+    main_content = re.sub(r' :', ':', main_content)
 
     main_content = re.sub(r'\u2013', '-', main_content)  # Replaces en dash with a hyphen
     main_content = re.sub(r'["“”‘’]', '', main_content)
