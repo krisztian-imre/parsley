@@ -8,11 +8,14 @@ headers = {
 }
 
 urls = [
+    'https://www.gate.io/announcements/article/38540',
+    'https://www.gate.io/announcements/article/37002',
+    'https://www.gate.io/announcements/article/37873',
+    'https://www.gate.io/announcements/article/38903',
     'https://www.gate.io/announcements/article/38569',
     'https://www.gate.io/announcements/article/39227',
-    'https://www.gate.io/announcements/article/38903',
-    'https://www.gate.io/announcements/article/39203',
-    'https://www.gate.io/announcements/article/37002'
+    'https://www.gate.io/announcements/article/38447'
+
 ]
 
 for url in urls:
@@ -26,12 +29,13 @@ for url in urls:
     
     #################################################
 
-    main_content = re.sub(r'\[([^\]]+)\]\((?:[^\s\)]+)(?:\s+"[^"]+")?\)', r'\1', main_content)  # Remove markdown links
+    main_content = re.sub(r'\[([^\]]+)\]\(\s*(?:[^\s\)]+)(?:\s+"[^"]*")?\s*\)', r'\1', main_content) # Remove markdown links
     main_content = re.sub(r'【.*?】', '', main_content)  # Remove text within 【 and 】
     main_content = re.sub(r'!\[.*?\]\(.*?\)', '', main_content)  # Remove markdown images
     
     main_content = re.sub(r'[\U0001F600-\U0001F64F\U0001F300-\U0001F5FF\U0001F680-\U0001F6FF\U0001F700-\U0001F77F\u2700-\u27BF\uFE0F]', '', main_content)
-
+    main_content = re.sub(r'\u00A0', ' ', main_content)
+    
     main_content = re.sub(r'：', ': ', main_content)
     main_content = re.sub(r'\.\.', '.', main_content)
     main_content = re.sub(r' ,', ',', main_content)
@@ -46,6 +50,7 @@ for url in urls:
     main_content = re.sub(r'＆', 'and', main_content)
     main_content = re.sub(r'（', '(', main_content)
     main_content = re.sub(r'）', ')', main_content)
+    main_content = re.sub(r'●', '•', main_content)
 
     main_content = re.sub(r'\n\s+', '\n', main_content)
     main_content = re.sub(r'\n{2,}', '\n', main_content)
@@ -53,7 +58,7 @@ for url in urls:
     main_content = re.sub(r'\[//\]:content-type-MARKDOWN-DONOT-DELETE\s*\n?', '', main_content)
     main_content = re.sub(r'\s*Gateway to Crypto.*', '', main_content, flags=re.DOTALL).rstrip()
 
-    main_content = re.sub(r'(?:\r\n|\r|\n|\u2028|\u2029)+', '///', main_content)
+    #main_content = re.sub(r'(?:\r\n|\r|\n|\u2028|\u2029)+', '///', main_content)
 
     ##################################################
 

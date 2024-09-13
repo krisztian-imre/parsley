@@ -39,11 +39,12 @@ def get_html(url, max_retries=3, delay=3):
 # Function to clean main_content (body) content using regex
 def clean_body(main_content):
     
-    main_content = re.sub(r'\[([^\]]+)\]\((?:[^\s\)]+)(?:\s+"[^"]+")?\)', r'\1', main_content)  # Remove markdown links
+    main_content = re.sub(r'\[([^\]]+)\]\(\s*(?:[^\s\)]+)(?:\s+"[^"]*")?\s*\)', r'\1', main_content) # Remove markdown links
     main_content = re.sub(r'!\[.*?\]\(.*?\)', '', main_content)  # Remove markdown images
     
     main_content = re.sub(r'[\U0001F600-\U0001F64F\U0001F300-\U0001F5FF\U0001F680-\U0001F6FF\U0001F700-\U0001F77F\u2700-\u27BF\uFE0F]', '', main_content)
-
+    main_content = re.sub(r'\u00A0', ' ', main_content)
+    
     main_content = re.sub(r'：', ': ', main_content)
     main_content = re.sub(r'\.\.', '.', main_content)
     main_content = re.sub(r' ,', ',', main_content)
@@ -58,6 +59,7 @@ def clean_body(main_content):
     main_content = re.sub(r'＆', 'and', main_content)
     main_content = re.sub(r'（', '(', main_content)
     main_content = re.sub(r'）', ')', main_content)
+    main_content = re.sub(r'●', '•', main_content)
 
     main_content = re.sub(r'\n\s+', '\n', main_content)
     main_content = re.sub(r'\n{2,}', '\n', main_content)
