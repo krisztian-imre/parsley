@@ -1,3 +1,5 @@
+# File: gateio_create_categories.py
+
 # Define the URLs and categories
 gateio_urls = {
     "https://www.gate.io/announcements/activity": "Activities",

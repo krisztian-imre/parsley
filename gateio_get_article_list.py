@@ -1,3 +1,5 @@
+# File: gateio_get_article_list.py
+
 import os
 import pandas as pd
 from tqdm import tqdm

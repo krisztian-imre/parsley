@@ -1,4 +1,4 @@
-# File: process_gateio_articles.py
+# File: gateio_get_articles.py
 
 import os
 import pandas as pd
@@ -36,6 +36,23 @@ def get_html(url, max_retries=3, delay=3):
     print(f"Failed to fetch {url} after {max_retries} attempts.")
     return None
 
+# Function to clean body content using regex
+def clean_body(body):
+    # Remove '[//]:content-type-MARKDOWN-DONOT-DELETE' string
+    body = body.replace('[//]:content-type-MARKDOWN-DONOT-DELETE', '')
+
+    # Remove everything within square brackets, including the brackets
+    body = re.sub(r'\[.*?\]', '', body)
+
+    # Truncate the content after certain phrases
+    truncate_phrases = ['Gateway to Crypto', 'Gate.io is a Cryptocurrency Trading Platform']
+    for phrase in truncate_phrases:
+        truncate_point = body.find(phrase)
+        if truncate_point != -1:
+            body = body[:truncate_point + len(phrase)]
+
+    return body
+
 # Function to parse article HTML content
 def parse_article_html(html):
     soup = BeautifulSoup(html, 'html.parser')
@@ -50,17 +67,9 @@ def parse_article_html(html):
     # Extract the main content within the article-details-main
     main_content_div = article_details_box.find('div', class_='article-details-main')
     main_content = main_content_div.get_text(strip=True, separator='\n') if main_content_div else ''
-    
-    # Clean the content
-    main_content = main_content.replace('[//]:content-type-MARKDOWN-DONOT-DELETE', '')
-    main_content = re.sub(r'\[.*?\]', '', main_content)
 
-    # Truncate the content after certain phrases
-    truncate_phrases = ['Gateway to Crypto', 'Gate.io is a Cryptocurrency Trading Platform']
-    for phrase in truncate_phrases:
-        truncate_point = main_content.find(phrase)
-        if truncate_point != -1:
-            main_content = main_content[:truncate_point + len(phrase)]
+    # Clean the content using the new clean_body function
+    main_content = clean_body(main_content)
     
     return main_content, publish_time
 
@@ -80,7 +89,7 @@ def process_articles(article_list_file='gateio_article_list.tsv', articles_file=
     if os.path.exists(articles_file):
         existing_articles_df = pd.read_csv(articles_file, sep='\t')
     else:
-        existing_articles_df = pd.DataFrame(columns=['exchange', 'link', 'category', 'title', 'body', 'publish_time', 'scraping_time', 'llm_processed'])
+        existing_articles_df = pd.DataFrame(columns=['exchange', 'link', 'category', 'title', 'publish_time', 'scraping_time', 'llm_processed', 'markdowns', 'body'])
 
     # Initialize a list to hold new article data
     new_articles = []
@@ -99,10 +108,11 @@ def process_articles(article_list_file='gateio_article_list.tsv', articles_file=
                     'link': row['link'],
                     'category': row['category'],
                     'title': row['title'],
-                    'body': body,
                     'publish_time': publish_time,
                     'scraping_time': row['scraping_time'],
-                    'llm_processed': 'No'  # default value
+                    'llm_processed': 'No',  # default value
+                    'markdowns': 'No',
+                    'body': body
                 }
                 new_articles.append(new_article)
 
