@@ -1,0 +1,81 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Europe/Budapest
+X-LIC-LOCATION:Europe/Budapest
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:GMT+2
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:GMT+1
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Budapest:20240813T160000
+DTEND;TZID=Europe/Budapest:20240813T180000
+RRULE:FREQ=WEEKLY;WKST=SU;COUNT=4;BYDAY=TU
+DTSTAMP:20240809T165435Z
+ORGANIZER;CN=AI Safety Hungary:mailto:info@aishungary.com
+UID:7mtu8vbb2e59c1t2o84f3ibvi6@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=AI Safety Hungary;X-NUM-GUESTS=0:mailto:info@aishungary.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=krisztian.imre@icloud.com;X-NUM-GUESTS=0:mailto:krisztian.imre@iclo
+ ud.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=csofja@gmail.com;X-NUM-GUESTS=0:mailto:csofja@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=kambar.orazbekov@gmail.com;X-NUM-GUESTS=0:mailto:kambar.orazbekov@g
+ mail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=emma.badenhorst@zohomail.eu;X-NUM-GUESTS=0:mailto:emma.badenhorst@z
+ ohomail.eu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=elizabethjames984@gmail.com;X-NUM-GUESTS=0:mailto:elizabethjames984
+ @gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=shamiso.chitongo@gmail.com;X-NUM-GUESTS=0:mailto:shamiso.chitongo@g
+ mail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/jwu-bmfs-ent
+X-MICROSOFT-CDO-OWNERAPPTID:1374248984
+CREATED:20240807T134747Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/jw
+ u-bmfs-ent\nOr dial: (HU) +36 21 262 4952 PIN: 383736060#\nMore phone numbe
+ rs: https://tel.meet/jwu-bmfs-ent?pin=2389817763346&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20240809T165434Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:AI Safety Policy Intro Course - Group 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:EMAIL
+DESCRIPTION:This is an event reminder
+SUMMARY:Alarm notification
+ATTENDEE:mailto:krisztian.imre@icloud.com
+TRIGGER:-P0DT1H0M0S
+END:VALARM
+BEGIN:VALARM
+ACTION:EMAIL
+DESCRIPTION:This is an event reminder
+SUMMARY:Alarm notification
+ATTENDEE:mailto:krisztian.imre@icloud.com
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
