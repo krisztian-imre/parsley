@@ -1,4 +1,4 @@
-# File: gateio_create_categories.py
+# File: gateio_create_urls.py
 
 # Define the URLs and categories
 gateio_urls = {

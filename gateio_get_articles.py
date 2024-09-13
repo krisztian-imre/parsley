@@ -37,21 +37,38 @@ def get_html(url, max_retries=3, delay=3):
     return None
 
 # Function to clean body content using regex
-def clean_body(body):
-    # Remove '[//]:content-type-MARKDOWN-DONOT-DELETE' string
-    body = body.replace('[//]:content-type-MARKDOWN-DONOT-DELETE', '')
+def clean_body(main_content):
+    
+    main_content = re.sub(r'\[([^\]]+)\]\((?:[^\s\)]+)(?:\s+"[^"]+")?\)', r'\1', main_content)  # Remove markdown links
+    main_content = re.sub(r'【.*?】', '', main_content)  # Remove text within 【 and 】
+    main_content = re.sub(r'!\[.*?\]\(.*?\)', '', main_content)  # Remove markdown images
+    
+    main_content = re.sub(r'[\U0001F600-\U0001F64F\U0001F300-\U0001F5FF\U0001F680-\U0001F6FF\U0001F700-\U0001F77F\u2700-\u27BF\uFE0F]', '', main_content)
 
-    # Remove everything within square brackets, including the brackets
-    body = re.sub(r'\[.*?\]', '', body)
+    main_content = main_content.replace('：', ': ')
+    main_content = main_content.replace('..', '.')
+    main_content = main_content.replace(' ,', ',')
+    main_content = main_content.replace(' :', ':')
 
-    # Truncate the content after certain phrases
-    truncate_phrases = ['Gateway to Crypto', 'Gate.io is a Cryptocurrency Trading Platform']
-    for phrase in truncate_phrases:
-        truncate_point = body.find(phrase)
-        if truncate_point != -1:
-            body = body[:truncate_point + len(phrase)]
+    main_content = re.sub(r'\u2013', '-', main_content)  # Replaces en dash with a hyphen
+    main_content = re.sub(r'["“”‘’]', '', main_content)
+    main_content = re.sub(r'\t+', ' ', main_content)
 
-    return body
+    main_content = re.sub(r'&', 'and', main_content)
+
+    main_content = re.sub(r'＆', 'and', main_content)
+    main_content = re.sub(r'（', '(', main_content)
+    main_content = re.sub(r'）', ')', main_content)
+
+    main_content = re.sub(r'\n\s+', '\n', main_content)
+    main_content = re.sub(r'\n{2,}', '\n', main_content)
+
+    main_content = re.sub(r'\[//\]:content-type-MARKDOWN-DONOT-DELETE\s*\n?', '', main_content)
+    main_content = re.sub(r'\s*Gateway to Crypto.*', '', main_content, flags=re.DOTALL).rstrip()
+
+    main_content = re.sub(r'(?:\r\n|\r|\n|\u2028|\u2029)+', '///', main_content)
+
+    return main_content
 
 # Function to parse article HTML content
 def parse_article_html(html):
@@ -63,6 +80,7 @@ def parse_article_html(html):
         return None, None
     
     publish_time = article_details_box.find('div', class_='article-details-base-info').find_all('span')[0].get_text(strip=True)
+    publish_time = re.sub(r' UTC$', '', publish_time)
 
     # Extract the main content within the article-details-main
     main_content_div = article_details_box.find('div', class_='article-details-main')

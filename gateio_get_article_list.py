@@ -47,6 +47,15 @@ def clean_title(title):
     title = re.sub(r'\)(\S)', r') \1', title)
     title = re.sub(r'\(\s+', '(', title)
     title = re.sub(r'\s+\)', ')', title)
+    title = re.sub(r'\u2013', '-', title)
+    title = re.sub(r'&', 'and', title)
+    
+    # Asian full-width
+    title = re.sub(r'＆', 'and', title)
+    title = re.sub(r'（', '(', title)
+    title = re.sub(r'）', ')', title)
+
+
     return title.strip()
 
 # Function to get HTML content with retry mechanism
