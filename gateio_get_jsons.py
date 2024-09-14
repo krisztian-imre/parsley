@@ -30,6 +30,16 @@ with open(TSV_FILE_PATH, 'r', encoding='utf-8') as tsv_file:
     reader = csv.DictReader(tsv_file, delimiter='\t')
     records = list(reader)
 
+# Create the assistant with the specified instructions
+assistant = client.beta.assistants.create(
+    name="CryptoExchangeGuru",
+    instructions=instructions,
+    tools=[{"type": "code_interpreter"}],
+    model="gpt-4o-mini",
+    temperature=0
+)
+
+
 # Initialize ID counter
 current_id = 1
 
