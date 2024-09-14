@@ -1,0 +1,46 @@
+Please process the following announcement text and extract the relevant information to produce a structured JSON output with the specified fields.
+
+**Fields to extract:**
+
+1. **id**: A unique identifier for the event. This should be an 8-digit number starting from '00000001' and incremented by 1 for each event.
+2. **link**: The URL of the announcement.
+3. **parse_datetime**: The datetime when the parsing is performed.
+4. **exchange**: The name of the exchange (e.g., 'Binance', 'Bybit', 'Gate.io').
+5. **publish_datetime**: The datetime when the announcement was published.
+6. **event_type**: The category of the event (e.g., 'Delisting', 'Listing', 'Maintenance'). Use the 'in_category' field as a basis but verify its correctness based on the announcement content.
+7. **event_date**: The date(s) of the event(s) mentioned in the announcement. If multiple events are present, include all event dates.
+8. **coin**: The symbol(s) of the coin(s) involved (e.g., 'BTC', 'ETH', 'ZKX'). Extract all relevant coins mentioned.
+9. **market**: The market pair(s) involved (e.g., 'BTC/USDT', 'ZKX/BNB'). Include all relevant markets.
+10. **market_type**: The type of market (e.g., 'spot', 'perpetual', 'futures').
+11. **priority**: An integer representing the priority of the event:
+    - **9** for high-priority events (e.g., delisting, engine upgrades).
+    - **5** for medium-priority events.
+    - **1** for low-priority events (e.g., marketing events).
+
+**Instructions:**
+
+- Replace all occurrences of '///' in the announcement text with newline characters ('\n') before processing.
+- Carefully read the announcement to accurately extract information.
+- If the 'event_type' in 'in_category' seems incorrect based on the content, update it accordingly.
+- If the announcement contains multiple events, create separate entries for each event within the same JSON output.
+- Ensure that all extracted dates are in the format 'YYYY-MM-DD HH:MM:SS'.
+- The final output should be a JSON object (or an array of JSON objects if multiple events) containing the extracted fields.
+
+**Example Output Format:**
+
+```json
+[
+  {
+    "id": "00000001",
+    "link": "https://www.gate.io/announcements/article/39068",
+    "parse_datetime": "2024-09-14 13:03:31",
+    "exchange": "Gate.io",
+    "publish_datetime": "2024-09-06 04:12:04",
+    "event_type": "Delisting",
+    "event_date": "2024-09-06 04:12:04",
+    "coin": ["ZKX", "CATGIRL"],
+    "market": ["ZKX/USDT", "CATGIRL/USDT"],
+    "market_type": "spot",
+    "priority": 9
+  }
+]

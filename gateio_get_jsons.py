@@ -1,99 +1,97 @@
 # File: gateio_get_jsons.py
 
 import os
+import csv
 import re
 import json
 import openai
-import pandas as pd
 from datetime import datetime
 
-# Set your OpenAI API key here
+# Set your OpenAI API key
 openai.api_key = 'sk-proj-vCcWskCtsmbnloDfRC6XT3BlbkFJURTh97LuwNhvGOMqgWgh'
 
+# Initialize the OpenAI client
+client = openai.OpenAI()
+
 # File paths
-DATA_FILE = 'gateio_articles.tsv'
-JSON_FOLDER = 'Unprocessed_JSON'
+TSV_FILE_PATH = 'gateio_articles.tsv'
+INSTRUCTIONS_FILE_PATH = 'instructions.txt'
+OUTPUT_FOLDER = 'Unprocessed_JSON'
 
 # Ensure the output folder exists
-if not os.path.exists(JSON_FOLDER):
-    os.makedirs(JSON_FOLDER)
+os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
-# Load data
-df = pd.read_csv(DATA_FILE, sep='\t')
+# Load instructions from 'instructions.txt'
+with open(INSTRUCTIONS_FILE_PATH, 'r', encoding='utf-8') as f:
+    instructions = f.read()
+
+# Read the TSV file
+with open(TSV_FILE_PATH, 'r', encoding='utf-8') as tsv_file:
+    reader = csv.DictReader(tsv_file, delimiter='\t')
+    records = list(reader)
 
 # Initialize ID counter
-id_counter = 1
+current_id = 1
 
-# Function to convert '///' to '\n'
-def clean_body_text(body):
-    return re.sub(r'///', '\n', body)
+# Process each record
+for record in records:
+    if record['llm_processed'] == 'No':
+        # Replace '///' with '\n' in the 'body' text
+        body_text = re.sub(r'///', '\n', record['body'])
 
-# Function to send text to OpenAI API
-def call_openai_api(prompt):
-    response = openai.Completion.create(
-        model="gpt-4", # You can choose a different model
-        prompt=prompt,
-        max_tokens=500, # Adjust as needed
-        n=1,
-        stop=None,
-        temperature=0.7
-    )
-    return response.choices[0].text.strip()
+        # Prepare the messages for OpenAI API
+        messages = [
+            {"role": "system", "content": instructions},
+            {"role": "user", "content": body_text}
+        ]
 
-# Function to process each article
-def process_article(row, id_counter):
-    # Clean the body text
-    clean_body = clean_body_text(row['body'])
-    
-    # Prepare prompt for the LLM
-    prompt = f"""
-    Extract the following structured information from the event description:
-    - Event type (confirm if it is delisting, listing, or anything else)
-    - Event date (any dates mentioned)
-    - Coin (extract coin symbols like BTC, ETH, etc.)
-    - Market (e.g., BTC/USDT, XYZ/BNB)
-    - Market type (spot, perpetual, etc.)
-    - Priority (high, medium, low)
+        # Call the OpenAI API
+        try:
+            response = openai.ChatCompletion.create(
+                model='gpt-4',  # Use 'gpt-3.5-turbo' if you don't have access to 'gpt-4'
+                messages=messages,
+                temperature=0.0,
+            )
 
-    Event description:
-    {clean_body}
-    """
+            # Extract the assistant's reply
+            assistant_reply = response['choices'][0]['message']['content'].strip()
 
-    # Call OpenAI API to process
-    structured_output = call_openai_api(prompt)
+            # Parse the JSON output
+            try:
+                json_output = json.loads(assistant_reply)
+            except json.JSONDecodeError:
+                print(f"JSON decoding failed for record with link: {record['link']}")
+                continue
 
-    # Create structured output
-    output_data = {
-        'id': f'{id_counter:08d}',  # Format ID as 8-digit string
-        'link': row['link'],
-        'parse_datetime': row['parse_datetime'],
-        'exchange': row['exchange'],
-        'publish_datetime': row['publish_datetime'],
-        'event_type': row['in_category'],  # LLM should validate
-        'structured_output': structured_output  # Assuming this has multiple event dates, coins, etc.
-    }
+            # Assign IDs to each event
+            if isinstance(json_output, list):
+                for event in json_output:
+                    event['id'] = f"{current_id:08d}"
+                    current_id += 1
+            else:
+                json_output['id'] = f"{current_id:08d}"
+                current_id += 1
 
-    return output_data
+            # Save the JSON output to the 'Unprocessed_JSON' folder
+            output_filename = os.path.join(
+                OUTPUT_FOLDER, f"{record['exchange']}_{current_id - 1}.json"
+            )
+            with open(output_filename, 'w', encoding='utf-8') as json_file:
+                json.dump(json_output, json_file, ensure_ascii=False, indent=4)
 
-# Process all articles
-for index, row in df.iterrows():
-    # Skip if already processed
-    if row['llm_processed'] == 'Yes':
-        continue
-    
-    # Process the article
-    structured_data = process_article(row, id_counter)
-    
-    # Save the structured data to a JSON file
-    json_file_path = os.path.join(JSON_FOLDER, f'{structured_data["id"]}.json')
-    with open(json_file_path, 'w') as json_file:
-        json.dump(structured_data, json_file, indent=4)
+            # Update 'llm_processed' to 'Yes'
+            record['llm_processed'] = 'Yes'
 
-    # Update the 'llm_processed' status in the DataFrame
-    df.at[index, 'llm_processed'] = 'Yes'
+        except openai.OpenAIError as e:
+            print(f"OpenAI API error for record with link: {record['link']}")
+            print(e)
+            continue
 
-    # Increment ID counter
-    id_counter += 1
+# Write the updated records back to the TSV file
+with open(TSV_FILE_PATH, 'w', encoding='utf-8', newline='') as tsv_file:
+    fieldnames = records[0].keys()
+    writer = csv.DictWriter(tsv_file, fieldnames=fieldnames, delimiter='\t')
+    writer.writeheader()
+    writer.writerows(records)
 
-# Save the updated DataFrame back to the TSV file
-df.to_csv(DATA_FILE, sep='\t', index=False)
+print("Processing complete.")
