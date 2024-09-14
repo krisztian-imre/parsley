@@ -80,8 +80,8 @@ def parse_article_html(html):
     if not article_details_box:
         return None, None
     
-    publish_time = article_details_box.find('div', class_='article-details-base-info').find_all('span')[0].get_text(strip=True)
-    publish_time = re.sub(r' UTC$', '', publish_time)
+    publish_datetime = article_details_box.find('div', class_='article-details-base-info').find_all('span')[0].get_text(strip=True)
+    publish_datetime = re.sub(r' UTC$', '', publish_datetime)
 
     # Extract the main content within the article-details-main
     main_content_div = article_details_box.find('div', class_='article-details-main')
@@ -90,7 +90,7 @@ def parse_article_html(html):
     # Clean the content using the new clean_body function
     main_content = clean_body(main_content)
     
-    return main_content, publish_time
+    return main_content, publish_datetime
 
 # Function to process articles from gateio_article_list.tsv
 def process_articles(article_list_file='gateio_article_list.tsv', articles_file='gateio_articles.tsv'):
@@ -108,7 +108,7 @@ def process_articles(article_list_file='gateio_article_list.tsv', articles_file=
     if os.path.exists(articles_file):
         existing_articles_df = pd.read_csv(articles_file, sep='\t')
     else:
-        existing_articles_df = pd.DataFrame(columns=['exchange', 'link', 'category', 'title', 'publish_time', 'scraping_time', 'llm_processed', 'body'])
+        existing_articles_df = pd.DataFrame(columns=['exchange', 'parse_datetime', 'publish_datetime', 'llm_processed', 'in_category', 'link', 'title', 'body'])
 
     # Initialize a list to hold new article data
     new_articles = []
@@ -119,16 +119,16 @@ def process_articles(article_list_file='gateio_article_list.tsv', articles_file=
         html = get_html(url)
         
         if html:
-            body, publish_time = parse_article_html(html)
-            if body and publish_time:
+            body, publish_datetime = parse_article_html(html)
+            if body and publish_datetime:
                 # Create a new article record
                 new_article = {
                     'exchange': row['exchange'],
                     'link': row['link'],
-                    'category': row['category'],
+                    'in_category': row['in_category'],
                     'title': row['title'],
-                    'publish_time': publish_time,
-                    'scraping_time': row['scraping_time'],
+                    'publish_datetime': publish_datetime,
+                    'parse_datetime': row['parse_datetime'],
                     'llm_processed': 'No',  # default value
                     'body': body
                 }
@@ -137,7 +137,7 @@ def process_articles(article_list_file='gateio_article_list.tsv', articles_file=
                 # Mark the article as processed in the original list
                 article_list_df.loc[article_list_df['link'] == row['link'], 'processed'] = 'Yes'
 
-        # Add a delay to avoid overwhelming the server
+        # Add a delay to avoid 'overwhelming the server'
         time.sleep(1)
 
     # If there are new articles, append them to gateio_articles.tsv

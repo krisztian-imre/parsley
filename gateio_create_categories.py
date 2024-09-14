@@ -1,7 +1,7 @@
-# File: gateio_create_urls.py
+# File: gateio_create_categories.py
 
 # Define the URLs and categories
-gateio_urls = {
+gateio_categories = {
     "https://www.gate.io/announcements/activity": "Activities",
     "https://www.gate.io/announcements/dau": "Bi-Weekly Report",
     "https://www.gate.io/announcements/institutional": "Institutional & VIP",
@@ -25,8 +25,8 @@ gateio_urls = {
 }
 
 # Create the .txt file
-with open('gateio_urls.txt', 'w') as file:
-    for url, category in gateio_urls.items():
+with open('gateio_categories.txt', 'w') as file:
+    for url, category in gateio_categories.items():
         file.write(f"{url}\t{category}\n")  # Write URL and category separated by a tab
 
-print("gateio_urls.txt file has been created.")
+print("gateio_categories.txt file has been created.")

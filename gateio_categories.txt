@@ -1,0 +1,8 @@
+https://www.gate.io/announcements/delisted	Delisting
+https://www.gate.io/announcements/wealth	Gate Wealth
+https://www.gate.io/announcements/newlisted	New Cryptocurrency Listings
+https://www.gate.io/announcements/finance	Finance
+https://www.gate.io/announcements/deposit-withdrawal	Deposit & Withdrawal
+https://www.gate.io/announcements/rename	Token Rename
+https://www.gate.io/announcements/engine-upgrade	Engine Upgrade
+https://www.gate.io/announcements/precision	Precision

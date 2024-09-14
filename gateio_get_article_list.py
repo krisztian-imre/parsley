@@ -20,20 +20,20 @@ headers = {
 }
 
 # Function to load URLs and categories from the txt file
-def load_gateio_urls(filename='gateio_urls.txt'):
-    gateio_urls = {}
+def load_gateio_categories(filename='gateio_categories.txt'):
+    gateio_categories = {}
     with open(filename, 'r') as file:
         for line in file:
             url, category = line.strip().split('\t')  # Split by tab
-            gateio_urls[url] = category
-    return gateio_urls
+            gateio_categories[url] = category
+    return gateio_categories
 
 # Load the URLs from the file
-gateio_urls = load_gateio_urls()
+gateio_categories = load_gateio_categories()
 
 # Display the loaded URLs and categories
 print("Loaded URLs and categories:")
-for url, category in gateio_urls.items():
+for url, category in gateio_categories.items():
     print(f"{url}: {category}")
 
 # Function to clean title
@@ -90,11 +90,11 @@ def parse_html(html, category):
             full_link = urljoin('https://www.gate.io', partial_link)
             article_data.append({
                 'exchange': 'Gate.io',
+                'parse_datetime': current_time,
+                'processed': 'No',
+                'in_category': category,
                 'link': full_link,
-                'category': category,
-                'title': title,
-                'scraping_time': current_time,
-                'processed': 'No'
+                'title': title
             })
     return article_data
 
@@ -133,7 +133,7 @@ if os.path.exists(filename):
     # Load the existing data
     existing_data = pd.read_csv(filename, sep='\t')
     # Scrape new data
-    new_data = scrape_website(gateio_urls)
+    new_data = scrape_website(gateio_categories)
     # Append only new articles
     new_articles = append_new_articles(existing_data, new_data)
     if new_articles:
@@ -145,7 +145,7 @@ if os.path.exists(filename):
         print("No new articles found.")
 else:
     # No file exists, create a new file with scraped data
-    scraped_data = scrape_website(gateio_urls)
+    scraped_data = scrape_website(gateio_categories)
     if scraped_data:
         save_data(scraped_data, filename=filename)
     else:
