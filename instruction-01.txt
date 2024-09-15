@@ -1,100 +1,27 @@
-Bitcoin: BTC
-Ethereum: ETH
-Tether: USDT
-BNB: BNB
-Solana: SOL
-USDC: USDC
-XRP: XRP
-Dogecoin: DOGE
-Toncoin: TON
-TRON: TRX
-Cardano: ADA
-Avalanche: AVAX
-Shiba Inu: SHIB
-Chainlink: LINK
-Polkadot: DOT
-Bitcoin Cash: BCH
-Dai: DAI
-UNUS SED LEO: LEO
-Litecoin: LTC
-NEAR Protocol: NEAR
-Kaspa: KAS
-Internet Computer: ICP
-Uniswap: UNI
-Artificial Superintelligence Alliance: FET
-Pepe: PEPE
-Monero: XMR
-Aptos: APT
-POL (ex-MATIC): POL
-Stellar: XLM
-Ethereum Classic: ETC
-Render: RENDER
-Sui: SUI
-First Digital USD: FDUSD
-Stacks: STX
-OKB: OKB
-Bittensor: TAO
-Cronos: CRO
-Filecoin: FIL
-Aave: AAVE
-Immutable: IMX
-Hedera: HBAR
-Injective: INJ
-Mantle: MNT
-Arbitrum: ARB
-Optimism: OP
-VeChain: VET
-Cosmos: ATOM
-dogwifhat: WIF
-Maker: MKR
-The Graph: GRT
-THORChain: RUNE
-Fantom: FTM
-Bitget Token: BGB
-Arweave: AR
-Theta Network: THETA
-Helium: HNT
-FLOKI: FLOKI
-Bonk: BONK
-Polygon: MATIC
-Algorand: ALGO
-Pyth Network: PYTH
-Jupiter: JUP
-JasmyCoin: JASMY
-Sei: SEI
-KuCoin Token: KCS
-Bitcoin SV: BSV
-Celestia: TIA
-MANTRA: OM
-Lido DAO: LDO
-Quant: QNT
-Ondo: ONDO
-Core: CORE
-Flow: FLOW
-BitTorrent: BTT
-Brett (Based): BRETT
-Notcoin: NOT
-PayPal USD: PYUSD
-EOS: EOS
-Flare: FLR
-GateToken: GT
-USDD: USDD
-MultiversX: EGLD
-Starknet: STRK
-Axie Infinity: AXS
-Popcat (SOL): POPCAT
-Beam: BEAM
-ORDI: ORDI
-Neo: NEO
-Worldcoin: WLD
-SATS: 1000SATS
-Tezos: XTZ
-Gala: GALA
-Tether Gold: XAUt
-Nervos Network: CKB
-eCash: XEC
-Conflux: CFX
-Akash Network: AKT
-The Sandbox: SAND
-dYdX (Native): DYDX
-Ethereum Name Service: ENS
+You have to identify crypto COIN and MARKET ABBREVATIONS. 
+
+Here you can see a few examples of coin names and theirs abbrevations:
+
+Bitcoin (BTC), Ethereum (ETH), Tether (USDT), BNB (BNB), Solana (SOL), USDC (USDC), Dogecoin (DOGE), Toncoin (TON), Cardano (ADA), Avalanche (AVAX), Shiba Inu (SHIB), 
+Chainlink (LINK), Polkadot (DOT), Bitcoin Cash (BCH), Litecoin: (LTC), Stellar (XLM), Ethereum Classic (ETC), Render (RENDER), Bitget Token (BGB), Arweave (AR), 
+Bitcoin SV (BSV), MANTRA (OM), Lido DAO (LDO), Quant (QNT), Worldcoin: (WLD), SATS (1000SATS), Tether Gold (XAUt)... etc.
+
+Here you can see a few examples of MARKET name ABBREVATIONS:
+
+PEPE/USD, DOGS/USD, SHIB/USD, DOGE/USD, SUI/USD, KAS/USD, APE/USD, LINK/USD, TON/USD, USDT/MXN, ETH/USD, BCH/USD, BTC/USDC... etc.
+
+Sometimes MARKETS are marked down with underscore:
+
+PEPE_USD, DOGS_USD, SHIB_USD, DOGE/USD, SUI_USD, KAS_USD, APE_USD, LINK_USD, TON_USD, USDT_MXN, ETH_USD, BCH_USD, BTC_USDC... etc.
+
+All you have to do is to recognize and collect the **abbrevations**, and give it back in a .json format. Always use the '/' instead of '_'!
+
+**Example Output Format:**
+
+```json
+[
+  {
+    "COIN": ["ETH", "OM"],
+    "MARKET": ["LINK/USDT", "APE/USDT"],
+  }
+]

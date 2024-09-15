@@ -1,0 +1,8 @@
+Write a 140 character summary.
+
+Include priority:
+High-priority events: delisting, engine upgrades
+Medium-priority events: 
+Low-priority events: marketing events, games
+
+Always end with: 'User action required.'/ 'User action not required'

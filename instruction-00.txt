@@ -19,7 +19,6 @@ Please process the following announcement text and extract the relevant informat
 
 **Instructions:**
 
-- Replace all occurrences of '///' in the announcement text with newline characters ('\n') before processing.
 - Carefully read the announcement to accurately extract information.
 - If the 'event_type' in 'in_category' seems incorrect based on the content, update it accordingly.
 - If the announcement contains multiple events, create separate entries for each event within the same JSON output.

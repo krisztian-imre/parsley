@@ -9,7 +9,7 @@ os.environ['OPENAI_API_KEY'] = 'sk-proj-vCcWskCtsmbnloDfRC6XT3BlbkFJURTh97LuwNhv
 
 client = openai.OpenAI()
 
-with open('instruction.txt', 'r') as file:
+with open('instruction-02.txt', 'r') as file:
     instruction = file.read()
 
 
