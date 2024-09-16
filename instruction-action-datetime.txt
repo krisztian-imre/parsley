@@ -1,0 +1,7 @@
+**Never search external URL!**
+**No comments or remarks!**
+
+Extract the **earliest** datetime.
+If no specific datetime is provided, return "Unknown Date".
+
+Return the output in the format 'YYYY-MM-DD HH:MM:SS'. If the time is not given, assume "00:00:00" for the time component. Example output: '2023-09-12 14:30:00'.

@@ -1,0 +1,10 @@
+**Never search external URL!**
+**No comments or remarks!**
+
+Here you can see a few examples of MARKET TYPES:
+'Spot', 'Futures', 'Margin', 'Derivatives', 'Quant Grid' ,'Liquidity Mining', etc...
+
+Recognize and collect any distinguish **market types** 
+
+**Example Output Format:**
+[Quant Grid, Futures]

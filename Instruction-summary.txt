@@ -1,0 +1,10 @@
+**Never search external URL**
+
+Please provide a concise, 140 character long summary of the article. The summary should:
+
+- Capture the main points of the article.
+- Focus on significant events or announcements related to the cryptocurrency exchange.
+- Avoid including minor details or overly technical jargon.
+- Keep the summary exactly 140 characters.
+
+Provide the output as a single string.

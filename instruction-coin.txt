@@ -1,0 +1,13 @@
+**Never search external URL!**
+**No comments or remarks!**
+
+Here you can see a few examples of coin names and theirs abbrevations:
+
+Bitcoin (BTC), Ethereum (ETH), Tether (USDT), BNB (BNB), Solana (SOL), USDC (USDC), Dogecoin (DOGE), Toncoin (TON), Cardano (ADA), Avalanche (AVAX), Shiba Inu (SHIB), 
+Chainlink (LINK), Polkadot (DOT), Bitcoin Cash (BCH), Litecoin: (LTC), Stellar (XLM), Ethereum Classic (ETC), Render (RENDER), Bitget Token (BGB), Arweave (AR), 
+Bitcoin SV (BSV), MANTRA (OM), Lido DAO (LDO), Quant (QNT), Worldcoin: (WLD), SATS (1000SATS), Tether Gold (XAUt)... etc.
+
+Recognize and collect any distinguish coin **abbrevations**.
+
+**Example Output Format:**
+[ABC, EFG]
