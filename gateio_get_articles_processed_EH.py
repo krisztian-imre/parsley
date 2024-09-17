@@ -1,3 +1,5 @@
+# File: gateio_get_articles_processed_EH.py
+
 import pandas as pd
 import openai
 import os
@@ -26,7 +28,7 @@ with open('instruction-market-type.txt', 'r') as file:
     instruction_market_type = file.read()
 
 with open('instruction-action-datetime.txt', 'r') as file:
-    base_instruction_action_datetime = file.read()  # Load the base template
+    instruction_action_datetime = file.read()
 
 with open('instruction-priority.txt', 'r') as file:
     instruction_priority = file.read()
@@ -107,21 +109,17 @@ processed_data = []
 # Use tqdm to display a progress bar while iterating through unprocessed data
 for index, row in tqdm(unprocessed_data.iterrows(), total=unprocessed_data.shape[0], desc="Processing records"):
     content = row['body']
-    
-    # Inject publish_datetime into the action datetime prompt
-    instruction_action_datetime = base_instruction_action_datetime.format(publish_datetime=row['publish_datetime'])
-    
+
     # Get LLM responses for each instruction by sending the instruction as part of the message
     llm_summary = get_llm_response(content, instruction_summary)  # Use summary instruction
     llm_category = get_llm_response(content, instruction_category)  # Use category instruction
     llm_coin = get_llm_response(content, instruction_coin)  # Use coin instruction
     llm_pair = get_llm_response(content, instruction_pair)  # Use pair instruction
     llm_market_type = get_llm_response(content, instruction_market_type)  # Use market-type instruction
-    llm_action_datetime = get_llm_response(content, instruction_action_datetime)  # Use the modified action datetime prompt
+    llm_action_datetime = get_llm_response(content, instruction_action_datetime)  # Use action datetime instruction
 
     # Logic to handle 'Unknown Date' and substitute with 'publish_datetime'
     if llm_action_datetime == 'Unknown Date':
-        print('Unknown Date')
         llm_action_datetime = row['publish_datetime']  # Use the value from 'publish_datetime'
 
     llm_priority = get_llm_response(content, instruction_priority)  # Use priority instruction
@@ -133,7 +131,7 @@ for index, row in tqdm(unprocessed_data.iterrows(), total=unprocessed_data.shape
     processed_record = {
         'parse_datetime': row['parse_datetime'],
         'publish_datetime': row['publish_datetime'],
-        'llm_action_datetime': llm_action_datetime,  # Updated with the logic to handle 'Unknown Date'
+        'llm_action_datetime': llm_action_datetime,
         'link': row['link'],
         'llm_summary': llm_summary,
         'llm_category': llm_category,
