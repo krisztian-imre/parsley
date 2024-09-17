@@ -1,13 +1,15 @@
-**Never search external URL!**
-**No comments or remarks!**
+No comments or remarks!
 
-Here you can see a few examples of MARKET name ABBREVATIONS:
-PEPE/USD, DOGS/USD, SHIB/USD, DOGE/USD, SUI/USD, KAS/USD, APE/USD, LINK/USD, TON/USD, USDT/MXN, ETH/USD, BCH/USD, BTC/USDC... etc.
+Here you can see a few examples of MARKET name ABBREVIATIONS: PEPE/USD, DOGS/USD, SHIB/USD, DOGE/USD, SUI/USD, KAS/USD, APE/USD, LINK/USD, TON/USD, USDT/MXN, ETH/USD, BCH/USD, BTC/USDC... etc.
 
-Sometimes MARKETS are marked down with underscore:
-PEPE_USD, DOGS_USD, SHIB_USD, DOGE/USD, SUI_USD, KAS_USD, APE_USD, LINK_USD, TON_USD, USDT_MXN, ETH_USD, BCH_USD, BTC_USDC... etc.
+Sometimes MARKETS are marked down with underscore: PEPE_USD, DOGS_USD, SHIB_USD, DOGE_USD, SUI_USD, KAS_USD, APE_USD, LINK_USD, TON_USD, USDT_MXN, ETH_USD, BCH_USD, BTC_USDC... etc.
 
-Recognize and collect any distinguish **abbrevations**. Always use the '/' instead of '_'!
+Recognize and collect any distinguishable abbreviations. Always use the '/' instead of '_'.
 
-**Example Output Format:**
-[ABC/EFG, HIJ/KLM]
+If no market pairs are directly noted, give back empty brackets [].
+
+No comments or remarks!
+
+Example Output Format: ['ABC/EFG', 'HIJ/KLM'] or []
+
+Provide the output for the following announcement:

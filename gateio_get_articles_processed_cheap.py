@@ -1,5 +1,3 @@
-# File: gateio_get_processed.py
-
 import pandas as pd
 import openai
 import os
@@ -32,29 +30,56 @@ with open('instruction-action-datetime.txt', 'r') as file:
 with open('instruction-priority.txt', 'r') as file:
     instruction_priority = file.read()
 
-# Function to interact with the LLM for a specific instruction using an existing thread
-def get_llm_response(content, instruction, thread_id):
-    # Send the content as a message
-    message = client.beta.threads.messages.create(
-        thread_id=thread_id,
-        role="user",
-        content=content
-    )
-    
-    # Poll the LLM with the instruction
-    run = client.beta.threads.runs.create_and_poll(
-        thread_id=thread_id,
-        assistant_id=assistant.id
-    )
-    
-    # Check if the run completed and extract response
-    if run.status == "completed":
-        messages = client.beta.threads.messages.list(thread_id=thread_id)
-        for message in messages:
-            if message.role == "assistant":
-                response = message.content[0].text.value  # Extract the response
-                return response
-    return "[WRONG]"
+# Use the existing assistant ID
+assistant_id = 'asst_QArsWr5MGsrqgy7UJraQlIMW'
+
+# Function to interact with the LLM for a specific instruction using an existing assistant
+def get_llm_response(content, instruction):
+    try:
+        # Create a new thread for each interaction
+        thread = client.beta.threads.create()
+
+        # Combine the content and instruction to send it as a single user message
+        full_message = f"{instruction}\n\n{content}"
+
+        # Send the content as a message
+        message = client.beta.threads.messages.create(
+            thread_id=thread.id,
+            role="user",
+            content=full_message
+        )
+
+        # Poll the LLM with the existing assistant
+        run = client.beta.threads.runs.create_and_poll(
+            thread_id=thread.id,
+            assistant_id=assistant_id
+        )
+
+        # Check the run status
+        if run.status == "completed":
+            messages = client.beta.threads.messages.list(thread_id=thread.id)
+            for message in messages:
+                if message.role == "assistant":
+                    response = message.content[0].text.value  # Extract the response
+                    # Delete the thread after we have the response
+                    client.beta.threads.delete(thread_id=thread.id)
+                    return response
+
+        # Delete the thread if the run is not completed or no response is found
+        client.beta.threads.delete(thread_id=thread.id)
+        print("WRONG: No valid response from assistant.")
+        return ""
+
+    except Exception as e:
+        print(f"Error during interaction with assistant: {e}")
+        return ""
+
+# Function to handle list formatting (coins, pairs, market types)
+def format_as_list(response):
+    if response:
+        # Assuming LLM returns comma-separated values, split and format as list
+        return [item.strip() for item in response.split(',')]
+    return []
 
 # Load the TSV file
 data = pd.read_csv('gateio_articles.tsv', sep='\t')
@@ -72,30 +97,15 @@ processed_data = []
 # Use tqdm to display a progress bar while iterating through unprocessed data
 for index, row in tqdm(unprocessed_data.iterrows(), total=unprocessed_data.shape[0], desc="Processing records"):
     content = row['body']
-    
-    # Create the assistant once for this record
-    assistant = client.beta.assistants.create(
-        name="CryptoExchangeInvestigator",
-        instructions=instruction_summary,  # Can use summary as base, updated later
-        tools=[{"type": "code_interpreter"}],
-        model="gpt-4o",
-        temperature=0
-    )
 
-    # Create a new thread for this record
-    thread = client.beta.threads.create()
-
-    # Get LLM responses for each instruction using the same thread
-    llm_summary = get_llm_response(content, instruction_summary, thread.id)  # Use summary instruction
-    llm_category = get_llm_response(content, instruction_category, thread.id)  # Use category instruction
-    llm_coin = get_llm_response(content, instruction_coin, thread.id)  # Use coin instruction
-    llm_pair = get_llm_response(content, instruction_pair, thread.id)  # Use pair instruction
-    llm_market_type = get_llm_response(content, instruction_market_type, thread.id)  # Use market-type instruction
-    llm_action_datetime = get_llm_response(content, instruction_action_datetime, thread.id)  # Use action datetime instruction
-    llm_priority = get_llm_response(content, instruction_priority, thread.id)  # Use priority instruction
-    
-    # Delete the thread after all responses are retrieved
-    client.beta.threads.delete(thread_id=thread.id)
+    # Get LLM responses for each instruction by sending the instruction as part of the message
+    llm_summary = get_llm_response(content, instruction_summary)  # Use summary instruction
+    llm_category = get_llm_response(content, instruction_category)  # Use category instruction
+    llm_coin = get_llm_response(content, instruction_coin)  # Use coin instruction
+    llm_pair = get_llm_response(content, instruction_pair)  # Use pair instruction
+    llm_market_type = get_llm_response(content, instruction_market_type)  # Use market-type instruction
+    llm_action_datetime = get_llm_response(content, instruction_action_datetime)  # Use action datetime instruction
+    llm_priority = get_llm_response(content, instruction_priority)  # Use priority instruction
 
     # Mark the record as processed
     data.at[index, 'llm_processed'] = 'Yes'  # Update the original data to mark it as processed

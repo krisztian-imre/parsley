@@ -67,13 +67,13 @@ def get_llm_response(content, instruction):
                 response = message.content[0].text.value  # Extract the response
                 # Delete or close the thread here
                 client.beta.threads.delete(thread_id=thread.id)  # Assuming delete method is available
-                print(response)
                 return response
     
     # Delete or close the thread if the run is not completed or no response is found
     client.beta.threads.delete(thread_id=thread.id)  # Assuming delete method is available
-    print('WRONG')
-    return "[WRONG]"
+    print("WRONG")
+    return ""
+    
 
 # Function to handle list formatting (coins, pairs, market types)
 def format_as_list(response):

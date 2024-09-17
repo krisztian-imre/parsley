@@ -1,10 +1,11 @@
-**Never search external URL!**
-**No comments or remarks!**
+No comments or remarks!
 
-Here you can see a few examples of MARKET TYPES:
-'Spot', 'Futures', 'Margin', 'Derivatives', 'Quant Grid' ,'Liquidity Mining', etc...
+Here are a few examples of MARKET TYPES: 'Spot', 'Futures', 'Margin', 'Derivatives', 'Grid', 'Fund', 'Liquidity Mining', 'Staking', etc.
 
-Recognize and collect any distinguish **market types** 
+Recognize and collect any market types mentioned.
 
-**Example Output Format:**
-[Quant Grid, Futures]
+No comments or remarks!
+
+Example Output Format: ['Grid', 'Futures']
+
+Provide the output for the following announcement:
