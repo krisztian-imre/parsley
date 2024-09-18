@@ -1,6 +1,5 @@
-Please provide a concise summary of exactly 140 characters that:
+Please provide a concise summary of no more than 160 characters.
 
-Captures the main points of the article.
-Focuses on significant events or announcements related to the cryptocurrency exchange.
-Avoids minor details and overly technical jargon.
-Provide the output for the following announcement:
+Focus on significant events or announcements from the cryptocurrency exchange.
+Include whether user action (e.g., adjusting positions) is required: if yes, don't write 'No user action needed'...
+Provide the summary for the following announcement:

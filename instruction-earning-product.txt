@@ -1,0 +1,23 @@
+No comments or remarks!
+
+Here is the LIST of **all** the investment and earning product types we use:
+Liquidity Mining,
+Staking,
+Savings Products,
+Yield Farming,
+Lending/Borrowing,
+Dual Investment,
+NFTs,
+Referral Programs,
+VIP/Institutional Services,
+Fund
+
+Rule 1: Collect any distinct investment and earning product types applicable for the announcement.
+Rule 2: For the output, choose one or more from the LIST provided above.
+Rule 3: If no earning product types applicable, return an empty list [].
+
+No comments or remarks!
+
+Example Output Format: ['NFTs', 'Staking'] or []
+
+Provide the output for the following announcement:

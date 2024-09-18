@@ -22,8 +22,11 @@ with open('instruction-coin.txt', 'r') as file:
 with open('instruction-pair.txt', 'r') as file:
     instruction_pair = file.read()
 
-with open('instruction-market-type.txt', 'r') as file:
-    instruction_market_type = file.read()
+with open('instruction-trading-contract.txt', 'r') as file:
+    instruction_trading_contract = file.read()
+
+with open('instruction-earning-product.txt', 'r') as file:
+    instruction_earning_product = file.read()
 
 with open('instruction-action-datetime.txt', 'r') as file:
     base_instruction_action_datetime = file.read()  # Load the base template
@@ -114,8 +117,9 @@ for index, row in tqdm(unprocessed_data.iterrows(), total=unprocessed_data.shape
     llm_category = get_llm_response(content, title+'///'+instruction_category)  # Use category instruction
     llm_coin = get_llm_response(content, instruction_coin)  # Use coin instruction
     llm_pair = get_llm_response(content, instruction_pair)  # Use pair instruction
-    llm_market_type = get_llm_response(content, title+'///'+instruction_market_type)  # Use market-type instruction
-    llm_priority = get_llm_response(content, instruction_priority)  # Use priority instruction
+    llm_trading_contract = get_llm_response(content, title+'///'+instruction_trading_contract)  # Use market-type instruction
+    llm_earning_product = get_llm_response(content, title+'///'+instruction_earning_product)  # Use market-type instruction
+    llm_priority = get_llm_response(llm_category+"///"+llm_summary, instruction_priority)  # Use priority instruction
 
     # Inject publish_datetime into the action datetime prompt
     instruction_action_datetime = base_instruction_action_datetime.format(publish_datetime=row['publish_datetime'])
@@ -135,7 +139,8 @@ for index, row in tqdm(unprocessed_data.iterrows(), total=unprocessed_data.shape
         'llm_category': llm_category,
         'llm_coin': llm_coin,
         'llm_pair': llm_pair,
-        'llm_market_type': llm_market_type,
+        'llm_trading_contract': llm_trading_contract,
+        'llm_earning_product': llm_earning_product,
         'llm_priority': llm_priority,
         'link': row['link'],    
         'parse_datetime': row['parse_datetime'],
