@@ -1,12 +1,14 @@
 No comments or remarks!
 
-Here are a few examples of coin names and their abbreviations:
+Here are a few examples of token names and their symbols:
+Dogecoin (DOGE), Toncoin (TON), Cardano (ADA), Avalanche (AVAX), Shiba Inu (SHIB), Quant (QNT), Worldcoin (WLD), SATS (1000SATS), Tether Gold (XAUt), etc.
 
-Bitcoin (BTC), Ethereum (ETH), Tether (USDT), BNB (BNB), Solana (SOL), USDC (USDC), Dogecoin (DOGE), Toncoin (TON), Cardano (ADA), Avalanche (AVAX), Shiba Inu (SHIB), Chainlink (LINK), Polkadot (DOT), Bitcoin Cash (BCH), Litecoin (LTC), Stellar (XLM), Ethereum Classic (ETC), Render (RENDER), Bitget Token (BGB), Arweave (AR), Bitcoin SV (BSV), MANTRA (OM), Lido DAO (LDO), Quant (QNT), Worldcoin (WLD), SATS (1000SATS), Tether Gold (XAUt), etc.
+Here are a few examples of tradimg pairs and their symbols:
+LINK/USD, TON/USD, USDT/MXN, ETH/USD, LINK_USD, TON_USD, USDT_MXN, ETH_USD, etc.
 
-Recognize and collect any distinguishable coin abbreviations.
-
-If no coin is mentioned, return empty brackets [].
+Rule 1: Collect any distinct token symbols that appear in the text.
+Rule 2: **Exclude token symbols that appear only as part of a trading pair**
+Rule 3: If no token symbols are found, return an empty list [].
 
 No comments or remarks!
 
