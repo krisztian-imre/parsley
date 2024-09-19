@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io adds ALEO/USDT perpetual contract with up to 50X leverage and 4-hour funding intervals. Trade or practice on demo account. High risk\; trade responsibly.\n\nTokens: ALEO\, BTC\, ETH\, EOS\, LTC\, BCH\, BSV\, USDT\nPairs: ALEO/USDT\nType: Perpetual\nCategory: Listings\nPriority: Medium
+DTEND:20240919T013000Z
+LOCATION:Listings
+DTSTART:20240919T010000Z
+SUMMARY:Gate.io Has Added ALEO Perpetual Contract
+UID:4e4731df-ba5d-41b8-bd41-cee3e516890b@4e47.org
+URL:https://www.gate.io/announcements/article/39340
+END:VEVENT
+END:VCALENDAR

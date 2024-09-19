@@ -22,8 +22,11 @@ Watch out! Announcements can be tricky:
 Automatically settling positions, suspending deposits, suspending withdrawals, or suspending services may indicate Delistings.
 Offering investment strategies are NOT listings!
 
-Rule: For the output, choose **only one** category from the LIST above.
+Rule1: For the output, choose **maximum three** relevant category from the LIST above.
+Rule2: For the output, choose **at least one** relevant category from the LIST above. 
 
 No comments or remarks!
+
+Example Output Format: ['Listings', 'Trading']
 
 Provide the output as a single category for the following announcement:

@@ -1,10 +1,10 @@
 No comments or remarks!
 
-Articles discussing urgent actions, upcoming deadlines, or significant platform changes should be marked as "High Priority".
-Articles discussing new features, services, or general updates can be considered "Medium Priority".
-Articles discussing background information or minor updates can be considered "Low Priority".
-Return the output as a string: 'High Priority', 'Medium Priority', or 'Low Priority'.
+• Priority of article discussing urgent actions, upcoming deadlines, or significant platform changes should be marked as: High
+• Priority of article discussing new features, services, or general updates can be considered: Medium
+• Priority of article discussing background information or minor updates can be considered: Low
+• Return the output as one word: High, Medium, or Low
 
 No comments or remarks!
 
-Provide the output for the following announcement:
+Provide the output for the following article:

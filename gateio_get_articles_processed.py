@@ -3,6 +3,7 @@ import openai
 import os
 from tqdm import tqdm  # Import tqdm for progress bar
 from time import sleep
+import re
 
 # Set up OpenAI API key
 os.environ['OPENAI_API_KEY'] = 'sk-proj-vCcWskCtsmbnloDfRC6XT3BlbkFJURTh97LuwNhvGOMqgWgh'
@@ -16,8 +17,8 @@ with open('instruction-summary.txt', 'r') as file:
 with open('instruction-category.txt', 'r') as file:
     instruction_category = file.read()
 
-with open('instruction-coin.txt', 'r') as file:
-    instruction_coin = file.read()
+with open('instruction-token.txt', 'r') as file:
+    instruction_token = file.read()
 
 with open('instruction-pair.txt', 'r') as file:
     instruction_pair = file.read()
@@ -87,13 +88,6 @@ def get_llm_response(content, instruction, retries=3):
         print(f"Error during interaction with assistant: {e}")
         return ""
 
-# Function to handle list formatting (coins, pairs, market types)
-def format_as_list(response):
-    if response:
-        # Assuming LLM returns comma-separated values, split and format as list
-        return [item.strip() for item in response.split(',')]
-    return []
-
 # Load the TSV file
 data = pd.read_csv('gateio_articles.tsv', sep='\t')
 
@@ -112,23 +106,37 @@ for index, row in tqdm(unprocessed_data.iterrows(), total=unprocessed_data.shape
     content = row['body']
     title = row['title']
     
-    # Get LLM responses for each instruction by sending the instruction as part of the message
-    llm_summary = get_llm_response(content, instruction_summary)  # Use summary instruction
-    llm_category = get_llm_response(content, title+'///'+instruction_category)  # Use category instruction
-    llm_coin = get_llm_response(content, instruction_coin)  # Use coin instruction
-    llm_pair = get_llm_response(content, instruction_pair)  # Use pair instruction
-    llm_trading_contract = get_llm_response(content, title+'///'+instruction_trading_contract)  # Use market-type instruction
-    llm_earning_product = get_llm_response(content, title+'///'+instruction_earning_product)  # Use market-type instruction
-    llm_priority = get_llm_response(llm_category+"///"+llm_summary, instruction_priority)  # Use priority instruction
-
-    # Inject publish_datetime into the action datetime prompt
-    instruction_action_datetime = base_instruction_action_datetime.format(publish_datetime=row['publish_datetime'])
+    # SUMMARY
+    llm_summary = get_llm_response(title+'///'+content, instruction_summary)  # Use summary instruction
     
-    llm_action_datetime = get_llm_response(content, instruction_action_datetime)  # Use the modified action datetime prompt
+    # CATEGORY
+    llm_category = get_llm_response(title+'///'+content, instruction_category)  # Use category instruction
+    llm_category = re.sub(r'^.*?(\[.*?\]).*$', r'\1', llm_category) # Handling LLM failure
 
-    #Logic to handle 'Unknown Date' and substitute with 'publish_datetime'
-    if llm_action_datetime == 'Unknown Date':
-        print('Unknown Date')
+    # TOKENS
+    llm_token = get_llm_response(title+'///'+content, instruction_token)  # Use token instruction
+    llm_token = re.sub(r'^.*?(\[.*?\]).*$', r'\1', llm_token) # Handling LLM failure
+
+    # TRADING PAIRS
+    llm_pair = get_llm_response(title+'///'+content, instruction_pair)  # Use pair instruction
+    llm_pair = re.sub(r'^.*?(\[.*?\]).*$', r'\1', llm_pair) # Handling LLM failure
+
+    # TRADING OR CONTRACT TYPES
+    llm_trading_contract = get_llm_response(title+'///'+content, instruction_trading_contract)  # Use market-type instruction
+    llm_trading_contract = re.sub(r'^.*?(\[.*?\]).*$', r'\1', llm_trading_contract) # Handling LLM failure
+
+    # EARNING AND INVESTMENT PRODUCT TYPES
+    llm_earning_product = get_llm_response(title+'///'+content, instruction_earning_product)  # Use market-type instruction
+    llm_earning_product = re.sub(r'^.*?(\[.*?\]).*$', r'\1', llm_earning_product) # Handling LLM failure
+
+    # PIORITY
+    llm_priority = get_llm_response(llm_category+"///"+llm_summary, instruction_priority)  # Use priority instruction
+    llm_priority = re.sub(r'[^A-Za-z]', '', llm_priority) # Handling LLM failure
+
+    # ACTION DATETIME
+    instruction_action_datetime = base_instruction_action_datetime.format(publish_datetime=row['publish_datetime']) # Inject publish_datetime into the prompt
+    llm_action_datetime = get_llm_response(content, instruction_action_datetime)  # Use the modified action datetime prompt
+    if 'Unknown Date' in llm_action_datetime: #Logic to handle 'Unknown Date' and substitute with 'publish_datetime'
         llm_action_datetime = row['publish_datetime']  # Use the value from 'publish_datetime'
 
     # Mark the record as processed
@@ -136,19 +144,19 @@ for index, row in tqdm(unprocessed_data.iterrows(), total=unprocessed_data.shape
     
     # Add a new row with all existing features + new LLM-generated features   
     processed_record = {
+        'ical_processed': 'No',  # Default 'No'
+        'exchange': row['exchange'],
         'llm_category': llm_category,
-        'llm_coin': llm_coin,
+        'llm_priority': llm_priority,
+        'llm_summary': llm_summary,
+        'publish_datetime': row['publish_datetime'],
+        'llm_action_datetime': llm_action_datetime,  # Updated with the logic to handle 'Unknown Date'
+        'llm_token': llm_token,
         'llm_pair': llm_pair,
         'llm_trading_contract': llm_trading_contract,
         'llm_earning_product': llm_earning_product,
-        'llm_priority': llm_priority,
         'link': row['link'],    
         'parse_datetime': row['parse_datetime'],
-        'publish_datetime': row['publish_datetime'],
-        'llm_action_datetime': llm_action_datetime,  # Updated with the logic to handle 'Unknown Date'
-        'llm_summary': llm_summary,
-        'exchange': row['exchange'],
-        'ical_processed': 'No',  # Default 'No'
         'in_category': row['in_category'],
         'title': row['title'],
         'body': row['body']
