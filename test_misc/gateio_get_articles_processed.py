@@ -1,3 +1,5 @@
+# File: gateio_get_articles_processed.py
+
 import pandas as pd
 import openai
 import os
@@ -9,6 +11,9 @@ import re
 os.environ['OPENAI_API_KEY'] = 'sk-proj-vCcWskCtsmbnloDfRC6XT3BlbkFJURTh97LuwNhvGOMqgWgh'
 
 client = openai.OpenAI()
+
+# Use the existing assistant ID
+assistant_id = 'asst_QArsWr5MGsrqgy7UJraQlIMW'
 
 # Load instructions for different tasks
 with open('instruction-summary.txt', 'r') as file:
@@ -35,58 +40,66 @@ with open('instruction-action-datetime.txt', 'r') as file:
 with open('instruction-priority.txt', 'r') as file:
     instruction_priority = file.read()
 
-# Use the existing assistant ID
-assistant_id = 'asst_QArsWr5MGsrqgy7UJraQlIMW'
+# Define the expected number of features (columns)
+expected_feature_count = 16  # Adjust this if the number of expected columns changes
+
+# Function to check if the record has the correct number of features
+def record_health_check(record, expected_count):
+    # Count the number of keys (features) in the record
+    actual_count = len(record)
+    
+    # Check if any feature contains the string 'LLM_ERROR'
+    llm_error_found = any('LLM_ERROR' in str(value) for value in record.values())
+
+    if llm_error_found:
+        print("Error: 'LLM_ERROR' found in one of the features.")
+        return False
+    
+    # Check if the number of features matches the expected count
+    if actual_count == expected_count:
+        return True
+    else:
+        print(f"Error: Record has {actual_count} features, expected {expected_count}.")
+        return False
 
 # Function to interact with the LLM for a specific instruction using an existing assistant
 def get_llm_response(content, instruction, retries=3):
-    try:
-        # Try to send a request and handle API errors
-        for attempt in range(retries):
-            try:
-                # Create a new thread for each interaction
-                thread = client.beta.threads.create()
+    for attempt in range(retries):
+        # Create a new thread for each interaction
+        thread = client.beta.threads.create()
 
-                # Combine the content and instruction to send it as a single user message
-                full_message = f"{instruction}\n\n{content}"
+        # Combine the content and instruction to send it as a single user message
+        full_message = f"{instruction}\n\n{content}"
 
-                # Send the content as a message
-                message = client.beta.threads.messages.create(
-                    thread_id=thread.id,
-                    role="user",
-                    content=full_message
-                )
+        # Send the content as a message
+        client.beta.threads.messages.create(
+            thread_id=thread.id,
+            role="user",
+            content=full_message
+        )
+    
+        # Poll the LLM with the existing assistant
+        run = client.beta.threads.runs.create_and_poll(
+            thread_id=thread.id,
+            assistant_id=assistant_id
+        )
 
-                # Poll the LLM with the existing assistant
-                run = client.beta.threads.runs.create_and_poll(
-                    thread_id=thread.id,
-                    assistant_id=assistant_id
-                )
+        # Check the run status
+        if run.status == "completed":
+            messages = client.beta.threads.messages.list(thread_id=thread.id)
+            for message in messages:
+                if message.role == "assistant" and hasattr(message, 'content'):
+                    response = message.content[0].text.value  # Extract the response     
+                    print(response)
+                    # Check if the response is empty, and retry if it is
+                    if response == "" or '\n' in response:
+                        continue  # Continue to the next attempt if the response is empty
+                    else:
+                        return response  # Return the valid response
+                
+        sleep(1)
 
-                # Check the run status
-                if run.status == "completed":
-                    messages = client.beta.threads.messages.list(thread_id=thread.id)
-                    for message in messages:
-                        if message.role == "assistant":
-                            response = message.content[0].text.value  # Extract the response
-                            # Delete the thread after we have the response
-                            client.beta.threads.delete(thread_id=thread.id)
-                            return response
-
-                # Delete the thread if the run is not completed or no response is found
-                client.beta.threads.delete(thread_id=thread.id)
-                return ""
-
-            except openai.error.RateLimitError:
-                print(f"RateLimitError on attempt {attempt+1}, retrying after backoff.")
-                sleep(5)  # Backoff before retrying
-            except openai.error.OpenAIError as e:
-                print(f"OpenAIError on attempt {attempt+1}: {e}")
-                sleep(5)  # General backoff for other API issues
-
-    except Exception as e:
-        print(f"Error during interaction with assistant: {e}")
-        return ""
+    return "LLM_ERROR"
 
 # Load the TSV file
 data = pd.read_csv('gateio_articles.tsv', sep='\t')
@@ -129,18 +142,15 @@ for index, row in tqdm(unprocessed_data.iterrows(), total=unprocessed_data.shape
     llm_earning_product = get_llm_response(title+'///'+content, instruction_earning_product)  # Use market-type instruction
     llm_earning_product = re.sub(r'^.*?(\[.*?\]).*$', r'\1', llm_earning_product) # Handling LLM failure
 
-    # PIORITY
-    llm_priority = get_llm_response(llm_category+"///"+llm_summary, instruction_priority)  # Use priority instruction
-    llm_priority = re.sub(r'[^A-Za-z]', '', llm_priority) # Handling LLM failure
-
     # ACTION DATETIME
     instruction_action_datetime = base_instruction_action_datetime.format(publish_datetime=row['publish_datetime']) # Inject publish_datetime into the prompt
     llm_action_datetime = get_llm_response(content, instruction_action_datetime)  # Use the modified action datetime prompt
     if 'Unknown Date' in llm_action_datetime: #Logic to handle 'Unknown Date' and substitute with 'publish_datetime'
         llm_action_datetime = row['publish_datetime']  # Use the value from 'publish_datetime'
 
-    # Mark the record as processed
-    data.at[index, 'llm_processed'] = 'Yes'  # Update the original data to mark it as processed
+     # PIORITY
+    llm_priority = get_llm_response(llm_category+"///"+llm_summary, instruction_priority)  # Use priority instruction
+    #llm_priority = re.sub(r'[^A-Za-z]', '', llm_priority) # Handling LLM failure
     
     # Add a new row with all existing features + new LLM-generated features   
     processed_record = {
@@ -162,8 +172,14 @@ for index, row in tqdm(unprocessed_data.iterrows(), total=unprocessed_data.shape
         'body': row['body']
     }
 
-    # Append the processed record to the list
-    processed_data.append(processed_record)
+    # Check if the record has the correct number of features
+    if record_health_check(processed_record, expected_feature_count):
+        # Append the processed record if it passes the feature count check
+        processed_data.append(processed_record)
+        # Mark the record as processed
+        data.at[index, 'llm_processed'] = 'Yes'  # Update the original data to mark it as processed
+    else:
+        print(f"Record at index {index} failed feature count check and was not appended.")
 
 # Convert the processed records into a DataFrame
 processed_df = pd.DataFrame(processed_data)

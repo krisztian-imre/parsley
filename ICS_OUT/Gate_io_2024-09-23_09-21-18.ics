@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate Web3 Tasks launches Up Network airdrop. Complete tasks by Oct 07 to share 5\,000\,000 points. Follow social media\, purchase a phone\, and register email to participate.\n\nCategory: Reward\nPriority: High
+DTEND:20240923T003000Z
+LOCATION:Reward
+DTSTART:20240923T000000Z
+SUMMARY:New Airdrop Project Up Network in Gate Web3 Tasks: Share 5\,000\,000 Points\, Complete All Tasks to Win a Chance to Receive Rewards!
+UID:ead88db7-4e88-4855-b936-36243041dc3f@ead8.org
+URL:https://www.gate.io/announcements/article/39432
+END:VEVENT
+END:VCALENDAR

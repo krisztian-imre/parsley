@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io Answer and Earn: Take the quiz on Povel Durev (DUREV) from Sep 23 to Sep 28 to share 31\,407 DUREV prizes. Complete tasks for more points and rewards.\n\nTokens: DUREV\nCategory: Reward\, Competition\nPriority: Low
+DTEND:20240923T073000Z
+LOCATION:Reward\, Competition
+DTSTART:20240923T070000Z
+SUMMARY:Gate.io Answer and Earn: Take the Quiz on Povel Durev (DUREV) to Share 31\,407 DUREV Prizes
+UID:41b11e1d-7659-408a-ae64-cc28327b5e76@41b1.org
+URL:https://www.gate.io/announcements/article/39425
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io will delist Agility (AGILITY) on September 30\, 2024. Adjust quant grid trading strategies and withdraw AGILITY holdings to avoid losses. Buyback available post-October 13\, 2024.\n\nTokens: AGILITY\nPairs: AGILITY/USDT\nType: Spot\, Grid Trading\nCategory: Delisting\nPriority: High
+DTEND:20240930T033000Z
+LOCATION:Delisting
+DTSTART:20240930T030000Z
+SUMMARY:Gate.io to Delist Agility (AGILITY)
+UID:0c14be59-7fdd-455e-8343-0696fb56691d@0c14.org
+URL:https://www.gate.io/announcements/article/39434
+END:VEVENT
+END:VCALENDAR

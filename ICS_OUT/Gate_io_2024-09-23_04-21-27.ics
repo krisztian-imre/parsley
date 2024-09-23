@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches Lock and Earn MEW on 2024-9-23 with 150% APR. Minimum 1\,040 MEW\, maximum 291\,950 MEW. Principal and interest distributed after 14 days.\n\nTokens: MEW\nProduct: Savings Products\nCategory: Investments\nPriority: Medium
+DTEND:20240923T083000Z
+LOCATION:Investments
+DTSTART:20240923T080000Z
+SUMMARY:Gate.io HODL and Earn: Lock MEW To Earn 150% APR
+UID:d43f595c-995f-4a89-850d-c31beb7b59aa@d43f.org
+URL:https://www.gate.io/announcements/article/39414
+END:VEVENT
+END:VCALENDAR

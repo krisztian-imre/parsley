@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io lists DeGods (DEGOD) on Sep 24\, 2024. Deposit and trade DEGOD from Sep 23-30 to share a $24\,000 prize pool. Complete identity verification to claim rewards.\n\nTokens: DEGOD\, BTC\, USDT\nPairs: DEGOD/USDT\nType: Spot\nCategory: Listing\, Reward\nPriority: Medium
+DTEND:20240924T023000Z
+LOCATION:Listing\, Reward
+DTSTART:20240924T020000Z
+SUMMARY:Gate.io DeGods (DEGOD) Limited-Time Listing Campaign: Deposit and Trade DEGOD to Split a $24\,000 Prize Pool
+UID:e3da4b75-1357-4f30-9d1d-69c601be4c52@e3da.org
+URL:https://www.gate.io/announcements/article/39437
+END:VEVENT
+END:VCALENDAR

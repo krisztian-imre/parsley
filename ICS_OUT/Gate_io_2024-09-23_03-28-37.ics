@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io offers Double Earning Monday with 200% Stable APR and 250% APR for new users starting at 7:00 UTC every Monday. KYC required. UK and restricted locations excluded.\n\nTokens: SWGT\nProduct: Savings Products\nCategory: Earning\nPriority: Medium
+DTEND:20240923T073000Z
+LOCATION:Earning
+DTSTART:20240923T070000Z
+SUMMARY:Gate.io Double Earning Monday: 200% Stable APR and 250% APR for New Users
+UID:1f132b54-24a2-4163-9a63-d4b2ce93e6ba@1f13.org
+URL:https://www.gate.io/announcements/article/39411
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io Simple Earn now supports NEIROCTO\, ALEO\, BILLY\, and CATI with an estimated APR of 4.38%. Users can subscribe to these assets to earn interest.\n\nTokens: NEIROCTO\, ALEO\, BILLY\, CATI\nProduct: Lending/Borrowing\nCategory: Investments\nPriority: Medium
+DTEND:20240923T083000Z
+LOCATION:Investments
+DTSTART:20240923T080000Z
+SUMMARY:Gate.io Simple Earn Market Supports Subscribing to NEIROCTO / ALEO / BILLY / CATI !
+UID:56854d3a-797c-4d8d-9eea-3b9acb131da1@5685.org
+URL:https://www.gate.io/announcements/article/39427
+END:VEVENT
+END:VCALENDAR

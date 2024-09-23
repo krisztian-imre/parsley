@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches Web3 Startup for Eigenpie (EGP) with a 200 EGP airdrop. Users with $10+ in Gate Web3 Wallet can join the lottery. Higher wallet assets increase winning chances.\n\nTokens: EGP\, ETH\, LSTs\nProduct: NFTs\, Staking\nCategory: Reward\nPriority: Medium
+DTEND:20240923T063000Z
+LOCATION:Reward
+DTSTART:20240923T060000Z
+SUMMARY:Announcement on Gate Web3 Startup Token Project Eigenpie(EGP) and Rules of Participation in Win and Share 200 EGP for Free
+UID:6e3abb2c-c67e-4644-bee8-8ff339b1c85f@6e3a.org
+URL:https://www.gate.io/announcements/article/39417
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io to delist YIELD App (YLD) on Sep 30\, 2024. Adjust quant grid trading\, withdraw liquidity\, and consider withdrawing YLD holdings to avoid losses. Buyback available.\n\nTokens: YLD\nPairs: YLD/USDT\nType: Spot\, Grid Trading\nProduct: Liquidity Mining\nCategory: Delisting\nPriority: High
+DTEND:20240930T063000Z
+LOCATION:Delisting
+DTSTART:20240930T060000Z
+SUMMARY:Gate.io to Delist YIELD App(YLD)
+UID:74210cbd-6edc-4608-9291-d1c37ab5471a@7421.org
+URL:https://www.gate.io/announcements/article/39441
+END:VEVENT
+END:VCALENDAR

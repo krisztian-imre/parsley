@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches Structured Products with up to 8% APR for BTC\, USDT\, and ETH. Subscription starts at 10:00 UTC on Sep 23\, 2024. Users can participate for potential high returns.\n\nTokens: BTC\, ETH\nProduct: Savings Products\nCategory: Investments\nPriority: Medium
+DTEND:20240923T103000Z
+LOCATION:Investments
+DTSTART:20240923T100000Z
+SUMMARY:Gate.io Structured Product Launched: Earn up to 8% APR
+UID:11bab0a7-8936-496e-8ddb-a9a2f75b067b@11ba.org
+URL:https://www.gate.io/announcements/article/39424
+END:VEVENT
+END:VCALENDAR

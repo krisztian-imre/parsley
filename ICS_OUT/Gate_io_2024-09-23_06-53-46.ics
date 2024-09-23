@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io announces WatBird (WAT) sale results and listing. Trading starts Sep 23\, 10:00 UTC. Deposit and trade links provided.\n\nTokens: WAT\nPairs: WAT/USDT\nType: Launchpad/IEO\nCategory: Listing\, Reward\, Community\nPriority: Low
+DTEND:20240923T103000Z
+LOCATION:Listing\, Reward\, Community
+DTSTART:20240923T100000Z
+SUMMARY:Gate.io Startup:WatBird (WAT) Initial Sale Result and Listing Schedule
+UID:a23bd161-2ec3-4d17-b197-e90c6d7854f4@a23b.org
+URL:https://www.gate.io/announcements/article/39423
+END:VEVENT
+END:VCALENDAR

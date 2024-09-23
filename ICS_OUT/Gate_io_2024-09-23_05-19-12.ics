@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:RBTC trading starts Sep 23\, 08:00 UTC. Deposit and trade links provided. 80.25% of orders qualified. 99.21% purchase success.\n\nTokens: RBTC\nPairs: RBTC/USDT\nType: Launchpad/IEO\nCategory: Listing\nPriority: High
+DTEND:20240923T083000Z
+LOCATION:Listing
+DTSTART:20240923T080000Z
+SUMMARY:Gate.io Startup:RabBitcoin (RBTC) Initial Sale Result and Listing Schedule
+UID:c189aefb-950a-4062-b69b-6ca30174f620@c189.org
+URL:https://www.gate.io/announcements/article/39415
+END:VEVENT
+END:VCALENDAR

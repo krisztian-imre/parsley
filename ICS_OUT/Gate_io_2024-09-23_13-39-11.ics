@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches Dip Sniper and Peak Sniper for BTC and ETH. Access via spot trading page under Financial Bots. Adjust positions to buy below or sell above market price.\n\nTokens: BTC\, ETH\nType: Spot\nCategory: Trading\nPriority: Medium
+DTEND:20240923T133000Z
+LOCATION:Trading
+DTSTART:20240923T130000Z
+SUMMARY:Gate.io Unveils New Trading Strategies: Dip Sniper and Peak Sniper
+UID:611ff814-2c38-43e9-9227-5938e337ac89@611f.org
+URL:https://www.gate.io/announcements/article/39442
+END:VEVENT
+END:VCALENDAR

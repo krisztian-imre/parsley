@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io announces a GT Holder-Exclusive Airdrop for StarryNift (SNIFT) from Sep 24-26\, 2024. Users need at least 10 GT to participate. Trading starts Sep 26\, 2024.\n\nTokens: SNIFT\, GT\nPairs: SNIFT/USDT\, GT/USDT\nType: Launchpad/IEO\nCategory: Reward\nPriority: Low
+DTEND:20240924T053000Z
+LOCATION:Reward
+DTSTART:20240924T050000Z
+SUMMARY:GT Holder-Exclusive Airdrop: Gate.io Initial Startup Free Offering: StarryNift(SNIFT) and Only GT Subscription Rules Announcement  ( 375\,000 free of charge)
+UID:d749babd-a8b8-4df2-9130-6d78197c9dba@d749.org
+URL:https://www.gate.io/announcements/article/39421
+END:VEVENT
+END:VCALENDAR

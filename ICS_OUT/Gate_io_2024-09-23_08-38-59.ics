@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io will suspend STX deposits and withdrawals on October 9\, 2024\, for a Stacks upgrade. Trading of STX remains unaffected.\n\nTokens: STX\nCategory: Maintenance\nPriority: High
+DTEND:20241009T003000Z
+LOCATION:Maintenance
+DTSTART:20241009T000000Z
+SUMMARY:Gate.io Supports Upcoming Stacks (STX) Upgrade
+UID:a274c254-464e-489d-887a-89fde0ff29a9@a274.org
+URL:https://www.gate.io/announcements/article/39428
+END:VEVENT
+END:VCALENDAR

@@ -2,4 +2,5 @@ Please provide a concise summary of no more than 160 characters.
 
 Focus on significant events or announcements from the cryptocurrency exchange.
 Include whether user action (e.g., adjusting positions) is required: if yes, don't write 'No user action needed'...
+Don't use double qoutation marks in any circumstances.
 Provide the summary for the following announcement:

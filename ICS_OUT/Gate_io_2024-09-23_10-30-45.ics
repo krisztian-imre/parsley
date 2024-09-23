@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate Learn Crypto Master Course Challenge: Complete courses\, invite friends\, and share on X to win prizes. Event runs from 2024-09-23 to 2024-09-30. KYC required.\n\nCategory: Reward\, Community\nPriority: Low
+DTEND:20240923T103000Z
+LOCATION:Reward\, Community
+DTSTART:20240923T100000Z
+SUMMARY:Gate Learn Crypto Master Course Challenge: Become the Top Learner and Share Thousands in Prizes!
+UID:e03d52f4-7fe1-4f10-9703-454137ff7a61@e03d.org
+URL:https://www.gate.io/announcements/article/39436
+END:VEVENT
+END:VCALENDAR

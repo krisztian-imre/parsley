@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io announces FOUR token sale results and listing. Trading starts Sep 22\, 08:00 UTC. Deposit and trade links provided.\n\nTokens: FOUR\, USDT\nPairs: FOUR/USDT\nType: Launchpad/IEO\nCategory: Listing\, Reward\, Community\nPriority: Low
+DTEND:20240923T003000Z
+LOCATION:Listing\, Reward\, Community
+DTSTART:20240923T000000Z
+SUMMARY:Gate.io Startup:FOUR (FOUR) Sale Result and Listing Schedule
+UID:cad9d90f-aa76-458d-b9a9-e53c13353939@cad9.org
+URL:https://www.gate.io/announcements/article/39408
+END:VEVENT
+END:VCALENDAR

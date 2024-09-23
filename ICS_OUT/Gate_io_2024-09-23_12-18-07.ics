@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io's Scallop (SCA) trading competition is live from Sep 23-30. Join to share $10\,000 in rewards. Complete tasks to win prizes. New users can earn extra rewards.\n\nTokens: SCA\nPairs: SCA/USDT\nType: Spot\nCategory: Competition\, Reward\nPriority: Medium
+DTEND:20240923T073000Z
+LOCATION:Competition\, Reward
+DTSTART:20240923T070000Z
+SUMMARY:Sui-Backed DeFi Protocol: Scallop (SCA) Trading Competition is Live\, Join and Share $10\,000 Rewards!
+UID:04e13e0a-830a-4c3a-87b1-b343c800ca4d@04e1.org
+URL:https://www.gate.io/announcements/article/39439
+END:VEVENT
+END:VCALENDAR

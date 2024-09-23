@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate Learn Daily Study Challenge is live from Sep 17 to Oct 17\, 2024. Earn points via quizzes and invites to compete for a $10\,000 prize pool. Share on X for extra rewards.\n\nCategory: Competition\nPriority: Medium
+DTEND:20240923T163000Z
+LOCATION:Competition
+DTSTART:20240923T160000Z
+SUMMARY:Gate Learn Daily Study Challenge: Study\, Quiz\, and Compete for a $10\,000 Prize Pool！
+UID:24650c6f-7e0b-48ff-981f-6564f0b8f29f@2465.org
+URL:https://www.gate.io/announcements/article/39412
+END:VEVENT
+END:VCALENDAR
