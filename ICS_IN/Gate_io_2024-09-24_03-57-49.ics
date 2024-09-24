@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io Answer and Earn: Take the quiz on PeiPei (PEIPEI) to share 18\,118\,064\,639 PEIPEI prizes. Event: Sep 24-29. Complete tasks to earn points and draw prizes.\n\nTokens: PEIPEI\nCategory: Reward\, Competition\nPriority: Medium
+DTEND:20240924T043000Z
+LOCATION:Reward\, Competition
+DTSTART:20240924T040000Z
+SUMMARY:Gate.io Answer and Earn: Take the Quiz on PeiPei (PEIPEI) to Share 18\,118\,064\,639 PEIPEI Prizes
+UID:51e05bfe-0ee5-4113-b9fe-9c14e20661b4@51e0.org
+URL:https://www.gate.io/announcements/article/39448
+END:VEVENT
+END:VCALENDAR

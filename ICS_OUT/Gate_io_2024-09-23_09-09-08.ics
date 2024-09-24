@@ -2,12 +2,12 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Gate.io RBTC Trading League: Form or join a team\, trade RBTC to split $15\,000 rewards from Sep 23 to Oct 2. Complete identity verification and meet trading volume requirements.\n\nTokens: RBTC\nType: Spot\nCategory: Competition\, Reward\nPriority: Medium
+DESCRIPTION:Gate.io RBTC Trading League: Form or join a team\, trade RBTC to split $15\,000 rewards from Sep 23 to Oct 2. Complete identity verification and meet trading volume requirements.\n\nTokens: RBTC\nType: Spot\nCategory: Competition\, Reward\, Trading\nPriority: Medium
 DTEND:20240923T093000Z
-LOCATION:Competition\, Reward
+LOCATION:Competition\, Reward\, Trading
 DTSTART:20240923T090000Z
 SUMMARY:Gate.io RBTC Trading League: Form a Team\, Trade to Split $15\,000
-UID:711af266-75bb-497b-a5b9-2e2e4bb2bab2@711a.org
+UID:78abe27d-c671-4c78-a83b-9be3755811c5@78ab.org
 URL:https://www.gate.io/announcements/article/39431
 END:VEVENT
 END:VCALENDAR

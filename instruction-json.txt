@@ -1,0 +1,92 @@
+Extract events from content for every token or trading pair separately in a structured .json response, like:
+
+{
+  "events": [
+    {
+      "event_type": "",
+      "token_or_pair": "",
+      "exchange_name": "",
+      "event_description": "",
+      "start_datetime": "YYYY-MM-DD HH:00:00",
+      "end_datetime": "YYYY-MM-DD HH:30:00",
+      "product_type": "",
+      "contract_type": ""
+      "priority_level": ""
+    },
+    {
+      "event_type": "",
+      "token_or_pair": "",
+      "exchange_name": "",
+      "event_description": "",
+      "start_datetime": "YYYY-MM-DD HH:00:00",
+      "end_datetime": "YYYY-MM-DD HH:30:00",
+      "product_type": "",
+      "contract_type": ""
+      "priority_level": ""
+    },
+    {
+      "event_type": "",
+      "token_or_pair": "",
+      "exchange_name": "",
+      "event_description": "",
+      "start_datetime": "YYYY-MM-DD HH:00:00",
+      "end_datetime": "YYYY-MM-DD HH:30:00",
+      "product_type": "",
+      "contract_type": ""
+      "priority_level": ""
+    }
+  ]
+}
+
+don't give back redundant events
+
+if you can't find distinct start date for and event, use publish_date: {publish_date} for start_datetime with (MM:00, SS:00)
+if you can't find end date for an event, use publish_date for end_datetime with (MM:30, SS:00)    
+
+event_description is about 160-character: 
+• Focus on significant information.
+• Include whether user action (e.g., adjusting positions) is required  
+
+event_type can be:
+• Listing (token listing, trading pair launch, perpetual swap listing) 
+• Delisting (token delisting, trading pair delisting, settling positions) 
+• Deposit/Withdrawal (suspending deposits and/or withdrawals) 
+• Investments (funds, savings accounts, flexible savings, fixed savings, liquidity mining, yield farming, lending/borrowing, dual investment, structured investment, quantitative funds, algorithm-driven investment, index funds, NFT investments) 
+• Earning (staking, liquidity mining, yield farming) • Reward (airdrop event, referral program, VIP program) 
+• Trading (margin trading update, futures contract launch, OTC) 
+• Competition • Maintenance (security update, bug bounty program, system upgrade, network upgrade) 
+• Community (voting, partnership announcement) 
+• Fee (trading fees, maker fees, taker fees, deposit and withdrawal fees, margin/leverage fees, listing fees, subscription fees, transaction or network fees) 
+• Operational (infrastructure changes) 
+
+contract_type can be:
+• Spot,
+• Futures,
+• Perpetual,
+• Options,
+• Swap,
+• Margin Trading,
+• Derivatives,
+• Grid Trading,
+• Copy Trading,
+• OTC Trading,
+• Leveraged Tokens,
+• Launchpad/IEO,
+• Fiat Gateway
+
+product_type can be:
+• Liquidity Mining,
+• Staking,
+• Savings Products,
+• Yield Farming,
+• Lending/Borrowing,
+• Dual Investment,
+• NFTs,
+• Referral Programs,
+• VIP/Institutional Services,
+• Fund
+
+priority_level can be:
+• Low
+• Medium
+• High 

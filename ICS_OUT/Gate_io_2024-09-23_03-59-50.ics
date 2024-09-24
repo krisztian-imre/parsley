@@ -2,12 +2,12 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Gate.io Answer and Earn: Take the quiz on Landwolf (WOLF) to share 41\,413\,583 WOLF prizes. Event: Sep 23-28. Earn points via quizzes\, tasks\, and trading.\n\nTokens: WOLF\nCategory: Reward\, Competition\nPriority: Medium
+DESCRIPTION:Gate.io Answer and Earn: Take the quiz on Landwolf (WOLF) to share 41\,413\,583 WOLF prizes. Complete tasks like trading\, inviting friends\, and using bots to earn more points. Event: Sep 23-28.\n\nTokens: WOLF\nCategory: Reward\, Competition\nPriority: Low
 DTEND:20240923T043000Z
 LOCATION:Reward\, Competition
 DTSTART:20240923T040000Z
 SUMMARY:Gate.io Answer and Earn: Take the Quiz on Landwolf (WOLF) to Share 41\,413\,583 WOLF Prizes
-UID:02d6f26e-6acb-4ec2-83a4-2d57473f7424@02d6.org
+UID:79ab393a-130f-4d23-9d74-f1df05cc93d6@79ab.org
 URL:https://www.gate.io/announcements/article/39413
 END:VEVENT
 END:VCALENDAR

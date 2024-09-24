@@ -2,12 +2,12 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Paragon (PGN) sale concluded with 2\,160\,000 PGN sold. Trading starts Sep 23\, 02:00 UTC. Deposit and trade links provided.\n\nTokens: PGN\nPairs: PGN/USDT\nType: Launchpad/IEO\nProduct: Referral Programs\nCategory: Listing\nPriority: Medium
+DESCRIPTION:Paragon (PGN) sale concluded with 2\,160\,000 PGN sold. Trading starts Sep 23\, 02:00 UTC. Deposit and trade links provided.\n\nTokens: PGN\nPairs: PGN/USDT\nType: Launchpad/IEO\, Spot\nProduct: Referral Programs\nCategory: Listing\nPriority: Medium
 DTEND:20240923T023000Z
 LOCATION:Listing
 DTSTART:20240923T020000Z
 SUMMARY:Gate.io Startup:Paragon (PGN) Sale Result and Listing Schedule
-UID:76327338-c25b-4eef-a6da-6af3e09df80b@7632.org
+UID:1840d0a5-ae99-4747-a94a-efcabb620833@1840.org
 URL:https://www.gate.io/announcements/article/39407
 END:VEVENT
 END:VCALENDAR

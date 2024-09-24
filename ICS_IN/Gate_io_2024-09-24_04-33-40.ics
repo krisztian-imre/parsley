@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io Startup Projects Voting Campaign Phase 8 runs from Sep 24 to Oct 1. Vote for projects to share a $5\,000 prize pool. Invite friends to increase rewards.\n\nTokens: SNIFT\, KOAI\, SOCIAL\nCategory: Community\, Reward\, Competition\nPriority: Low
+DTEND:20240924T043000Z
+LOCATION:Community\, Reward\, Competition
+DTSTART:20240924T040000Z
+SUMMARY:Gate.io Startup Projects Voting Campaign 8: Cast Your Vote\, Share a $5\,000 Prize Pool
+UID:aa9eb492-b35b-4437-80ef-de542bcaa013@aa9e.org
+URL:https://www.gate.io/announcements/article/39453
+END:VEVENT
+END:VCALENDAR

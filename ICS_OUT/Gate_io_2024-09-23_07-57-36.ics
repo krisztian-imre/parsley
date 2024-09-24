@@ -2,12 +2,12 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Gate.io announces KOI protocol (KOAI) airdrop exclusive to GT holders. Users need at least 10 GT to participate. Subscription runs from Sep 25-27\, 2024.\n\nTokens: KOAI\, GT\nPairs: KOAI/USDT\, GT/USDT\nType: Launchpad/IEO\nProduct: Referral Programs\nCategory: Reward\, Listing\nPriority: Medium
+DESCRIPTION:Gate.io announces KOI protocol (KOAI) airdrop exclusive to GT holders. Users need at least 10 GT to participate. Subscription runs from Sep 25-27\, 2024.\n\nTokens: KOAI\, GT\nPairs: KOAI/USDT\, GT/USDT\nType: Launchpad/IEO\nCategory: Reward\, Listing\nPriority: Medium
 DTEND:20240925T063000Z
 LOCATION:Reward\, Listing
 DTSTART:20240925T060000Z
 SUMMARY:GT Holder-Exclusive Airdrop: Gate.io Startup Initial Free Offering: KOI protocol (KOAI) and Only GT Subscription Rules Announcement (3\,000\,000 KOAI free of charge)
-UID:fd3d54cb-5000-4e98-b4c8-716f136cec13@fd3d.org
+UID:c37c75a2-94b3-4ebb-8b30-7e10852b3843@c37c.org
 URL:https://www.gate.io/announcements/article/39426
 END:VEVENT
 END:VCALENDAR

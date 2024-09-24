@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Gate.io's WatBird (WAT) trading competition is live from Sep 24 - Oct 01. Join to share a $14\,000 prize pool. New users can win extra rewards. Complete identity verification.\n\nTokens: WAT\nPairs: WAT/USDT\nType: Spot\nCategory: Competition\, Reward\nPriority: High
+DTEND:20240924T043000Z
+LOCATION:Competition\, Reward
+DTSTART:20240924T040000Z
+SUMMARY:Building a Gaming Community on TON: WatBird (WAT) Trading Competition is Live\, Join and Share $14\,000 Rewards!
+UID:46385285-1777-4a07-8715-f9916f0bfb89@4638.org
+URL:https://www.gate.io/announcements/article/39449
+END:VEVENT
+END:VCALENDAR
