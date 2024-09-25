@@ -1,4 +1,4 @@
-Extract events from content for every token or trading pair separately in a structured .json response, like:
+Extract events from content for every token (XYZ) or trading pair (XYZ/BCD, XYZ_BCD) separately in a structured JSON response, like:
 
 {
   "events": [
@@ -9,9 +9,10 @@ Extract events from content for every token or trading pair separately in a stru
       "event_description": "",
       "start_datetime": "YYYY-MM-DD HH:00:00",
       "end_datetime": "YYYY-MM-DD HH:30:00",
-      "product_type": "",
-      "contract_type": ""
-      "priority_level": ""
+      "product_type": ["", ""],
+      "contract_type": ["", ""],
+      "priority_level": "",
+      "announcement_link": ""
     },
     {
       "event_type": "",
@@ -20,9 +21,10 @@ Extract events from content for every token or trading pair separately in a stru
       "event_description": "",
       "start_datetime": "YYYY-MM-DD HH:00:00",
       "end_datetime": "YYYY-MM-DD HH:30:00",
-      "product_type": "",
-      "contract_type": ""
-      "priority_level": ""
+      "product_type": ["", ""],
+      "contract_type": ["", ""],
+      "priority_level": "",
+      "announcement_link": ""
     },
     {
       "event_type": "",
@@ -31,35 +33,37 @@ Extract events from content for every token or trading pair separately in a stru
       "event_description": "",
       "start_datetime": "YYYY-MM-DD HH:00:00",
       "end_datetime": "YYYY-MM-DD HH:30:00",
-      "product_type": "",
-      "contract_type": ""
-      "priority_level": ""
+      "product_type": ["", ""],
+      "contract_type": ["", ""],
+      "priority_level": "",
+      "announcement_link": ""
     }
   ]
 }
 
-don't give back redundant events
-
 if you can't find distinct start date for and event, use publish_date: {publish_date} for start_datetime with (MM:00, SS:00)
 if you can't find end date for an event, use publish_date for end_datetime with (MM:30, SS:00)    
 
+token_or_pair:
+• Use slash '/' instead of underscore '_' for trading pairs.
+
 event_description is about 160-character: 
-• Focus on significant information.
-• Include whether user action (e.g., adjusting positions) is required  
+• Focus on key information and indicate if user action (e.g., adjusting positions) is necessary.
 
 event_type can be:
 • Listing (token listing, trading pair launch, perpetual swap listing) 
 • Delisting (token delisting, trading pair delisting, settling positions) 
 • Deposit/Withdrawal (suspending deposits and/or withdrawals) 
 • Investments (funds, savings accounts, flexible savings, fixed savings, liquidity mining, yield farming, lending/borrowing, dual investment, structured investment, quantitative funds, algorithm-driven investment, index funds, NFT investments) 
-• Earning (staking, liquidity mining, yield farming) • Reward (airdrop event, referral program, VIP program) 
+• Earning (staking, liquidity mining, yield farming) 
+• Reward (airdrop event, referral program, VIP program) 
 • Trading (margin trading update, futures contract launch, OTC) 
 • Competition • Maintenance (security update, bug bounty program, system upgrade, network upgrade) 
 • Community (voting, partnership announcement) 
 • Fee (trading fees, maker fees, taker fees, deposit and withdrawal fees, margin/leverage fees, listing fees, subscription fees, transaction or network fees) 
 • Operational (infrastructure changes) 
 
-contract_type can be:
+contract_type can be an array, choose any combination from the provided options:
 • Spot,
 • Futures,
 • Perpetual,
@@ -74,7 +78,7 @@ contract_type can be:
 • Launchpad/IEO,
 • Fiat Gateway
 
-product_type can be:
+product_type can be an array, choose any combination from the provided options:
 • Liquidity Mining,
 • Staking,
 • Savings Products,
