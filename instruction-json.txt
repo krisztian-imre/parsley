@@ -1,69 +1,85 @@
-Extract events from content for every token (XYZ) or trading pair (XYZ/BCD, XYZ_BCD) separately in a structured JSON response, like:
+Extract events from content into records in a structured JSON response.
 
 {
   "events": [
     {
-      "event_type": "",
-      "token_or_pair": "",
       "exchange_name": "",
-      "event_description": "",
+      "event_type": [""],
+      "event_summary": "",
+      "token_andor_pair": [""],
+      "market_type": [""],
       "start_datetime": "YYYY-MM-DD HH:00:00",
       "end_datetime": "YYYY-MM-DD HH:30:00",
-      "product_type": ["", ""],
-      "contract_type": ["", ""],
       "priority_level": "",
       "announcement_link": ""
     },
     {
-      "event_type": "",
-      "token_or_pair": "",
       "exchange_name": "",
-      "event_description": "",
+      "event_type": [""],
+      "event_summary": "",
+      "token_andor_pair": [""],
+      "market_type": [""],
       "start_datetime": "YYYY-MM-DD HH:00:00",
       "end_datetime": "YYYY-MM-DD HH:30:00",
-      "product_type": ["", ""],
-      "contract_type": ["", ""],
       "priority_level": "",
       "announcement_link": ""
     },
     {
-      "event_type": "",
-      "token_or_pair": "",
       "exchange_name": "",
-      "event_description": "",
+      "event_type": [""],
+      "event_summary": "",
+      "token_andor_pair": [""],
+      "market_type": [""],
       "start_datetime": "YYYY-MM-DD HH:00:00",
       "end_datetime": "YYYY-MM-DD HH:30:00",
-      "product_type": ["", ""],
-      "contract_type": ["", ""],
       "priority_level": "",
       "announcement_link": ""
     }
   ]
 }
 
-if you can't find distinct start date for and event, use publish_date: {publish_date} for start_datetime with (MM:00, SS:00)
-if you can't find end date for an event, use publish_date for end_datetime with (MM:30, SS:00)    
+start_datetime:
+• If you can't find distinct start date for and event, use publish_datetime: {1973-01-31 11:11:11} for start_datetime with (MM:00, SS:00)
 
-token_or_pair:
+end_datetime:
+• If you can't find end date for an event, use publish_datetime for end_datetime with (MM:30, SS:00)    
+
+token_andor_pair:
+• Affected token (XYZ) or trading pair (XYZ/BCD, XYZ_BCD) 
 • Use slash '/' instead of underscore '_' for trading pairs.
 
-event_description is about 160-character: 
-• Focus on key information and indicate if user action (e.g., adjusting positions) is necessary.
+event_summary:
+• Less than 165 characters 
+• Focus on key information and indicate if user intervention (e.g., adjusting positions) is necessary.
+• Use slash '/' instead of underscore '_' for trading pairs.
 
-event_type can be:
-• Listing (token listing, trading pair launch, perpetual swap listing) 
-• Delisting (token delisting, trading pair delisting, settling positions) 
-• Deposit/Withdrawal (suspending deposits and/or withdrawals) 
-• Investments (funds, savings accounts, flexible savings, fixed savings, liquidity mining, yield farming, lending/borrowing, dual investment, structured investment, quantitative funds, algorithm-driven investment, index funds, NFT investments) 
-• Earning (staking, liquidity mining, yield farming) 
-• Reward (airdrop event, referral program, VIP program) 
-• Trading (margin trading update, futures contract launch, OTC) 
-• Competition • Maintenance (security update, bug bounty program, system upgrade, network upgrade) 
-• Community (voting, partnership announcement) 
-• Fee (trading fees, maker fees, taker fees, deposit and withdrawal fees, margin/leverage fees, listing fees, subscription fees, transaction or network fees) 
-• Operational (infrastructure changes) 
+event_type can be an array, choose any combination from the provided options:
+• Listing
+• Delisting
+• Trading Suspension
+• Token Migration 
+• Token Swap 
+• Risk Tier Change
+• Margin Change
+• Liquidity Pool Change
+• Airdrop
+• Fork
+• Staking
+• Token Burn 
+• Reverse Split 
+• Liquidity Mining Event 
+• Yield Farming Event 
+• Fee Adjustment 
+• Security Upgrade
+• Exchange Maintenance 
+• Regulatory Updates 
+• Trading Competition 
+• New Feature Launch
+• Investment Offer 
+• Community Event
+• News 
 
-contract_type can be an array, choose any combination from the provided options:
+market_type can be an array, choose any combination from the provided options:
 • Spot,
 • Futures,
 • Perpetual,
@@ -77,20 +93,15 @@ contract_type can be an array, choose any combination from the provided options:
 • Leveraged Tokens,
 • Launchpad/IEO,
 • Fiat Gateway
-
-product_type can be an array, choose any combination from the provided options:
-• Liquidity Mining,
-• Staking,
-• Savings Products,
-• Yield Farming,
-• Lending/Borrowing,
-• Dual Investment,
-• NFTs,
-• Referral Programs,
-• VIP/Institutional Services,
+• NFT
+• ETF
 • Fund
 
-priority_level can be:
-• Low
-• Medium
-• High 
+priority_level based on the necessity or user intervention:
+• Low Priority
+• Medium Priority
+• High Priority
+
+announcement_link: www.gate.io.com/announcements
+
+{content}
