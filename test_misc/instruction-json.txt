@@ -54,8 +54,8 @@ event_summary:
 • Use slash '/' instead of underscore '_' for trading pairs.
 
 event_type can be an array, choose any combination from the provided options:
-• Listing
 • Delisting
+• Listing
 • Trading Suspension
 • Token Migration 
 • Token Swap 

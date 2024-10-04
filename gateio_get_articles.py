@@ -94,7 +94,7 @@ def parse_article_html(html):
     return main_content, publish_datetime
 
 # Function to process articles from gateio_article_list.tsv
-def process_articles(article_list_file='gateio_article_list.tsv', articles_file='gateio_articles.tsv'):
+def get_articles(article_list_file='gateio_article_list.tsv', articles_file='gateio_articles.tsv'):
     # Load the article list
     article_list_df = pd.read_csv(article_list_file, sep='\t')
 
@@ -109,7 +109,7 @@ def process_articles(article_list_file='gateio_article_list.tsv', articles_file=
     if os.path.exists(articles_file):
         existing_articles_df = pd.read_csv(articles_file, sep='\t')
     else:
-        existing_articles_df = pd.DataFrame(columns=['exchange', 'parse_datetime', 'publish_datetime', 'llm_processed', 'in_category', 'link', 'title', 'body'])
+        existing_articles_df = pd.DataFrame(columns=['exchange', 'parse_datetime', 'publish_datetime', 'llm_processed', 'link', 'in_category', 'title', 'body'])
 
     # Initialize a list to hold new article data
     new_articles = []
@@ -125,12 +125,12 @@ def process_articles(article_list_file='gateio_article_list.tsv', articles_file=
                 # Create a new article record
                 new_article = {
                     'exchange': row['exchange'],
+                    'parse_datetime': row['parse_datetime'],
+                    'publish_datetime': publish_datetime,
+                    'llm_processed': 'No',  # default value
                     'link': row['link'],
                     'in_category': row['in_category'],
-                    'title': row['title'],
-                    'publish_datetime': publish_datetime,
-                    'parse_datetime': row['parse_datetime'],
-                    'llm_processed': 'No',  # default value
+                    'title': row['title'],                    
                     'body': body
                 }
                 new_articles.append(new_article)
@@ -153,4 +153,4 @@ def process_articles(article_list_file='gateio_article_list.tsv', articles_file=
     print(f"Updated {article_list_file} with processed status.")
 
 if __name__ == '__main__':
-    process_articles()
+    get_articles()

@@ -1,0 +1,269 @@
+[
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Airdrop",
+                "Listing"
+            ],
+            "event_summary": "Gate.io launches Mars(MARS) airdrop and lists MARS/USDT trading pair on October 4, 2024.",
+            "token_and_or_pair": [
+                "MARS",
+                "MARS/USDT"
+            ],
+            "market_type": [
+                "Spot",
+                "Launchpad/IEO"
+            ],
+            "quantifiable_changes": [
+                "1,726,121,979 MARS free of charge"
+            ],
+            "user_action_required": "Complete KYC2, hold $10 spot asset, claim free airdrop.",
+            "start_datetime": "2024-10-03 16:00:00",
+            "end_datetime": "2024-10-03 16:30:00",
+            "publish_datetime": "2024-10-03 16:39:25",
+            "event_link": "https://www.gate.io/announcements/article/39687",
+            "article_link": "https://www.gate.io/announcements/article/39687"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Earning"
+            ],
+            "event_summary": "GateLive streamers received bonuses in USDT for live mining and copy trading from Sep 23 to Sep 29.",
+            "token_and_or_pair": [
+                "USDT"
+            ],
+            "market_type": [
+                "Spot",
+                "Copy Trading"
+            ],
+            "quantifiable_changes": [],
+            "user_action_required": "Check Wallet\u2014Bill for bonus.",
+            "start_datetime": "2024-10-03 16:00:00",
+            "end_datetime": "2024-10-03 16:30:00",
+            "publish_datetime": "2024-10-03 16:53:09",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/39688"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Earning",
+                "Community Event"
+            ],
+            "event_summary": "Gate Learn invites creators to submit unique content for rewards up to 600 USDT.",
+            "token_and_or_pair": [],
+            "market_type": [],
+            "quantifiable_changes": [
+                "Rewards up to 600 USDT"
+            ],
+            "user_action_required": "Submit creative content for review.",
+            "start_datetime": "2024-10-04 09:00:00",
+            "end_datetime": "2024-10-04 09:30:00",
+            "publish_datetime": "2024-10-04 09:59:13",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/39693"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Earning"
+            ],
+            "event_summary": "Gate.io launches Crazy Friday#71 offering 4% APR on BTC/ETH/USDT with 3-day lockup.",
+            "token_and_or_pair": [
+                "BTC",
+                "ETH",
+                "USDT"
+            ],
+            "market_type": [
+                "Spot"
+            ],
+            "quantifiable_changes": [
+                "APR 4%",
+                "Lockup 3 days",
+                "Start position 10 USDT"
+            ],
+            "user_action_required": "Participate in Crazy Friday#71",
+            "start_datetime": "2024-10-04 10:00:00",
+            "end_datetime": "2024-10-07 10:30:00",
+            "publish_datetime": "2024-10-04 05:57:06",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/39690"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Listing"
+            ],
+            "event_summary": "Gate.io adjusts listing time for Hamster (HAMSTER) to 10:00 AM UTC on October 12, 2024.",
+            "token_and_or_pair": [
+                "HAMSTER/USDT"
+            ],
+            "market_type": [
+                "Spot"
+            ],
+            "quantifiable_changes": [],
+            "user_action_required": "Note new listing time",
+            "start_datetime": "2024-10-04 08:00:00",
+            "end_datetime": "2024-10-04 08:30:00",
+            "publish_datetime": "2024-10-04 08:43:21",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/39692"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Airdrop",
+                "Listing"
+            ],
+            "event_summary": "Gate.io offers GT Holder-Exclusive Airdrop for sudeng(HIPPO) with 2,770,084 HIPPO free of charge. Trading starts on October 5, 2024.",
+            "token_and_or_pair": [
+                "HIPPO/USDT"
+            ],
+            "market_type": [
+                "Spot"
+            ],
+            "quantifiable_changes": [
+                "Subscription Total: 3,750 GT",
+                "Startup Total Supply: 2,770,084 HIPPO"
+            ],
+            "user_action_required": "Ensure GT holding no less than 10 GT. Participate in subscription.",
+            "start_datetime": "2024-10-04 04:00:00",
+            "end_datetime": "2024-10-04 04:30:00",
+            "publish_datetime": "2024-10-04 04:20:05",
+            "event_link": "https://www.gate.io/startup",
+            "article_link": "https://www.gate.io/announcements/article/39689"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "New Feature Launch",
+                "Investment Offer"
+            ],
+            "event_summary": "Gate.io launches Structured Product for BTC/USDT and ETH SharkFin with up to 15% APR. Subscription starts on October 4/5/6th, 2024.",
+            "token_and_or_pair": [
+                "BTC/USDT",
+                "ETH"
+            ],
+            "market_type": [
+                "Structured Product"
+            ],
+            "quantifiable_changes": [
+                "Up to 15% APR"
+            ],
+            "user_action_required": "Participate in subscription",
+            "start_datetime": "2024-10-04 10:00:00",
+            "end_datetime": "2024-10-04 10:30:00",
+            "publish_datetime": "2024-10-04 06:06:27",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/39691"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Token Migration",
+                "Token Swap"
+            ],
+            "event_summary": "Gate.io supports Frontier (FRONT) to Self Chain (SLF) token migration at 1:1 ratio.",
+            "token_and_or_pair": [
+                "FRONT",
+                "SLF"
+            ],
+            "market_type": [
+                "Spot",
+                "Futures",
+                "Margin Trading",
+                "Quant Grid Trading"
+            ],
+            "quantifiable_changes": [
+                "Total token supply increases from 90 million to 360 million"
+            ],
+            "user_action_required": "No action required for FRONT holders.",
+            "start_datetime": "2024-08-20 04:00:00",
+            "end_datetime": "2024-08-20 04:30:00",
+            "publish_datetime": "2024-08-20 04:08:17",
+            "event_link": "https://blog.selfchain.xyz/front-to-slf-migration-details/",
+            "article_link": "https://www.gate.io/announcements/article/38688"
+        },
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Switching to Reduce Only Mode"
+            ],
+            "event_summary": "FRONT/USDT futures market switches to Reduce-only mode on August 26, 2024.",
+            "token_and_or_pair": [
+                "FRONT/USDT"
+            ],
+            "market_type": [
+                "Futures"
+            ],
+            "quantifiable_changes": [],
+            "user_action_required": "Adjust strategies in advance.",
+            "start_datetime": "2024-08-26 08:00:00",
+            "end_datetime": "2024-08-26 08:30:00",
+            "publish_datetime": "2024-08-20 04:08:17",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/38688"
+        },
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Settling Open Positions"
+            ],
+            "event_summary": "Gate.io will settle open positions for FRONT futures on August 27, 2024.",
+            "token_and_or_pair": [
+                "FRONT"
+            ],
+            "market_type": [
+                "Futures"
+            ],
+            "quantifiable_changes": [],
+            "user_action_required": "Close positions before August 27, 2024.",
+            "start_datetime": "2024-08-27 08:00:00",
+            "end_datetime": "2024-08-27 08:30:00",
+            "publish_datetime": "2024-08-20 04:08:17",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/38688"
+        },
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Suspend Trading"
+            ],
+            "event_summary": "Gate.io suspends FRONT trading services on August 28, 2024.",
+            "token_and_or_pair": [
+                "FRONT/USDT",
+                "FRONT/USDC",
+                "FRONT/ETH",
+                "FRONT/TRY"
+            ],
+            "market_type": [
+                "Spot",
+                "Quant Grid Trading",
+                "Margin Trading"
+            ],
+            "quantifiable_changes": [],
+            "user_action_required": "Adjust strategies and repay loans before suspension.",
+            "start_datetime": "2024-08-28 03:00:00",
+            "end_datetime": "2024-08-28 03:30:00",
+            "publish_datetime": "2024-08-20 04:08:17",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/38688"
+        }
+    ]
+]
