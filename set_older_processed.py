@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 # Load the TSV file into a DataFrame
-filename = 'gateio_articles.tsv'
+filename = 'gateio_article_collection.tsv'
 df = pd.read_csv(filename, sep='\t')
 
 # Convert 'publish_datetime' to datetime format

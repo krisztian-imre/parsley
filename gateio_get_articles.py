@@ -1,4 +1,4 @@
-# File: gateio_get_articles.py
+# File: gateio_get_articles_2.py
 
 import os
 import pandas as pd
@@ -15,25 +15,26 @@ headers = {
 }
 
 # Function to get HTML content with retry mechanism
-def get_html(url, max_retries=3, delay=3):
-    attempts = 0
-    while attempts < max_retries:
+def get_html(url, max_retries=3, backoff_factor=2):
+    retries = 0
+    while retries < max_retries:
         try:
             response = requests.get(url, headers=headers)
             response.raise_for_status()
             return response.text
         except requests.exceptions.HTTPError as e:
             if response.status_code == 502:
-                print(f"502 Server Error: Bad Gateway for url: {url}. Retrying in {delay} seconds...")
-                attempts += 1
-                time.sleep(delay)
+                retries += 1
+                wait_time = backoff_factor ** retries
+                print(f"502 Server Error: Bad Gateway for url: {url}. Retrying in {wait_time} seconds...")
+                time.sleep(wait_time)
             else:
                 print(f"HTTP Error fetching {url}: {e}")
                 return None
         except requests.exceptions.RequestException as e:
             print(f"Error fetching {url}: {e}")
             return None
-    print(f"Failed to fetch {url} after {max_retries} attempts.")
+    print(f"Failed to fetch {url} after {max_retries} retries.")
     return None
 
 # Function to clean main_content (body) content using regex
@@ -94,63 +95,39 @@ def parse_article_html(html):
     return main_content, publish_datetime
 
 # Function to process articles from gateio_article_list.tsv
-def get_articles(article_list_file='gateio_article_list.tsv', articles_file='gateio_articles.tsv'):
+def get_articles(article_collection_file='gateio_article_collection.tsv'):
     # Load the article list
-    article_list_df = pd.read_csv(article_list_file, sep='\t')
+    article_list_df = pd.read_csv(article_collection_file, sep='\t')
 
-    # Filter out records where 'processed' == 'No'
-    articles_to_process = article_list_df[article_list_df['processed'] == 'No']
+    # Ensure the correct data types for the 'body' and 'publish_datetime' columns
+    if 'body' in article_list_df.columns:
+        article_list_df['body'] = article_list_df['body'].astype('object')  # Ensure 'body' is of type string (object)
+
+    if 'publish_datetime' in article_list_df.columns:
+        article_list_df['publish_datetime'] = pd.to_datetime(article_list_df['publish_datetime'], errors='coerce')  # Ensure 'publish_datetime' is datetime
+
+    # Filter out records where 'publish_datetime' is missing (NaN)
+    articles_to_process = article_list_df[pd.isna(article_list_df['publish_datetime'])]
 
     if articles_to_process.empty:
         print("No new articles to process.")
         return
 
-    # If gateio_articles.tsv exists, load it, otherwise create an empty DataFrame
-    if os.path.exists(articles_file):
-        existing_articles_df = pd.read_csv(articles_file, sep='\t')
-    else:
-        existing_articles_df = pd.DataFrame(columns=['exchange', 'parse_datetime', 'publish_datetime', 'llm_processed', 'link', 'in_category', 'title', 'body'])
-
-    # Initialize a list to hold new article data
-    new_articles = []
-
     # Process each article
-    for _, row in tqdm(articles_to_process.iterrows(), total=len(articles_to_process), desc="Processing articles"):
+    for _, row in tqdm(articles_to_process.iterrows(), total=len(articles_to_process), desc="Scraping articles"):
         url = row['link']
         html = get_html(url)
         
         if html:
             body, publish_datetime = parse_article_html(html)
             if body and publish_datetime:
-                # Create a new article record
-                new_article = {
-                    'exchange': row['exchange'],
-                    'parse_datetime': row['parse_datetime'],
-                    'publish_datetime': publish_datetime,
-                    'llm_processed': 'No',  # default value
-                    'link': row['link'],
-                    'in_category': row['in_category'],
-                    'title': row['title'],                    
-                    'body': body
-                }
-                new_articles.append(new_article)
+                # Update the DataFrame with the new values
+                article_list_df.at[row.name, 'body'] = str(body)  # Ensure 'body' is explicitly converted to string
+                article_list_df.at[row.name, 'publish_datetime'] = pd.to_datetime(publish_datetime)  # Ensure 'publish_datetime' is datetime
 
-                # Mark the article as processed in the original list
-                article_list_df.loc[article_list_df['link'] == row['link'], 'processed'] = 'Yes'
-
-        # Add a delay to avoid 'overwhelming the server'
-        time.sleep(1)
-
-    # If there are new articles, append them to gateio_articles.tsv
-    if new_articles:
-        new_articles_df = pd.DataFrame(new_articles)
-        updated_articles_df = pd.concat([existing_articles_df, new_articles_df], ignore_index=True)
-        updated_articles_df.to_csv(articles_file, sep='\t', index=False)
-        print(f"New articles saved to {articles_file}")
-
-    # Save the updated article list with 'processed' updated to 'Yes'
-    article_list_df.to_csv(article_list_file, sep='\t', index=False)
-    print(f"Updated {article_list_file} with processed status.")
+    # Save the updated article list with the processed information
+    article_list_df.to_csv(article_collection_file, sep='\t', index=False)
+    print(f"Updated {article_collection_file} with processed articles.")
 
 if __name__ == '__main__':
     get_articles()

@@ -1,4 +1,4 @@
-# File: gateio_get_article_list_2.py
+# File: gateio_get_article_list.py
 
 import os
 import pandas as pd
@@ -70,32 +70,24 @@ def parse_html(html, category):
     article_list_box = soup.find('div', class_='article-list-box')
     if not article_list_box:
         return None
-
     articles = article_list_box.find_all('div', class_='article-list-item')
     article_data = []
-    current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # Current time for 'parse_datetime'
-
+    current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     for article in articles:
         title_tag = article.find('a', class_='article-list-item-title')
         if title_tag:
             title = title_tag.find('h3').get_text(strip=True)
-            title = clean_title(title)  # Assuming you have a clean_title() function for processing titles
-
-            # Construct the full link for the article
+            title = clean_title(title)
             partial_link = title_tag['href']
             full_link = urljoin('https://www.gate.io', partial_link)
-
-            # Append the article data, ensuring correct types
             article_data.append({
                 'exchange': 'Gate.io',
-                'parse_datetime': current_time,  # This will be a string in the correct format for parsing
-                'publish_datetime': None,  # Use None instead of 'NaN' to represent missing values
+                'parse_datetime': current_time,
+                'processed': 'No',
                 'link': full_link,
-                'category': category,
-                'title': title,
-                'body': None  # Use None for missing body content
+                'in_category': category,
+                'title': title
             })
-
     return article_data
 
 # Function to append only new articles
@@ -105,7 +97,7 @@ def append_new_articles(existing_data, new_data):
     return new_articles
 
 # Function to save data to TSV
-def save_data(data, filename='gateio_article_collection.tsv'):
+def save_data(data, filename='gateio_article_list.tsv'):
     df = pd.DataFrame(data)
     df.to_csv(filename, sep='\t', index=False)
     print(f"Data saved to {filename}")
@@ -128,7 +120,7 @@ def scrape_website(urls_dict):
             time.sleep(random.uniform(1, 1.75))  # Delay to avoid overwhelming the server
     return all_articles
 
-def get_article_list(filename='gateio_article_collection.tsv'):
+def get_article_list(filename='gateio_article_list.tsv'):
 
     # Load the URLs from the file
     gateio_categories = load_gateio_categories()
