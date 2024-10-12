@@ -13,11 +13,11 @@ df['publish_datetime'] = pd.to_datetime(df['publish_datetime'], errors='coerce')
 # Get the current date
 current_date = datetime.now()
 
-# Calculate the threshold date (3 days ago)
+# Calculate the threshold date (x days ago)
 threshold_date = current_date - timedelta(days=1)
 
 # Update 'llm_processed' to 'Yes' if 'publish_datetime' is older than 3 days
-df.loc[df['publish_datetime'] < threshold_date, 'llm_processed'] = 'Yes'
+df.loc[df['publish_datetime'] > threshold_date, 'llm_processed'] = 'No'
 
 # Save the updated DataFrame back to the TSV file
 df.to_csv(filename, sep='\t', index=False)

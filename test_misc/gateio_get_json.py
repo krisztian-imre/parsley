@@ -8,20 +8,9 @@ import json
 import logging
 import re  # Import regular expressions to help remove trailing commas
 import time
-import signal  # Import signal for global timeout management
-
-# Timeout handler to catch unresponsive scripts
-class TimeoutException(Exception):
-    pass
-
-def timeout_handler(signum, frame):
-    raise TimeoutException()
-
-# Set up the signal for timeouts
-signal.signal(signal.SIGALRM, timeout_handler)
 
 # Function to interact with the LLM for a specific instruction using an existing assistant
-def get_llm_response(content, title, max_retries=3, backoff_factor=2, timeout=60):
+def get_llm_response(content, title, max_retries=3, backoff_factor=2):
     retries = 0
     
     if "Bi-Weekly Report" in title:
@@ -33,9 +22,6 @@ def get_llm_response(content, title, max_retries=3, backoff_factor=2, timeout=60
 
     while retries < max_retries:
         try:
-            # Set an alarm for the timeout to prevent script from hanging
-            signal.alarm(timeout)
-            
             # Create a new thread for each interaction
             thread = client.beta.threads.create()
 
@@ -52,9 +38,6 @@ def get_llm_response(content, title, max_retries=3, backoff_factor=2, timeout=60
                 assistant_id=assistant_id
             )
 
-            # Reset the alarm after successful response
-            signal.alarm(0)
-
             # Check the run status
             if run.status == "completed":
                 messages = client.beta.threads.messages.list(thread_id=thread.id)
@@ -64,21 +47,19 @@ def get_llm_response(content, title, max_retries=3, backoff_factor=2, timeout=60
                         response = response.replace('```json', '')  # Remove starting ```json marker
                         response = response.replace('```', '')      # Remove ending ```
                         if response:
+                            print(response)
                             return response
             else:
                 logging.error(f"Unexpected run status: {run.status}")
                 raise Exception("LLM run did not complete successfully")
 
-        except TimeoutException:
-            logging.error(f"Timeout occurred after {timeout} seconds")
-            return "LLM_TIMEOUT"
-        
         except json.JSONDecodeError as e:
             logging.error(f"JSON Decode Error: {e} - Content: {content}")
             return "LLM_ERROR"
         
         except openai.error.RateLimitError as rate_limit_err:
             logging.error(f"Rate Limit Error: {rate_limit_err} - Content: {content}")
+            # Backoff and retry for rate-limiting issues
             retries += 1
             sleep_time = backoff_factor ** retries
             logging.warning(f"Rate limit exceeded, retrying in {sleep_time} seconds...")
@@ -87,6 +68,7 @@ def get_llm_response(content, title, max_retries=3, backoff_factor=2, timeout=60
 
         except openai.error.APIConnectionError as connection_err:
             logging.error(f"API Connection Error: {connection_err} - Content: {content}")
+            # Backoff and retry for connection issues
             retries += 1
             sleep_time = backoff_factor ** retries
             logging.warning(f"Connection issue, retrying in {sleep_time} seconds...")
@@ -95,6 +77,7 @@ def get_llm_response(content, title, max_retries=3, backoff_factor=2, timeout=60
 
         except openai.error.Timeout as timeout_err:
             logging.error(f"Timeout Error: {timeout_err} - Content: {content}")
+            # Backoff and retry for timeouts
             retries += 1
             sleep_time = backoff_factor ** retries
             logging.warning(f"Timeout issue, retrying in {sleep_time} seconds...")
@@ -176,20 +159,16 @@ def get_json():
 
 # Run the main function only when the script is executed directly
 if __name__ == "__main__":
-    
+
     # Set up logging for error tracking
     logging.basicConfig(filename='gateio_errors.log', level=logging.ERROR)
-    
-    # Retrieve the OpenAI API key from the environment
-    openai_api_key = os.getenv('OPENAI_API_KEY')
-    
-    if not openai_api_key:
-        logging.error("OpenAI API key not found in environment variables.")
-        raise EnvironmentError("OPENAI_API_KEY environment variable is not set. Please configure it before running the script.")
-    
-    # Initialize OpenAI client with the retrieved API key
-    global client
-    client = openai
 
-    # You can now directly call get_json without needing a global variable
+    # Set up OpenAI API key
+    os.environ['OPENAI_API_KEY'] = 'sk-proj-vCcWskCtsmbnloDfRC6XT3BlbkFJURTh97LuwNhvGOMqgWgh'
+    
+    # Initialize OpenAI client (based on the actual SDK you use)
+    openai.api_key = os.getenv('OPENAI_API_KEY')
+    global client
+    client = openai.OpenAI()  # Ensure correct initialization method for the version of OpenAI SDK you're using
+
     get_json()

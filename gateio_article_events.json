@@ -1,0 +1,342 @@
+[
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Trading Competition",
+                "Investment Offer"
+            ],
+            "event_summary": "Gate.io launches Startup Projects Voting Campaign Phase 11 with a $5,000 prize pool from Oct 12 to Oct 19.",
+            "tokens_and_pairs": [
+                "CYCON",
+                "DEEP",
+                "TRKX",
+                "OMNIA",
+                "AIC",
+                "BBT",
+                "CGPU"
+            ],
+            "market_type": [
+                "Launchpad/IEO"
+            ],
+            "quantifiable_changes": [
+                "$5,000 prize pool",
+                "$3,000 top 3 project prizes",
+                "$2,000 referral prizes"
+            ],
+            "user_action_required": "Vote for projects. Invite friends. Complete identity verification.",
+            "start_datetime": "2024-10-12 06:00:00",
+            "end_datetime": "2024-10-19 06:00:00",
+            "publish_datetime": "2024-10-12 05:55:08",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/39840"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "New Feature Launch",
+                "Trading Competition",
+                "Airdrop",
+                "Cashback"
+            ],
+            "event_summary": "Gate.io Bots App upgraded with new UI and features; users can win $80,000 in rewards by participating in trading events.",
+            "tokens_and_pairs": [],
+            "market_type": [
+                "Spot",
+                "Futures",
+                "Grid Trading"
+            ],
+            "quantifiable_changes": [
+                "300,000 USDT prize pool",
+                "10 USDT Trial Fund",
+                "100 USDT cashback"
+            ],
+            "user_action_required": "Restart bots, create/copy strategies, fill questionnaire.",
+            "start_datetime": "2024-10-12 03:00:00",
+            "end_datetime": "2024-10-12 03:30:00",
+            "publish_datetime": "2024-10-12 03:55:13",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/39835"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Airdrop"
+            ],
+            "event_summary": "Gate.io launches Moongate airdrop in Web3 Tasks, offering 200 Moongate Voyager Passes. Complete tasks to win rewards.",
+            "tokens_and_pairs": [
+                "Moongate"
+            ],
+            "market_type": [
+                "NFT"
+            ],
+            "quantifiable_changes": [
+                "200 Moongate Voyager Passes"
+            ],
+            "user_action_required": "Complete tasks using Gate Web3 Wallet.",
+            "start_datetime": "2024-10-12 03:00:00",
+            "end_datetime": "2024-10-12 03:30:00",
+            "publish_datetime": "2024-10-12 03:39:50",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/39834"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Airdrop",
+                "Startup Mining"
+            ],
+            "event_summary": "Gate.io launches Web3 Startup for MXS Games (XSEED) with airdrop of 2,857,142 XSEED tokens.",
+            "tokens_and_pairs": [
+                "XSEED"
+            ],
+            "market_type": [
+                "Launchpad/IEO",
+                "NFT"
+            ],
+            "quantifiable_changes": [
+                "2,857,142 XSEED airdrop"
+            ],
+            "user_action_required": "Ensure Gate Web3 Wallet assets \u2265 $10. Participate via app or website.",
+            "start_datetime": "2024-10-12 03:00:00",
+            "end_datetime": "2024-10-12 03:30:00",
+            "publish_datetime": "2024-10-12 03:36:59",
+            "event_link": "https://www.gate.io/web3/startup/1909",
+            "article_link": "https://www.gate.io/announcements/article/39833"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Airdrop",
+                "Startup Mining"
+            ],
+            "event_summary": "Gate.io launches Web3 Startup for PSJ Global (CYCON) with airdrop of 6,863,428 CYCON tokens.",
+            "tokens_and_pairs": [
+                "CYCON"
+            ],
+            "market_type": [
+                "Launchpad/IEO",
+                "NFT"
+            ],
+            "quantifiable_changes": [
+                "Total airdrop amount: 6,863,428 CYCON"
+            ],
+            "user_action_required": "Ensure Gate Web3 Wallet assets \u2265 $10. Participate via Web3 Startup or Gate APP.",
+            "start_datetime": "2024-10-12 06:00:00",
+            "end_datetime": "2024-10-12 06:30:00",
+            "publish_datetime": "2024-10-12 03:36:53",
+            "event_link": "https://www.gate.io/web3/startup/1908",
+            "article_link": "https://www.gate.io/announcements/article/39832"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Earning",
+                "New Feature Launch"
+            ],
+            "event_summary": "Gate Learn invites creators to submit unique content for rewards up to 600 USDT.",
+            "tokens_and_pairs": [],
+            "market_type": [],
+            "quantifiable_changes": [
+                "Rewards up to 600 USDT"
+            ],
+            "user_action_required": "Submit creative content to Gate Learn.",
+            "start_datetime": "2024-10-12 00:00:00",
+            "end_datetime": "2024-10-12 00:30:00",
+            "publish_datetime": "2024-10-12 00:09:26",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/39831"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "New Feature Launch"
+            ],
+            "event_summary": "Gate Learn releases 19 new articles covering blockchain, security, crypto tools, modular blockchains, trading, DeFi, and metaverse.",
+            "tokens_and_pairs": [],
+            "market_type": [
+                "Spot",
+                "Futures",
+                "Perpetual",
+                "Options",
+                "Swap",
+                "Margin Trading",
+                "Derivatives",
+                "Grid Trading",
+                "Copy Trading",
+                "OTC Trading",
+                "Leveraged Token",
+                "Launchpad/IEO",
+                "Structured Product",
+                "Fiat Gateway",
+                "NFT",
+                "ETF",
+                "Fund"
+            ],
+            "quantifiable_changes": [],
+            "user_action_required": "Explore new articles on Gate Learn.",
+            "start_datetime": "2024-10-12 05:00:00",
+            "end_datetime": "2024-10-12 05:30:00",
+            "publish_datetime": "2024-10-12 05:00:38",
+            "event_link": "https://www.gate.io/learn",
+            "article_link": "https://www.gate.io/announcements/article/39839"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Airdrop"
+            ],
+            "event_summary": "Optimism's fifth airdrop saw active addresses surge to 38,000, highest in nearly a year.",
+            "tokens_and_pairs": [
+                "Optimism"
+            ],
+            "market_type": [
+                "Spot"
+            ],
+            "quantifiable_changes": [
+                "Active addresses surged to 38,000"
+            ],
+            "user_action_required": "Check eligibility for airdrop",
+            "start_datetime": "2024-10-11 10:00:00",
+            "end_datetime": "2024-10-11 10:30:00",
+            "publish_datetime": "2024-10-11 10:36:10",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/39821"
+        },
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "New Feature Launch"
+            ],
+            "event_summary": "Uniswap launched Unichain, a Layer-2 network based on Optimism technology for DeFi transactions.",
+            "tokens_and_pairs": [
+                "Uniswap"
+            ],
+            "market_type": [
+                "DeFi"
+            ],
+            "quantifiable_changes": [],
+            "user_action_required": "Explore Unichain features",
+            "start_datetime": "2024-10-11 10:00:00",
+            "end_datetime": "2024-10-11 10:30:00",
+            "publish_datetime": "2024-10-11 10:36:10",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/39821"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Airdrop",
+                "Listing"
+            ],
+            "event_summary": "Gate.io launches BabyBoomToken (BBT) airdrop and announces free distribution rules. Trading starts on Oct 17, 2024.",
+            "tokens_and_pairs": [
+                "BBT",
+                "BBT/USDT"
+            ],
+            "market_type": [
+                "Spot",
+                "Launchpad/IEO"
+            ],
+            "quantifiable_changes": [
+                "571,429 BBT free of charge",
+                "Fundraising Goal: $40,000 USDT"
+            ],
+            "user_action_required": "Complete KYC2, hold $10 spot asset, claim free airdrop.",
+            "start_datetime": "2024-10-11 14:00:00",
+            "end_datetime": "2024-10-11 14:30:00",
+            "publish_datetime": "2024-10-11 14:05:01",
+            "event_link": "https://www.gate.io/announcements/article/39830",
+            "article_link": "https://www.gate.io/announcements/article/39830"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Earning"
+            ],
+            "event_summary": "Gate.io launches Lock and Earn SNS with 150% APR starting 2024-10-14.",
+            "tokens_and_pairs": [
+                "SNS"
+            ],
+            "market_type": [
+                "Structured Product"
+            ],
+            "quantifiable_changes": [
+                "150% APR"
+            ],
+            "user_action_required": "Subscribe via app or website.",
+            "start_datetime": "2024-10-14 08:00:00",
+            "end_datetime": "2024-10-14 08:30:00",
+            "publish_datetime": "2024-10-12 04:19:02",
+            "event_link": "https://www.gate.io/hodl?pid=2777",
+            "article_link": "https://www.gate.io/announcements/article/39837"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Staking",
+                "New Feature Launch"
+            ],
+            "event_summary": "Gate.io introduces TON staking with 4.34% APR, allowing flexible staking and redemption anytime.",
+            "tokens_and_pairs": [
+                "TON"
+            ],
+            "market_type": [
+                "Staking"
+            ],
+            "quantifiable_changes": [
+                "4.34% APR"
+            ],
+            "user_action_required": "Stake TON to earn rewards.",
+            "start_datetime": "2024-10-11 13:00:00",
+            "end_datetime": "2024-10-11 13:30:00",
+            "publish_datetime": "2024-10-11 13:37:53",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/39829"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Token Migration",
+                "Token Swap"
+            ],
+            "event_summary": "Gate.io supports PlayZap (PZP) token migration at 1:1 ratio. Deposit, withdrawal, and trading services closed.",
+            "tokens_and_pairs": [
+                "PZP"
+            ],
+            "market_type": [
+                "Spot",
+                "Grid Trading"
+            ],
+            "quantifiable_changes": [],
+            "user_action_required": "Adjust PlayZap (PZP) quant grid trading strategies.",
+            "start_datetime": "2024-10-12 04:00:00",
+            "end_datetime": "2024-10-12 04:30:00",
+            "publish_datetime": "2024-10-12 04:11:48",
+            "event_link": "https://x.com/PlayZapGames/status/1841417772599042300",
+            "article_link": "https://www.gate.io/announcements/article/39836"
+        }
+    ]
+]

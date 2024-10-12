@@ -68,6 +68,7 @@ def clean_body(main_content):
 
     main_content = re.sub(r'\[//\]:content-type-MARKDOWN-DONOT-DELETE\s*\n?', '', main_content)
     main_content = re.sub(r'\s*Gateway to Crypto.*', '', main_content, flags=re.DOTALL).rstrip()
+    main_content = re.sub(r'\s*Gate.io is your gateway to crypto.*', '', main_content, flags=re.DOTALL).rstrip()
 
     main_content = re.sub(r'(?:\r\n|\r|\n|\u2028|\u2029)+', '///', main_content)
 
