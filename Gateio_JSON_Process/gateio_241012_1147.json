@@ -1,0 +1,104 @@
+[
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Airdrop",
+                "Startup Mining"
+            ],
+            "event_summary": "Gate.io launches Web3 Startup for ReflectionAI (RECT) with airdrop of 30,000 RECT tokens.",
+            "tokens_and_pairs": [
+                "RECT"
+            ],
+            "market_type": [
+                "Launchpad/IEO",
+                "NFT"
+            ],
+            "quantifiable_changes": [
+                "30,000 RECT airdrop"
+            ],
+            "user_action_required": "Ensure ALL-chain assets > $10 in Gate Web3 Wallet.",
+            "start_datetime": "2024-10-23 06:00:00",
+            "end_datetime": "2024-10-30 06:00:00",
+            "publish_datetime": "2024-10-12 09:40:09",
+            "event_link": "https://www.gate.io/web3/startup/1916",
+            "article_link": "https://www.gate.io/announcements/article/39846"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Token Migration",
+                "Token Swap"
+            ],
+            "event_summary": "Gate.io supports PlayZap (PZP) token migration to new ID at 1:1 ratio.",
+            "tokens_and_pairs": [
+                "PZP"
+            ],
+            "market_type": [
+                "Spot",
+                "Grid Trading"
+            ],
+            "quantifiable_changes": [],
+            "user_action_required": "Adjust PlayZap (PZP) quant grid trading strategies.",
+            "start_datetime": "2024-10-12 04:00:00",
+            "end_datetime": "2024-10-12 04:30:00",
+            "publish_datetime": "2024-10-12 04:11:48",
+            "event_link": "https://x.com/PlayZapGames/status/1841417772599042300",
+            "article_link": "https://www.gate.io/announcements/article/39836"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Resume Trading",
+                "Listing"
+            ],
+            "event_summary": "SmileAI (SMILE) rebranded to SmileAI (SMILEAI) and relisted on Gate.io with trading resuming on October 13, 2024.",
+            "tokens_and_pairs": [
+                "SMILEAI/USDT"
+            ],
+            "market_type": [
+                "Spot"
+            ],
+            "quantifiable_changes": [],
+            "user_action_required": "Check updated balances. Be aware of market risks.",
+            "start_datetime": "2024-10-12 08:00:00",
+            "end_datetime": "2024-10-12 08:30:00",
+            "publish_datetime": "2024-10-12 08:46:43",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/39844"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Trading Competition",
+                "Earning"
+            ],
+            "event_summary": "Gate.io launches P2P trading competition with rewards for top advertisers from 14 Oct to 17 Nov.",
+            "tokens_and_pairs": [
+                "NGN",
+                "INR",
+                "IDR",
+                "RUB",
+                "VND"
+            ],
+            "market_type": [
+                "OTC Trading"
+            ],
+            "quantifiable_changes": [
+                "Rewards up to 100 USDT"
+            ],
+            "user_action_required": "Stay active, complete trades, meet eligibility criteria.",
+            "start_datetime": "2024-10-12 07:00:00",
+            "end_datetime": "2024-10-12 07:30:00",
+            "publish_datetime": "2024-10-12 07:49:55",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/39841"
+        }
+    ]
+]

@@ -3,10 +3,11 @@
 import pandas as pd
 import openai
 import os
+import shutil
+import datetime
 from tqdm import tqdm
 import json
 import logging
-import re  # Import regular expressions to help remove trailing commas
 import time
 import signal  # Import signal for global timeout management
 
@@ -169,14 +170,45 @@ def get_json():
     df.to_csv('gateio_article_collection.tsv', sep='\t', index=False)
 
     # Save the parsed JSON objects as a valid JSON array
-    with open('gateio_article_events.json', 'w') as f:
+    # Get the current datetime in the format YYMMDD_HHMM
+    current_datetime = datetime.datetime.now().strftime("%y%m%d_%H%M")
+
+    # Specify the folder where the JSON file should be saved
+    destination_folder = os.path.expanduser('~/parsley/Gateio_JSON_Process')
+
+    # Create the filename with the current datetime appended
+    filename = f'gateio_{current_datetime}.json'
+
+    # Create the full path for the file
+    file_path = os.path.join(destination_folder, filename)
+
+    # Save the parsed JSON objects as a valid JSON array with the new filename
+    with open(file_path, 'w') as f:
         json.dump(parsed_responses, f, indent=4)
 
-    print("The JSON file has been saved as 'gateio_article_events.json'.")
+    print(f"The JSON file has been saved as '{file_path}'.")
 
 # Run the main function only when the script is executed directly
 if __name__ == "__main__":
+
+    # Define the source and destination directories
+    source_folder = os.path.expanduser('~/parsley/Gateio_JSON_Process')
+    destination_folder = os.path.expanduser('~/parsley/Gateio_JSON_Archive')
+
+    # Create the destination folder if it doesn't exist
+    if not os.path.exists(destination_folder):
+        os.makedirs(destination_folder)
+
+    # Move all files from source to destination
+    for filename in os.listdir(source_folder):
+        source_path = os.path.join(source_folder, filename)
+        destination_path = os.path.join(destination_folder, filename)
     
+        if os.path.isfile(source_path):
+            shutil.move(source_path, destination_path)
+
+    print("All files moved from 'Process' to 'Archived'.")
+
     # Set up logging for error tracking
     logging.basicConfig(filename='gateio_errors.log', level=logging.ERROR)
     
