@@ -18,9 +18,6 @@ class TimeoutException(Exception):
 def timeout_handler(signum, frame):
     raise TimeoutException()
 
-# Set up the signal for timeouts
-signal.signal(signal.SIGALRM, timeout_handler)
-
 # Function to interact with the LLM for a specific instruction using an existing assistant
 def get_llm_response(content, title, max_retries=3, backoff_factor=2, timeout=60):
     retries = 0
@@ -30,16 +27,17 @@ def get_llm_response(content, title, max_retries=3, backoff_factor=2, timeout=60
         assistant_id = 'asst_vsTB4KYxPD3G8m1Kn6fJnUnS'
     else:
         # Normal assistant
-        assistant_id = 'asst_vIbs0DWbJUOxY4yuS0pbTL2q'
+        assistant_id = 'asst_bhj7GqxBu5nB35lY0ZVkeK4J'
 
     while retries < max_retries:
+
+        # Create a new thread for each interaction
+        thread = client.beta.threads.create()
+        
         try:
             # Set an alarm for the timeout to prevent script from hanging
             signal.alarm(timeout)
             
-            # Create a new thread for each interaction
-            thread = client.beta.threads.create()
-
             # Send the content as a message
             client.beta.threads.messages.create(
                 thread_id=thread.id,
@@ -114,16 +112,6 @@ def get_llm_response(content, title, max_retries=3, backoff_factor=2, timeout=60
     logging.error(f"Failed to process content after {max_retries} retries.")
     return "LLM_ERROR"
 
-# Load the TSV file into a pandas DataFrame
-df = pd.read_csv('gateio_article_collection.tsv', sep='\t')
-
-# Filter rows where 'llm_processed' is 'No'
-unprocessed_records = df[df['llm_processed'] == 'No']
-
-# Initialize an empty list to store raw responses and parsed responses
-raw_responses = []
-parsed_responses = []
-
 # Main function to handle the entire process
 def get_json():
     # Load the TSV file into a pandas DataFrame
@@ -191,9 +179,26 @@ def get_json():
 # Run the main function only when the script is executed directly
 if __name__ == "__main__":
 
+    # Load the TSV file into a pandas DataFrame
+    df = pd.read_csv('gateio_article_collection.tsv', sep='\t')
+
+    # Filter rows where 'llm_processed' is 'No'
+    unprocessed_records = df[df['llm_processed'] == 'No']
+
+    # Initialize an empty list to store raw responses and parsed responses
+    raw_responses = []
+    parsed_responses = []
+
+    # Set up the signal for timeouts
+    signal.signal(signal.SIGALRM, timeout_handler)
+
     # Define the source and destination directories
     source_folder = os.path.expanduser('~/parsley/Gateio_JSON_Process')
     destination_folder = os.path.expanduser('~/parsley/Gateio_JSON_Archive')
+
+    # Create the source folder if it doesn't exist
+    if not os.path.exists(source_folder):
+        os.makedirs(source_folder)
 
     # Create the destination folder if it doesn't exist
     if not os.path.exists(destination_folder):

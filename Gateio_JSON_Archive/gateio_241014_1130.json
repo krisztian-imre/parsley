@@ -1,0 +1,26 @@
+[
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Token Migration",
+                "Token Swap"
+            ],
+            "event_summary": "Gate.io supports PlayZap (PZP) token migration to a new ID at 1:1 ratio. No action required for holders.",
+            "tokens_and_pairs": [
+                "PZP"
+            ],
+            "market_type": [
+                "Spot",
+                "Grid Trading"
+            ],
+            "quantifiable_changes": [],
+            "user_action_required": "Adjust grid trading strategies before Oct 13, 2024.",
+            "start_datetime": "2024-10-12 04:00:00",
+            "end_datetime": "2024-10-12 04:30:00",
+            "publish_datetime": "2024-10-12 04:11:48",
+            "event_link": "https://x.com/PlayZapGames/status/1841417772599042300",
+            "article_link": "https://www.gate.io/announcements/article/39836"
+        }
+    ]
+]

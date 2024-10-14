@@ -9,10 +9,7 @@ from urllib.parse import urljoin
 import re
 import time
 
-# Set headers to mimic a browser
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-}
+
 
 # Function to get HTML content with retry mechanism
 def get_html(url, max_retries=3, backoff_factor=2):
@@ -131,4 +128,10 @@ def get_articles(article_collection_file='gateio_article_collection.tsv'):
     print(f"Updated {article_collection_file} with processed articles.")
 
 if __name__ == '__main__':
+    
+    # Set headers to mimic a browser
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+    }
+    
     get_articles()

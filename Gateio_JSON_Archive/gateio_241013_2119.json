@@ -1,0 +1,64 @@
+[
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "New Feature Launch"
+            ],
+            "event_summary": "Gate Learn Live Stream on 10/13 17:30 PM UTC+0 hosted by Wilfred, featuring Newbies Guide to Gate.io Auto-invest with rewards.",
+            "tokens_and_pairs": [],
+            "market_type": [
+                "Spot"
+            ],
+            "quantifiable_changes": [],
+            "user_action_required": "Join live stream. Complete KYC1 for participation.",
+            "start_datetime": "2024-10-13 17:30:00",
+            "end_datetime": "2024-10-13 18:00:00",
+            "publish_datetime": "2024-10-13 11:44:25",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/39863"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Listing"
+            ],
+            "event_summary": "RETARDIO token listed in Pilot trading market on Gate.io on October 13. Monitor token list closely as no prior announcement for new listings.",
+            "tokens_and_pairs": [
+                "RETARDIO"
+            ],
+            "market_type": [
+                "Spot"
+            ],
+            "quantifiable_changes": [],
+            "user_action_required": "Read and complete Pilot Trading Disclaimer. Update app to version 6.30.0 or above.",
+            "start_datetime": "2024-10-13 13:00:00",
+            "end_datetime": "2024-10-13 13:30:00",
+            "publish_datetime": "2024-10-13 13:00:07",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/39864"
+        }
+    ],
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "Tick Size Adjustment"
+            ],
+            "event_summary": "Gate.io will adjust tick size for multiple spot trading pairs starting 14 Oct 02:30 UTC to improve liquidity.",
+            "tokens_and_pairs": [],
+            "market_type": [
+                "Spot"
+            ],
+            "quantifiable_changes": [],
+            "user_action_required": "Change trading strategy beforehand.",
+            "start_datetime": "2024-10-14 02:30:00",
+            "end_datetime": "2024-10-14 03:00:00",
+            "publish_datetime": "2024-10-13 09:44:03",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/39862"
+        }
+    ]
+]

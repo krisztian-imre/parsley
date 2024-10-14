@@ -11,11 +11,6 @@ from urllib.parse import urljoin
 from datetime import datetime
 import re
 
-# Set headers to mimic a browser
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-}
-
 # Function to load URLs and categories from the txt file
 def load_gateio_categories(filename='gateio_categories.txt'):
     gateio_categories = {}
@@ -163,4 +158,10 @@ def get_article_list(filename='gateio_article_collection.tsv'):
             print("No data scraped.")
 
 if __name__ == '__main__':
+
+    # Set headers to mimic a browser
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+    }
+    
     get_article_list()
