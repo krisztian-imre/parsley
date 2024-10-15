@@ -1,4 +1,4 @@
-#File: gateio_get_article_list_2.py
+# File: gateio_get_article_list_2.py
 
 import os
 import pandas as pd
@@ -22,6 +22,7 @@ def load_gateio_categories(filename='gateio_categories.txt'):
 
 # Function to clean title
 def clean_title(title):
+    
     title = re.sub(r'[\U0001F600-\U0001F64F\U0001F300-\U0001F5FF\U0001F680-\U0001F6FF\U0001F700-\U0001F77F\u2700-\u27BF\u2600-\u26FF\uFE0F]', '', title)
     title = re.sub(r'\u00A0', ' ', title)
 
@@ -106,7 +107,7 @@ def save_data(data, filename='gateio_article_collection.tsv'):
     print(f"Data saved to {filename}")
 
 # Main function to scrape multiple URLs
-def scrape_website(urls_dict, filename='gateio_article_collection.tsv'):
+def scrape_website(urls_dict):
     all_articles = []
     with tqdm(urls_dict.items(), desc="Scraping categories", ncols=100, leave=False) as progress_bar:
         for url, category in progress_bar:
@@ -116,33 +117,15 @@ def scrape_website(urls_dict, filename='gateio_article_collection.tsv'):
                 data = parse_html(html, category=category)
                 if data:
                     all_articles.extend(data)
-
-                    # Save after finishing with each category
-                    if os.path.exists(filename):
-                        # Load the existing data
-                        existing_data = pd.read_csv(filename, sep='\t')
-                        # Append only new articles
-                        new_articles = append_new_articles(existing_data, data)
-                        if new_articles:
-                            # Convert to DataFrame and append new articles
-                            new_df = pd.DataFrame(new_articles)
-                            updated_data = pd.concat([existing_data, new_df], ignore_index=True)
-                            save_data(updated_data, filename=filename)
-                        else:
-                            print(f"No new articles found for {category}.")
-                    else:
-                        # No file exists, create a new file with scraped data
-                        save_data(data, filename=filename)
-
                 else:
                     print(f"No articles found for {category}")
             else:
                 print(f"Failed to fetch {category}: {url}")
             time.sleep(random.uniform(1, 1.75))  # Delay to avoid overwhelming the server
-
     return all_articles
 
 def get_article_list(filename='gateio_article_collection.tsv'):
+
     # Load the URLs from the file
     gateio_categories = load_gateio_categories()
 
@@ -151,7 +134,28 @@ def get_article_list(filename='gateio_article_collection.tsv'):
     for url, category in gateio_categories.items():
         print(f"{url}: {category}")
 
-    scrape_website(gateio_categories, filename=filename)
+    # Check if file exists
+    if os.path.exists(filename):
+        # Load the existing data
+        existing_data = pd.read_csv(filename, sep='\t')
+        # Scrape new data
+        new_data = scrape_website(gateio_categories)
+        # Append only new articles
+        new_articles = append_new_articles(existing_data, new_data)
+        if new_articles:
+            # Convert to DataFrame and append new articles
+            new_df = pd.DataFrame(new_articles)
+            updated_data = pd.concat([existing_data, new_df], ignore_index=True)
+            save_data(updated_data, filename=filename)
+        else:
+            print("No new articles found.")
+    else:
+        # No file exists, create a new file with scraped data
+        scraped_data = scrape_website(gateio_categories)
+        if scraped_data:
+            save_data(scraped_data, filename=filename)
+        else:
+            print("No data scraped.")
 
 if __name__ == '__main__':
 

@@ -18,3 +18,5 @@ https://www.gate.io/announcements/engine-upgrade	Engine Upgrade
 https://www.gate.io/announcements/fiat	Fiat
 https://www.gate.io/announcements/precision	Precision
 https://www.gate.io/announcements/p2p	P2P Trading
+https://www.gate.io/announcements	Announcements
+https://www.gate.io/announcements?page=2	Announcements
