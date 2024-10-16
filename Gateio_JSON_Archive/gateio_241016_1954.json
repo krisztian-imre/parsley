@@ -1,0 +1,176 @@
+[
+    {
+        "exchange_name": "Gate.io",
+        "publish_datetime": "2024-10-16 15:11:56 UTC",
+        "article_title": "Gate.io Announcement on Launching the Pre-Market Trading to Blum(BLUM)",
+        "article_link": "https://www.gate.io/announcements/article/39952",
+        "events": [
+            {
+                "event_summary": "Gate.io launches Pre-Market PreToken for Blum(BLUM)",
+                "user_action_required": "Join the Pre-Market PreMint and PreToken Trading",
+                "event_type": [
+                    "Product_Offering"
+                ],
+                "additional_link": "https://www.gate.io/premint",
+                "start_datetime": "2024-10-16 14:00:00 UTC",
+                "deadline_datetime": "2024-10-17 00:00:00 UTC",
+                "tokens": [
+                    "BLUM"
+                ],
+                "trading_pairs": [
+                    "BLUM_USDT"
+                ],
+                "markets": [
+                    "Pre-Market"
+                ],
+                "quantifiable_changes": [
+                    "Point max supply of Blum(BLUM): 100B"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "exchange_name": "Gate.io",
+        "publish_datetime": "2024-10-16 13:22:54 UTC",
+        "article_title": "Gate.io Completes PlayZap (PZP) Token Migration",
+        "article_link": "https://www.gate.io/announcements/article/39951",
+        "events": [
+            {
+                "event_summary": "Gate.io completes PlayZap (PZP) token migration",
+                "user_action_required": "Users should check their Transaction History for details.",
+                "event_type": [
+                    "Token_Migration",
+                    "Listing"
+                ],
+                "additional_link": "",
+                "start_datetime": "2024-10-17 07:00 UTC",
+                "deadline_datetime": "",
+                "tokens": [
+                    "PlayZap (PZP)"
+                ],
+                "trading_pairs": [
+                    "PZP_USDT"
+                ],
+                "markets": [
+                    "Gate.io"
+                ],
+                "quantifiable_changes": [
+                    "Swap Ratio: 1:1"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "exchange_name": "Gate.io",
+        "publish_datetime": "2024-10-16 08:49:39 UTC",
+        "article_title": "Enjoy 100% Double Cashback and a $20,000 Prize Pool with GateLive Copy Trading! VIP+1 Distribution Ongoing",
+        "article_link": "https://www.gate.io/announcements/article/39939",
+        "events": [
+            {
+                "event_summary": "Gate.io hosts GateLive Copy Trading event",
+                "user_action_required": "Participate in GateLive Copy Trading and complete at least 5 copy trades.",
+                "event_type": [
+                    "Trading_Competition"
+                ],
+                "additional_link": "",
+                "start_datetime": "2024-10-16 06:00 UTC",
+                "deadline_datetime": "2024-10-22 16:00 UTC",
+                "tokens": [
+                    ""
+                ],
+                "trading_pairs": [
+                    ""
+                ],
+                "markets": [
+                    ""
+                ],
+                "quantifiable_changes": [
+                    ""
+                ]
+            },
+            {
+                "event_summary": "Streamers participate in GateLive Copy Trading Weekly Challenge",
+                "user_action_required": "Streamers must share trading strategies and attract participants.",
+                "event_type": [
+                    "Trading_Competition"
+                ],
+                "additional_link": "",
+                "start_datetime": "2024-10-16 06:00 UTC",
+                "deadline_datetime": "2024-10-22 16:00 UTC",
+                "tokens": [
+                    ""
+                ],
+                "trading_pairs": [
+                    ""
+                ],
+                "markets": [
+                    ""
+                ],
+                "quantifiable_changes": [
+                    ""
+                ]
+            },
+            {
+                "event_summary": "Streamers provide winning list to GateLive official admin",
+                "user_action_required": "Submit the winning list to GateLive official admin.",
+                "event_type": [
+                    "Report"
+                ],
+                "additional_link": "",
+                "start_datetime": "",
+                "deadline_datetime": "2024-10-29 01:00 UTC",
+                "tokens": [
+                    ""
+                ],
+                "trading_pairs": [
+                    ""
+                ],
+                "markets": [
+                    ""
+                ],
+                "quantifiable_changes": [
+                    ""
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "exchange_name": "Gate.io",
+        "publish_datetime": "2024-10-12 10:24:07 UTC",
+        "article_title": "Gate.io Completes Runes\u00b7X\u00b7Bitcoin (X) Rebranding to Runes\u00b7X\u00b7Bitcoin (RUNESX) and to Resume Trading",
+        "article_link": "https://www.gate.io/announcements/article/39850",
+        "events": [
+            {
+                "event_summary": "Gate.io rebrands Runes\u00b7X\u00b7Bitcoin (X) to Runes\u00b7X\u00b7Bitcoin (RUNESX) and resumes trading",
+                "user_action_required": "Users should check their updated balances and be aware of market risks.",
+                "event_type": [
+                    "Token_Swap",
+                    "Resume_Trading"
+                ],
+                "additional_link": "https://www.gate.io/announcements/article/39850",
+                "start_datetime": "2024-10-13 07:00 UTC",
+                "deadline_datetime": "",
+                "tokens": [
+                    "RUNESX"
+                ],
+                "trading_pairs": [
+                    "RUNESX_USDT"
+                ],
+                "markets": [
+                    "Gate.io"
+                ],
+                "quantifiable_changes": [
+                    "Token symbol change from X to RUNESX"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    }
+]

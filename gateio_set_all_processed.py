@@ -7,7 +7,7 @@ filename = 'gateio_article_collection.tsv'
 df = pd.read_csv(filename, sep='\t')
 
 # Set all 'llm_processed' values to 'Yes'
-df['publish_datetime'] = ''
+df['llm_processed'] = 'Yes'
 
 # Save the updated DataFrame back to the TSV file
 df.to_csv(filename, sep='\t', index=False)

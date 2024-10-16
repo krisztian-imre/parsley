@@ -2,7 +2,6 @@
 
 import pandas as pd
 import openai
-from openai._exceptions import RateLimitError, APIConnectionError, OpenAIError
 import os
 import shutil
 import datetime
@@ -21,10 +20,15 @@ def timeout_handler(signum, frame):
     raise TimeoutException()
 
 # Function to interact with the LLM for a specific instruction using an existing assistant
-def get_llm_response(content, assistant_id, max_retries=3, backoff_factor=2, timeout=60):
+def get_llm_response(content, title, max_retries=3, backoff_factor=2, timeout=60):
     retries = 0
-
-    logging.error(f"\nAssistant ID: {assistant_id}\n\nContent:\n{content}")
+    
+    if "Bi-Weekly Report" in title:
+        # Use the existing assistant ID
+        assistant_id = 'asst_vsTB4KYxPD3G8m1Kn6fJnUnS'
+    else:
+        # Normal assistant
+        assistant_id = 'asst_bhj7GqxBu5nB35lY0ZVkeK4J'
 
     while retries < max_retries:
 
@@ -39,10 +43,8 @@ def get_llm_response(content, assistant_id, max_retries=3, backoff_factor=2, tim
             client.beta.threads.messages.create(
                 thread_id=thread.id,
                 role="user",
-                content=[{"type": "text", "text": content}]
+                content=content
             )
-
-            logging.info(f"\nThread ID: {thread.id}\nContent:\n{content}") 
 
             # Poll the LLM with the existing assistant
             run = client.beta.threads.runs.create_and_poll(
@@ -56,14 +58,12 @@ def get_llm_response(content, assistant_id, max_retries=3, backoff_factor=2, tim
             # Check the run status
             if run.status == "completed":
                 messages = client.beta.threads.messages.list(thread_id=thread.id)
-                logging.info(f"\nAssistant ID: {assistant_id}\n\nMessages:\n{messages}")
                 for message in messages:
                     if message.role == "assistant" and hasattr(message, 'content'):
                         response = message.content[0].text.value
-                        #response = response.replace('```json', '')  # Remove starting ```json marker
-                        #response = response.replace('```', '')      # Remove ending ```
+                        response = response.replace('```json', '')  # Remove starting ```json marker
+                        response = response.replace('```', '')      # Remove ending ```
                         if response:
-                            #logging.log(f"\nAssistant ID: {assistant_id}\nResponse:\n{response}")
                             return response
             else:
                 logging.error(f"Unexpected run status: {run.status}")
@@ -77,7 +77,7 @@ def get_llm_response(content, assistant_id, max_retries=3, backoff_factor=2, tim
             logging.error(f"JSON Decode Error: {e} - Content: {content}")
             return "LLM_ERROR"
         
-        except RateLimitError as rate_limit_err:
+        except openai.error.RateLimitError as rate_limit_err:
             logging.error(f"Rate Limit Error: {rate_limit_err} - Content: {content}")
             retries += 1
             sleep_time = backoff_factor ** retries
@@ -85,7 +85,7 @@ def get_llm_response(content, assistant_id, max_retries=3, backoff_factor=2, tim
             time.sleep(sleep_time)
             continue
 
-        except APIConnectionError as connection_err:
+        except openai.error.APIConnectionError as connection_err:
             logging.error(f"API Connection Error: {connection_err} - Content: {content}")
             retries += 1
             sleep_time = backoff_factor ** retries
@@ -93,7 +93,15 @@ def get_llm_response(content, assistant_id, max_retries=3, backoff_factor=2, tim
             time.sleep(sleep_time)
             continue
 
-        except OpenAIError as openai_err:
+        except openai.error.Timeout as timeout_err:
+            logging.error(f"Timeout Error: {timeout_err} - Content: {content}")
+            retries += 1
+            sleep_time = backoff_factor ** retries
+            logging.warning(f"Timeout issue, retrying in {sleep_time} seconds...")
+            time.sleep(sleep_time)
+            continue
+
+        except openai.error.OpenAIError as openai_err:
             logging.error(f"OpenAI API Error: {openai_err} - Content: {content}")
             return "LLM_ERROR"
 
@@ -113,11 +121,9 @@ def get_json():
     # Filter rows where 'llm_processed' is 'No'
     unprocessed_records = df[df['llm_processed'] == 'No']
 
-    # Remove rows where either 'publish_datetime', 'body', etc. is an empty string
+    # Remove rows where either 'publish_datetime' or 'body' is an empty string
     unprocessed_records = unprocessed_records[unprocessed_records['body'].notna()]
     unprocessed_records = unprocessed_records[unprocessed_records['publish_datetime'].notna()]
-    unprocessed_records = unprocessed_records[unprocessed_records['title'].notna()]
-    unprocessed_records = unprocessed_records[unprocessed_records['link'].notna()]
 
     # Initialize an empty list to store raw responses and parsed responses
     raw_responses = []
@@ -125,46 +131,18 @@ def get_json():
 
     # Process each unprocessed record
     for index, row in tqdm(unprocessed_records.iterrows(), total=len(unprocessed_records)):
-        
-        exchange = row['exchange']
-        publish_datetime = row['publish_datetime']
         title = row['title']
-        link = row['link']
         body = row['body']
+        publish_datetime = row['publish_datetime']
+        article_link = row['link']
+
         body = re.sub(r'///+', '\n', body)
 
         # Construct the content to be sent to the LLM
-        content = f"exchange_name: {exchange}\npublish_datetime: {publish_datetime}\narticle_title: {title}\narticle_link: {link}\n{body}"
-
-        if "Bi-Weekly Report" in title:
-            # Use 'Crypto Event Info Extractor for Report' assistant ID
-            assistant_id = 'asst_Xk1XKciwc63DdjIHIO3ljfmH'
-        else:
-            # Use 'Crypto Event Datetime Extractor' assistant ID
-            assistant_id = 'asst_33sFfSIFStFOd5TPJvOKfy2h'
+        content = f"publish_datetime: {publish_datetime}\narticle_link: {article_link}\n{title}\n{body}"
 
         # Get the response from the LLM
-        response = get_llm_response(content, assistant_id)
-
-        # Try to parse the response as JSON
-        try:
-            # Strip and load the JSON to validate it
-            parsed_response = json.loads(response.strip())
-
-        except json.JSONDecodeError as e:
-            # Log the error and the problematic response, but don't mark as processed
-            logging.error(f"Failed to parse JSON: {e} - Response: {response}")
-            continue  # Move to the next article without marking this one as processed
-
-        # 'Crypto Event Event Categorizer of JSON input' assistant
-        assistant_id = 'asst_CfFXkDtL6wiBKpPpIREesccm'
-
-        content = json.dumps(parsed_response, indent=4)
-
-        # Get the response from the LLM
-        response = get_llm_response(content, assistant_id)
-
-        logging.error(f"\nResponse2:\n{response}")
+        response = get_llm_response(content, title)
 
         # Try to parse the response as JSON
         try:

@@ -40,6 +40,7 @@ def clean_body(main_content):
    
     main_content = re.sub(r'[\U0001F600-\U0001F64F\U0001F300-\U0001F5FF\U0001F680-\U0001F6FF\U0001F700-\U0001F77F\u2700-\u27BF\u2600-\u26FF\uFE0F]', '', main_content)
     main_content = re.sub(r'\u00A0', ' ', main_content)
+    main_content = re.sub(r'[\u25CB-\u25EF\u2B55]', '', main_content)
 
     main_content = re.sub(r'：', ': ', main_content)
     main_content = re.sub(r'！', '! ', main_content)
@@ -62,9 +63,10 @@ def clean_body(main_content):
     main_content = re.sub(r'\n{2,}', '\n', main_content)
 
     main_content = re.sub(r'\[//\]:content-type-MARKDOWN-DONOT-DELETE\s*\n?', '', main_content)
-    main_content = re.sub(r'\s*Gateway to Crypto*', '', main_content, flags=re.DOTALL).rstrip()
-    main_content = re.sub(r'\s*Gate.io is your gateway to crypto*', '', main_content, flags=re.DOTALL).rstrip()
-    main_content = re.sub(r'\s*Gate.io is a Cryptocurrency Trading Platform Since 2013*', '', main_content, flags=re.DOTALL).rstrip()
+
+    main_content = re.sub(r'\s*Gateway to Crypto.*', '', main_content, flags=re.DOTALL).rstrip()
+    main_content = re.sub(r'\s*Gate.io is your gateway to crypto.*', '', main_content, flags=re.DOTALL).rstrip()
+    main_content = re.sub(r'\s*Gate.io is a Cryptocurrency Trading Platform Since 2013.*', '', main_content, flags=re.DOTALL).rstrip()
 
     main_content = re.sub(r'(?:\r\n|\r|\n|\u2028|\u2029)+', '///', main_content)
 
