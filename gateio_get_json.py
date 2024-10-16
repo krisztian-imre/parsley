@@ -10,6 +10,7 @@ import json
 import logging
 import time
 import signal  # Import signal for global timeout management
+import re
 
 # Timeout handler to catch unresponsive scripts
 class TimeoutException(Exception):
@@ -120,6 +121,10 @@ def get_json():
     # Filter rows where 'llm_processed' is 'No'
     unprocessed_records = df[df['llm_processed'] == 'No']
 
+    # Remove rows where either 'publish_datetime' or 'body' is an empty string
+    unprocessed_records = unprocessed_records[unprocessed_records['body'].notna()]
+    unprocessed_records = unprocessed_records[unprocessed_records['publish_datetime'].notna()]
+
     # Initialize an empty list to store raw responses and parsed responses
     raw_responses = []
     parsed_responses = []
@@ -130,6 +135,8 @@ def get_json():
         body = row['body']
         publish_datetime = row['publish_datetime']
         article_link = row['link']
+
+        body = re.sub(r'///+', '\n', body)
 
         # Construct the content to be sent to the LLM
         content = f"publish_datetime: {publish_datetime}\narticle_link: {article_link}\n{title}\n{body}"

@@ -1,0 +1,25 @@
+[
+    [
+        {
+            "exchange_name": "Gate.io",
+            "event_type": [
+                "New Feature Launch"
+            ],
+            "event_summary": "Gate.io introduces Gate Connect's new off-ramp feature for selling crypto to debit/credit cards.",
+            "tokens_and_pairs": [],
+            "market_type": [
+                "Fiat Gateway"
+            ],
+            "quantifiable_changes": [
+                "Supports 30 fiat currencies",
+                "1600+ cryptocurrencies"
+            ],
+            "user_action_required": "Explore new off-ramp feature",
+            "start_datetime": "2024-08-14 10:00:00",
+            "end_datetime": "2024-08-14 10:30:00",
+            "publish_datetime": "2024-08-14 10:06:51",
+            "event_link": "",
+            "article_link": "https://www.gate.io/announcements/article/38568"
+        }
+    ]
+]

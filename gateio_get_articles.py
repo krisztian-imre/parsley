@@ -1,4 +1,4 @@
-# File: gateio_get_articles_2.py
+# File: gateio_get_articles.py
 
 import os
 import pandas as pd
@@ -8,8 +8,6 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 import re
 import time
-
-
 
 # Function to get HTML content with retry mechanism
 def get_html(url, max_retries=3, backoff_factor=2):
@@ -64,8 +62,8 @@ def clean_body(main_content):
     main_content = re.sub(r'\n{2,}', '\n', main_content)
 
     main_content = re.sub(r'\[//\]:content-type-MARKDOWN-DONOT-DELETE\s*\n?', '', main_content)
-    main_content = re.sub(r'\s*Gateway to Crypto.*', '', main_content, flags=re.DOTALL).rstrip()
-    main_content = re.sub(r'\s*Gate.io is your gateway to crypto.*', '', main_content, flags=re.DOTALL).rstrip()
+    main_content = re.sub(r'\s*Gateway to Crypto*', '', main_content, flags=re.DOTALL).rstrip()
+    main_content = re.sub(r'\s*Gate.io is your gateway to crypto*', '', main_content, flags=re.DOTALL).rstrip()
     main_content = re.sub(r'\s*Gate.io is a Cryptocurrency Trading Platform Since 2013*', '', main_content, flags=re.DOTALL).rstrip()
 
     main_content = re.sub(r'(?:\r\n|\r|\n|\u2028|\u2029)+', '///', main_content)
@@ -82,7 +80,6 @@ def parse_article_html(html):
         return None, None
     
     publish_datetime = article_details_box.find('div', class_='article-details-base-info').find_all('span')[0].get_text(strip=True)
-    publish_datetime = re.sub(r' UTC$', '', publish_datetime)
 
     # Extract the main content within the article-details-main
     main_content_div = article_details_box.find('div', class_='article-details-main')
@@ -102,11 +99,12 @@ def get_articles(article_collection_file='gateio_article_collection.tsv'):
     if 'body' in article_list_df.columns:
         article_list_df['body'] = article_list_df['body'].astype('object')  # Ensure 'body' is of type string (object)
 
+    # No need to convert 'publish_datetime' since it's already in the correct format
     if 'publish_datetime' in article_list_df.columns:
-        article_list_df['publish_datetime'] = pd.to_datetime(article_list_df['publish_datetime'], errors='coerce')  # Ensure 'publish_datetime' is datetime
+        article_list_df['publish_datetime'] = article_list_df['publish_datetime'].astype('object')  # Ensure 'publish_datetime' is treated as string
 
-    # Filter out records where 'publish_datetime' is missing (NaN)
-    articles_to_process = article_list_df[pd.isna(article_list_df['publish_datetime'])]
+    # Keep records where 'publish_datetime' or 'body' or both are missing (NaN)
+    articles_to_process = article_list_df[pd.isna(article_list_df['publish_datetime']) | pd.isna(article_list_df['body'])]
 
     if articles_to_process.empty:
         print("No new articles to process.")
@@ -122,7 +120,7 @@ def get_articles(article_collection_file='gateio_article_collection.tsv'):
             if body and publish_datetime:
                 # Update the DataFrame with the new values
                 article_list_df.at[row.name, 'body'] = str(body)  # Ensure 'body' is explicitly converted to string
-                article_list_df.at[row.name, 'publish_datetime'] = pd.to_datetime(publish_datetime)  # Ensure 'publish_datetime' is datetime
+                article_list_df.at[row.name, 'publish_datetime'] = publish_datetime  # Keep 'publish_datetime' as string            
 
     # Save the updated article list with the processed information
     article_list_df.to_csv(article_collection_file, sep='\t', index=False)

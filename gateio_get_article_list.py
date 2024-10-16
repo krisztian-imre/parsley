@@ -1,4 +1,4 @@
-#File: gateio_get_article_list_2.py
+#File: gateio_get_article_list.py
 
 import os
 import pandas as pd
@@ -8,7 +8,7 @@ import random
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
-from datetime import datetime
+from datetime import datetime, timezone
 import re
 
 # Function to load URLs and categories from the txt file
@@ -67,7 +67,9 @@ def parse_html(html, category):
 
     articles = article_list_box.find_all('div', class_='article-list-item')
     article_data = []
-    current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # Current time for 'parse_datetime'
+    
+    # Get the current time in UTC with a timezone-aware object and format it as 'YYYY-MM-DD HH:MM:SS UTC'
+    current_time = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S') + ' UTC'
 
     for article in articles:
         title_tag = article.find('a', class_='article-list-item-title')
