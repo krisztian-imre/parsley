@@ -1,0 +1,42 @@
+[
+    {
+        "exchange_name": "Gate.io",
+        "publish_datetime": "2024-09-24 13:41:05 UTC",
+        "article_title": "Dr. Han, What do you think?: What Is Your Personal Attitude Toward Wealth?",
+        "article_link": "https://www.gate.io/announcements/article/39481",
+        "events": [
+            {
+                "event_number": 1,
+                "event_summary": "Gate.io will suspend the withdrawal and trading services for ETHA Lend (ETHA) starting from September 25, 2024, 06:00 UTC.",
+                "user_action_required": "Users should adjust trading strategies and withdraw liquidity before the deadline.",
+                "event_type": [
+                    "Token Migration",
+                    "Suspend_Trading",
+                    "Delisting"
+                ],
+                "additional_external_URL": "https://medium.com/etha/etha-to-prf-migration-is-live-96e68305560d",
+                "duration_start_datetime": "2024-09-25 06:00:00 UTC",
+                "duration_end_datetime": "",
+                "temporal_scope": "Upcoming_Event",
+                "tokens": [
+                    "ETHA",
+                    "PRF"
+                ],
+                "trading_pairs": [
+                    "ETHA_USDT",
+                    "ETHA_ETH"
+                ],
+                "markets": [
+                    "Spot",
+                    "Grid_Trading",
+                    "Liquidity_Pools"
+                ],
+                "changes_in_numbers": [
+                    "Total supply increased from 30 million to 1 billion"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    }
+]

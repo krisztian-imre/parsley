@@ -1,0 +1,34 @@
+[
+    {
+        "exchange_name": "Gate.io",
+        "publish_datetime": "2024-09-27 11:12:49 UTC",
+        "article_title": "Gate.io's Updates on Unamano (WHYPAD) Token Swap Progress",
+        "article_link": "https://www.gate.io/announcements/article/39579",
+        "events": [
+            {
+                "event_number": 1,
+                "event_summary": "Gate.io performs a token swap for Unamano (WHYPAD) holders.",
+                "user_action_required": "Users should ensure they hold WHYPAD tokens as of the specified date to be eligible for the swap.",
+                "event_type": [
+                    "Token Swap",
+                    "Airdrop"
+                ],
+                "external_website_URL": "https://www.gate.io/announcements/article/39579",
+                "duration_start_datetime": "2024-09-21 13:23:00 UTC",
+                "duration_end_datetime": "",
+                "act_before_datetime": "",
+                "temporal_scope": "Ongoing_Event",
+                "tokens": [
+                    "WHYPAD"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "DEX"
+                ],
+                "quantifiable_metrics": []
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    }
+]

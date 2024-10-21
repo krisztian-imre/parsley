@@ -1,0 +1,276 @@
+[
+    {
+        "exchange_name": "Gate.io",
+        "publish_datetime": "2024-10-16 10:41:30 UTC",
+        "article_title": "Gate.io Completes Delisting and Buyback of WaykiChain (WICC)",
+        "article_link": "https://www.gate.io/announcements/article/39947",
+        "events": [
+            {
+                "event_number": 1,
+                "event_summary": "Gate.io delists WaykiChain (WICC) from the platform and conducts a buyback program.",
+                "user_action_required": "None",
+                "event_type": [
+                    "Delisting",
+                    "Buyback"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "",
+                "duration_end_datetime": "",
+                "act_before_datetime": "",
+                "tokens": [
+                    "WaykiChain (WICC)"
+                ],
+                "trading_pairs": [
+                    "WICC"
+                ],
+                "markets": [
+                    "Spot"
+                ],
+                "quantifiable_changes": [
+                    ""
+                ]
+            },
+            {
+                "event_number": 2,
+                "event_summary": "Withdrawal services for WaykiChain (WICC) remain available for one month.",
+                "user_action_required": "Withdraw WICC tokens if not participating in the buyback program.",
+                "event_type": [
+                    "Withdrawal Period"
+                ],
+                "external_website_URL": "https://www.gate.io/myaccount/withdraw/WICC",
+                "duration_start_datetime": "2024-10-16 10:41:30 UTC",
+                "duration_end_datetime": "2024-11-16 10:41:30 UTC",
+                "act_before_datetime": "2024-11-16 10:41:30 UTC",
+                "tokens": [
+                    "WaykiChain (WICC)"
+                ],
+                "trading_pairs": [
+                    "WICC"
+                ],
+                "markets": [
+                    "Spot"
+                ],
+                "quantifiable_changes": [
+                    ""
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "exchange_name": "Gate.io",
+        "publish_datetime": "2024-08-20 04:08:17 UTC",
+        "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+        "article_link": "https://www.gate.io/announcements/article/38688",
+        "events": [
+            {
+                "event_number": 1,
+                "event_summary": "Gate.io will disable new margin borrowing and crypto loan services for Frontier (FRONT)",
+                "user_action_required": "None required unless involved in margin borrowing or crypto loans",
+                "event_type": [
+                    "Margin_Change"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "",
+                "duration_end_datetime": "2024-08-25 08:00 UTC",
+                "act_before_datetime": "2024-08-25 08:00 UTC",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    ""
+                ],
+                "markets": [
+                    "Margin_Trading"
+                ],
+                "quantifiable_changes": [
+                    ""
+                ]
+            },
+            {
+                "event_number": 2,
+                "event_summary": "FRONT_USDT futures trading market will switch to Reduce-only mode",
+                "user_action_required": "Adjust trading strategies as necessary",
+                "event_type": [
+                    "Switching_to_Reduce_Only_Mode"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "2024-08-26 08:00 UTC",
+                "duration_end_datetime": "",
+                "act_before_datetime": "2024-08-26 08:00 UTC",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT"
+                ],
+                "markets": [
+                    "Futures"
+                ],
+                "quantifiable_changes": [
+                    ""
+                ]
+            },
+            {
+                "event_number": 3,
+                "event_summary": "Gate.io will automatically settle open futures positions",
+                "user_action_required": "Adjust strategies and close positions before deadline to avoid automatic settlement",
+                "event_type": [
+                    "Settling_Open_Positions"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "2024-08-27 07:30 UTC",
+                "duration_end_datetime": "2024-08-27 08:00 UTC",
+                "act_before_datetime": "2024-08-27 08:00 UTC",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT"
+                ],
+                "markets": [
+                    "Futures"
+                ],
+                "quantifiable_changes": [
+                    ""
+                ]
+            },
+            {
+                "event_number": 4,
+                "event_summary": "Gate.io suspends deposit, withdrawal, and trading services for Frontier (FRONT)",
+                "user_action_required": "Adjust or close positions in various trading services",
+                "event_type": [
+                    "Suspend_Trading"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "2024-08-28 03:00 UTC",
+                "duration_end_datetime": "",
+                "act_before_datetime": "2024-08-28 03:00 UTC",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT",
+                    "FRONT_USDC",
+                    "FRONT_ETH",
+                    "FRONT_TRY"
+                ],
+                "markets": [
+                    "Spot",
+                    "Grid_Trading",
+                    "Margin_Trading"
+                ],
+                "quantifiable_changes": [
+                    ""
+                ]
+            },
+            {
+                "event_number": 5,
+                "event_summary": "Quant grid trading termination for Frontier (FRONT)",
+                "user_action_required": "Adjust trading strategies beforehand",
+                "event_type": [
+                    "Termination_of_Trading"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "",
+                "duration_end_datetime": "2024-08-28 03:00 UTC",
+                "act_before_datetime": "2024-08-28 03:00 UTC",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    ""
+                ],
+                "markets": [
+                    "Grid_Trading"
+                ],
+                "quantifiable_changes": [
+                    ""
+                ]
+            },
+            {
+                "event_number": 6,
+                "event_summary": "Assets in Simple Earn will be liquidated automatically",
+                "user_action_required": "Manually redeem assets in advance if preferred",
+                "event_type": [
+                    "Settling_Open_Positions"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "",
+                "duration_end_datetime": "2024-08-28 03:00 UTC",
+                "act_before_datetime": "2024-08-28 03:00 UTC",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    ""
+                ],
+                "markets": [
+                    "Yield_Farming"
+                ],
+                "quantifiable_changes": [
+                    ""
+                ]
+            },
+            {
+                "event_number": 7,
+                "event_summary": "Outstanding Frontier (FRONT) loans will be settled automatically",
+                "user_action_required": "Repay loans in advance to avoid automatic settlement",
+                "event_type": [
+                    "Settling_Open_Positions"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "",
+                "duration_end_datetime": "2024-08-28 03:00 UTC",
+                "act_before_datetime": "2024-08-28 03:00 UTC",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    ""
+                ],
+                "markets": [
+                    "Margin_Trading"
+                ],
+                "quantifiable_changes": [
+                    ""
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "exchange_name": "Gate.io",
+        "publish_datetime": "2024-10-17 02:55:48 UTC",
+        "article_title": "Gate.io will list Cros World (CROS)",
+        "article_link": "https://www.gate.io/announcements/article/39957",
+        "events": [
+            {
+                "event_number": 1,
+                "event_summary": "Gate.io will commence Cros World (CROS) trading.",
+                "user_action_required": "",
+                "event_type": [
+                    "Listing"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "2024-10-23 11:00:00 UTC",
+                "duration_end_datetime": "",
+                "act_before_datetime": "",
+                "tokens": [
+                    "CROS"
+                ],
+                "trading_pairs": [
+                    "CROS_USDT"
+                ],
+                "markets": [
+                    "Spot"
+                ],
+                "quantifiable_changes": []
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    }
+]

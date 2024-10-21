@@ -1,0 +1,191 @@
+[
+    {
+        "exchange_name": "Gate.io",
+        "publish_datetime": "2024-08-20 04:08:17 UTC",
+        "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+        "article_link": "https://www.gate.io/announcements/article/38688",
+        "events": [
+            {
+                "event_number": 1,
+                "event_summary": "Gate.io will disable new margin borrowing and crypto loan services for Frontier (FRONT).",
+                "user_action_required": "No action needed if you hold FRONT on Gate.io.",
+                "event_type": [
+                    "Service Disabling"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "",
+                "duration_end_datetime": "2024-08-25 08:00 UTC",
+                "act_before_datetime": "2024-08-25 08:00 UTC",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Margin Lending",
+                    "Crypto Loans"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "event_number": 2,
+                "event_summary": "FRONT_USDT futures switch to Reduce-only mode.",
+                "user_action_required": "Adjust trading strategies.",
+                "event_type": [
+                    "Switching_to_Reduce_Only_Mode"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "2024-08-26 08:00 UTC",
+                "duration_end_datetime": "",
+                "act_before_datetime": "",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT"
+                ],
+                "markets": [
+                    "Futures"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "event_number": 3,
+                "event_summary": "Automatically settle open positions at average index price.",
+                "user_action_required": "Close positions before automatic settlement.",
+                "event_type": [
+                    "Settling_Open_Positions"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "",
+                "duration_end_datetime": "2024-08-27 08:00 UTC",
+                "act_before_datetime": "2024-08-27 08:00 UTC",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT"
+                ],
+                "markets": [
+                    "Futures"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "event_number": 4,
+                "event_summary": "Suspend deposit, withdrawal, and trading services for Frontier (FRONT).",
+                "user_action_required": "Adjust open trades and strategies.",
+                "event_type": [
+                    "Suspend_Trading"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "2024-08-28 03:00 UTC",
+                "duration_end_datetime": "",
+                "act_before_datetime": "",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT",
+                    "FRONT_USDC",
+                    "FRONT_ETH",
+                    "FRONT_TRY"
+                ],
+                "markets": [
+                    "Spot Trading",
+                    "Quant Grid Trading",
+                    "Simple Earn",
+                    "Margin Trading"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "event_number": 5,
+                "event_summary": "Quant grid trading termination for FRONT.",
+                "user_action_required": "Adjust trading strategies or manual termination.",
+                "event_type": [
+                    "Trading_Interruption"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "",
+                "duration_end_datetime": "2024-08-28 03:00 UTC",
+                "act_before_datetime": "2024-08-28 03:00 UTC",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Quant Grid Trading"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "event_number": 6,
+                "event_summary": "Liquidation of assets in Simple Earn.",
+                "user_action_required": "Redeem assets manually before liquidation.",
+                "event_type": [
+                    "Asset Liquidation"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "",
+                "duration_end_datetime": "2024-08-28 03:00 UTC",
+                "act_before_datetime": "2024-08-28 03:00 UTC",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Simple Earn"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "event_number": 7,
+                "event_summary": "Automatic settlement of outstanding Frontier (FRONT) loans.",
+                "user_action_required": "Repay loans in advance to avoid automatic settlement.",
+                "event_type": [
+                    "Settling_Open_Positions"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "",
+                "duration_end_datetime": "2024-08-28 03:00 UTC",
+                "act_before_datetime": "2024-08-28 03:00 UTC",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Margin Trading"
+                ],
+                "quantifiable_changes": [
+                    "Total token supply increases from 90 million to 360 million"
+                ]
+            },
+            {
+                "event_number": 8,
+                "event_summary": "Post-swap, Frontier (FRONT) no longer supported.",
+                "user_action_required": "Await listing details for Self Chain (SLF).",
+                "event_type": [
+                    "Token_Swap",
+                    "Delisting"
+                ],
+                "external_website_URL": "https://blog.selfchain.xyz/front-to-slf-migration-details/",
+                "duration_start_datetime": "",
+                "duration_end_datetime": "",
+                "act_before_datetime": "",
+                "tokens": [
+                    "FRONT",
+                    "SLF"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    ""
+                ],
+                "quantifiable_changes": [
+                    "Total token supply increases from 90 million to 360 million"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    }
+]

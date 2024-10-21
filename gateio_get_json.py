@@ -134,7 +134,7 @@ def get_json():
         body = re.sub(r'///+', '\n', body)
 
         # Construct the content to be sent to the LLM
-        content = f"exchange_name: {exchange}\npublish_datetime: {publish_datetime}\narticle_title: {title}\narticle_link: {link}\n{body}"
+        content = f"exchange_name: {exchange}\npublish_datetime: {publish_datetime}\narticle_title: {title}\narticle_link: {link}\narticle: {body}"
 
         if "Bi-Weekly Report" in title:
             # Use 'Crypto Event Info Extractor for Report' assistant ID
@@ -156,10 +156,15 @@ def get_json():
             logging.error(f"Failed to parse JSON: {e} - Response: {response}")
             continue  # Move to the next article without marking this one as processed
 
-        # 'Crypto Event Event Categorizer of JSON input' assistant
+        # 'Crypto Event SON improver' assistant
         assistant_id = 'asst_CfFXkDtL6wiBKpPpIREesccm'
 
-        content = json.dumps(parsed_response, indent=4)
+        # 'Crypto Event Event JSON improver' assistant
+        # assistant_id = 'asst_h1EIifzGRJQ83Teu8PRqRDhI'
+    
+        json_content = json.dumps(parsed_response, indent=4)
+
+        content = f"JSON: {json_content}\nAdditional data: {body}"
 
         # Get the response from the LLM
         response = get_llm_response(content, assistant_id)

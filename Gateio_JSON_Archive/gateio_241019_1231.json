@@ -1,0 +1,188 @@
+[
+    {
+        "exchange_name": "Gate.io",
+        "publish_datetime": "2024-05-16 10:48:37 UTC",
+        "article_title": "Gate.io Bi-Weekly Report (May 1-15, 2024)",
+        "article_link": "https://www.gate.io/announcements/article/36627",
+        "events": [
+            {
+                "event_number": 1,
+                "event_summary": "Gate.io releases bi-weekly report covering activities from May 1 to May 15, 2024.",
+                "user_action_required": "",
+                "event_type": [
+                    "Report"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "2024-05-01T00:00:00Z",
+                "duration_end_datetime": "2024-05-15T23:59:59Z",
+                "act_before_datetime": "",
+                "temporal_scope": "Past_Event",
+                "tokens": [
+                    ""
+                ],
+                "trading_pairs": [
+                    ""
+                ],
+                "markets": [
+                    "Spot",
+                    "Futures",
+                    "Startup/IEO",
+                    "Lending/Borrowing",
+                    "Staking",
+                    "Copy_Trading"
+                ],
+                "quantifiable_changes": [
+                    "23 new projects launched",
+                    "22 Startup projects launched",
+                    "Total airdrop value of $1,035,000",
+                    "18 trading competitions with total prize pool of $219,000",
+                    "23 financial products launched in Hodl and Earn with APR up to 200%"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "exchange_name": "Gate.io",
+        "publish_datetime": "2024-09-27 11:12:49 UTC",
+        "article_title": "Gate.io's Updates on Unamano (WHYPAD) Token Swap Progress",
+        "article_link": "https://www.gate.io/announcements/article/39579",
+        "events": [
+            {
+                "event_number": 1,
+                "event_summary": "Gate.io performs token swap for WHYPAD holders as of September 21, 2024, 13:23 UTC",
+                "user_action_required": "Hold WHYPAD tokens to be eligible for swap.",
+                "event_type": [
+                    "Token Swap",
+                    "Airdrop"
+                ],
+                "external_website_URL": "https://www.gate.io/announcements/article/39579",
+                "duration_start_datetime": "2024-09-21 13:23:00 UTC",
+                "duration_end_datetime": "",
+                "act_before_datetime": "",
+                "temporal_scope": "Past_Event",
+                "tokens": [
+                    "WHYPAD"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "DEX"
+                ],
+                "quantifiable_changes": [
+                    "1:1 token swap for holders as of specific date and time",
+                    "Compensation in USDT for purchases after specific date and time",
+                    "Airdrop to source address for direct deposits"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "exchange_name": "Gate.io",
+        "publish_datetime": "2024-08-20 04:08:17 UTC",
+        "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+        "article_link": "https://www.gate.io/announcements/article/38688",
+        "events": [
+            {
+                "event_number": 1,
+                "event_summary": "Gate.io will disable new margin borrowing and crypto loan services for Frontier (FRONT)",
+                "user_action_required": "Users should note the change in services.",
+                "event_type": [
+                    "Margin_Change"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "",
+                "duration_end_datetime": "2024-08-25 08:00:00 UTC",
+                "act_before_datetime": "",
+                "temporal_scope": "Deadline",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Margin_Trading",
+                    "Lending/Borrowing"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "event_number": 2,
+                "event_summary": "FRONT_USDT futures trading market will switch to Reduce-only mode",
+                "user_action_required": "Users should adjust their trading strategies.",
+                "event_type": [
+                    "Switching_to_Reduce_Only_Mode"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "2024-08-26 08:00:00 UTC",
+                "duration_end_datetime": "",
+                "act_before_datetime": "",
+                "temporal_scope": "Upcoming Event",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT"
+                ],
+                "markets": [
+                    "Futures"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "event_number": 3,
+                "event_summary": "Gate.io will automatically settle open positions in the futures market",
+                "user_action_required": "Users should close positions before automatic settlement.",
+                "event_type": [
+                    "Settling_Open_Positions"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "",
+                "duration_end_datetime": "2024-08-27 08:00:00 UTC",
+                "act_before_datetime": "2024-08-27 08:00:00 UTC",
+                "temporal_scope": "Deadline",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Futures"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "event_number": 4,
+                "event_summary": "Gate.io will suspend deposit, withdrawal, and trading services for Frontier (FRONT)",
+                "user_action_required": "Users should adjust their trading strategies.",
+                "event_type": [
+                    "Suspend_Trading",
+                    "Token_Migration"
+                ],
+                "external_website_URL": "",
+                "duration_start_datetime": "2024-08-28 03:00:00 UTC",
+                "duration_end_datetime": "",
+                "act_before_datetime": "",
+                "temporal_scope": "Upcoming Event",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT",
+                    "FRONT_USDC",
+                    "FRONT_ETH",
+                    "FRONT_TRY"
+                ],
+                "markets": [
+                    "Spot",
+                    "Grid_Trading",
+                    "Earning",
+                    "Margin_Trading"
+                ],
+                "quantifiable_changes": []
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    }
+]

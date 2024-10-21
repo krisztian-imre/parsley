@@ -1,0 +1,114 @@
+[
+    {
+        "exchange_name": "Gate.io",
+        "publish_datetime": "2024-09-02 01:42:32 UTC",
+        "article_title": "Gate.io Bi-Weekly Report (August 16-31, 2024)",
+        "article_link": "https://www.gate.io/announcements/article/38963",
+        "events": [
+            {
+                "event_number": 1,
+                "event_summary": "Gate.io released the Bi-Weekly Report covering significant events and updates, including listing new projects and tokens, launching financial products and trading competitions, and introducing various activities and blog articles.",
+                "user_action_required": "",
+                "event_type": [
+                    "Report",
+                    "Listing",
+                    "Trading_Competition",
+                    "Product_Offering",
+                    "Airdrop",
+                    "Learning_and_Education"
+                ],
+                "external_website_URL": "https://www.gate.io/announcements/article/38963",
+                "duration_start_datetime": "2024-08-16",
+                "duration_end_datetime": "2024-08-31",
+                "act_before_datetime": "",
+                "temporal_scope": "Past_Event",
+                "tokens": [
+                    "LOVECHAIN",
+                    "SUNDOG",
+                    "CAT"
+                ],
+                "trading_pairs": [
+                    "BTC_USDT"
+                ],
+                "markets": [
+                    "Spot",
+                    "Launchpad/IEO",
+                    "Staking",
+                    "Yield_Farming",
+                    "Copy_Trading"
+                ],
+                "quantifiable_changes": [
+                    "24 new projects listed",
+                    "29 Startup projects launched",
+                    "$1,213,000 total airdrop value",
+                    "13 trading competitions held",
+                    "$253,000 total prize pool",
+                    "17 financial products launched",
+                    "APR up to 200%"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "exchange_name": "Gate.io",
+        "publish_datetime": "2024-10-16 15:11:56 UTC",
+        "article_title": "Gate.io Announcement on Launching the Pre-Market Trading to Blum(BLUM)",
+        "article_link": "https://www.gate.io/announcements/article/39952",
+        "events": [
+            {
+                "event_number": 1,
+                "event_summary": "Gate.io launches Pre-Market PreToken for Blum(BLUM)",
+                "user_action_required": "Users can join the Pre-Market PreMint and PreToken Trading.",
+                "event_type": [
+                    "Product_Offering"
+                ],
+                "external_website_URL": "https://www.gate.io/premint",
+                "duration_start_datetime": "2024-10-16T14:00:00Z",
+                "duration_end_datetime": "",
+                "act_before_datetime": "",
+                "temporal_scope": "Ongoing_Event",
+                "tokens": [
+                    "BLUM"
+                ],
+                "trading_pairs": [
+                    "BLUM_USDT"
+                ],
+                "markets": [
+                    "Spot"
+                ],
+                "quantifiable_changes": [
+                    "Point max supply of Blum(BLUM): 100B"
+                ]
+            },
+            {
+                "event_number": 2,
+                "event_summary": "Gate.io starts Pre-market PreToken Spot trading for Blum(BLUM)",
+                "user_action_required": "Users can participate in PreToken Spot trading.",
+                "event_type": [
+                    "Listing"
+                ],
+                "external_website_URL": "https://www.gate.io/trade/BLUM_USDT?type=pre",
+                "duration_start_datetime": "2024-10-17T00:00:00Z",
+                "duration_end_datetime": "",
+                "act_before_datetime": "",
+                "temporal_scope": "Upcoming_Event",
+                "tokens": [
+                    "BLUM"
+                ],
+                "trading_pairs": [
+                    "BLUM_USDT"
+                ],
+                "markets": [
+                    "Spot"
+                ],
+                "quantifiable_changes": [
+                    ""
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    }
+]
