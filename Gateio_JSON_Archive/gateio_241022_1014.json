@@ -1,0 +1,51 @@
+[
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Bi-Weekly Report (October 1-15, 2024)",
+                "article_link": "https://www.gate.io/announcements/article/39985",
+                "publish_datetime": "2024-10-17 15:38:14 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-01T00:00:00Z",
+                "end_datetime": "2024-10-15T23:59:59Z",
+                "event_summary": "The report covers events from October 1 to October 15, 2024, including the listing of 30 new projects and 32 Startup projects, launching of 9 trading competitions with a total prize pool of $103,000, and introduction of 7 financial products in Hodl and Earn with an APR of up to 200%. Additionally, various activities such as Web3 Startup, Simple Earn, Double Earning Monday, and educational initiatives through Gate Learn were conducted.",
+                "event_type": [
+                    "Listing",
+                    "Trading_Competition",
+                    "Product_Offering",
+                    "Learning_and_Education",
+                    "Community Activity"
+                ],
+                "user_action_required": "None",
+                "separate_event_link": "https://www.gate.io/articlelist/ann/1",
+                "tokens": [
+                    "FUD",
+                    "COS",
+                    "EIGEN",
+                    "MOODENG",
+                    "USTC",
+                    "HIPPO",
+                    "LIQ",
+                    "SCR"
+                ],
+                "trading_pairs": [
+                    "BTC_USDT"
+                ],
+                "markets": [
+                    "Spot",
+                    "Yield_Farming",
+                    "Staking"
+                ],
+                "quantifiable_changes": [
+                    "30 new projects listed",
+                    "32 Startup projects listed",
+                    "$860,000 total airdrop value",
+                    "9 trading competitions",
+                    "$103,000 total prize pool",
+                    "7 financial products launched",
+                    "200% APR"
+                ]
+            }
+        ]
+    }
+]

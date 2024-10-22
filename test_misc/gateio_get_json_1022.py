@@ -1,3 +1,5 @@
+#File: gateio_get_json.py
+
 import pandas as pd
 import openai
 from openai._exceptions import RateLimitError, APIConnectionError, OpenAIError
@@ -58,7 +60,10 @@ def get_llm_response(content, assistant_id, max_retries=3, backoff_factor=2, tim
                 for message in messages:
                     if message.role == "assistant" and hasattr(message, 'content'):
                         response = message.content[0].text.value
+                        #response = response.replace('```json', '')  # Remove starting ```json marker
+                        #response = response.replace('```', '')      # Remove ending ```
                         if response:
+                            #logging.log(f"\nAssistant ID: {assistant_id}\nResponse:\n{response}")
                             return response
             else:
                 logging.error(f"Unexpected run status: {run.status}")
@@ -146,14 +151,6 @@ def get_json():
             # Strip and load the JSON to validate it
             parsed_response = json.loads(response.strip())
 
-            # Handle inconsistent structure for 'events'
-            if isinstance(parsed_response.get('events'), dict) and 'events' in parsed_response['events']:
-                # Nested 'events' structure
-                events = parsed_response['events']['events']
-            else:
-                # Direct 'events' array
-                events = parsed_response.get('events', [])
-
         except json.JSONDecodeError as e:
             # Log the error and the problematic response, but don't mark as processed
             logging.error(f"Failed to parse JSON: {e} - Response: {response}")
@@ -165,12 +162,12 @@ def get_json():
             assistant_id = 'asst_CfFXkDtL6wiBKpPpIREesccm'
         
             json_content = json.dumps(parsed_response, indent=4)
-            content = f"JSON:\n{json_content}\nAdditional data:\n{body}"
+            content = f"JSON: {json_content}\nAdditional data: {body}"
 
             # Get the response from the third assistant
             response = get_llm_response(content, assistant_id)
 
-            logging.error(f"\nChain-of-Thought Response:\n{response}\n")
+            logging.error(f"\nChain-of-Thought Response:\n{response}")
 
             # Try to parse the response as JSON
             try:
@@ -190,8 +187,7 @@ def get_json():
                 continue  # Move to the next article without marking this one as processed
 
         else:
-            
-            logging.error(f"\nReport Response:\n{json.dumps(parsed_response, indent=4)}")
+            logging.error(f"\nReport Response:\n{response}")
             
             # Append the raw and parsed responses to the respective lists
             raw_responses.append(response)
@@ -206,7 +202,7 @@ def get_json():
 
     # Save the parsed JSON objects as a valid JSON array
     # Get the current datetime in the format YYMMDD_HHMM
-    current_datetime = datetime.datetime.now().strftime("%y%mdd_%H%M")
+    current_datetime = datetime.datetime.now().strftime("%y%m%d_%H%M")
 
     # Specify the folder where the JSON file should be saved
     destination_folder = os.path.expanduser('~/parsley/Gateio_JSON_Process')

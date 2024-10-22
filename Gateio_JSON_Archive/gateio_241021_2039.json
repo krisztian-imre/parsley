@@ -1,0 +1,39 @@
+[
+    {
+        "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+        "article_link": "https://www.gate.io/announcements/article/38688",
+        "publish_datetime": "2024-08-20 04:08:17 UTC",
+        "start_datetime": "2024-08-25 08:00:00 UTC",
+        "end_datetime": "2024-08-28 03:00:00 UTC",
+        "exchange_name": "Gate.io",
+        "event_summary": "Gate.io will support the migration of Frontier (FRONT) tokens to Self Chain (SLF) tokens at a 1:1 ratio. The migration involves disabling certain services for FRONT, including margin borrowing, futures trading, and spot trading, with specific deadlines for users to adjust their strategies and close positions.",
+        "event_type": [
+            "Token Migration",
+            "Service Suspension",
+            "Futures Trading Adjustment",
+            "Delisting"
+        ],
+        "user_action_required": "Users should adjust trading strategies, close futures positions, redeem assets in Simple Earn, and repay outstanding loans before the specified deadlines to avoid automatic settlement or liquidation.",
+        "separate_event_link": "https://blog.selfchain.xyz/front-to-slf-migration-details/",
+        "tokens": [
+            "FRONT",
+            "SLF"
+        ],
+        "trading_pairs": [
+            "FRONT_USDT",
+            "FRONT_USDC",
+            "FRONT_ETH",
+            "FRONT_TRY"
+        ],
+        "markets": [
+            "Spot",
+            "Futures",
+            "Margin_Trading",
+            "Grid_Trading",
+            "Simple Earn"
+        ],
+        "quantifiable_changes": [
+            "Total token supply increases from 90 million to 360 million"
+        ]
+    }
+]

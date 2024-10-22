@@ -1,0 +1,245 @@
+[
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Startup Free Offering: MEDUSA(MEDUSA) and Announcement of Free Distribution Rule(2,500,000 MEDUSA free of charge)",
+                "article_link": "https://www.gate.io/announcements/article/39990",
+                "publish_datetime": "2024-10-18 04:05:05 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-18 08:00:00 UTC",
+                "end_datetime": "2024-10-20 08:00:00 UTC",
+                "event_summary": "Gate.io announces the Startup Project Free Airdrop Program for MEDUSA (MEDUSA) tokens. Users can participate in the free airdrop by holding at least 10 USD in spot assets and completing KYC2 verification. The event runs from October 18 to October 20, 2024.",
+                "event_type": [
+                    "Airdrop",
+                    "Startup_Mining"
+                ],
+                "user_action_required": "Login to Gate.io, complete KYC2 verification, hold at least 10 USD in spot assets, and click $0 Free to Claim.",
+                "separate_event_link": "https://www.gate.io/help/guide/faq/25687/startup-faq",
+                "tokens": [
+                    "MEDUSA"
+                ],
+                "trading_pairs": [
+                    "MEDUSA/USDT"
+                ],
+                "markets": [
+                    "Spot"
+                ],
+                "quantifiable_changes": [
+                    "2,500,000 MEDUSA free of charge"
+                ]
+            },
+            {
+                "article_title": "Gate.io Startup Free Offering: MEDUSA(MEDUSA) and Announcement of Free Distribution Rule(2,500,000 MEDUSA free of charge)",
+                "article_link": "https://www.gate.io/announcements/article/39990",
+                "publish_datetime": "2024-10-18 04:05:05 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-20 12:00:00 UTC",
+                "end_datetime": "2024-10-20 12:00:00 UTC",
+                "event_summary": "Trading for MEDUSA/USDT pair begins on Gate.io following the conclusion of the MEDUSA token airdrop event.",
+                "event_type": [
+                    "Listing"
+                ],
+                "user_action_required": "Users can start trading MEDUSA/USDT on Gate.io from October 20, 2024, at 12:00 PM UTC.",
+                "separate_event_link": "https://www.gate.io/help/guide/faq/25687/startup-faq",
+                "tokens": [
+                    "MEDUSA"
+                ],
+                "trading_pairs": [
+                    "MEDUSA/USDT"
+                ],
+                "markets": [
+                    "Spot"
+                ],
+                "quantifiable_changes": [
+                    "Trading starts for MEDUSA/USDT"
+                ]
+            }
+        ]
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Supports Parex Ecosystem (PRX) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/39986",
+                "publish_datetime": "2024-10-18 02:11:58 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-18 02:11:58 UTC",
+                "end_datetime": "2024-10-18 02:11:58 UTC",
+                "event_summary": "Gate.io announces support for the migration of Parex Ecosystem (PRX) tokens to a new ID at a 1:1 ratio. The exchange will facilitate a seamless token swap for users holding PRX on Gate.io, with no action required from users.",
+                "event_type": [
+                    "Token Migration"
+                ],
+                "user_action_required": "No action required from users holding PRX on Gate.io.",
+                "separate_event_link": "https://link.medium.com/V7DH8H77cNb",
+                "tokens": [
+                    "Parex Ecosystem (PRX)"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Spot"
+                ],
+                "quantifiable_changes": [
+                    "Token ID change to 0x51Bd0D0853B7596B6F1aCa8D2BE6816774271733 (BEP20)"
+                ]
+            },
+            {
+                "article_title": "Gate.io Supports Parex Ecosystem (PRX) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/39986",
+                "publish_datetime": "2024-10-18 02:11:58 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-18 02:11:58 UTC",
+                "end_datetime": "2024-10-18 02:11:58 UTC",
+                "event_summary": "Gate.io has closed deposit and withdrawal services for Parex Ecosystem (PRX) in preparation for the token migration.",
+                "event_type": [
+                    "Suspend_Trading"
+                ],
+                "user_action_required": "No action required from users holding PRX on Gate.io.",
+                "separate_event_link": "https://link.medium.com/V7DH8H77cNb",
+                "tokens": [
+                    "Parex Ecosystem (PRX)"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Spot"
+                ],
+                "quantifiable_changes": [
+                    "Closure of deposit and withdrawal services for old PRX tokens"
+                ]
+            },
+            {
+                "article_title": "Gate.io Supports Parex Ecosystem (PRX) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/39986",
+                "publish_datetime": "2024-10-18 02:11:58 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-18 02:11:58 UTC",
+                "end_datetime": "2024-10-18 02:11:58 UTC",
+                "event_summary": "After the token swap, Gate.io will resume deposit and withdrawal services for the new Parex Ecosystem (PRX) tokens.",
+                "event_type": [
+                    "Resume_Trading"
+                ],
+                "user_action_required": "No action required from users holding PRX on Gate.io.",
+                "separate_event_link": "https://link.medium.com/V7DH8H77cNb",
+                "tokens": [
+                    "Parex Ecosystem (PRX)"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Spot"
+                ],
+                "quantifiable_changes": [
+                    "Resumption of deposit and withdrawal services for new PRX tokens"
+                ]
+            }
+        ]
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-25 08:00:00 UTC",
+                "end_datetime": "2024-08-25 08:00:00 UTC",
+                "event_summary": "Gate.io will disable new margin borrowing and crypto loan services for Frontier (FRONT).",
+                "event_type": [
+                    "Disable_Services",
+                    "Token_Migration"
+                ],
+                "user_action_required": "No action required if not using margin borrowing or crypto loan services.",
+                "separate_event_link": "https://blog.selfchain.xyz/front-to-slf-migration-details/",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Margin_Trading",
+                    "Lending/Borrowing"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-26 08:00:00 UTC",
+                "end_datetime": "2024-08-26 08:00:00 UTC",
+                "event_summary": "FRONT_USDT futures trading market will switch to a Reduce-only mode.",
+                "event_type": [
+                    "Switching_to_Reduce_Only_Mode",
+                    "Token_Migration"
+                ],
+                "user_action_required": "Adjust trading strategies in the futures market.",
+                "separate_event_link": "https://blog.selfchain.xyz/front-to-slf-migration-details/",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT"
+                ],
+                "markets": [
+                    "Futures"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-27 08:00:00 UTC",
+                "end_datetime": "2024-08-27 08:00:00 UTC",
+                "event_summary": "Automatic settlement of open positions in FRONT futures market at average index price.",
+                "event_type": [
+                    "Settling_Open_Positions",
+                    "Token_Migration"
+                ],
+                "user_action_required": "Close positions before the deadline to avoid automatic settlement.",
+                "separate_event_link": "https://blog.selfchain.xyz/front-to-slf-migration-details/",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT"
+                ],
+                "markets": [
+                    "Futures"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-28 03:00:00 UTC",
+                "end_datetime": "2024-08-28 03:00:00 UTC",
+                "event_summary": "Suspension of deposit, withdrawal, and trading services for Frontier (FRONT).",
+                "event_type": [
+                    "Suspend_Trading",
+                    "Token_Migration",
+                    "Delisting"
+                ],
+                "user_action_required": "Adjust trading strategies and redeem assets in Simple Earn.",
+                "separate_event_link": "https://blog.selfchain.xyz/front-to-slf-migration-details/",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT",
+                    "FRONT_USDC",
+                    "FRONT_ETH",
+                    "FRONT_TRY"
+                ],
+                "markets": [
+                    "Spot",
+                    "Grid_Trading",
+                    "Staking",
+                    "Margin_Trading"
+                ],
+                "quantifiable_changes": []
+            }
+        ]
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Bi-Weekly Report (September 16-30, 2024)",
+                "article_link": "https://www.gate.io/announcements/article/39677",
+                "publish_datetime": "2024-10-02 16:11:44 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-02 16:11:44 UTC",
+                "end_datetime": "2024-10-02 16:11:44 UTC",
+                "event_summary": "Gate.io report covers events from September 16 to 30, 2024, including 28 new projects, 34 Startup projects, $1,228,000 airdrop, 13 trading competitions, and 15 financial products.",
+                "event_type": [
+                    "Report",
+                    "Listing",
+                    "Trading_Competition",
+                    "Product_Offering",
+                    "Airdrop"
+                ],
+                "user_action_required": "",
+                "separate_event_link": "https://www.gate.io/articlelist/ann",
+                "tokens": [],
+                "trading_pairs": [
+                    "BTC_USDT"
+                ],
+                "markets": [
+                    "Spot",
+                    "Launchpad/IEO",
+                    "Staking",
+                    "Yield_Farming"
+                ],
+                "quantifiable_changes": [
+                    "28 new projects launched",
+                    "34 Startup projects launched",
+                    "$1,228,000 total airdrop value",
+                    "13 trading competitions held",
+                    "$215,000 total prize pool",
+                    "15 financial products launched with up to 200% APR"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,229 @@
+[
+    {
+        "events": [
+            {
+                "article_title": "Watch and 100% Win Airdrops: November Rate Cuts and U.S. Elections Approaching: How to Position $BTC and $ETH?",
+                "article_link": "https://www.gate.io/announcements/article/39968",
+                "publish_datetime": "2024-10-17 07:52:25 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-18 12:00:00 UTC",
+                "end_datetime": "2024-10-18 13:00:00 UTC",
+                "event_summary": "GateLive will host a live program called Trading Signals on October 18th at 12:00 (UTC). The program will feature discussions on how November rate cuts and the U.S. elections will affect $BTC and $ETH, along with an analysis of related strategies. Participants can claim red packets and interact with guests for a chance to receive $5 Gate.io points.",
+                "event_type": [
+                    "Live_Streaming",
+                    "Airdrop"
+                ],
+                "user_action_required": "Book the live stream to claim free airdrops and participate in the event.",
+                "separate_event_link": "https://www.gate.io/live/video/0b960fdde21d4530a37a4235ec8955d8?type=live",
+                "tokens": [
+                    "BTC",
+                    "ETH"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Spot",
+                    "Futures"
+                ],
+                "quantifiable_changes": [
+                    "Points reward: Points (valid for 15 days) can be used to offset spot and futures trading fees."
+                ]
+            }
+        ]
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-25 08:00:00 UTC",
+                "end_datetime": "2024-08-25 08:00:00 UTC",
+                "event_summary": "Gate.io will disable new margin borrowing and crypto loan services for Frontier (FRONT).",
+                "event_type": [
+                    "Disable_Services"
+                ],
+                "user_action_required": "No action required if not using margin borrowing or crypto loan services.",
+                "separate_event_link": "",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Margin_Trading",
+                    "Lending/Borrowing"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-26 08:00:00 UTC",
+                "end_datetime": "2024-08-26 08:00:00 UTC",
+                "event_summary": "FRONT_USDT futures trading market will switch to a Reduce-only mode.",
+                "event_type": [
+                    "Switching_to_Reduce_Only_Mode"
+                ],
+                "user_action_required": "Adjust strategies in advance if involved in futures trading.",
+                "separate_event_link": "",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT"
+                ],
+                "markets": [
+                    "Futures"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-27 08:00:00 UTC",
+                "end_datetime": "2024-08-27 08:00:00 UTC",
+                "event_summary": "Automatic settlement of open positions in FRONT futures market at average index price.",
+                "event_type": [
+                    "Settling_Open_Positions"
+                ],
+                "user_action_required": "Close positions before the deadline to avoid automatic settlement.",
+                "separate_event_link": "",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT"
+                ],
+                "markets": [
+                    "Futures"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-28 03:00:00 UTC",
+                "end_datetime": "2024-08-28 03:00:00 UTC",
+                "event_summary": "Suspension of deposit, withdrawal, and trading services for Frontier (FRONT).",
+                "event_type": [
+                    "Suspend_Trading",
+                    "Delisting"
+                ],
+                "user_action_required": "Adjust trading strategies and redeem assets in Simple Earn before suspension.",
+                "separate_event_link": "",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT",
+                    "FRONT_USDC",
+                    "FRONT_ETH",
+                    "FRONT_TRY"
+                ],
+                "markets": [
+                    "Spot",
+                    "Grid_Trading",
+                    "Staking",
+                    "Margin_Trading"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-28 03:00:00 UTC",
+                "end_datetime": "2024-08-28 03:00:00 UTC",
+                "event_summary": "Automatic termination of ongoing Frontier (FRONT) quant grid trading.",
+                "event_type": [
+                    "Termination_of_Trading",
+                    "Delisting"
+                ],
+                "user_action_required": "Adjust quant grid trading strategies before the deadline.",
+                "separate_event_link": "",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Grid_Trading"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-28 03:00:00 UTC",
+                "end_datetime": "2024-08-28 03:00:00 UTC",
+                "event_summary": "Automatic liquidation of assets in Simple Earn if not redeemed manually.",
+                "event_type": [
+                    "Asset Liquidation"
+                ],
+                "user_action_required": "Manually redeem assets in Simple Earn before the deadline.",
+                "separate_event_link": "",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Staking"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-28 03:00:00 UTC",
+                "end_datetime": "2024-08-28 03:00:00 UTC",
+                "event_summary": "Automatic settlement of outstanding Frontier (FRONT) loans in margin trading.",
+                "event_type": [
+                    "Settling_Open_Positions"
+                ],
+                "user_action_required": "Repay loans in advance to avoid automatic settlement.",
+                "separate_event_link": "",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Margin_Trading"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-28 03:00:00 UTC",
+                "end_datetime": "2024-08-28 03:00:00 UTC",
+                "event_summary": "Total token supply increases from 90 million to 360 million after token swap.",
+                "event_type": [
+                    "Token_Swap"
+                ],
+                "user_action_required": "No action required from users.",
+                "separate_event_link": "",
+                "tokens": [
+                    "FRONT",
+                    "SLF"
+                ],
+                "trading_pairs": [],
+                "markets": [],
+                "quantifiable_changes": [
+                    "Token supply increase from 90 million to 360 million"
+                ]
+            }
+        ]
+    }
+]

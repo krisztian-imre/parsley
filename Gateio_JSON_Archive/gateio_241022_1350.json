@@ -1,0 +1,93 @@
+[
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Bi-Weekly Report (October 1-15, 2024)",
+                "article_link": "https://www.gate.io/announcements/article/39985",
+                "publish_datetime": "2024-10-17 15:38:14 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-17 15:38:14 UTC",
+                "end_datetime": "2024-10-17 15:38:14 UTC",
+                "event_summary": "From October 1 to October 15, 2024, Gate.io launched 30 new projects, 32 Startup projects with $860,000 airdrop value, 9 trading competitions with $103,000 prize pool, and 7 financial products with up to 200% APR.",
+                "event_type": [
+                    "Report"
+                ],
+                "user_action_required": "",
+                "separate_event_link": "",
+                "tokens": [],
+                "trading_pairs": [],
+                "markets": [],
+                "quantifiable_changes": [
+                    "30 new projects launched",
+                    "32 Startup projects launched",
+                    "$860,000 total airdrop value",
+                    "9 trading competitions held",
+                    "$103,000 total prize pool",
+                    "7 financial products launched",
+                    "Up to 200% APR"
+                ]
+            }
+        ]
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Bi-Weekly Report (August 1-15, 2024)",
+                "article_link": "https://www.gate.io/announcements/article/38636",
+                "publish_datetime": "2024-08-17 02:28:45 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-17 02:28:45 UTC",
+                "end_datetime": "2024-08-17 02:28:45 UTC",
+                "event_summary": "From August 1 to August 15, 2024, Gate.io launched 14 new projects, 17 Startup projects, 9 trading competitions, and 18 financial products.",
+                "event_type": [
+                    "Report"
+                ],
+                "user_action_required": "",
+                "separate_event_link": "",
+                "tokens": [],
+                "trading_pairs": [],
+                "markets": [],
+                "quantifiable_changes": [
+                    "14 new projects launched",
+                    "17 Startup projects launched",
+                    "Total airdrop value of $810,000",
+                    "9 trading competitions held",
+                    "Total prize pool of $105,000",
+                    "18 financial products launched",
+                    "APR up to 200%"
+                ]
+            }
+        ]
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Completes Delisting and Buyback of Agility (AGILITY) and YIELD App (YLD)",
+                "article_link": "https://www.gate.io/announcements/article/40045",
+                "publish_datetime": "2024-10-21 06:24:35 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-21 06:24:35 UTC",
+                "end_datetime": "2024-11-21 06:24:35 UTC",
+                "event_summary": "Gate.io has delisted Agility (AGILITY) and YIELD App (YLD) from its platform and initiated a buyback program for these tokens. Withdrawal services for AGILITY and YLD will remain available for one more month.",
+                "event_type": [
+                    "Delisting",
+                    "Buyback"
+                ],
+                "user_action_required": "Users are encouraged to withdraw their AGILITY and YLD tokens to personal wallets as soon as possible.",
+                "separate_event_link": "https://www.gate.io/myaccount/withdraw/AGILITY",
+                "tokens": [
+                    "AGILITY",
+                    "YLD"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Spot"
+                ],
+                "quantifiable_changes": [
+                    "Delisting of AGILITY and YLD",
+                    "Buyback of AGILITY and YLD"
+                ]
+            }
+        ]
+    }
+]

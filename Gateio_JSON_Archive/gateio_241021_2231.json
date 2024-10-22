@@ -1,0 +1,112 @@
+[
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-25 08:00:00 UTC",
+                "end_datetime": "2024-08-25 08:00:00 UTC",
+                "event_summary": "Gate.io will disable new margin borrowing and crypto loan services for Frontier (FRONT).",
+                "event_type": [
+                    "Disable_Services",
+                    "Token_Migration"
+                ],
+                "user_action_required": "No action required if you do not use margin borrowing or crypto loan services for FRONT.",
+                "separate_event_link": "https://blog.selfchain.xyz/front-to-slf-migration-details/",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Margin_Trading",
+                    "Lending/Borrowing"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-26 08:00:00 UTC",
+                "end_datetime": "2024-08-26 08:00:00 UTC",
+                "event_summary": "FRONT_USDT futures trading market will switch to a Reduce-only mode.",
+                "event_type": [
+                    "Switching_to_Reduce_Only_Mode",
+                    "Token_Migration"
+                ],
+                "user_action_required": "Adjust your strategies in the futures trading market accordingly.",
+                "separate_event_link": "https://blog.selfchain.xyz/front-to-slf-migration-details/",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT"
+                ],
+                "markets": [
+                    "Futures"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-27 08:00:00 UTC",
+                "end_datetime": "2024-08-27 08:00:00 UTC",
+                "event_summary": "Gate.io will automatically settle open positions at the average index price before futures trading stops. Outstanding orders will be canceled.",
+                "event_type": [
+                    "Settling_Open_Positions",
+                    "Token_Migration"
+                ],
+                "user_action_required": "Close positions before this date to avoid automatic settlement.",
+                "separate_event_link": "https://blog.selfchain.xyz/front-to-slf-migration-details/",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT"
+                ],
+                "markets": [
+                    "Futures"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-28 03:00:00 UTC",
+                "end_datetime": "2024-08-28 03:00:00 UTC",
+                "event_summary": "Gate.io will suspend deposit, withdrawal, and trading services for Frontier (FRONT).",
+                "event_type": [
+                    "Suspend_Trading",
+                    "Token_Migration",
+                    "Delisting"
+                ],
+                "user_action_required": "Adjust trading strategies and redeem assets in Simple Earn before this date.",
+                "separate_event_link": "https://blog.selfchain.xyz/front-to-slf-migration-details/",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT",
+                    "FRONT_USDC",
+                    "FRONT_ETH",
+                    "FRONT_TRY"
+                ],
+                "markets": [
+                    "Spot",
+                    "Grid_Trading",
+                    "Staking",
+                    "Margin_Trading"
+                ],
+                "quantifiable_changes": []
+            }
+        ]
+    }
+]

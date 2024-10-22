@@ -1,0 +1,76 @@
+[
+    {
+        "events": [
+            {
+                "article_title": "Watch and 100% Win Airdrops: November Rate Cuts and U.S. Elections Approaching: How to Position $BTC and $ETH?",
+                "article_link": "https://www.gate.io/announcements/article/39968",
+                "publish_datetime": "2024-10-17 07:52:25 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-18 12:00:00 UTC",
+                "end_datetime": "",
+                "event_summary": "GateLive will host a live program called Trading Signals on October 18th at 12:00 (UTC), featuring discussions on how November rate cuts and U.S. elections will affect $BTC and $ETH. Participants can claim free airdrops and interact with guests for a chance to receive $5 Gate.io points. Points are valid for 15 days and can offset trading fees. Identity verification is required for rewards, distributed within 14 working days post-event. The event is not open to market makers, corporations, or users in restricted locations.",
+                "event_type": [
+                    "Live Streaming",
+                    "Airdrop",
+                    "Discussion"
+                ],
+                "user_action_required": "Book the live stream to claim free airdrops and participate in discussions.",
+                "separate_event_link": "https://www.gate.io/live/video/0b960fdde21d4530a37a4235ec8955d8?type=live",
+                "tokens": [
+                    "BTC",
+                    "ETH"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Spot",
+                    "Futures"
+                ],
+                "quantifiable_changes": [
+                    "$5 Gate.io points for participants"
+                ]
+            }
+        ]
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-25 08:00:00 UTC",
+                "end_datetime": "2024-08-28 03:00:00 UTC",
+                "event_summary": "Gate.io announces the migration of Frontier (FRONT) tokens to Self Chain (SLF) tokens at a 1:1 ratio. The migration process involves several steps affecting various trading services. Margin borrowing and crypto loan services for FRONT will be disabled before August 25, 2024. FRONT_USDT futures trading will switch to Reduce-only mode on August 26, 2024, and automatic settlement of open positions will occur on August 27, 2024. All deposit, withdrawal, and trading services for FRONT will be suspended starting August 28, 2024. Users are advised to adjust their trading strategies and repay loans before these dates to avoid automatic actions.",
+                "event_type": [
+                    "Token Migration",
+                    "Suspend_Trading",
+                    "Settling_Open_Positions",
+                    "Switching_to_Reduce_Only_Mode",
+                    "Delisting"
+                ],
+                "user_action_required": "Users should adjust trading strategies, close positions, redeem assets, and repay loans before the specified dates to avoid automatic actions.",
+                "separate_event_link": "https://blog.selfchain.xyz/front-to-slf-migration-details/",
+                "tokens": [
+                    "FRONT",
+                    "SLF"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT",
+                    "FRONT_USDC",
+                    "FRONT_ETH",
+                    "FRONT_TRY"
+                ],
+                "markets": [
+                    "Spot",
+                    "Futures",
+                    "Grid_Trading",
+                    "Staking",
+                    "Margin_Trading"
+                ],
+                "quantifiable_changes": [
+                    "Total token supply increases from 90 million to 360 million."
+                ]
+            }
+        ]
+    }
+]

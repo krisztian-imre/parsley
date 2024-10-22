@@ -1,0 +1,178 @@
+[
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Supports PlayZap (PZP) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/39836",
+                "publish_datetime": "2024-10-12 04:11:48 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-12 04:11:48 UTC",
+                "end_datetime": "2024-10-12 04:11:48 UTC",
+                "event_summary": "Gate.io announces support for the migration of PlayZap (PZP) tokens to a new ID at a 1:1 ratio. The exchange will provide seamless token swap services for users holding PlayZap (PZP) on Gate.io.",
+                "event_type": [
+                    "Token Migration"
+                ],
+                "user_action_required": "No action required for users holding PlayZap (PZP) on Gate.io.",
+                "separate_event_link": "https://x.com/PlayZapGames/status/1841417772599042300",
+                "tokens": [
+                    "PlayZap (PZP)"
+                ],
+                "trading_pairs": [],
+                "markets": [],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Supports PlayZap (PZP) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/39836",
+                "publish_datetime": "2024-10-12 04:11:48 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-12 04:11:48 UTC",
+                "end_datetime": "2024-10-12 04:11:48 UTC",
+                "event_summary": "Gate.io has closed deposit, withdrawal, and trading services for PlayZap (PZP) tokens in preparation for the token migration.",
+                "event_type": [
+                    "Suspend_Trading",
+                    "Token Migration"
+                ],
+                "user_action_required": "Users with in-progress PlayZap (PZP) quant grid trading should adjust strategies before October 13, 2024, 06:00 UTC.",
+                "separate_event_link": "https://x.com/PlayZapGames/status/1841417772599042300",
+                "tokens": [
+                    "PlayZap (PZP)"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Grid_Trading"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Supports PlayZap (PZP) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/39836",
+                "publish_datetime": "2024-10-12 04:11:48 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-13 06:00:00 UTC",
+                "end_datetime": "2024-10-13 06:00:00 UTC",
+                "event_summary": "Deadline for users to adjust their PlayZap (PZP) quant grid trading strategies before automatic termination.",
+                "event_type": [
+                    "Trading Strategy Adjustment"
+                ],
+                "user_action_required": "Adjust PlayZap (PZP) quant grid trading strategies before the deadline.",
+                "separate_event_link": "https://x.com/PlayZapGames/status/1841417772599042300",
+                "tokens": [
+                    "PlayZap (PZP)"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Grid_Trading"
+                ],
+                "quantifiable_changes": []
+            }
+        ]
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-25 08:00:00 UTC",
+                "end_datetime": "2024-08-25 08:00:00 UTC",
+                "event_summary": "Gate.io will disable new margin borrowing and crypto loan services for Frontier (FRONT).",
+                "event_type": [
+                    "Disable_Services"
+                ],
+                "user_action_required": "No action required if you do not use margin borrowing or crypto loan services.",
+                "separate_event_link": "https://www.gate.io/announcements/article/38688#event1",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Margin_Trading",
+                    "Lending/Borrowing"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-26 08:00:00 UTC",
+                "end_datetime": "2024-08-26 08:00:00 UTC",
+                "event_summary": "FRONT_USDT futures trading market will switch to a Reduce-only mode.",
+                "event_type": [
+                    "Switching_to_Reduce_Only_Mode"
+                ],
+                "user_action_required": "Adjust strategies in the futures trading market.",
+                "separate_event_link": "https://www.gate.io/announcements/article/38688#event2",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT"
+                ],
+                "markets": [
+                    "Futures"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-27 08:00:00 UTC",
+                "end_datetime": "2024-08-27 08:00:00 UTC",
+                "event_summary": "Automatic settlement of open positions in FRONT futures market.",
+                "event_type": [
+                    "Settling_Open_Positions",
+                    "Delisting"
+                ],
+                "user_action_required": "Close positions before the deadline to avoid automatic settlement.",
+                "separate_event_link": "https://www.gate.io/announcements/article/38688#event3",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT"
+                ],
+                "markets": [
+                    "Futures"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Supports Frontier (FRONT) to Self Chain (SLF) Token Migration",
+                "article_link": "https://www.gate.io/announcements/article/38688",
+                "publish_datetime": "2024-08-20 04:08:17 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-08-28 03:00:00 UTC",
+                "end_datetime": "2024-08-28 03:00:00 UTC",
+                "event_summary": "Suspension of deposit, withdrawal, and trading services for Frontier (FRONT).",
+                "event_type": [
+                    "Suspend_Trading",
+                    "Delisting"
+                ],
+                "user_action_required": "Adjust trading strategies and redeem assets in Simple Earn.",
+                "separate_event_link": "https://www.gate.io/announcements/article/38688#event4",
+                "tokens": [
+                    "FRONT"
+                ],
+                "trading_pairs": [
+                    "FRONT_USDT",
+                    "FRONT_USDC",
+                    "FRONT_ETH",
+                    "FRONT_TRY"
+                ],
+                "markets": [
+                    "Spot",
+                    "Grid_Trading",
+                    "Staking",
+                    "Margin_Trading"
+                ],
+                "quantifiable_changes": []
+            }
+        ]
+    }
+]

@@ -1,0 +1,121 @@
+[
+    {
+        "type": "object",
+        "properties": {
+            "events": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "article_title": {
+                            "type": "string"
+                        },
+                        "article_link": {
+                            "type": "string"
+                        },
+                        "publish_datetime": {
+                            "type": "string"
+                        },
+                        "exchange_name": {
+                            "type": "string"
+                        },
+                        "start_datetime": {
+                            "type": "string"
+                        },
+                        "end_datetime": {
+                            "type": "string"
+                        },
+                        "event_summary": {
+                            "type": "string"
+                        },
+                        "event_type": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "user_action_required": {
+                            "type": "string"
+                        },
+                        "separate_event_link": {
+                            "type": "string"
+                        },
+                        "tokens": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "trading_pairs": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "markets": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "quantifiable_changes": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "events": [
+            {
+                "article_title": "Gate.io Bi-Weekly Report (September 16-30, 2024)",
+                "article_link": "https://www.gate.io/announcements/article/39677",
+                "publish_datetime": "2024-10-02 16:11:44 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-02 16:11:44 UTC",
+                "end_datetime": "2024-10-02 16:11:44 UTC",
+                "event_summary": "Gate.io report covers events from September 16 to 30, 2024, including new token listings, trading competitions, and financial products.",
+                "event_type": [
+                    "Report",
+                    "Listing",
+                    "Trading_Competition",
+                    "Product_Offering",
+                    "Airdrop",
+                    "Learning_and_Education"
+                ],
+                "user_action_required": "Participate in trading competitions, explore new financial products, and engage with educational content.",
+                "separate_event_link": "https://www.gate.io/startup",
+                "tokens": [
+                    "Pencils Protocol (DAPP)",
+                    "NEIROCTO",
+                    "ALEO",
+                    "BILLY",
+                    "CATI",
+                    "BOOM",
+                    "PEIPEI"
+                ],
+                "trading_pairs": [
+                    "BTC_USDT"
+                ],
+                "markets": [
+                    "Spot",
+                    "Launchpad/IEO",
+                    "Staking",
+                    "Yield_Farming",
+                    "Lending/Borrowing"
+                ],
+                "quantifiable_changes": [
+                    "28 new projects listed",
+                    "34 Startup projects launched",
+                    "Total airdrop value of $1,228,000",
+                    "13 trading competitions",
+                    "Total prize pool of $215,000",
+                    "15 financial products launched",
+                    "APR up to 200%"
+                ]
+            }
+        ]
+    }
+]

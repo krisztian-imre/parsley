@@ -1,35 +1,33 @@
 import json
 import os
 from ics import Calendar, Event
-from datetime import timedelta
-from dateutil import parser
+from datetime import datetime, timedelta
 
 # Function for single-day events
 def create_ics_event_single_day(event_data):
     event = Event()
 
-    # Combine tokens and trading pairs into one list
-    assets = event_data.get('tokens', []) + event_data.get('trading_pairs', [])
-
     # Conditional logic for event.name
-    if assets:
-        if len(assets) > 10:
+    if event_data['tokens_and_pairs']:
+        if len(event_data['tokens_and_pairs']) > 10:
             # If there are more than 10 tokens/pairs, use a placeholder
             event.name = f"{event_data['exchange_name']}: {', '.join(event_data['event_type'])} of Various Assets"
         else:
             # If there are 10 or fewer, list the tokens/pairs
-            event.name = f"{event_data['exchange_name']}: {', '.join(event_data['event_type'])} of {', '.join(assets)}"
+            event.name = f"{event_data['exchange_name']}: {', '.join(event_data['event_type'])} of {', '.join(event_data['tokens_and_pairs'])}"
     else:
         event.name = f"{event_data['exchange_name']}: {', '.join(event_data['event_type'])}"
 
     # Construct the event description conditionally
-    description_parts = [f"{event_data['event_summary']}"]
+    description_parts = [
+        f"{event_data['event_summary']}"
+    ]
     
-    if assets:
-        description_parts.append(f"\nAssets: {', '.join(assets)}")
+    if event_data['tokens_and_pairs']:
+        description_parts.append(f"\nAssets: {', '.join(event_data['tokens_and_pairs'])}")
     
-    if event_data['markets']:
-        description_parts.append(f"Markets: {', '.join(event_data['markets'])}")
+    if event_data['market_type']:
+        description_parts.append(f"Markets: {', '.join(event_data['market_type'])}")
     
     if event_data['quantifiable_changes']:
         description_parts.append(f"\n{',\n'.join(event_data['quantifiable_changes'])}")
@@ -37,54 +35,45 @@ def create_ics_event_single_day(event_data):
     if event_data['user_action_required']:
         description_parts.append(f"\n{event_data['user_action_required']}")
     
-    if event_data['separate_event_link']:
-        description_parts.append(f"{event_data.get('separate_event_link', '')}")
+    if event_data['event_link']:
+        description_parts.append(f"{event_data.get('event_link', '')}")
 
     event.description = "\n".join(part for part in description_parts if part)
 
     event.location = "Deadline"
     event.url = event_data['article_link']
 
-    # Use parser.parse for datetime parsing
-    start_datetime = parser.parse(event_data['start_datetime'])
-    end_datetime = parser.parse(event_data['end_datetime'])
-
-    # Round down 'event.begin' to HH:00:00
-    event.begin = start_datetime.replace(minute=0, second=0, microsecond=0)
-
-    # Round up 'event.end' to HH:30:00
-    event.end = end_datetime.replace(minute=30, second=0, microsecond=0)
+    # Set the start and end datetime (assuming they are already in UTC)
+    event.begin = datetime.strptime(event_data['start_datetime'], "%Y-%m-%d %H:%M:%S")
+    event.end = datetime.strptime(event_data['end_datetime'], "%Y-%m-%d %H:%M:%S")
 
     return event
 
-# Function for multi-day events
+# Function for multi-day events (creates two events: start and end)
 def create_ics_event_multi_day(event_data):
     events = []
-
-    # Combine tokens and trading pairs into one list
-    assets = event_data.get('tokens', []) + event_data.get('trading_pairs', [])
 
     # Function to generate an event
     def create_event(event_data, location, begin_time, end_time):
         event = Event()
 
         # Conditional logic for event.name with large token handling
-        if assets:
-            if len(assets) > 10:
+        if event_data['tokens_and_pairs']:
+            if len(event_data['tokens_and_pairs']) > 10:
                 event.name = f"{event_data['exchange_name']}: {', '.join(event_data['event_type'])} of Various Assets"
             else:
-                event.name = f"{event_data['exchange_name']}: {', '.join(event_data['event_type'])} of {', '.join(assets)}"
+                event.name = f"{event_data['exchange_name']}: {', '.join(event_data['event_type'])} of {', '.join(event_data['tokens_and_pairs'])}"
         else:
             event.name = f"{event_data['exchange_name']}: {', '.join(event_data['event_type'])}"
 
         # Construct the event description conditionally
         description_parts = [f"{event_data['event_summary']}"]
         
-        if assets:
-            description_parts.append(f"\nAssets: {', '.join(assets)}")
+        if event_data['tokens_and_pairs']:
+            description_parts.append(f"\nAssets: {', '.join(event_data['tokens_and_pairs'])}")
         
-        if event_data['markets']:
-            description_parts.append(f"Markets: {', '.join(event_data['markets'])}")
+        if event_data['market_type']:
+            description_parts.append(f"Markets: {', '.join(event_data['market_type'])}")
         
         if event_data['quantifiable_changes']:
             description_parts.append(f"\n{',\n'.join(event_data['quantifiable_changes'])}")
@@ -92,8 +81,8 @@ def create_ics_event_multi_day(event_data):
         if event_data['user_action_required']:
             description_parts.append(f"\n{event_data['user_action_required']}")
         
-        if event_data['separate_event_link']:
-            description_parts.append(f"{event_data.get('separate_event_link', '')}")
+        if event_data['event_link']:
+            description_parts.append(f"{event_data.get('event_link', '')}")
 
         # Set the description
         event.description = "\n".join(part for part in description_parts if part)
@@ -106,9 +95,9 @@ def create_ics_event_multi_day(event_data):
 
         return event
 
-    # Parse the start and end datetimes using parser.parse
-    start_datetime = parser.parse(event_data['start_datetime'])
-    end_datetime = parser.parse(event_data['end_datetime'])
+    # Parse the start and end datetimes
+    start_datetime = datetime.strptime(event_data['start_datetime'], "%Y-%m-%d %H:%M:%S")
+    end_datetime = datetime.strptime(event_data['end_datetime'], "%Y-%m-%d %H:%M:%S")
 
     # Create the start event (location: "Period Starts")
     start_event = create_event(
@@ -134,9 +123,8 @@ def create_ics_event_multi_day(event_data):
 
 # Main function to determine whether the event is single-day or multi-day
 def create_ics_event(event_data):
-    # Parse the datetime strings using dateutil.parser
-    start_datetime = parser.parse(event_data['start_datetime'])
-    end_datetime = parser.parse(event_data['end_datetime'])
+    start_datetime = datetime.strptime(event_data['start_datetime'], "%Y-%m-%d %H:%M:%S")
+    end_datetime = datetime.strptime(event_data['end_datetime'], "%Y-%m-%d %H:%M:%S")
     
     # Check if start_datetime and end_datetime fall on the same day
     if start_datetime.date() == end_datetime.date():
@@ -177,10 +165,9 @@ if __name__ == "__main__":
     else:
         calendar = Calendar()
 
-    # Loop through each group of events in the JSON data
+    # Loop through each event in the JSON and create ICS events
     for event_group in json_data:
-        # The 'events' key contains the list of actual events in each group
-        for event_data in event_group.get("events", []):  # Use `.get()` to safely access 'events'
+        for event_data in event_group:
             events = create_ics_event(event_data)  # This returns a list of events
             for ics_event in events:
                 calendar.events.add(ics_event)
@@ -190,3 +177,4 @@ if __name__ == "__main__":
         ics_file.writelines(calendar)
 
     print(f"Events have been saved to '{ics_file_path}'.")
+
