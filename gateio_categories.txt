@@ -3,6 +3,8 @@ https://www.gate.io/announcements/dau	Bi-Weekly Report
 https://www.gate.io/announcements/institutional	Institutional & VIP
 https://www.gate.io/announcements/gate-learn	Gate Learn
 https://www.gate.io/announcements/delisted	Delisting
+https://www.gate.io/announcements/delisted?page=2	Delisting
+https://www.gate.io/announcements/delisted?page=3	Delisting
 https://www.gate.io/announcements/wealth	Gate Wealth
 https://www.gate.io/announcements/newlisted	New Cryptocurrency Listings
 https://www.gate.io/announcements/charity	Gate Charity

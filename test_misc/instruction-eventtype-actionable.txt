@@ -1,4 +1,0 @@
-Extract actionable event types from content and give back in ['event type1', 'event type 2'] format.
-
-content:
-

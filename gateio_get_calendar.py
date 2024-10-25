@@ -157,7 +157,7 @@ def find_latest_json_file(folder_path):
 if __name__ == "__main__":
 
     # Define the source folder where the JSON file is located
-    source_folder = os.path.expanduser('~/parsley/Gateio_JSON_Process')
+    source_folder = os.path.expanduser('~/parsley/Gateio_Files/Gateio_JSON_Process')
 
     # Find the latest JSON file in the source folder
     json_file_name = find_latest_json_file(source_folder)

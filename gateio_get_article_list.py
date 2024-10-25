@@ -24,6 +24,7 @@ def load_gateio_categories(filename='gateio_categories.txt'):
 def clean_title(title):
     title = re.sub(r'[\U0001F600-\U0001F64F\U0001F300-\U0001F5FF\U0001F680-\U0001F6FF\U0001F700-\U0001F77F\u2700-\u27BF\u2600-\u26FF\uFE0F]', '', title)
     title = re.sub(r'\u00A0', ' ', title)
+    title = re.sub(r'[\u25CB-\u25EF\u2B55\u1F9E7\u2B50]', '', title)
 
     title = re.sub(r'：', ': ', title)
     title = re.sub(r'！', '! ', title)

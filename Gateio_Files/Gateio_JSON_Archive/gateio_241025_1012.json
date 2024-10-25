@@ -1,0 +1,123 @@
+[
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Not Supporting NFTX (NFTX) Token Swap and Initiating a Delisting and Buyback Plan",
+                "article_link": "https://www.gate.io/announcements/article/39569",
+                "publish_datetime": "2024-09-27 08:54:11 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-09-27 08:54:11 UTC",
+                "end_datetime": "2024-09-27 08:54:11 UTC",
+                "event_summary": "Gate.io has suspended the deposit service for NFTX (NFTX).",
+                "event_type": [
+                    "Deposit_Closure",
+                    "Delisting"
+                ],
+                "user_action_required": "Users cannot deposit NFTX (NFTX) on Gate.io.",
+                "separate_event_link": "",
+                "tokens": [
+                    "NFTX"
+                ],
+                "trading_pairs": [],
+                "markets": [],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Not Supporting NFTX (NFTX) Token Swap and Initiating a Delisting and Buyback Plan",
+                "article_link": "https://www.gate.io/announcements/article/39569",
+                "publish_datetime": "2024-09-27 08:54:11 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-01 16:00:00 UTC",
+                "end_datetime": "2024-10-24 16:00:00 UTC",
+                "event_summary": "Users holding NFTX (NFTX) on Gate.io after October 1, 2024, can apply for a buyback.",
+                "event_type": [
+                    "Buyback"
+                ],
+                "user_action_required": "Users must fill out the provided form to apply for the buyback between October 1, 2024, 16:00 UTC and October 24, 16:00 UTC.",
+                "separate_event_link": "https://www.gate.io/questionnaire/5204",
+                "tokens": [
+                    "NFTX"
+                ],
+                "trading_pairs": [],
+                "markets": [],
+                "quantifiable_changes": [
+                    "Buyback price of 2.353 USDT with a maximum compensation limit of 100 USDT per user."
+                ]
+            },
+            {
+                "article_title": "Gate.io Not Supporting NFTX (NFTX) Token Swap and Initiating a Delisting and Buyback Plan",
+                "article_link": "https://www.gate.io/announcements/article/39569",
+                "publish_datetime": "2024-09-27 08:54:11 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-04 03:00:00 UTC",
+                "end_datetime": "2024-10-04 03:00:00 UTC",
+                "event_summary": "Gate.io will delist NFTX (NFTX) from the trading market, including NFTX_USDT and NFTX_ETH spot trading pairs, quant grid trading, and liquidity mining.",
+                "event_type": [
+                    "Delisting"
+                ],
+                "user_action_required": "Users should adjust trading strategies and withdraw liquidity before delisting.",
+                "separate_event_link": "",
+                "tokens": [
+                    "NFTX"
+                ],
+                "trading_pairs": [
+                    "NFTX_USDT",
+                    "NFTX_ETH"
+                ],
+                "markets": [
+                    "Spot",
+                    "Grid_Trading",
+                    "Liquidity_Mining"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Not Supporting NFTX (NFTX) Token Swap and Initiating a Delisting and Buyback Plan",
+                "article_link": "https://www.gate.io/announcements/article/39569",
+                "publish_datetime": "2024-09-27 08:54:11 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-04 03:00:00 UTC",
+                "end_datetime": "2024-10-04 03:00:00 UTC",
+                "event_summary": "Users with ongoing quant grid trading of NFTX (NFTX) should adjust trading strategies before October 4, 2024, 03:00 UTC.",
+                "event_type": [
+                    "Switching_to_Reduce_Only_Mode"
+                ],
+                "user_action_required": "Users should adjust their trading strategies to avoid automatic termination.",
+                "separate_event_link": "",
+                "tokens": [
+                    "NFTX"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Grid_Trading"
+                ],
+                "quantifiable_changes": []
+            },
+            {
+                "article_title": "Gate.io Not Supporting NFTX (NFTX) Token Swap and Initiating a Delisting and Buyback Plan",
+                "article_link": "https://www.gate.io/announcements/article/39569",
+                "publish_datetime": "2024-09-27 08:54:11 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-10-04 03:00:00 UTC",
+                "end_datetime": "2024-10-04 03:00:00 UTC",
+                "event_summary": "Users who have provided liquidity for NFTX (NFTX) in the liquidity mining market should withdraw liquidity before October 4, 2024, 03:00 UTC.",
+                "event_type": [
+                    "Withdrawal_Deadline",
+                    "Delisting"
+                ],
+                "user_action_required": "Users should withdraw their liquidity to avoid automatic redemption.",
+                "separate_event_link": "",
+                "tokens": [
+                    "NFTX"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Liquidity_Mining"
+                ],
+                "quantifiable_changes": []
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    }
+]

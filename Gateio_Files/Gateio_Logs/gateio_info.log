@@ -1,0 +1,751 @@
+2024-10-25 05:46:19 - INFO - Input Content:
+exchange_name: Gate.io
+publish_datetime: 2024-10-17 15:38:14 UTC
+article_title: Gate.io Bi-Weekly Report (October 1-15, 2024)
+article_link: https://www.gate.io/announcements/article/39985
+article: The Gate.io bi-weekly report brings you all the updates on the trending events and new developments on Gate.io to help you stay in the loop.
+A quick recap of the most significant events from October 1 to October 15, 2024:
+-Listed some Startup Projects and new tokens;
+-Launched many trading competitions and a few financial products in Hodl and Earn;
+-Launched Many Activities on Gate.io.
+### 1. Successfully Listed Some Startup Projects and New Tokens on Gate.io
+From October 1 to October 15, 2024, Gate.io has launched 30 new projects and 32 Startup projects with a total airdrop value of $860,000.
+Gate.io Startup is a token launch platform for innovative and advanced projects, join now: https://www.gate.io/startup
+Trade at: https://www.gate.io/trade/BTC_USDT
+More Details: https://www.gate.io/articlelist/ann
+### 2.  Launched a Few Financial Products in Hodl and Earn and Trading Competitions on Gate.io
+From October 1 to October 15, 2024, we held 9 trading competitions with the total prize pool of $103,000.
+View More Activities: https://www.gate.io/competition/center/all/1
+Gate.io launched  financial products in Hodl and Earn with an APR of up to 200%. 
+More Details: https://www.gate.io/hodl
+### 3. Launched Many Activities on Gate.io 
+From October 1 to October 15, 2024, Gate.io held many activities including:
+**Web3 Startup**
+Announcement on Gate Web3 Startup Project FUD The Pug(FUD) and Rules of Participation in Win and Share 5,188,200,655 FUD for Free
+Learn more: https://www.gate.io/web3/startup
+**Simple Earn**
+Gate.io Simple Earn Market Supports Subscribing to COS / EIGEN / MOODENG / USTC / HIPPO !
+Learn More: https://www.gate.io/simple-earn
+**Double Earning Monday**
+Gate.io Double Earning Monday: 200% Stable APR and 250% APR for New Users
+Learn more: https://www.gate.io/hodl
+**Gate Learn**
+Gate Learn Must Read ! LUKSO, SUN, aPriori, Long and Short Positions, and Bonding Curves
+Learn more: https://www.gate.io/learn
+**Others**
+「Copiers Exclusive」Add Copying Amount and Enjoy Bonus! Win Up to 800 USDT per Person!
+New Airdrop Project Liquor in Gate Web3 Tasks: Share 50,000,000 $LIQ Tokens, Complete All Tasks to Win a Chance to Receive Rewards!
+Gate Learn Daily Study Challenge: Study, Quiz, and Compete for a $10,000 Prize Pool! 
+Gate.io Answer and Earn: Take the Quiz on Scroll (SCR) to Share $5,000 SCR Prizes
+Gate.io Startup Projects Voting Campaign 11: Cast Your Vote, Share a $5,000 Prize Pool
+Gate.io Crazy Friday#2: Earn 4% High APR on Top Cryptos with 3-Days Lockup Period
+Learn More: https://www.gate.io/articlelist/ann/1
+### 4. Gate.io Academy: Latest Articles and Courses
+Gate Research: Fed Rate Cut Expectations Weaken, BTC Continues to Fluctuate, EigenLayer Users Lose $5. Million in Theft
+Gate Learn New Courses is Live ! L2 Deep Dives: Ethernity Chain (ERN)
+Gate Learn Must Read ! PlatON, Loom Network, Eurite, Grass, and Skillful AI
+Learn More: https://www.gate.io/learn
+### 5. Gate.io Blog
+From October 1 to October 15, 2024, we released a number of blog articles:
+Web3 Research Weekly | The overall market has shown a fluctuating trend this week; Layer3 has expanded to Solana; Payment giant Stripe now supports USDC payments
+TAO Surges, Driving New Narrative in AI Sector
+Daily News | BTC Oscillated and Fell, Market Awaits Tonight's CPI Data
+Gate.io Announces $10 Million Investment in TON Blockchain to Boost Telegram-Based Projects
+Daily News | Focus on Tonight's Employment Report, BTC Narrowly Held at $60,000
+Learn more: https://www.gate.io/blog
+2024-10-25 05:46:26 - INFO - Response 1:
+{
+    "events": [
+        {
+            "article_title": "Gate.io Bi-Weekly Report (October 1-15, 2024)",
+            "article_link": "https://www.gate.io/announcements/article/39985",
+            "publish_datetime": "2024-10-17 15:38:14 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-10-17 15:38:14 UTC",
+            "end_datetime": "2024-10-17 15:38:14 UTC",
+            "event_summary": "From October 1 to October 15, 2024, Gate.io listed 30 new projects, launched 9 trading competitions with a $103,000 prize pool, and introduced financial products with up to 200% APR.",
+            "event_type": [
+                "Report"
+            ],
+            "user_action_required": "",
+            "separate_event_link": "",
+            "tokens": [
+                ""
+            ],
+            "trading_pairs": [
+                ""
+            ],
+            "markets": [
+                ""
+            ],
+            "quantifiable_changes": [
+                "30 new projects listed",
+                "32 Startup projects launched",
+                "$860,000 total airdrop value",
+                "9 trading competitions",
+                "$103,000 total prize pool",
+                "Financial products with up to 200% APR"
+            ]
+        }
+    ],
+    "type": "object",
+    "properties": {}
+}
+2024-10-25 05:46:26 - INFO - Input Content:
+exchange_name: Gate.io
+publish_datetime: 2024-10-24 11:39:52 UTC
+article_title: Gate.io Completes Delisting and Buyback of Salmon (SLM)
+article_link: https://www.gate.io/announcements/article/40148
+article: Gate.io has conducted a thorough reevaluation of Salmon (SLM) and determined that it no longer meet our platform's trading criteria. Consequently, Gate.io has delisted its trading market and initiated a buyback program for Salmon (SLM) holders on our platform. For eligible holders who have submitted the required application form, Gate.io has deposited the corresponding buyback amounts into your Gate.io accounts. Details can be found in your Transaction History. If you have any questions, please submit a ticket or contact our live customer support for assistance. 
+For more information about the buyback process, please refer to:
+Gate.io to Delist Salmonswap(SLM)
+It is important to note that Gate.io no longer supports the deposit and trading services for Salmon (SLM). However, withdrawal services will remain available for one more month. Users who have not yet filled out the form are strongly encouraged to withdraw your tokens to personal wallets as soon as possible.
+Withdraw SLM:  https://www.gate.io/myaccount/withdraw/SLM
+2024-10-25 05:46:35 - INFO - Response 1:
+{
+    "events": [
+        {
+            "article_title": "Gate.io Completes Delisting and Buyback of Salmon (SLM)",
+            "article_link": "https://www.gate.io/announcements/article/40148",
+            "publish_datetime": "2024-10-24 11:39:52 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-10-24 11:39:52 UTC",
+            "end_datetime": "2024-10-24 11:39:52 UTC",
+            "event_summary": "Gate.io has delisted Salmon (SLM) and initiated a buyback program for holders.",
+            "event_type": [
+                "Delisting",
+                "Buyback"
+            ],
+            "user_action_required": "Users should check their accounts for buyback deposits and withdraw remaining SLM tokens to personal wallets.",
+            "separate_event_link": "",
+            "tokens": [
+                "SLM"
+            ],
+            "trading_pairs": [
+                "SLM"
+            ],
+            "markets": [
+                ""
+            ],
+            "quantifiable_changes": [
+                ""
+            ]
+        },
+        {
+            "article_title": "Gate.io Completes Delisting and Buyback of Salmon (SLM)",
+            "article_link": "https://www.gate.io/announcements/article/40148",
+            "publish_datetime": "2024-10-24 11:39:52 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-11-24 11:39:52 UTC",
+            "end_datetime": "2024-11-24 11:39:52 UTC",
+            "event_summary": "Withdrawal services for Salmon (SLM) will no longer be available after this date.",
+            "event_type": [
+                "Withdrawal Deadline"
+            ],
+            "user_action_required": "Users should withdraw their SLM tokens to personal wallets before this date.",
+            "separate_event_link": "",
+            "tokens": [
+                "SLM"
+            ],
+            "trading_pairs": [
+                "SLM"
+            ],
+            "markets": [
+                ""
+            ],
+            "quantifiable_changes": [
+                ""
+            ]
+        }
+    ]
+}
+2024-10-25 05:46:44 - INFO - Response 2:
+{
+    "events": [
+        {
+            "article_title": "Gate.io Completes Delisting and Buyback of Salmon (SLM)",
+            "article_link": "https://www.gate.io/announcements/article/40148",
+            "publish_datetime": "2024-10-24 11:39:52 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-10-24 11:39:52 UTC",
+            "end_datetime": "2024-10-24 11:39:52 UTC",
+            "event_summary": "Gate.io has delisted Salmon (SLM) and initiated a buyback program for holders.",
+            "event_type": [
+                "Delisting",
+                "Buyback"
+            ],
+            "user_action_required": "Users should check their accounts for buyback deposits and withdraw remaining SLM tokens to personal wallets.",
+            "separate_event_link": "https://www.gate.io/myaccount/withdraw/SLM",
+            "tokens": [
+                "SLM"
+            ],
+            "trading_pairs": [
+                "SLM"
+            ],
+            "markets": [
+                "Spot"
+            ],
+            "quantifiable_changes": [
+                ""
+            ]
+        },
+        {
+            "article_title": "Gate.io Completes Delisting and Buyback of Salmon (SLM)",
+            "article_link": "https://www.gate.io/announcements/article/40148",
+            "publish_datetime": "2024-10-24 11:39:52 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-11-24 11:39:52 UTC",
+            "end_datetime": "2024-11-24 11:39:52 UTC",
+            "event_summary": "Withdrawal services for Salmon (SLM) will no longer be available after this date.",
+            "event_type": [
+                "Delisting"
+            ],
+            "user_action_required": "Users should withdraw their SLM tokens to personal wallets before this date.",
+            "separate_event_link": "https://www.gate.io/myaccount/withdraw/SLM",
+            "tokens": [
+                "SLM"
+            ],
+            "trading_pairs": [
+                "SLM"
+            ],
+            "markets": [
+                "Spot"
+            ],
+            "quantifiable_changes": [
+                ""
+            ]
+        }
+    ]
+}
+2024-10-25 06:21:00 - INFO - Input Content:
+exchange_name: Gate.io
+publish_datetime: 2024-09-24 13:36:56 UTC
+article_title: Gate.io to Delist Salmonswap(SLM)
+article_link: https://www.gate.io/announcements/article/39480
+article: Gate.io has conducted a thorough reevaluation of Salmonswap(SLM) and determined that it no longer meets our platform's trading criteria. As a result, Gate.io will delist Salmonswap(SLM) from the trading market, including SLM_USDT spot trading pair and quant grid trading. However, withdrawal services for Salmonswap(SLM) will continue to be provided for one month.
+**Details:**
+1) Gate.io has closed the deposit service for Salmonswap(SLM).
+2) Gate.io will suspend the trading services for Salmonswap(SLM), including SLM_USDT spot trading pair and quant grid trading, starting from October 2, 2024, 03:00 UTC. 
+3) Users with ongoing quant grid trading of Salmonswap(SLM) should adjust your trading strategies beforehand. Otherwise, the trades will be terminated automatically before October 2, 2024, 03:00 UTC.
+4) Users unwilling to participate in the buyback after the delisting are advised to withdraw your Salmonswap(SLM) holdings as soon as possible to avoid potential losses.
+5) Users holding Salmonswap(SLM) on Gate.io after October 15, 2024 can apply for a buyback by filling out a form. Gate.io will buy back Salmonswap(SLM) at a price of 0.26044 USDT, with a maximum compensation limit of 100 USDT per user.
+To apply for the compensation, users must fill out the provided form between October 15, 2024, 16:00 UTC and October 22, 16:00 UTC.
+Form Link: https://www.gate.io/questionnaire/5189
+Withdraw SLM: https://www.gate.io/myaccount/withdraw/SLM
+2024-10-25 06:21:10 - INFO - Response 1:
+{
+    "events": [
+        {
+            "article_title": "Gate.io to Delist Salmonswap(SLM)",
+            "article_link": "https://www.gate.io/announcements/article/39480",
+            "publish_datetime": "2024-09-24 13:36:56 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-09-24 13:36:56 UTC",
+            "end_datetime": "2024-09-24 13:36:56 UTC",
+            "event_summary": "Gate.io has closed the deposit service for Salmonswap(SLM).",
+            "event_type": [
+                "Deposit Closure"
+            ],
+            "user_action_required": "Users cannot deposit Salmonswap(SLM) anymore.",
+            "separate_event_link": "",
+            "tokens": [
+                "SLM"
+            ],
+            "trading_pairs": [
+                "SLM_USDT"
+            ],
+            "markets": [
+                "Spot",
+                "Quant Grid"
+            ],
+            "quantifiable_changes": [
+                ""
+            ]
+        },
+        {
+            "article_title": "Gate.io to Delist Salmonswap(SLM)",
+            "article_link": "https://www.gate.io/announcements/article/39480",
+            "publish_datetime": "2024-09-24 13:36:56 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-10-02 03:00:00 UTC",
+            "end_datetime": "2024-10-02 03:00:00 UTC",
+            "event_summary": "Gate.io will suspend the trading services for Salmonswap(SLM), including SLM_USDT spot trading pair and quant grid trading.",
+            "event_type": [
+                "Trading Suspension"
+            ],
+            "user_action_required": "Users should adjust their trading strategies before the suspension date.",
+            "separate_event_link": "",
+            "tokens": [
+                "SLM"
+            ],
+            "trading_pairs": [
+                "SLM_USDT"
+            ],
+            "markets": [
+                "Spot",
+                "Quant Grid"
+            ],
+            "quantifiable_changes": [
+                ""
+            ]
+        },
+        {
+            "article_title": "Gate.io to Delist Salmonswap(SLM)",
+            "article_link": "https://www.gate.io/announcements/article/39480",
+            "publish_datetime": "2024-09-24 13:36:56 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-10-15 16:00:00 UTC",
+            "end_datetime": "2024-10-22 16:00:00 UTC",
+            "event_summary": "Users holding Salmonswap(SLM) on Gate.io after October 15, 2024 can apply for a buyback.",
+            "event_type": [
+                "Buyback Offer"
+            ],
+            "user_action_required": "Users must fill out the provided form to apply for the buyback between October 15 and October 22, 2024.",
+            "separate_event_link": "https://www.gate.io/questionnaire/5189",
+            "tokens": [
+                "SLM"
+            ],
+            "trading_pairs": [
+                "SLM_USDT"
+            ],
+            "markets": [
+                "Spot"
+            ],
+            "quantifiable_changes": [
+                "Buyback price of 0.26044 USDT with a maximum compensation limit of 100 USDT per user."
+            ]
+        }
+    ]
+}
+2024-10-25 06:21:22 - INFO - Response 2:
+{
+    "events": [
+        {
+            "article_title": "Gate.io to Delist Salmonswap(SLM)",
+            "article_link": "https://www.gate.io/announcements/article/39480",
+            "publish_datetime": "2024-09-24 13:36:56 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-09-24 13:36:56 UTC",
+            "end_datetime": "2024-09-24 13:36:56 UTC",
+            "event_summary": "Gate.io has closed the deposit service for Salmonswap(SLM).",
+            "event_type": [
+                "Deposit Closure",
+                "Delisting"
+            ],
+            "user_action_required": "Users cannot deposit Salmonswap(SLM) anymore.",
+            "separate_event_link": "",
+            "tokens": [
+                "SLM"
+            ],
+            "trading_pairs": [
+                "SLM_USDT"
+            ],
+            "markets": [
+                "Spot"
+            ],
+            "quantifiable_changes": [
+                ""
+            ]
+        },
+        {
+            "article_title": "Gate.io to Delist Salmonswap(SLM)",
+            "article_link": "https://www.gate.io/announcements/article/39480",
+            "publish_datetime": "2024-09-24 13:36:56 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-10-02 03:00:00 UTC",
+            "end_datetime": "2024-10-02 03:00:00 UTC",
+            "event_summary": "Gate.io will suspend the trading services for Salmonswap(SLM), including SLM_USDT spot trading pair and quant grid trading.",
+            "event_type": [
+                "Suspend_Trading",
+                "Delisting"
+            ],
+            "user_action_required": "Users should adjust their trading strategies before the suspension date.",
+            "separate_event_link": "",
+            "tokens": [
+                "SLM"
+            ],
+            "trading_pairs": [
+                "SLM_USDT"
+            ],
+            "markets": [
+                "Spot"
+            ],
+            "quantifiable_changes": [
+                ""
+            ]
+        },
+        {
+            "article_title": "Gate.io to Delist Salmonswap(SLM)",
+            "article_link": "https://www.gate.io/announcements/article/39480",
+            "publish_datetime": "2024-09-24 13:36:56 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-10-15 16:00:00 UTC",
+            "end_datetime": "2024-10-22 16:00:00 UTC",
+            "event_summary": "Users holding Salmonswap(SLM) on Gate.io after October 15, 2024 can apply for a buyback.",
+            "event_type": [
+                "Buyback",
+                "Delisting"
+            ],
+            "user_action_required": "Users must fill out the provided form to apply for the buyback between October 15 and October 22, 2024.",
+            "separate_event_link": "https://www.gate.io/questionnaire/5189",
+            "tokens": [
+                "SLM"
+            ],
+            "trading_pairs": [
+                "SLM_USDT"
+            ],
+            "markets": [
+                "Spot"
+            ],
+            "quantifiable_changes": [
+                "Buyback price of 0.26044 USDT with a maximum compensation limit of 100 USDT per user."
+            ]
+        }
+    ]
+}
+2024-10-25 06:30:07 - INFO - Input Content:
+exchange_name: Gate.io
+publish_datetime: 2024-10-24 11:39:52 UTC
+article_title: Gate.io Completes Delisting and Buyback of Salmon (SLM)
+article_link: https://www.gate.io/announcements/article/40148
+article: Gate.io has conducted a thorough reevaluation of Salmon (SLM) and determined that it no longer meet our platform's trading criteria. Consequently, Gate.io has delisted its trading market and initiated a buyback program for Salmon (SLM) holders on our platform. For eligible holders who have submitted the required application form, Gate.io has deposited the corresponding buyback amounts into your Gate.io accounts. Details can be found in your Transaction History. If you have any questions, please submit a ticket or contact our live customer support for assistance. 
+For more information about the buyback process, please refer to:
+Gate.io to Delist Salmonswap(SLM)
+It is important to note that Gate.io no longer supports the deposit and trading services for Salmon (SLM). However, withdrawal services will remain available for one more month. Users who have not yet filled out the form are strongly encouraged to withdraw your tokens to personal wallets as soon as possible.
+Withdraw SLM:  https://www.gate.io/myaccount/withdraw/SLM
+2024-10-25 06:30:28 - INFO - Response 1:
+{
+    "events": [
+        {
+            "article_title": "Gate.io Completes Delisting and Buyback of Salmon (SLM)",
+            "article_link": "https://www.gate.io/announcements/article/40148",
+            "publish_datetime": "2024-10-24 11:39:52 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-10-24 11:39:52 UTC",
+            "end_datetime": "2024-10-24 11:39:52 UTC",
+            "event_summary": "Gate.io has delisted Salmon (SLM) and initiated a buyback program for holders.",
+            "event_type": [
+                "Delisting",
+                "Buyback"
+            ],
+            "user_action_required": "Users should check their Transaction History for buyback deposits and withdraw remaining SLM tokens to personal wallets.",
+            "separate_event_link": "",
+            "tokens": [
+                "SLM"
+            ],
+            "trading_pairs": [
+                ""
+            ],
+            "markets": [
+                ""
+            ],
+            "quantifiable_changes": [
+                ""
+            ]
+        },
+        {
+            "article_title": "Gate.io Completes Delisting and Buyback of Salmon (SLM)",
+            "article_link": "https://www.gate.io/announcements/article/40148",
+            "publish_datetime": "2024-10-24 11:39:52 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-11-24 11:39:52 UTC",
+            "end_datetime": "2024-11-24 11:39:52 UTC",
+            "event_summary": "Withdrawal services for Salmon (SLM) will remain available for one more month after delisting.",
+            "event_type": [
+                "Withdrawal Deadline"
+            ],
+            "user_action_required": "Users should withdraw their SLM tokens to personal wallets before the deadline.",
+            "separate_event_link": "https://www.gate.io/myaccount/withdraw/SLM",
+            "tokens": [
+                "SLM"
+            ],
+            "trading_pairs": [
+                ""
+            ],
+            "markets": [
+                ""
+            ],
+            "quantifiable_changes": [
+                ""
+            ]
+        }
+    ]
+}
+2024-10-25 06:30:40 - INFO - Response 2:
+{
+    "events": [
+        {
+            "article_title": "Gate.io Completes Delisting and Buyback of Salmon (SLM)",
+            "article_link": "https://www.gate.io/announcements/article/40148",
+            "publish_datetime": "2024-10-24 11:39:52 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-10-24 11:39:52 UTC",
+            "end_datetime": "2024-10-24 11:39:52 UTC",
+            "event_summary": "Gate.io has delisted Salmon (SLM) and initiated a buyback program for holders.",
+            "event_type": [
+                "Delisting_Completed",
+                "Buyback"
+            ],
+            "user_action_required": "Users should check their Transaction History for buyback deposits and withdraw remaining SLM tokens to personal wallets.",
+            "separate_event_link": "https://www.gate.io/myaccount/withdraw/SLM",
+            "tokens": [
+                "SLM"
+            ],
+            "trading_pairs": [
+                ""
+            ],
+            "markets": [
+                "Spot"
+            ],
+            "quantifiable_changes": [
+                ""
+            ]
+        },
+        {
+            "article_title": "Gate.io Completes Delisting and Buyback of Salmon (SLM)",
+            "article_link": "https://www.gate.io/announcements/article/40148",
+            "publish_datetime": "2024-10-24 11:39:52 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-11-24 11:39:52 UTC",
+            "end_datetime": "2024-11-24 11:39:52 UTC",
+            "event_summary": "Withdrawal services for Salmon (SLM) will remain available for one more month after delisting.",
+            "event_type": [
+                "Withdrawal Deadline",
+                "Delisting"
+            ],
+            "user_action_required": "Users should withdraw their SLM tokens to personal wallets before the deadline.",
+            "separate_event_link": "https://www.gate.io/myaccount/withdraw/SLM",
+            "tokens": [
+                "SLM"
+            ],
+            "trading_pairs": [
+                ""
+            ],
+            "markets": [
+                "Spot"
+            ],
+            "quantifiable_changes": [
+                ""
+            ]
+        }
+    ]
+}
+2024-10-25 06:35:51 - INFO - Input Content:
+exchange_name: Gate.io
+publish_datetime: 2024-10-24 11:39:52 UTC
+article_title: Gate.io Completes Delisting and Buyback of Salmon (SLM)
+article_link: https://www.gate.io/announcements/article/40148
+article: Gate.io has conducted a thorough reevaluation of Salmon (SLM) and determined that it no longer meet our platform's trading criteria. Consequently, Gate.io has delisted its trading market and initiated a buyback program for Salmon (SLM) holders on our platform. For eligible holders who have submitted the required application form, Gate.io has deposited the corresponding buyback amounts into your Gate.io accounts. Details can be found in your Transaction History. If you have any questions, please submit a ticket or contact our live customer support for assistance. 
+For more information about the buyback process, please refer to:
+Gate.io to Delist Salmonswap(SLM)
+It is important to note that Gate.io no longer supports the deposit and trading services for Salmon (SLM). However, withdrawal services will remain available for one more month. Users who have not yet filled out the form are strongly encouraged to withdraw your tokens to personal wallets as soon as possible.
+Withdraw SLM:  https://www.gate.io/myaccount/withdraw/SLM
+2024-10-25 06:35:58 - INFO - Response 1:
+{
+    "events": [
+        {
+            "article_title": "Gate.io Completes Delisting and Buyback of Salmon (SLM)",
+            "article_link": "https://www.gate.io/announcements/article/40148",
+            "publish_datetime": "2024-10-24 11:39:52 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-10-24 11:39:52 UTC",
+            "end_datetime": "2024-10-24 11:39:52 UTC",
+            "event_summary": "Gate.io has delisted Salmon (SLM) and initiated a buyback program for holders.",
+            "event_type": [
+                "Delisting",
+                "Buyback"
+            ],
+            "user_action_required": "Users should check their Transaction History for buyback deposits and withdraw remaining SLM tokens to personal wallets.",
+            "separate_event_link": "",
+            "tokens": [
+                "SLM"
+            ],
+            "trading_pairs": [
+                ""
+            ],
+            "markets": [
+                ""
+            ],
+            "quantifiable_changes": [
+                ""
+            ]
+        },
+        {
+            "article_title": "Gate.io Completes Delisting and Buyback of Salmon (SLM)",
+            "article_link": "https://www.gate.io/announcements/article/40148",
+            "publish_datetime": "2024-10-24 11:39:52 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-11-24 11:39:52 UTC",
+            "end_datetime": "2024-11-24 11:39:52 UTC",
+            "event_summary": "Withdrawal services for Salmon (SLM) will no longer be available after this date.",
+            "event_type": [
+                "Withdrawal Deadline"
+            ],
+            "user_action_required": "Users should withdraw their SLM tokens to personal wallets before this date.",
+            "separate_event_link": "",
+            "tokens": [
+                "SLM"
+            ],
+            "trading_pairs": [
+                ""
+            ],
+            "markets": [
+                ""
+            ],
+            "quantifiable_changes": [
+                ""
+            ]
+        }
+    ],
+    "type": "object",
+    "properties": {}
+}
+2024-10-25 06:36:25 - INFO - Response 2:
+{
+    "events": [
+        {
+            "article_title": "Gate.io Completes Delisting and Buyback of Salmon (SLM)",
+            "article_link": "https://www.gate.io/announcements/article/40148",
+            "publish_datetime": "2024-10-24 11:39:52 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-10-24 11:39:52 UTC",
+            "end_datetime": "2024-10-24 11:39:52 UTC",
+            "event_summary": "Gate.io has delisted Salmon (SLM) and initiated a buyback program for holders.",
+            "event_type": [
+                "Delisting_Completed",
+                "Buyback"
+            ],
+            "user_action_required": "Users should check their Transaction History for buyback deposits and withdraw remaining SLM tokens to personal wallets.",
+            "separate_event_link": "https://www.gate.io/myaccount/withdraw/SLM",
+            "tokens": [
+                "SLM"
+            ],
+            "trading_pairs": [
+                ""
+            ],
+            "markets": [
+                "Spot"
+            ],
+            "quantifiable_changes": [
+                ""
+            ]
+        },
+        {
+            "article_title": "Gate.io Completes Delisting and Buyback of Salmon (SLM)",
+            "article_link": "https://www.gate.io/announcements/article/40148",
+            "publish_datetime": "2024-10-24 11:39:52 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-11-24 11:39:52 UTC",
+            "end_datetime": "2024-11-24 11:39:52 UTC",
+            "event_summary": "Withdrawal services for Salmon (SLM) will no longer be available after this date.",
+            "event_type": [
+                "Withdrawal_Deadline",
+                "Delisting"
+            ],
+            "user_action_required": "Users should withdraw their SLM tokens to personal wallets before this date.",
+            "separate_event_link": "https://www.gate.io/myaccount/withdraw/SLM",
+            "tokens": [
+                "SLM"
+            ],
+            "trading_pairs": [
+                ""
+            ],
+            "markets": [
+                "Spot"
+            ],
+            "quantifiable_changes": [
+                ""
+            ]
+        }
+    ],
+    "type": "object",
+    "properties": {}
+}
+2024-10-25 10:49:59 - INFO - All files moved from 'Process' to 'Archived'.
+2024-10-25 10:50:16 - INFO - The JSON file has been saved as '/Users/krisztianimre/parsley/Gateio_Files/Gateio_JSON_Process/gateio_241025_1050.json'.
+2024-10-25 11:04:24 - INFO - All files moved from 'Process' to 'Archived'.
+2024-10-25 11:04:24 - INFO - Content for LLM:
+exchange_name: Gate.io
+publish_datetime: 2024-10-25 02:03:23 UTC
+article_title: Gate.io Completes XDEFI Wallet (XDEFI) to Ctrl Wallet (CTRL) Token Migration
+article_link: https://www.gate.io/announcements/article/40153
+article: According to the XDEFI Wallet (XDEFI) project team, XDEFI Wallet (XDEFI) tokens have been swapped for Ctrl Wallet (CTRL) at a ratio of 1:1. Gate.io has successfully completed the swap, and users can now view the details in your Transaction History.
+Swap Ratio: 1:1
+New CTRL Token ID: 0xe50E009Ddb1A4d8Ec668EAc9D8b2dF1F963480 (ERC-20)
+**For more information, please refer to:**
+Gate.io Supports XDEFI Wallet (XDEFI) to Ctrl Wallet (CTRL) Token Migration
+Please note that after this migration, Gate.io no longer supports XDEFI Wallet (XDEFI). The listing time for Ctrl Wallet (CTRL) will be announced separately after Gate.io completes the listing review.
+Deposit CTRL: https://www.gate.io/myaccount/deposit/CTRL
+Trade CTRL: https://www.gate.io/trade/CTRL_USDT
+2024-10-25 11:04:34 - INFO - Response 1:
+{
+    "events": [
+        {
+            "article_title": "Gate.io Completes XDEFI Wallet (XDEFI) to Ctrl Wallet (CTRL) Token Migration",
+            "article_link": "https://www.gate.io/announcements/article/40153",
+            "publish_datetime": "2024-10-25 02:03:23 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-10-25 02:03:23 UTC",
+            "end_datetime": "2024-10-25 02:03:23 UTC",
+            "event_summary": "Gate.io has completed the token migration from XDEFI Wallet (XDEFI) to Ctrl Wallet (CTRL) at a 1:1 ratio.",
+            "event_type": [
+                "Token Migration"
+            ],
+            "user_action_required": "Users should check their Transaction History to confirm the swap and note that XDEFI is no longer supported.",
+            "separate_event_link": "",
+            "tokens": [
+                "XDEFI",
+                "CTRL"
+            ],
+            "trading_pairs": [
+                "CTRL_USDT"
+            ],
+            "markets": [
+                ""
+            ],
+            "quantifiable_changes": [
+                "Swap Ratio: 1:1"
+            ]
+        }
+    ]
+}
+2024-10-25 11:04:41 - INFO - Response 2:
+{
+    "events": [
+        {
+            "article_title": "Gate.io Completes XDEFI Wallet (XDEFI) to Ctrl Wallet (CTRL) Token Migration",
+            "article_link": "https://www.gate.io/announcements/article/40153",
+            "publish_datetime": "2024-10-25 02:03:23 UTC",
+            "exchange_name": "Gate.io",
+            "start_datetime": "2024-10-25 02:03:23 UTC",
+            "end_datetime": "2024-10-25 02:03:23 UTC",
+            "event_summary": "Gate.io has completed the token migration from XDEFI Wallet (XDEFI) to Ctrl Wallet (CTRL) at a 1:1 ratio.",
+            "event_type": [
+                "Token Migration",
+                "Delisting_Completed"
+            ],
+            "user_action_required": "Users should check their Transaction History to confirm the swap and note that XDEFI is no longer supported.",
+            "separate_event_link": "https://www.gate.io/myaccount/deposit/CTRL",
+            "tokens": [
+                "XDEFI",
+                "CTRL"
+            ],
+            "trading_pairs": [
+                "CTRL_USDT"
+            ],
+            "markets": [
+                "Spot"
+            ],
+            "quantifiable_changes": [
+                "Swap Ratio: 1:1"
+            ]
+        }
+    ]
+}
+2024-10-25 11:04:41 - INFO - The JSON file has been saved as '/Users/krisztianimre/parsley/Gateio_Files/Gateio_JSON_Process/gateio_241025_1104.json'.
+2024-10-25 11:57:02 - INFO - All files moved from 'Process' to 'Archived'.
+2024-10-25 11:57:02 - INFO - The JSON file has been saved as '/Users/krisztianimre/parsley/Gateio_Files/Gateio_JSON_Process/gateio_241025_1157.json'.
+2024-10-25 12:32:14 - INFO - All files moved from 'Process' to 'Archived'.
+2024-10-25 12:32:14 - INFO - The JSON file has been saved as '/Users/krisztianimre/parsley/Gateio_Files/Gateio_JSON_Process/gateio_241025_1232.json'.
+2024-10-25 14:15:41 - INFO - All files moved from 'Process' to 'Archived'.
+2024-10-25 14:15:41 - INFO - The JSON file has been saved as '/Users/krisztianimre/parsley/Gateio_Files/Gateio_JSON_Process/gateio_241025_1415.json'.
