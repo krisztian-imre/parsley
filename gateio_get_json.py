@@ -1,9 +1,10 @@
-#File: gateio_get_json_refactored.py
+#File: gateio_get_json_new.py
 
 import os
-import shutil
 import datetime
 import json
+import hashlib
+from collections import defaultdict
 import time
 import signal
 import re
@@ -12,6 +13,8 @@ import pandas as pd
 import openai
 from openai._exceptions import RateLimitError, APIConnectionError, OpenAIError
 import logger_setup
+
+ARTICLE_COLLECTION_FILE='Gateio_Files/Gateio_Article_Process/gateio_article_collection.tsv'
 
 # Timeout handler to catch unresponsive scripts
 class TimeoutException(Exception):
@@ -79,7 +82,7 @@ def check_for_nested_events(parsed_response):
 
 # Main function to process articles and save JSON
 def get_json():
-    df = pd.read_csv('gateio_article_collection.tsv', sep='\t')
+    df = pd.read_csv(ARTICLE_COLLECTION_FILE, sep='\t')
     unprocessed_records = df[df['llm_processed'] == 'No'].dropna(subset=['body', 'publish_datetime', 'title', 'link'])
     parsed_responses = []
 
@@ -94,7 +97,8 @@ def get_json():
         if " ERROR" not in response:
             if "Bi-Weekly Report" not in row['title']:
                 assistant_id = 'asst_CfFXkDtL6wiBKpPpIREesccm'
-                response = get_llm_response(f"JSON:\n{json.dumps(response, indent=4)}\nAdditional data:\n{row['body']}", assistant_id)
+                # response = get_llm_response(f"JSON:\n{json.dumps(response, indent=4)}\n**Additional data:**\n{row['body']}", assistant_id)
+                response = get_llm_response(f"JSON:\n{json.dumps(response, indent=4)}\n**Additional data:**\n{content}", assistant_id)
                 logging.info(f"Response 2:\n{json.dumps(response, indent=4)}")
 
                 if " ERROR" in response:
@@ -106,8 +110,38 @@ def get_json():
         else:
             logging.error(f"Error in LLM response: {response}")
 
-    df.to_csv('gateio_article_collection.tsv', sep='\t', index=False)
-    save_json(parsed_responses, source_folder)
+    parsed_responses_uid = assign_uids(parsed_responses)
+
+    df.to_csv(ARTICLE_COLLECTION_FILE, sep='\t', index=False)
+    save_json(parsed_responses_uid)
+
+# Function to create a hexadecimal UID based on the article_link
+def create_hex_uid(link):
+    return hashlib.sha256(link.encode()).hexdigest()[:32]  # Shorten to 16 characters for brevity
+
+def assign_uids(parsed_responses):
+    
+    data = parsed_responses
+
+    # Dictionary to track occurrences of each article_link for uniqueness
+    link_counter = defaultdict(int)
+
+    # Iterate through the data to assign UIDs
+    for item in data:
+        for event in item.get("events", []):
+            article_link = event.get("article_link", "")
+            if article_link:
+                # Generate the base UID
+                base_uid = create_hex_uid(article_link)
+                
+                # Always append '@' and a counter starting from 1
+                link_counter[article_link] += 1
+                unique_uid = f"{base_uid}@{link_counter[article_link]}"
+                
+                # Assign the generated UID to the event
+                event["UID"] = unique_uid
+
+    return data
 
 # Helper function to prepare content for LLM input
 def prepare_content(row):
@@ -124,29 +158,14 @@ def determine_assistant(title):
             else 'asst_33sFfSIFStFOd5TPJvOKfy2h')
 
 # Helper function to save JSON objects
-def save_json(parsed_responses, source_folder):
+def save_json(parsed_responses):
     current_datetime = datetime.datetime.now().strftime("%y%m%d_%H%M")
-    os.makedirs(destination_folder, exist_ok=True)
-    file_path = os.path.join(source_folder, f'gateio_{current_datetime}.json')
+    file_path = os.path.join('Gateio_Files', 'Gateio_JSON_Process', f'gateio_{current_datetime}.json')
 
     with open(file_path, 'w') as f:
         json.dump(parsed_responses, f, indent=4)
 
     logging.info(f"The JSON file has been saved as '{file_path}'.")
-
-# Function to move files between directories
-def move_files(source_folder, destination_folder):
-    if not os.path.exists(source_folder):
-        os.makedirs(source_folder)
-    if not os.path.exists(destination_folder):
-        os.makedirs(destination_folder)
-
-    for filename in os.listdir(source_folder):
-        source_path = os.path.join(source_folder, filename)
-        destination_path = os.path.join(destination_folder, filename)
-        if os.path.isfile(source_path):
-            shutil.move(source_path, destination_path)
-    logging.info("All files moved from 'Process' to 'Archived'.")
 
 # Run the main function only when the script is executed directly
 if __name__ == "__main__":
@@ -160,9 +179,5 @@ if __name__ == "__main__":
         raise EnvironmentError("OPENAI_API_KEY environment variable is not set. Please configure it before running the script.")
 
     client = openai
-
-    source_folder = os.path.expanduser('~/parsley/Gateio_Files/Gateio_JSON_Process')
-    destination_folder = os.path.expanduser('~/parsley/Gateio_Files/Gateio_JSON_Archive')
-    move_files(source_folder, destination_folder)
 
     get_json()

@@ -1,3 +1,5 @@
+#File: gateio_get_calendar2.py
+
 import json
 import os
 from ics import Calendar, Event
@@ -42,7 +44,7 @@ def create_ics_event_single_day(event_data):
 
     event.description = "\n".join(part for part in description_parts if part)
 
-    event.location = "Deadline"
+    event.location = ""
     event.url = event_data['article_link']
 
     # Use parser.parse for datetime parsing
@@ -55,6 +57,9 @@ def create_ics_event_single_day(event_data):
     # Round up 'event.end' to HH:30:00
     event.end = end_datetime.replace(minute=30, second=0, microsecond=0)
 
+    # Set UID using existing UID from JSON
+    event.uid = event_data['UID']
+
     return event
 
 # Function for multi-day events
@@ -65,7 +70,7 @@ def create_ics_event_multi_day(event_data):
     assets = event_data.get('tokens', []) + event_data.get('trading_pairs', [])
 
     # Function to generate an event
-    def create_event(event_data, location, begin_time, end_time):
+    def create_event(event_data, location, begin_time, end_time, uid_suffix):
         event = Event()
 
         # Conditional logic for event.name with large token handling
@@ -104,6 +109,9 @@ def create_ics_event_multi_day(event_data):
         event.begin = begin_time
         event.end = end_time
 
+        # Set UID with suffix to differentiate start and end events
+        event.uid = f"{event_data['UID']}_{uid_suffix}"
+
         return event
 
     # Parse the start and end datetimes using parser.parse
@@ -115,7 +123,8 @@ def create_ics_event_multi_day(event_data):
         event_data=event_data,
         location="Period Starts",
         begin_time=start_datetime,
-        end_time=start_datetime + timedelta(minutes=30)
+        end_time=start_datetime + timedelta(minutes=30),
+        uid_suffix="start"
     )
 
     # Create the end event (location: "Period Ends")
@@ -123,7 +132,8 @@ def create_ics_event_multi_day(event_data):
         event_data=event_data,
         location="Period Ends",
         begin_time=end_datetime - timedelta(minutes=30),
-        end_time=end_datetime
+        end_time=end_datetime,
+        uid_suffix="end"
     )
 
     # Append both events to the list

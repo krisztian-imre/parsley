@@ -6,4 +6,4 @@ __pycache__/
 .DS_Store
 
 # Ignore the entire Data Folder  files
-Gateio_Files/
+#Gateio_Files/

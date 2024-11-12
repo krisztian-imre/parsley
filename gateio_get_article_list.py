@@ -1,8 +1,7 @@
-#File: gateio_get_article_list.py
+#File: gateio_get_article_list_new.py
 
 import os
 import pandas as pd
-from tqdm import tqdm
 import time
 import random
 import requests
@@ -10,9 +9,14 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from datetime import datetime, timezone
 import re
+import logging
+import logger_setup
+
+ARTICLE_COLLECTION_FILE = os.path.expanduser('~/parsley/Gateio_Files/Gateio_Article_Process/gateio_article_collection.tsv')
+ARTICLE_CATEGORIES_FILE = os.path.expanduser('~/parsley/gateio_categories.txt')
 
 # Function to load URLs and categories from the txt file
-def load_gateio_categories(filename='gateio_categories.txt'):
+def load_gateio_categories(filename = ARTICLE_CATEGORIES_FILE):
     gateio_categories = {}
     with open(filename, 'r') as file:
         for line in file:
@@ -26,22 +30,22 @@ def clean_title(title):
     title = re.sub(r'\u00A0', ' ', title)
     title = re.sub(r'[\u25CB-\u25EF\u2B55\u1F9E7\u2B50]', '', title)
 
-    title = re.sub(r'：', ': ', title)
-    title = re.sub(r'！', '! ', title)
+    title = re.sub(r'\uff1a', ': ', title)
+    title = re.sub(r'\uff01', '! ', title)
     title = re.sub(r'\.\.', '.', title)
     title = re.sub(r' ,', ',', title)
     title = re.sub(r' :', ':', title)
 
     title = re.sub(r'\u2013', '-', title)  # Replaces en dash with a hyphen
-    title = re.sub(r'["“”‘’]', '', title)
+    title = re.sub(r'["\u201c\u201d\u2018\u2019]', '', title)
     title = re.sub(r'\t+', ' ', title)
     title = re.sub(r'&', 'and', title)
 
-    title = re.sub(r'【.*?】', '', title)  # Remove text within 【 and 】
-    title = re.sub(r'＆', 'and', title)
-    title = re.sub(r'（', '(', title)
-    title = re.sub(r'）', ')', title)
-    title = re.sub(r'●', '•', title)
+    title = re.sub(r'\u3010.*?\u3011', '', title)  # Remove text within ［ and ］
+    title = re.sub(r'\uff06', 'and', title)
+    title = re.sub(r'\uff08', '(', title)
+    title = re.sub(r'\uff09', ')', title)
+    title = re.sub(r'\u25cf', '\u2022', title)
 
     return title.strip()
 
@@ -58,6 +62,7 @@ def get_html(url, max_retries=3, backoff_factor=2):
             wait_time = backoff_factor ** retries  # Exponential backoff
             print(f"Error fetching {url} (retries {retries}/{max_retries}): {e}. Retrying in {wait_time:.2f} seconds.")
             time.sleep(wait_time)
+    return None
 
 # Function to parse HTML content and return articles with full URLs
 def parse_html(html, category):
@@ -76,7 +81,7 @@ def parse_html(html, category):
         title_tag = article.find('a', class_='article-list-item-title')
         if title_tag:
             title = title_tag.find('h3').get_text(strip=True)
-            title = clean_title(title)  # Assuming you have a clean_title() function for processing titles
+            title = clean_title(title)
 
             # Construct the full link for the article
             partial_link = title_tag['href']
@@ -103,49 +108,58 @@ def append_new_articles(existing_data, new_data):
     return new_articles
 
 # Function to save data to TSV
-def save_data(data, filename='gateio_article_collection.tsv'):
+def save_data(data, filename = ARTICLE_COLLECTION_FILE):
     df = pd.DataFrame(data)
     df.to_csv(filename, sep='\t', index=False)
     print(f"Data saved to {filename}")
 
 # Main function to scrape multiple URLs
-def scrape_website(urls_dict, filename='gateio_article_collection.tsv'):
+def scrape_website(urls_dict, filename = ARTICLE_COLLECTION_FILE):
+    # Ensure the folder structure exists
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    
     all_articles = []
-    with tqdm(urls_dict.items(), desc="Scraping categories", ncols=100, leave=False) as progress_bar:
-        for url, category in progress_bar:
-            progress_bar.set_postfix_str(f"Scraping {category}")
-            html = get_html(url)
-            if html:
-                data = parse_html(html, category=category)
-                if data:
-                    all_articles.extend(data)
-
-                    # Save after finishing with each category
-                    if os.path.exists(filename):
-                        # Load the existing data
-                        existing_data = pd.read_csv(filename, sep='\t')
-                        # Append only new articles
-                        new_articles = append_new_articles(existing_data, data)
-                        if new_articles:
-                            # Convert to DataFrame and append new articles
-                            new_df = pd.DataFrame(new_articles)
-                            updated_data = pd.concat([existing_data, new_df], ignore_index=True)
-                            save_data(updated_data, filename=filename)
-                        else:
-                            print(f"No new articles found for {category}.")
-                    else:
-                        # No file exists, create a new file with scraped data
-                        save_data(data, filename=filename)
-
+    
+    # Load existing links into memory if file exists
+    existing_links = set()
+    if os.path.exists(filename):
+        existing_data = pd.read_csv(filename, sep='\t')
+        existing_links = set(existing_data['link'])
+    
+    for url, category in urls_dict.items():
+        print(f"Scraping category: {category}")
+        html = get_html(url)
+        if html:
+            data = parse_html(html, category=category)
+            if data:
+                # Append only new articles based on links
+                new_articles = [article for article in data if article['link'] not in existing_links]
+                
+                if new_articles:
+                    # Update the existing links set with new articles
+                    existing_links.update(article['link'] for article in new_articles)
+                    all_articles.extend(new_articles)
                 else:
-                    print(f"No articles found for {category}")
+                    print(f"No new articles found for {category}.")
             else:
-                print(f"Failed to fetch {category}: {url}")
-            time.sleep(random.uniform(1, 1.75))  # Delay to avoid overwhelming the server
+                print(f"No articles found for {category}")
+        else:
+            print(f"Failed to fetch {category}: {url}")
+        time.sleep(random.uniform(1, 1.75))  # Delay to avoid overwhelming the server
+
+    # Save all new articles once at the end
+    if all_articles:
+        if os.path.exists(filename):
+            existing_data = pd.read_csv(filename, sep='\t')
+            updated_data = pd.concat([existing_data, pd.DataFrame(all_articles)], ignore_index=True)
+            save_data(updated_data, filename=filename)
+        else:
+            save_data(all_articles, filename=filename)
 
     return all_articles
 
-def get_article_list(filename='gateio_article_collection.tsv'):
+# Function to get the article list
+def get_article_list(filename):
     # Load the URLs from the file
     gateio_categories = load_gateio_categories()
 
@@ -154,13 +168,17 @@ def get_article_list(filename='gateio_article_collection.tsv'):
     for url, category in gateio_categories.items():
         print(f"{url}: {category}")
 
-    scrape_website(gateio_categories, filename=filename)
+    scrape_website(gateio_categories, filename)
 
 if __name__ == '__main__':
+
+    # Set up logging
+    logger_setup.setup_logging()
+    logger = logging.getLogger()
 
     # Set headers to mimic a browser
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
     
-    get_article_list()
+    get_article_list(ARTICLE_COLLECTION_FILE)
