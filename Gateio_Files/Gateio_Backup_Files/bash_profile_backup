@@ -16,4 +16,5 @@ unset __conda_setup
 
 export OPENAI_API_KEY="sk-proj-vCcWskCtsmbnloDfRC6XT3BlbkFJURTh97LuwNhvGOMqgWgh"
 
-# nano ~/.bashrc source ~/.bashrc
+# nano ~/.bashrc
+# source ~/.bashrc
