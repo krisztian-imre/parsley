@@ -13,8 +13,7 @@ def create_directory_structure(base_path):
         "Gateio_Files/Gateio_JSON_Archive",
         "Gateio_Files/Gateio_JSON_Process",
         "Gateio_Files/Gateio_Logs",
-        "Gateio_Files/Gateio_Subscribe",
-        "Gateio_Files/Gateio_Subscribe_Archive"
+        "Gateio_Files/Gateio_Subscribe"
     ]
     
     # Loop through each directory and create it if it doesn't exist

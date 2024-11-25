@@ -1,0 +1,1493 @@
+[
+    {
+        "events": [
+            {
+                "article_title": "GT Holder-Exclusive Airdrop: Gate.io Startup Initial Free Offering: Moongate(MGT) and Announcement of Free Distribution Rules( 2,000,000 MGT free of charge)",
+                "article_link": "https://www.gate.io/announcements/article/41015",
+                "UID": "3c4f9d45fc8a1abe252b9509f9121ae0@1",
+                "publish_datetime": "2024-11-25 15:01:18 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-26 08:00:00 UTC",
+                "end_datetime": "2024-11-28 08:00:00 UTC",
+                "event_summary": "Gate.io launches Moongate (MGT) Startup Subscription for GT holders.",
+                "event_type": [
+                    "Airdrop",
+                    "Token Offering"
+                ],
+                "user_action_required": "Users should ensure they hold at least 10 GT to participate in the subscription.",
+                "separate_event_link": "https://www.gate.io/startup",
+                "tokens": [
+                    "MGT"
+                ],
+                "trading_pairs": [
+                    "MGT/USDT"
+                ],
+                "markets": [
+                    "Launchpad/IEO"
+                ],
+                "numerical_data": [
+                    "Subscription Price: $0 GT",
+                    "Subscription Total: 6364 GT",
+                    "Startup Total Supply: 2,000,000 MGT"
+                ]
+            },
+            {
+                "article_title": "GT Holder-Exclusive Airdrop: Gate.io Startup Initial Free Offering: Moongate(MGT) and Announcement of Free Distribution Rules( 2,000,000 MGT free of charge)",
+                "article_link": "https://www.gate.io/announcements/article/41015",
+                "UID": "3c4f9d45fc8a1abe252b9509f9121ae0@2",
+                "publish_datetime": "2024-11-25 15:01:18 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-28 12:00:00 UTC",
+                "end_datetime": "2024-11-28 12:00:00 UTC",
+                "event_summary": "Trading for Moongate (MGT) starts on Gate.io.",
+                "event_type": [
+                    "Listing"
+                ],
+                "user_action_required": "Users can start trading MGT/USDT from this time.",
+                "separate_event_link": "https://www.gate.io/startup",
+                "tokens": [
+                    "MGT"
+                ],
+                "trading_pairs": [
+                    "MGT/USDT"
+                ],
+                "markets": [
+                    "Spot"
+                ],
+                "numerical_data": [
+                    ""
+                ]
+            }
+        ]
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Has Added  RWA Perpetual Contract",
+                "article_link": "https://www.gate.io/announcements/article/41014",
+                "UID": "22ec83f8a276ae50a4362a1c80c73c5f@1",
+                "publish_datetime": "2024-11-25 14:54:48 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 14:54:48 UTC",
+                "end_datetime": "2024-11-25 14:54:48 UTC",
+                "event_summary": "Gate.io has added RWA/USDT perpetual contract trading with up to 50X leverage and a funding interval of every 4 hours.",
+                "event_type": [
+                    "Perpetual Contract Addition"
+                ],
+                "user_action_required": "Users can start trading the RWA/USDT perpetual contract with up to 50X leverage.",
+                "separate_event_link": "https://www.gate.io/futures_info_new/futures/usdt/RWA_USDT#baseinfo",
+                "tokens": [
+                    "RWA"
+                ],
+                "trading_pairs": [
+                    "RWA/USDT"
+                ],
+                "markets": [
+                    "Perpetual"
+                ],
+                "numerical_data": [
+                    "50X leverage",
+                    "4-hour funding interval",
+                    "\b12% capped funding rate"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Pilot Initial Listing Token: OVERSEER\u3001BOP\u3001TERRY\u3001SQUID\u3001MIKE\u3001WALLY\u3001PIM\u3001GOUT\u3001PNUT\u3001BABYPNUT\u3001QUASAR\u3001MEEKA\u3001FRIC\u3001SOOTCASE\u3001DNA\u3001PURPE\u3001WAIN\u30011\u3001JUSTICE",
+                "article_link": "https://www.gate.io/announcements/article/41013",
+                "UID": "f24cdeb467fa34862e13a8cdd2cbf2a7@1",
+                "publish_datetime": "2024-11-25 14:53:39 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 14:53:39 UTC",
+                "end_datetime": "2024-11-25 14:53:39 UTC",
+                "event_summary": "Gate.io lists multiple tokens in the Pilot trading market.",
+                "event_type": [
+                    "Listing"
+                ],
+                "user_action_required": "Users should monitor the token list closely as there will be no prior announcement for new listings in Pilot. They must read and complete the Pilot Trading Disclaimer and sign the user agreement as instructed.",
+                "separate_event_link": "https://www.gate.io/pilot",
+                "tokens": [
+                    "OVERSEER",
+                    "BOP",
+                    "TERRY",
+                    "SQUID",
+                    "MIKE",
+                    "WALLY",
+                    "PIM",
+                    "GOUT",
+                    "PNUT",
+                    "BABYPNUT",
+                    "QUASAR",
+                    "MEEKA",
+                    "FRIC",
+                    "SOOTCASE",
+                    "DNA",
+                    "PURPE",
+                    "WAIN",
+                    "1",
+                    "JUSTICE"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Spot"
+                ],
+                "numerical_data": []
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "GT Holder-Exclusive Airdrop: Gate.io Initial Startup Free Offering: PinGo(PINGO) and Only GT Subscription Rules Announcement  ( 1,600,000 PINGO free of charge)",
+                "article_link": "https://www.gate.io/announcements/article/41012",
+                "UID": "c800a07bd1039bcc214f3d98fb98f000@1",
+                "publish_datetime": "2024-11-25 11:52:04 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-02 00:00:00 UTC",
+                "end_datetime": "2024-11-29 00:00:00 UTC",
+                "event_summary": "Gate.io announces the GT Holder-Exclusive Airdrop for PinGo (PINGO) with a subscription period starting on November 2, 2024, and ending on November 29, 2024.",
+                "event_type": [
+                    "Airdrop",
+                    "Subscription"
+                ],
+                "user_action_required": "Users should ensure they hold at least 10 GT to participate in the subscription during the specified period.",
+                "separate_event_link": "https://www.gate.io/startup",
+                "tokens": [
+                    "PINGO"
+                ],
+                "trading_pairs": [
+                    "PINGO/USDT"
+                ],
+                "markets": [
+                    "Staking"
+                ],
+                "numerical_data": [
+                    "1,600,000 PINGO"
+                ]
+            },
+            {
+                "article_title": "GT Holder-Exclusive Airdrop: Gate.io Initial Startup Free Offering: PinGo(PINGO) and Only GT Subscription Rules Announcement  ( 1,600,000 PINGO free of charge)",
+                "article_link": "https://www.gate.io/announcements/article/41012",
+                "UID": "c800a07bd1039bcc214f3d98fb98f000@2",
+                "publish_datetime": "2024-11-25 11:52:04 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-29 11:00:00 UTC",
+                "end_datetime": "2024-11-29 11:00:00 UTC",
+                "event_summary": "Trading for PinGo (PINGO) against USDT starts on Gate.io on November 29, 2024, at 11:00 AM UTC.",
+                "event_type": [
+                    "Listing"
+                ],
+                "user_action_required": "Users can start trading PINGO/USDT from the specified time.",
+                "separate_event_link": "https://www.gate.io/trade/PINGO_USDT",
+                "tokens": [
+                    "PINGO"
+                ],
+                "trading_pairs": [
+                    "PINGO/USDT"
+                ],
+                "markets": [
+                    "Staking"
+                ],
+                "numerical_data": []
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Startup Free Offering: ResearchCoin(RSC) and Announcement of Free Distribution Rules(45,634 RSC free of charge)",
+                "article_link": "https://www.gate.io/announcements/article/41011",
+                "UID": "6da9567af3305f4a6192847db18adcf4@1",
+                "publish_datetime": "2024-11-25 11:29:57 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-02 11:00:00 UTC",
+                "end_datetime": "2024-11-29 11:00:00 UTC",
+                "event_summary": "Gate.io launches the Startup Project Free Airdrop Program for ResearchCoin (RSC) from November 2 to November 29, 2024.",
+                "event_type": [
+                    "Airdrop"
+                ],
+                "user_action_required": "Users must complete KYC2 verification and hold at least 10 USD in spot assets to participate.",
+                "separate_event_link": "",
+                "tokens": [
+                    "RSC"
+                ],
+                "trading_pairs": [
+                    "RSC/USDT"
+                ],
+                "markets": [
+                    "Spot"
+                ],
+                "numerical_data": [
+                    "Fundraising Goal: 30,000 USDT",
+                    "Startup Supply: 45,634 RSC"
+                ]
+            },
+            {
+                "article_title": "Gate.io Startup Free Offering: ResearchCoin(RSC) and Announcement of Free Distribution Rules(45,634 RSC free of charge)",
+                "article_link": "https://www.gate.io/announcements/article/41011",
+                "UID": "6da9567af3305f4a6192847db18adcf4@2",
+                "publish_datetime": "2024-11-25 11:29:57 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-29 15:00:00 UTC",
+                "end_datetime": "2024-11-29 15:00:00 UTC",
+                "event_summary": "Trading for ResearchCoin (RSC) starts on Gate.io on November 29, 2024.",
+                "event_type": [
+                    "Listing"
+                ],
+                "user_action_required": "Users can start trading RSC/USDT from 15:00 UTC on November 29, 2024.",
+                "separate_event_link": "",
+                "tokens": [
+                    "RSC"
+                ],
+                "trading_pairs": [
+                    "RSC/USDT"
+                ],
+                "markets": [
+                    "Spot"
+                ],
+                "numerical_data": []
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Digital Asset Lending Platform: Maple (SYRUP) Trading Competition is Live, Join and Share $21,000 Rewards!",
+                "article_link": "https://www.gate.io/announcements/article/41010",
+                "UID": "20015472fd0e3428aad3e389f1c2edcf@1",
+                "publish_datetime": "2024-11-25 11:18:26 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 08:00:00 UTC",
+                "end_datetime": "2024-12-02 23:59:00 UTC",
+                "event_summary": "Gate.io is holding a Maple (SYRUP) trading competition with a $21,000 reward prize pool.",
+                "event_type": [
+                    "Trading_Competition"
+                ],
+                "user_action_required": "Users should join the competition, complete tasks, and trade SYRUP/USDT to earn rewards. New users should register and complete tasks to earn additional rewards.",
+                "separate_event_link": "",
+                "tokens": [
+                    "SYRUP"
+                ],
+                "trading_pairs": [
+                    "SYRUP/USDT"
+                ],
+                "markets": [
+                    "Spot"
+                ],
+                "numerical_data": [
+                    "$21,000 total prize pool",
+                    "$15,000 for task completion",
+                    "$6,000 for new users",
+                    "90,600 SYRUP total prize pool"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Startup Free Offering: METAMAFIA(MAF) and Announcement of Free Distribution Rules (161,031 MAF free of charge)",
+                "article_link": "https://www.gate.io/announcements/article/41009",
+                "UID": "c5da3e620447e3cb68a5dd9fb60c373b@1",
+                "publish_datetime": "2024-11-25 11:13:01 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-02 06:00:00 UTC",
+                "end_datetime": "2024-11-29 06:00:00 UTC",
+                "event_summary": "Gate.io launches the Startup Project Free Airdrop Program for METAMAFIA (MAF) from November 2 to November 29, 2024.",
+                "event_type": [
+                    "Airdrop"
+                ],
+                "user_action_required": "Users must complete KYC2 verification and hold no less than 10 USD of spot assets to participate.",
+                "separate_event_link": "",
+                "tokens": [
+                    "MAF"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Spot"
+                ],
+                "numerical_data": [
+                    "161,031 MAF"
+                ]
+            },
+            {
+                "article_title": "Gate.io Startup Free Offering: METAMAFIA(MAF) and Announcement of Free Distribution Rules (161,031 MAF free of charge)",
+                "article_link": "https://www.gate.io/announcements/article/41009",
+                "UID": "c5da3e620447e3cb68a5dd9fb60c373b@2",
+                "publish_datetime": "2024-11-25 11:13:01 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-29 10:00:00 UTC",
+                "end_datetime": "2024-11-29 10:00:00 UTC",
+                "event_summary": "Trading for METAMAFIA (MAF) starts on Gate.io on November 29, 2024.",
+                "event_type": [
+                    "Listing"
+                ],
+                "user_action_required": "Users can start trading MAF/USDT pair from 10:00 AM UTC on November 29, 2024.",
+                "separate_event_link": "",
+                "tokens": [
+                    "MAF"
+                ],
+                "trading_pairs": [
+                    "MAF/USDT"
+                ],
+                "markets": [
+                    "Spot"
+                ],
+                "numerical_data": []
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Has Added ZRC Perpetual Contract",
+                "article_link": "https://www.gate.io/announcements/article/41008",
+                "UID": "da3031f23ed9b49dbef1666e8844a7c1@1",
+                "publish_datetime": "2024-11-25 10:37:10 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 10:37:10 UTC",
+                "end_datetime": "2024-11-25 10:37:10 UTC",
+                "event_summary": "Gate.io has added ZRC/USDT perpetual contract trading with up to 50X leverage.",
+                "event_type": [
+                    "Listing"
+                ],
+                "user_action_required": "Users can start trading the ZRC/USDT perpetual contract with up to 50X leverage.",
+                "separate_event_link": "https://www.gate.io/futures/USDT/ZRC_USDT",
+                "tokens": [
+                    "ZRC"
+                ],
+                "trading_pairs": [
+                    "ZRC/USDT"
+                ],
+                "markets": [
+                    "Perpetual"
+                ],
+                "numerical_data": [
+                    "50X leverage",
+                    "4-hour funding interval",
+                    "\b12% capped funding rate"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io x Hipo Gang Joint Task2Earn Campaign is Live! New Airdrop Project Hipo Gang in Gate Web3 TonVibe2024 Ecological Season: Claim Hipo Gang airdrop and share the $80,000 Gate.io prize pool",
+                "article_link": "https://www.gate.io/announcements/article/41006",
+                "UID": "527bea84804dea3357b7c51462a9a911@1",
+                "publish_datetime": "2024-11-25 09:30:42 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-22 00:00:00 UTC",
+                "end_datetime": "2024-12-31 23:59:59 UTC",
+                "event_summary": "Gate.io launches a Task2Earn campaign in collaboration with Hipo Gang, offering a prize pool of $80,000 and airdrops.",
+                "event_type": [
+                    "Airdrop"
+                ],
+                "user_action_required": "Users should follow Hipo Gang on Twitter, join their Telegram channel, and use the Mini App to participate.",
+                "separate_event_link": "https://www.gate.io/zh/web3/tasks/detail?id=148andnetwork=TON",
+                "tokens": [
+                    "$TON",
+                    "$GT",
+                    "$USDT"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Spot"
+                ],
+                "numerical_data": [
+                    "80000 USDT",
+                    "500000 in-game coins"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io x Vanilla Finance Joint Task2Earn Campaign is Live! New Airdrop Project Vanilla Finance in Gate Web3 TonVibe2024 Ecological Season: Claim Vanilla Finance airdrop and share the $80,000 Gate.io prize pool",
+                "article_link": "https://www.gate.io/announcements/article/41005",
+                "UID": "be180e746f7bb4136113f29c0bb93c7a@1",
+                "publish_datetime": "2024-11-25 09:24:16 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-22 00:00:00 UTC",
+                "end_datetime": "2024-12-31 23:59:59 UTC",
+                "event_summary": "Gate.io and Vanilla Finance launch a Task2Earn campaign with a prize pool of $80,000 and airdrops.",
+                "event_type": [
+                    "Airdrop"
+                ],
+                "user_action_required": "Users should follow Vanilla Finance on Twitter, join their Telegram channel, and open the Vanilla Finance Telegram Mini App to participate.",
+                "separate_event_link": "https://www.gate.io/zh/web3/tasks/detail?id=150andnetwork=TON",
+                "tokens": [
+                    "USDT",
+                    "Sugar",
+                    "TON",
+                    "GT"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Spot"
+                ],
+                "numerical_data": [
+                    "80000"
+                ]
+            },
+            {
+                "article_title": "Gate.io x Vanilla Finance Joint Task2Earn Campaign is Live! New Airdrop Project Vanilla Finance in Gate Web3 TonVibe2024 Ecological Season: Claim Vanilla Finance airdrop and share the $80,000 Gate.io prize pool",
+                "article_link": "https://www.gate.io/announcements/article/41005",
+                "UID": "be180e746f7bb4136113f29c0bb93c7a@2",
+                "publish_datetime": "2024-11-25 09:24:16 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2025-01-31 16:00:00 UTC",
+                "end_datetime": "2025-01-31 16:00:00 UTC",
+                "event_summary": "Deadline for claiming rewards from the Gate.io and Vanilla Finance Task2Earn campaign.",
+                "event_type": [
+                    "Withdrawal_Deadline"
+                ],
+                "user_action_required": "Users must claim their rewards by this date to avoid forfeiture.",
+                "separate_event_link": "",
+                "tokens": [
+                    "USDT",
+                    "Sugar",
+                    "TON",
+                    "GT"
+                ],
+                "trading_pairs": [],
+                "markets": [],
+                "numerical_data": []
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Margin Adds MEMEFI, BARSIK and More",
+                "article_link": "https://www.gate.io/announcements/article/41004",
+                "UID": "8463a9d9c7d04caa362bbd3354e5ff22@1",
+                "publish_datetime": "2024-11-25 09:09:23 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 09:09:23 UTC",
+                "end_datetime": "2024-11-25 09:09:23 UTC",
+                "event_summary": "Gate.io has added MemeFi (MEMEFI), Hasbulla's Cat (BARSIK), LightLink (LL) as new borrowable assets for Margin Trading.",
+                "event_type": [
+                    "Margin_Change"
+                ],
+                "user_action_required": "Users should be fully aware of the risks of price fluctuations of digital assets when using margin trading. Users in the UK and other Restricted Locations cannot access this service.",
+                "separate_event_link": "",
+                "tokens": [
+                    "MEMEFI",
+                    "BARSIK",
+                    "LL"
+                ],
+                "trading_pairs": [
+                    "MEMEFI/USDT",
+                    "BARSIK/USDT",
+                    "LL/USDT"
+                ],
+                "markets": [
+                    "Margin_Trading"
+                ],
+                "numerical_data": [
+                    ""
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io x DuckChain Joint Task2Earn Campaign is Live! New Airdrop Project DuckChain in Gate Web3 TonVibe2024 Ecological Season: Claim DuckChain airdrop and share the $80,000 Gate.io prize pool",
+                "article_link": "https://www.gate.io/announcements/article/41003",
+                "UID": "26ca04f0a18f4c47f3d621c1539bcb3e@1",
+                "publish_datetime": "2024-11-25 09:05:06 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-22 00:00:00 UTC",
+                "end_datetime": "2024-12-31 23:59:59 UTC",
+                "event_summary": "Gate.io launches a Task2Earn campaign in collaboration with DuckChain, offering a prize pool of $80,000 and airdrops.",
+                "event_type": [
+                    "Airdrop"
+                ],
+                "user_action_required": "Users should complete tasks such as following DuckChain on Twitter and joining their Telegram channel to participate in the campaign and claim rewards.",
+                "separate_event_link": "https://www.gate.io/zh/web3/tasks/detail?id=14andnetwork=TON",
+                "tokens": [
+                    "DUCK",
+                    "TON",
+                    "GT",
+                    "USDT"
+                ],
+                "trading_pairs": [],
+                "markets": [],
+                "numerical_data": [
+                    "80000 USDT",
+                    "2000 DUCK"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io x Memes Lab Joint Task2Earn Campaign is Live! New Airdrop Project Memes Lab in Gate Web3 TonVibe2024 Ecological Season: Claim Memes Lab airdrop and share the $80,000 Gate.io prize pool",
+                "article_link": "https://www.gate.io/announcements/article/41002",
+                "UID": "e50574df9c78c29ce0545a231be89973@1",
+                "publish_datetime": "2024-11-25 08:56:28 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-22 00:00:00 UTC",
+                "end_datetime": "2024-12-31 23:59:59 UTC",
+                "event_summary": "Gate.io launches the TonVibe2024 event, allowing users to participate in a Task2Earn campaign with Memes Lab and share in an $80,000 prize pool.",
+                "event_type": [
+                    "Airdrop"
+                ],
+                "user_action_required": "Users should complete tasks such as following Memes Lab on Twitter, joining their Telegram channel, and using the Mini App to claim rewards.",
+                "separate_event_link": "https://www.gate.io/zh/web3/tasks/detail?id=16andnetwork=TON",
+                "tokens": [
+                    "TON",
+                    "GT",
+                    "USDT"
+                ],
+                "trading_pairs": [],
+                "markets": [],
+                "numerical_data": [
+                    "80000 USDT"
+                ]
+            },
+            {
+                "article_title": "Gate.io x Memes Lab Joint Task2Earn Campaign is Live! New Airdrop Project Memes Lab in Gate Web3 TonVibe2024 Ecological Season: Claim Memes Lab airdrop and share the $80,000 Gate.io prize pool",
+                "article_link": "https://www.gate.io/announcements/article/41002",
+                "UID": "e50574df9c78c29ce0545a231be89973@2",
+                "publish_datetime": "2024-11-25 08:56:28 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2025-01-31 16:00:00 UTC",
+                "end_datetime": "2025-01-31 16:00:00 UTC",
+                "event_summary": "Deadline for claiming rewards from the TonVibe2024 event.",
+                "event_type": [
+                    "Withdrawal_Deadline"
+                ],
+                "user_action_required": "Users must claim their rewards by this date or they will become invalid.",
+                "separate_event_link": "",
+                "tokens": [
+                    "TON",
+                    "GT",
+                    "USDT"
+                ],
+                "trading_pairs": [],
+                "markets": [],
+                "numerical_data": []
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io x Goats Joint Task2Earn Campaign is Live! New Airdrop Project Goats in Gate Web3 TonVibe2024 Ecological Season: Claim Goats airdrop and share the $80,000 Gate.io prize pool",
+                "article_link": "https://www.gate.io/announcements/article/41001",
+                "UID": "bb022c1438a254532f8c3404606856eb@1",
+                "publish_datetime": "2024-11-25 08:42:45 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-22 00:00:00 UTC",
+                "end_datetime": "2024-12-31 23:59:59 UTC",
+                "event_summary": "Gate.io launches the TonVibe2024 event with a Task2Earn campaign featuring a reward pool of $80,000 and airdrops of $TON and $GOATS.",
+                "event_type": [
+                    "Airdrop"
+                ],
+                "user_action_required": "Users should follow Goats on Twitter, join the Goats Telegram Announcement Channel, and open the Goats Telegram Mini App to participate in the campaign and claim rewards.",
+                "separate_event_link": "https://www.gate.io/zh/web3/tasks/detail?id=145andnetwork=TON",
+                "tokens": [
+                    "$TON",
+                    "$GOATS",
+                    "$GT",
+                    "$USDT"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Spot"
+                ],
+                "numerical_data": [
+                    "80000 USDT"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Announcement on the Completion of Zircuit (ZRC) Pre-Market Trading Settlement Results",
+                "article_link": "https://www.gate.io/announcements/article/41016",
+                "UID": "3bf4aade73e6ed6a47c4e6e675fdfbb6@1",
+                "publish_datetime": "2024-11-25 15:42:16 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 15:00:00 UTC",
+                "end_datetime": "2024-11-25 15:00:00 UTC",
+                "event_summary": "Gate.io completed the ZRC PreToken minting order settlement.",
+                "event_type": [
+                    "Settling_Open_Positions"
+                ],
+                "user_action_required": "Users should check their asset details in the Assets section under PreMint Settlement Token and Staked Assets Settlement.",
+                "separate_event_link": "https://www.gate.io/help/guide/faq/38245",
+                "tokens": [
+                    "ZRC"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Pre-Token_Spot"
+                ],
+                "numerical_data": [
+                    "1,001,285.8 ZRC distributed",
+                    "21,064.020922 USDT pledges"
+                ]
+            },
+            {
+                "article_title": "Announcement on the Completion of Zircuit (ZRC) Pre-Market Trading Settlement Results",
+                "article_link": "https://www.gate.io/announcements/article/41016",
+                "UID": "3bf4aade73e6ed6a47c4e6e675fdfbb6@2",
+                "publish_datetime": "2024-11-25 15:42:16 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 15:30:00 UTC",
+                "end_datetime": "2024-11-25 15:30:00 UTC",
+                "event_summary": "Gate.io finalized the actual ZRC distribution and stake asset settlement.",
+                "event_type": [
+                    "Distribution"
+                ],
+                "user_action_required": "Users should check their asset details in the Assets section under PreMint Settlement Token and Staked Assets Settlement.",
+                "separate_event_link": "https://www.gate.io/help/guide/faq/38245",
+                "tokens": [
+                    "ZRC"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Pre-Token_Spot"
+                ],
+                "numerical_data": [
+                    "1,146,240.04 ZRC minted",
+                    "152,609.0081114 USDT staked",
+                    "1,001,285.8 ZRC delivered",
+                    "131,544.981392 USDT returned",
+                    "21,064.020922 USDT defaulted"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate Research: Altcoins Rally Over the Weekend; First Spot Bitcoin ETF Options Set to Launch",
+                "article_link": "https://www.gate.io/announcements/article/41007",
+                "UID": "3281e1942344b4006d7d1a161321b9ef@1",
+                "publish_datetime": "2024-11-25 09:54:25 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 09:54:25 UTC",
+                "end_datetime": "2024-11-25 09:54:25 UTC",
+                "event_summary": "Gate.io reports on the performance of altcoins over the weekend and the upcoming launch of the first spot Bitcoin ETF index options.",
+                "event_type": [
+                    "Market Report"
+                ],
+                "user_action_required": "Users should remain cautious of market volatility and changes in regulatory policies.",
+                "separate_event_link": "",
+                "tokens": [
+                    "BTC",
+                    "ETH",
+                    "Solana"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Spot",
+                    "NFT"
+                ],
+                "numerical_data": [
+                    "BTC price: $9,900",
+                    "ETH price: $3,361",
+                    "Solana DEX volume: $6 billion",
+                    "Bitcoin spot ETF inflows: $490 million",
+                    "Ethereum spot ETF inflows: $91.21 million"
+                ]
+            },
+            {
+                "article_title": "Gate Research: Altcoins Rally Over the Weekend; First Spot Bitcoin ETF Options Set to Launch",
+                "article_link": "https://www.gate.io/announcements/article/41007",
+                "UID": "3281e1942344b4006d7d1a161321b9ef@2",
+                "publish_datetime": "2024-11-25 09:54:25 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-12-02 00:00:00 UTC",
+                "end_datetime": "2024-12-02 23:59:59 UTC",
+                "event_summary": "CBOE is set to launch the first spot Bitcoin ETF index options.",
+                "event_type": [
+                    "Product_Offering"
+                ],
+                "user_action_required": "Users should monitor the launch of the Bitcoin ETF index options for potential investment opportunities.",
+                "separate_event_link": "",
+                "tokens": [
+                    "BTC"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Spot"
+                ],
+                "numerical_data": []
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "[Stable Profits] Gate.io Carefully Developed A Grid Trading Livestream Course",
+                "article_link": "https://www.gate.io/announcements/article/41000",
+                "UID": "609e1b28131dba56c65502a24b1bd1f4@1",
+                "publish_datetime": "2024-11-25 08:27:06 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-26 12:00:00 UTC",
+                "end_datetime": "2024-11-26 12:00:00 UTC",
+                "event_summary": "Gate.io will launch a live grid trading class on November 26 at 20:00 (UTC+8) for grid trading. This five-session hands-on course will guide you to experience the charm of stable profits without loss.",
+                "event_type": [
+                    "Live_Streaming"
+                ],
+                "user_action_required": "Register for a Gate.io account, complete KYC2 verification, and watch the live stream for at least 10 minutes on the broadcast day to be eligible for rewards.",
+                "separate_event_link": "https://www.gate.io/live/video/84151a3a2b9416393e20f255812cf6?type=live",
+                "tokens": [
+                    "USDT"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "Grid_Trading"
+                ],
+                "numerical_data": [
+                    "$10 Gate.io Bots Trail Funds",
+                    "VIP+1 Reward"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Structured Product Launched: Earn up to 8% APR",
+                "article_link": "https://www.gate.io/announcements/article/40998",
+                "UID": "b0c4ed30ea067592becae3c215558ea4@1",
+                "publish_datetime": "2024-11-25 07:54:47 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 10:00:00 UTC",
+                "end_datetime": "2024-11-25 10:00:00 UTC",
+                "event_summary": "Gate.io launches new structured financial products including Daily BTC and USDT SharkFin, Daily ETH SharkFin, Double No-Touch, DailySmile, Bullish Shark Fin, and Bearish Shark Fin, offering up to 8% APR.",
+                "event_type": [
+                    "Product_Offering"
+                ],
+                "user_action_required": "Users are encouraged to participate in the subscription starting at 10:00 UTC on November 25, 2024, to earn potential returns.",
+                "separate_event_link": "",
+                "tokens": [
+                    "BTC",
+                    "USDT",
+                    "ETH"
+                ],
+                "trading_pairs": [
+                    "BTC/USDT",
+                    "ETH/USDT"
+                ],
+                "markets": [
+                    "Structured Products"
+                ],
+                "numerical_data": [
+                    "8% APR",
+                    "15% APR",
+                    "6.5% APR",
+                    "3% yield",
+                    "0.5% yield"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Answer and Earn: Take the Quiz on Aethir (ATH) to Share 2,464 ATH Prizes",
+                "article_link": "https://www.gate.io/announcements/article/40997",
+                "UID": "916ae98583ccebc00f41655e596930e5@1",
+                "publish_datetime": "2024-11-25 07:27:52 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 00:00:00 UTC",
+                "end_datetime": "2024-11-29 00:00:00 UTC",
+                "event_summary": "Gate.io launches a quiz event where participants can earn points by taking quizzes and completing tasks to win ATH prizes.",
+                "event_type": [
+                    "Quiz Event"
+                ],
+                "user_action_required": "Users should visit the event page, take the quiz, complete tasks, and invite friends to earn points and win prizes.",
+                "separate_event_link": "https://www.gate.io/activities/answer-earn?period_num=238",
+                "tokens": [
+                    "ATH"
+                ],
+                "trading_pairs": [
+                    "ATH/USDT"
+                ],
+                "markets": [
+                    "Spot"
+                ],
+                "numerical_data": [
+                    "2,464 ATH prize pool"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate Learn New Courses is Live ! L2 Deep Dives: Lumia (LUMIA)",
+                "article_link": "https://www.gate.io/announcements/article/40996",
+                "UID": "483892fe8e31aae024fa8dbe2b331450@1",
+                "publish_datetime": "2024-11-25 07:13:34 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 07:13:34 UTC",
+                "end_datetime": "2024-11-25 07:13:34 UTC",
+                "event_summary": "Gate Learn launches a new course on Lumia (LUMIA), focusing on its architecture, features, and ecosystem.",
+                "event_type": [
+                    "Learning_and_Education"
+                ],
+                "user_action_required": "Users interested in learning about Lumia's blockchain technology should enroll in the course.",
+                "separate_event_link": "",
+                "tokens": [
+                    "LUMIA"
+                ],
+                "trading_pairs": [],
+                "markets": [],
+                "numerical_data": []
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Announcement on Zircuit(ZRC) Pre-Market OTC Trading Settlement Time",
+                "article_link": "https://www.gate.io/announcements/article/40995",
+                "UID": "44bc24cfd8151f1fa001d3d6353ef026@1",
+                "publish_datetime": "2024-11-25 07:03:45 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 12:00:00 UTC",
+                "end_datetime": "2024-11-25 15:00:00 UTC",
+                "event_summary": "Settlement for Zircuit(ZRC) Pre-Market OTC Trading starts and ends on November 25th, 2024.",
+                "event_type": [
+                    "Settling_Open_Positions"
+                ],
+                "user_action_required": "Users should complete settlement on time to avoid loss of collateral.",
+                "separate_event_link": "",
+                "tokens": [
+                    "ZRC"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "OTC_Trading"
+                ],
+                "numerical_data": [
+                    "ZRC Token Max Supply: 10,000,000,000"
+                ]
+            },
+            {
+                "article_title": "Gate.io Announcement on Zircuit(ZRC) Pre-Market OTC Trading Settlement Time",
+                "article_link": "https://www.gate.io/announcements/article/40995",
+                "UID": "44bc24cfd8151f1fa001d3d6353ef026@2",
+                "publish_datetime": "2024-11-25 07:03:45 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 12:00:00 UTC",
+                "end_datetime": "2024-11-25 12:00:00 UTC",
+                "event_summary": "Trading for Zircuit(ZRC) Pre-Market OTC ends on November 25th, 2024.",
+                "event_type": [
+                    "Termination_of_Trading"
+                ],
+                "user_action_required": "Users should be aware that trading ends at 12:00 PM UTC.",
+                "separate_event_link": "",
+                "tokens": [
+                    "ZRC"
+                ],
+                "trading_pairs": [],
+                "markets": [
+                    "OTC_Trading"
+                ],
+                "numerical_data": [
+                    "ZRC Token Max Supply: 10,000,000,000"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Startup:RWA Inc. (RWA) Initial Sale Result and Listing Schedule",
+                "article_link": "https://www.gate.io/announcements/article/40994",
+                "UID": "440953f4116ec1ed9d0850a988614c2c@1",
+                "publish_datetime": "2024-11-25 06:44:24 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 06:44:24 UTC",
+                "end_datetime": "2024-11-25 06:44:24 UTC",
+                "event_summary": "Gate.io announces the result of the RWA Inc. (RWA) token airdrop.",
+                "event_type": [
+                    "Airdrop"
+                ],
+                "user_action_required": "No immediate action required from users regarding the airdrop result.",
+                "separate_event_link": "",
+                "tokens": [
+                    "RWA"
+                ],
+                "trading_pairs": [],
+                "markets": [],
+                "numerical_data": [
+                    "3,000,000 RWA",
+                    "199,484,300 USDT",
+                    "199,363,40 USDT",
+                    "35 RWA",
+                    "6,459",
+                    "62,523",
+                    "92.68%",
+                    "99.94%",
+                    "0.000823198282363"
+                ]
+            },
+            {
+                "article_title": "Gate.io Startup:RWA Inc. (RWA) Initial Sale Result and Listing Schedule",
+                "article_link": "https://www.gate.io/announcements/article/40994",
+                "UID": "440953f4116ec1ed9d0850a988614c2c@2",
+                "publish_datetime": "2024-11-25 06:44:24 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 10:00:00 UTC",
+                "end_datetime": "2024-11-25 10:00:00 UTC",
+                "event_summary": "Gate.io will commence RWA trading and enable withdrawal service.",
+                "event_type": [
+                    "Listing"
+                ],
+                "user_action_required": "Users can start trading RWA and make withdrawals after the listing time.",
+                "separate_event_link": "",
+                "tokens": [
+                    "RWA"
+                ],
+                "trading_pairs": [
+                    "RWA_USDT"
+                ],
+                "markets": [
+                    "Spot"
+                ],
+                "numerical_data": []
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Announcement on Launching the Pre-Market OTC Trade to Holdcoin(HOLD)",
+                "article_link": "https://www.gate.io/announcements/article/40993",
+                "UID": "5128ae9562f441896135d851fd3aee6a@1",
+                "publish_datetime": "2024-11-25 06:30:45 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 10:00:00 UTC",
+                "end_datetime": "2024-11-25 10:00:00 UTC",
+                "event_summary": "Gate.io will launch Pre-Market OTC Trading for Holdcoin(HOLD) on November 25th, 2024.",
+                "event_type": [
+                    "Pre-market_Listing"
+                ],
+                "user_action_required": "Users should pay attention to the delivery schedule and complete delivery on time to avoid loss of collateral.",
+                "separate_event_link": "https://www.gate.io/help/pre-market-trading/pre-market/35226/faq-about-pre-market-trading",
+                "tokens": [
+                    "HOLD"
+                ],
+                "trading_pairs": [
+                    "HOLD/USDT"
+                ],
+                "markets": [
+                    "OTC_Trading"
+                ],
+                "numerical_data": [
+                    "HOLD Token Max Supply: 10,000,000,000"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "LightLink (LL) Limited-Time Trading Carnival: 800,000 LL Prizes Await You!",
+                "article_link": "https://www.gate.io/announcements/article/40992",
+                "UID": "618a8de0a65c38414090d172a9f091e9@1",
+                "publish_datetime": "2024-11-25 06:28:48 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 06:00:00 UTC",
+                "end_datetime": "2024-12-09 06:00:00 UTC",
+                "event_summary": "Gate.io and LightLink are hosting a trading competition with a prize pool of 800,000 LL. Users can participate in various challenges including trading and deposits to win rewards.",
+                "event_type": [
+                    "Trading_Competition"
+                ],
+                "user_action_required": "Users should register, trade LL/USDT, deposit LL, and invite new users to participate in the event.",
+                "separate_event_link": "",
+                "tokens": [
+                    "LL"
+                ],
+                "trading_pairs": [
+                    "LL/USDT"
+                ],
+                "markets": [
+                    "Spot"
+                ],
+                "numerical_data": [
+                    "800000"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io to Delist Energo (TSL)",
+                "article_link": "https://www.gate.io/announcements/article/40991",
+                "UID": "77fff505f39c136448c3cee40b40a062@1",
+                "publish_datetime": "2024-11-25 05:54:58 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 05:54:58 UTC",
+                "end_datetime": "2024-11-25 05:54:58 UTC",
+                "event_summary": "Gate.io announces the delisting of Energo (TSL) from its platform.",
+                "event_type": [
+                    "Delisting"
+                ],
+                "user_action_required": "Users should prepare for the delisting by withdrawing their Energo (TSL) holdings or participating in the buyback program.",
+                "separate_event_link": "",
+                "tokens": [
+                    "TSL"
+                ],
+                "trading_pairs": [
+                    "TSL_USDT"
+                ],
+                "markets": [
+                    "Spot",
+                    "Grid_Trading",
+                    "Liquidity_Pools"
+                ],
+                "numerical_data": []
+            },
+            {
+                "article_title": "Gate.io to Delist Energo (TSL)",
+                "article_link": "https://www.gate.io/announcements/article/40991",
+                "UID": "77fff505f39c136448c3cee40b40a062@2",
+                "publish_datetime": "2024-11-25 05:54:58 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-12-02 03:00:00 UTC",
+                "end_datetime": "2024-12-02 03:00:00 UTC",
+                "event_summary": "Gate.io will suspend trading services for Energo (TSL), including TSL_USDT spot trading pair, quant grid trading, and liquidity mining.",
+                "event_type": [
+                    "Suspend_Trading",
+                    "Delisting"
+                ],
+                "user_action_required": "Users should adjust their trading strategies and withdraw liquidity before the suspension date.",
+                "separate_event_link": "",
+                "tokens": [
+                    "TSL"
+                ],
+                "trading_pairs": [
+                    "TSL_USDT"
+                ],
+                "markets": [
+                    "Spot",
+                    "Grid_Trading",
+                    "Liquidity_Pools"
+                ],
+                "numerical_data": []
+            },
+            {
+                "article_title": "Gate.io to Delist Energo (TSL)",
+                "article_link": "https://www.gate.io/announcements/article/40991",
+                "UID": "77fff505f39c136448c3cee40b40a062@3",
+                "publish_datetime": "2024-11-25 05:54:58 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-12-15 16:00:00 UTC",
+                "end_datetime": "2024-12-22 16:00:00 UTC",
+                "event_summary": "Gate.io offers a buyback program for Energo (TSL) at a price of 0.000014305 USDT, with a maximum compensation limit of 100 USDT per user.",
+                "event_type": [
+                    "Buyback"
+                ],
+                "user_action_required": "Users holding Energo (TSL) after December 15, 2024, can apply for the buyback by filling out a form between December 15 and December 22, 2024.",
+                "separate_event_link": "https://www.gate.io/questionnaire/5580",
+                "tokens": [
+                    "TSL"
+                ],
+                "trading_pairs": [],
+                "markets": [],
+                "numerical_data": [
+                    "0.000014305 USDT",
+                    "100 USDT"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Regarding ETFs (BAT3S\u3001ONE3S\u3001LIT3S\u3001XTZ3S\u3001ROSE3S) Reverse Split",
+                "article_link": "https://www.gate.io/announcements/article/40990",
+                "UID": "fb788754d1e4855b7e840ecf588f0409@1",
+                "publish_datetime": "2024-11-25 04:01:54 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-26 06:00:00 UTC",
+                "end_datetime": "2024-11-26 06:00:00 UTC",
+                "event_summary": "Gate.io will conduct a 1-for-1000 reverse split for BAT3S ETF.",
+                "event_type": [
+                    "Reverse Split"
+                ],
+                "user_action_required": "Users should be aware that the number of BAT3S ETF shares will become 1/1000 of the original, and the unit value will increase 1000 times. Monitor the market closely after the split.",
+                "separate_event_link": "",
+                "tokens": [
+                    "BAT3S"
+                ],
+                "trading_pairs": [
+                    "BAT3S"
+                ],
+                "markets": [
+                    "ETF"
+                ],
+                "numerical_data": [
+                    "1-for-1000 reverse split"
+                ]
+            },
+            {
+                "article_title": "Regarding ETFs (BAT3S\u3001ONE3S\u3001LIT3S\u3001XTZ3S\u3001ROSE3S) Reverse Split",
+                "article_link": "https://www.gate.io/announcements/article/40990",
+                "UID": "fb788754d1e4855b7e840ecf588f0409@2",
+                "publish_datetime": "2024-11-25 04:01:54 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-26 06:00:00 UTC",
+                "end_datetime": "2024-11-26 06:00:00 UTC",
+                "event_summary": "Gate.io will conduct a 1-for-100 reverse split for ONE3S ETF.",
+                "event_type": [
+                    "Reverse Split"
+                ],
+                "user_action_required": "Users should be aware that the number of ONE3S ETF shares will become 1/100 of the original, and the unit value will increase 100 times. Monitor the market closely after the split.",
+                "separate_event_link": "",
+                "tokens": [
+                    "ONE3S"
+                ],
+                "trading_pairs": [
+                    "ONE3S"
+                ],
+                "markets": [
+                    "ETF"
+                ],
+                "numerical_data": [
+                    "1-for-100 reverse split"
+                ]
+            },
+            {
+                "article_title": "Regarding ETFs (BAT3S\u3001ONE3S\u3001LIT3S\u3001XTZ3S\u3001ROSE3S) Reverse Split",
+                "article_link": "https://www.gate.io/announcements/article/40990",
+                "UID": "fb788754d1e4855b7e840ecf588f0409@3",
+                "publish_datetime": "2024-11-25 04:01:54 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-26 06:00:00 UTC",
+                "end_datetime": "2024-11-26 06:00:00 UTC",
+                "event_summary": "Gate.io will conduct a 1-for-100 reverse split for LIT3S ETF.",
+                "event_type": [
+                    "Reverse Split"
+                ],
+                "user_action_required": "Users should be aware that the number of LIT3S ETF shares will become 1/100 of the original, and the unit value will increase 100 times. Monitor the market closely after the split.",
+                "separate_event_link": "",
+                "tokens": [
+                    "LIT3S"
+                ],
+                "trading_pairs": [
+                    "LIT3S"
+                ],
+                "markets": [
+                    "ETF"
+                ],
+                "numerical_data": [
+                    "1-for-100 reverse split"
+                ]
+            },
+            {
+                "article_title": "Regarding ETFs (BAT3S\u3001ONE3S\u3001LIT3S\u3001XTZ3S\u3001ROSE3S) Reverse Split",
+                "article_link": "https://www.gate.io/announcements/article/40990",
+                "UID": "fb788754d1e4855b7e840ecf588f0409@4",
+                "publish_datetime": "2024-11-25 04:01:54 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-26 06:00:00 UTC",
+                "end_datetime": "2024-11-26 06:00:00 UTC",
+                "event_summary": "Gate.io will conduct a 1-for-100 reverse split for XTZ3S ETF.",
+                "event_type": [
+                    "Reverse Split"
+                ],
+                "user_action_required": "Users should be aware that the number of XTZ3S ETF shares will become 1/100 of the original, and the unit value will increase 100 times. Monitor the market closely after the split.",
+                "separate_event_link": "",
+                "tokens": [
+                    "XTZ3S"
+                ],
+                "trading_pairs": [
+                    "XTZ3S"
+                ],
+                "markets": [
+                    "ETF"
+                ],
+                "numerical_data": [
+                    "1-for-100 reverse split"
+                ]
+            },
+            {
+                "article_title": "Regarding ETFs (BAT3S\u3001ONE3S\u3001LIT3S\u3001XTZ3S\u3001ROSE3S) Reverse Split",
+                "article_link": "https://www.gate.io/announcements/article/40990",
+                "UID": "fb788754d1e4855b7e840ecf588f0409@5",
+                "publish_datetime": "2024-11-25 04:01:54 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-26 06:00:00 UTC",
+                "end_datetime": "2024-11-26 06:00:00 UTC",
+                "event_summary": "Gate.io will conduct a 1-for-100 reverse split for ROSE3S ETF.",
+                "event_type": [
+                    "Reverse Split"
+                ],
+                "user_action_required": "Users should be aware that the number of ROSE3S ETF shares will become 1/100 of the original, and the unit value will increase 100 times. Monitor the market closely after the split.",
+                "separate_event_link": "",
+                "tokens": [
+                    "ROSE3S"
+                ],
+                "trading_pairs": [
+                    "ROSE3S"
+                ],
+                "markets": [
+                    "ETF"
+                ],
+                "numerical_data": [
+                    "1-for-100 reverse split"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Web3 Fantasy Adventures in 3 Minutes Episode 1: The Magic Ledger and the City of Trust",
+                "article_link": "https://www.gate.io/announcements/article/40989",
+                "UID": "ee95d9d43035aa27b06e9c2f7b1e1ba6@1",
+                "publish_datetime": "2024-11-25 03:41:30 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 03:41:30 UTC",
+                "end_datetime": "2024-11-25 03:41:30 UTC",
+                "event_summary": "Gate.io launches a new content series to explain Web3 concepts through adventure stories.",
+                "event_type": [
+                    "New_Feature_Launch"
+                ],
+                "user_action_required": "Users are encouraged to follow the series to learn about Web3 concepts.",
+                "separate_event_link": "",
+                "tokens": [],
+                "trading_pairs": [],
+                "markets": [],
+                "numerical_data": []
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Scheduled Spot Trading Engine Upgrade (25 Nov 16: 00 - 16: 30 UTC)",
+                "article_link": "https://www.gate.io/announcements/article/40988",
+                "UID": "9645fe14bccf0d4d70154a1a234e980f@1",
+                "publish_datetime": "2024-11-25 03:35:33 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 16:00:00 UTC",
+                "end_datetime": "2024-11-25 16:30:00 UTC",
+                "event_summary": "Gate.io will upgrade and optimize the spot trading engine, causing partial service unavailability for about 30 minutes.",
+                "event_type": [
+                    "Exchange_Maintenance"
+                ],
+                "user_action_required": "Traders and API users should adjust their strategies beforehand due to potential trading and query interruptions.",
+                "separate_event_link": "",
+                "tokens": [],
+                "trading_pairs": [
+                    "All spot trading pairs"
+                ],
+                "markets": [
+                    "Spot"
+                ],
+                "numerical_data": []
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Has Added  XDC Perpetual Contract",
+                "article_link": "https://www.gate.io/announcements/article/40987",
+                "UID": "e9d5dca9d35013ce51095491e2ebeefe@1",
+                "publish_datetime": "2024-11-25 03:01:36 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 03:01:36 UTC",
+                "end_datetime": "2024-11-25 03:01:36 UTC",
+                "event_summary": "Gate.io has added XDC/USDT perpetual contract trading with up to 50X leverage.",
+                "event_type": [
+                    "Listing"
+                ],
+                "user_action_required": "Users can start trading the XDC/USDT perpetual contract with up to 50X leverage.",
+                "separate_event_link": "https://www.gate.io/futures_info_new/futures/usdt/XDC_USDT#baseinfo",
+                "tokens": [
+                    "XDC"
+                ],
+                "trading_pairs": [
+                    "XDC/USDT"
+                ],
+                "markets": [
+                    "Perpetual"
+                ],
+                "numerical_data": [
+                    "50X leverage",
+                    "4-hour funding interval",
+                    "\b12% capped funding rate"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Grab Daily Thanksgiving Bonus and Share $2,500! 100% Claim $PEPE, $DOGE and more Meme Airdrops on GateLive!",
+                "article_link": "https://www.gate.io/announcements/article/40986",
+                "UID": "f440f91daca69cbf436b530af3386994@1",
+                "publish_datetime": "2024-11-25 01:43:52 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 02:00:00 UTC",
+                "end_datetime": "2024-12-01 16:00:00 UTC",
+                "event_summary": "GateLive launches a Thanksgiving reward event with various bonuses and airdrops.",
+                "event_type": [
+                    "Reward Event"
+                ],
+                "user_action_required": "Complete tasks on GateLive to qualify for rewards.",
+                "separate_event_link": "https://www.gate.io/live",
+                "tokens": [
+                    "PEPE",
+                    "DOGE",
+                    "GOAT",
+                    "APEPE",
+                    "BONK"
+                ],
+                "trading_pairs": [],
+                "markets": [],
+                "numerical_data": [
+                    "$2,500"
+                ]
+            },
+            {
+                "article_title": "Grab Daily Thanksgiving Bonus and Share $2,500! 100% Claim $PEPE, $DOGE and more Meme Airdrops on GateLive!",
+                "article_link": "https://www.gate.io/announcements/article/40986",
+                "UID": "f440f91daca69cbf436b530af3386994@2",
+                "publish_datetime": "2024-11-25 01:43:52 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 02:00:00 UTC",
+                "end_datetime": "2024-11-29 16:00:00 UTC",
+                "event_summary": "Daily bonus event where 100 users are chosen daily to win rewards.",
+                "event_type": [
+                    "Daily Bonus"
+                ],
+                "user_action_required": "Complete GateLive tasks to be eligible for daily rewards.",
+                "separate_event_link": "https://www.gate.io/live",
+                "tokens": [],
+                "trading_pairs": [],
+                "markets": [],
+                "numerical_data": [
+                    "$2,500"
+                ]
+            },
+            {
+                "article_title": "Grab Daily Thanksgiving Bonus and Share $2,500! 100% Claim $PEPE, $DOGE and more Meme Airdrops on GateLive!",
+                "article_link": "https://www.gate.io/announcements/article/40986",
+                "UID": "f440f91daca69cbf436b530af3386994@3",
+                "publish_datetime": "2024-11-25 01:43:52 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-28 00:00:00 UTC",
+                "end_datetime": "2024-11-28 23:59:59 UTC",
+                "event_summary": "Thanksgiving Day $PEPE airdrop event with 100% claim chance.",
+                "event_type": [
+                    "Airdrop"
+                ],
+                "user_action_required": "Enter any live room and tap the \\\\ud83e\\\\udde7 icon to claim $PEPE airdrops.",
+                "separate_event_link": "https://www.gate.io/live",
+                "tokens": [
+                    "PEPE"
+                ],
+                "trading_pairs": [],
+                "markets": [],
+                "numerical_data": []
+            },
+            {
+                "article_title": "Grab Daily Thanksgiving Bonus and Share $2,500! 100% Claim $PEPE, $DOGE and more Meme Airdrops on GateLive!",
+                "article_link": "https://www.gate.io/announcements/article/40986",
+                "UID": "f440f91daca69cbf436b530af3386994@4",
+                "publish_datetime": "2024-11-25 01:43:52 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 01:00:00 UTC",
+                "end_datetime": "2024-11-02 15:00:00 UTC",
+                "event_summary": "Streamer's Thanksgiving Gifts with hot MEME airdrops.",
+                "event_type": [
+                    "Airdrop"
+                ],
+                "user_action_required": "Tune into live streams and interact to receive airdrop rewards.",
+                "separate_event_link": "https://www.gate.io/live",
+                "tokens": [
+                    "GOAT",
+                    "APEPE",
+                    "PEPE",
+                    "BONK",
+                    "DOGE"
+                ],
+                "trading_pairs": [],
+                "markets": [],
+                "numerical_data": []
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    }
+]

@@ -1,1 +1,2 @@
 https://www.gate.io/announcements	Announcements
+https://www.gate.io/announcements?page=2	Announcements2

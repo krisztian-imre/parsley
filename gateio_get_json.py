@@ -1,4 +1,4 @@
-#File: gateio_get_json_new.py
+# File: gateio_get_json2.py
 
 import os
 import datetime
@@ -14,7 +14,7 @@ import openai
 from openai._exceptions import RateLimitError, APIConnectionError, OpenAIError
 import logger_setup
 
-ARTICLE_COLLECTION_FILE='Gateio_Files/Gateio_Article_Process/gateio_article_collection.tsv'
+ARTICLE_COLLECTION_FILE = 'Gateio_Files/Gateio_Article_Process/gateio_article_collection.tsv'
 
 # Timeout handler to catch unresponsive scripts
 class TimeoutException(Exception):
@@ -97,7 +97,6 @@ def get_json():
         if " ERROR" not in response:
             if "Bi-Weekly Report" not in row['title']:
                 assistant_id = 'asst_CfFXkDtL6wiBKpPpIREesccm'
-                # response = get_llm_response(f"JSON:\n{json.dumps(response, indent=4)}\n**Additional data:**\n{row['body']}", assistant_id)
                 response = get_llm_response(f"JSON:\n{json.dumps(response, indent=4)}\n**Additional data:**\n{content}", assistant_id)
                 logging.info(f"Response 2:\n{json.dumps(response, indent=4)}")
 
@@ -120,7 +119,6 @@ def create_hex_uid(link):
     return hashlib.sha256(link.encode()).hexdigest()[:32]  # Shorten to 16 characters for brevity
 
 def assign_uids(parsed_responses):
-    
     data = parsed_responses
 
     # Dictionary to track occurrences of each article_link for uniqueness
@@ -157,15 +155,35 @@ def determine_assistant(title):
     return ('asst_Xk1XKciwc63DdjIHIO3ljfmH' if "Bi-Weekly Report" in title
             else 'asst_33sFfSIFStFOd5TPJvOKfy2h')
 
-# Helper function to save JSON objects
+# Modified save_json function to append data if the file already exists
 def save_json(parsed_responses):
-    current_datetime = datetime.datetime.now().strftime("%y%m%d_%H%M")
-    file_path = os.path.join('Gateio_Files', 'Gateio_JSON_Process', f'gateio_{current_datetime}.json')
+    #current_datetime = datetime.datetime.now().strftime("%y%m%d_%H%M")
+    file_path = os.path.join('Gateio_Files', 'Gateio_JSON_Process', f'gateio_structured.json')
 
+    # Check if a JSON file already exists
+    if os.path.exists(file_path):
+        with open(file_path, 'r') as f:
+            try:
+                # Load existing data from the JSON file
+                existing_data = json.load(f)
+                # If existing_data is a list, extend it with the new responses
+                if isinstance(existing_data, list):
+                    existing_data.extend(parsed_responses)
+                else:
+                    # If it's not a list, wrap both in a list (to handle cases where data might be malformed)
+                    existing_data = [existing_data] + parsed_responses
+            except json.JSONDecodeError:
+                # If the JSON file exists but is not a valid JSON, we create a new list with the new data.
+                existing_data = parsed_responses
+    else:
+        # If the file doesn't exist, use the parsed_responses as the initial data
+        existing_data = parsed_responses
+
+    # Write the updated data back to the file
     with open(file_path, 'w') as f:
-        json.dump(parsed_responses, f, indent=4)
+        json.dump(existing_data, f, indent=4)
 
-    logging.info(f"The JSON file has been saved as '{file_path}'.")
+    logging.info(f"The JSON file has been updated and saved as '{file_path}'.")
 
 # Run the main function only when the script is executed directly
 if __name__ == "__main__":

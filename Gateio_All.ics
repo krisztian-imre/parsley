@@ -1,0 +1,556 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Deadline for claiming rewards from the TonVibe2024 event.\n\nAssets: TON\, GT\, USDT\n\nUsers must claim their rewards by this date or they will become invalid.
+DTEND:20250131T163000Z
+DTSTART:20250131T160000Z
+SUMMARY:Gate.io: Withdrawal_Deadline of TON\, GT\, USDT
+UID:e50574df9c78c29ce0545a231be89973@2
+URL:https://www.gate.io/announcements/article/41002
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches a Task2Earn campaign in collaboration with DuckChain\, offering a prize pool of $80\,000 and airdrops.\n\nAssets: DUCK\, TON\, GT\, USDT\n\n80000 USDT\,\n2000 DUCK\n\nUsers should complete tasks such as following DuckChain on Twitter and joining their Telegram channel to participate in the campaign and claim rewards.\nhttps://www.gate.io/zh/web3/tasks/detail?id=14andnetwork=TON
+DTEND:20241122T003000Z
+LOCATION:Period Starts
+DTSTART:20241122T000000Z
+SUMMARY:Gate.io: Airdrop of DUCK\, TON\, GT\, USDT
+UID:26ca04f0a18f4c47f3d621c1539bcb3e@1_start
+URL:https://www.gate.io/announcements/article/41003
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches the Startup Project Free Airdrop Program for METAMAFIA (MAF) from November 2 to November 29\, 2024.\n\nAssets: MAF\nMarkets: Spot\n\n161\,031 MAF\n\nUsers must complete KYC2 verification and hold no less than 10 USD of spot assets to participate.
+DTEND:20241102T063000Z
+LOCATION:Period Starts
+DTSTART:20241102T060000Z
+SUMMARY:Gate.io: Airdrop of MAF
+UID:c5da3e620447e3cb68a5dd9fb60c373b@1_start
+URL:https://www.gate.io/announcements/article/41009
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io announces the GT Holder-Exclusive Airdrop for PinGo (PINGO) with a subscription period starting on November 2\, 2024\, and ending on November 29\, 2024.\n\nAssets: PINGO\, PINGO/USDT\nMarkets: Staking\n\n1\,600\,000 PINGO\n\nUsers should ensure they hold at least 10 GT to participate in the subscription during the specified period.\nhttps://www.gate.io/startup
+DTEND:20241129T000000Z
+LOCATION:Period Ends
+DTSTART:20241128T233000Z
+SUMMARY:Gate.io: Airdrop\, Subscription of PINGO\, PINGO/USDT
+UID:c800a07bd1039bcc214f3d98fb98f000@1_end
+URL:https://www.gate.io/announcements/article/41012
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches Moongate (MGT) Startup Subscription for GT holders.\n\nAssets: MGT\, MGT/USDT\nMarkets: Launchpad/IEO\n\nSubscription Price: $0 GT\,\nSubscription Total: 6364 GT\,\nStartup Total Supply: 2\,000\,000 MGT\n\nUsers should ensure they hold at least 10 GT to participate in the subscription.\nhttps://www.gate.io/startup
+DTEND:20241126T083000Z
+LOCATION:Period Starts
+DTSTART:20241126T080000Z
+SUMMARY:Gate.io: Airdrop\, Token Offering of MGT\, MGT/USDT
+UID:3c4f9d45fc8a1abe252b9509f9121ae0@1_start
+URL:https://www.gate.io/announcements/article/41015
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches a Task2Earn campaign in collaboration with DuckChain\, offering a prize pool of $80\,000 and airdrops.\n\nAssets: DUCK\, TON\, GT\, USDT\n\n80000 USDT\,\n2000 DUCK\n\nUsers should complete tasks such as following DuckChain on Twitter and joining their Telegram channel to participate in the campaign and claim rewards.\nhttps://www.gate.io/zh/web3/tasks/detail?id=14andnetwork=TON
+DTEND:20241231T235959Z
+LOCATION:Period Ends
+DTSTART:20241231T232959Z
+SUMMARY:Gate.io: Airdrop of DUCK\, TON\, GT\, USDT
+UID:26ca04f0a18f4c47f3d621c1539bcb3e@1_end
+URL:https://www.gate.io/announcements/article/41003
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io reports on the performance of altcoins over the weekend and the upcoming launch of the first spot Bitcoin ETF index options.\n\nAssets: BTC\, ETH\, Solana\nMarkets: Spot\, NFT\n\nBTC price: $9\,900\,\nETH price: $3\,361\,\nSolana DEX volume: $6 billion\,\nBitcoin spot ETF inflows: $490 million\,\nEthereum spot ETF inflows: $91.21 million\n\nUsers should remain cautious of market volatility and changes in regulatory policies.
+DTEND:20241125T093000Z
+DTSTART:20241125T090000Z
+SUMMARY:Gate.io: Market Report of BTC\, ETH\, Solana
+UID:3281e1942344b4006d7d1a161321b9ef@1
+URL:https://www.gate.io/announcements/article/41007
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Deadline for claiming rewards from the Gate.io and Vanilla Finance Task2Earn campaign.\n\nAssets: USDT\, Sugar\, TON\, GT\n\nUsers must claim their rewards by this date to avoid forfeiture.
+DTEND:20250131T163000Z
+DTSTART:20250131T160000Z
+SUMMARY:Gate.io: Withdrawal_Deadline of USDT\, Sugar\, TON\, GT
+UID:be180e746f7bb4136113f29c0bb93c7a@2
+URL:https://www.gate.io/announcements/article/41005
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:CBOE is set to launch the first spot Bitcoin ETF index options.\n\nAssets: BTC\nMarkets: Spot\n\nUsers should monitor the launch of the Bitcoin ETF index options for potential investment opportunities.
+DTEND:20241202T233000Z
+DTSTART:20241202T000000Z
+SUMMARY:Gate.io: Product_Offering of BTC
+UID:3281e1942344b4006d7d1a161321b9ef@2
+URL:https://www.gate.io/announcements/article/41007
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io and LightLink are hosting a trading competition with a prize pool of 800\,000 LL. Users can participate in various challenges including trading and deposits to win rewards.\n\nAssets: LL\, LL/USDT\nMarkets: Spot\n\n800000\n\nUsers should register\, trade LL/USDT\, deposit LL\, and invite new users to participate in the event.
+DTEND:20241209T060000Z
+LOCATION:Period Ends
+DTSTART:20241209T053000Z
+SUMMARY:Gate.io: Trading_Competition of LL\, LL/USDT
+UID:618a8de0a65c38414090d172a9f091e9@1_end
+URL:https://www.gate.io/announcements/article/40992
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io has added MemeFi (MEMEFI)\, Hasbulla's Cat (BARSIK)\, LightLink (LL) as new borrowable assets for Margin Trading.\n\nAssets: MEMEFI\, BARSIK\, LL\, MEMEFI/USDT\, BARSIK/USDT\, LL/USDT\nMarkets: Margin_Trading\n\n\n\nUsers should be fully aware of the risks of price fluctuations of digital assets when using margin trading. Users in the UK and other Restricted Locations cannot access this service.
+DTEND:20241125T093000Z
+DTSTART:20241125T090000Z
+SUMMARY:Gate.io: Margin_Change of MEMEFI\, BARSIK\, LL\, MEMEFI/USDT\, BARSIK/USDT\, LL/USDT
+UID:8463a9d9c7d04caa362bbd3354e5ff22@1
+URL:https://www.gate.io/announcements/article/41004
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Trading for ResearchCoin (RSC) starts on Gate.io on November 29\, 2024.\n\nAssets: RSC\, RSC/USDT\nMarkets: Spot\n\nUsers can start trading RSC/USDT from 15:00 UTC on November 29\, 2024.
+DTEND:20241129T153000Z
+DTSTART:20241129T150000Z
+SUMMARY:Gate.io: Listing of RSC\, RSC/USDT
+UID:6da9567af3305f4a6192847db18adcf4@2
+URL:https://www.gate.io/announcements/article/41011
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io and Vanilla Finance launch a Task2Earn campaign with a prize pool of $80\,000 and airdrops.\n\nAssets: USDT\, Sugar\, TON\, GT\nMarkets: Spot\n\n80000\n\nUsers should follow Vanilla Finance on Twitter\, join their Telegram channel\, and open the Vanilla Finance Telegram Mini App to participate.\nhttps://www.gate.io/zh/web3/tasks/detail?id=150andnetwork=TON
+DTEND:20241231T235959Z
+LOCATION:Period Ends
+DTSTART:20241231T232959Z
+SUMMARY:Gate.io: Airdrop of USDT\, Sugar\, TON\, GT
+UID:be180e746f7bb4136113f29c0bb93c7a@1_end
+URL:https://www.gate.io/announcements/article/41005
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io offers a buyback program for Energo (TSL) at a price of 0.000014305 USDT\, with a maximum compensation limit of 100 USDT per user.\n\nAssets: TSL\n\n0.000014305 USDT\,\n100 USDT\n\nUsers holding Energo (TSL) after December 15\, 2024\, can apply for the buyback by filling out a form between December 15 and December 22\, 2024.\nhttps://www.gate.io/questionnaire/5580
+DTEND:20241222T160000Z
+LOCATION:Period Ends
+DTSTART:20241222T153000Z
+SUMMARY:Gate.io: Buyback of TSL
+UID:77fff505f39c136448c3cee40b40a062@3_end
+URL:https://www.gate.io/announcements/article/40991
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:GateLive launches a Thanksgiving reward event with various bonuses and airdrops.\n\nAssets: PEPE\, DOGE\, GOAT\, APEPE\, BONK\n\n$2\,500\n\nComplete tasks on GateLive to qualify for rewards.\nhttps://www.gate.io/live
+DTEND:20241201T160000Z
+LOCATION:Period Ends
+DTSTART:20241201T153000Z
+SUMMARY:Gate.io: Reward Event of PEPE\, DOGE\, GOAT\, APEPE\, BONK
+UID:f440f91daca69cbf436b530af3386994@1_end
+URL:https://www.gate.io/announcements/article/40986
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Daily bonus event where 100 users are chosen daily to win rewards.\n\n$2\,500\n\nComplete GateLive tasks to be eligible for daily rewards.\nhttps://www.gate.io/live
+DTEND:20241129T160000Z
+LOCATION:Period Ends
+DTSTART:20241129T153000Z
+SUMMARY:Gate.io: Daily Bonus
+UID:f440f91daca69cbf436b530af3386994@2_end
+URL:https://www.gate.io/announcements/article/40986
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io and Vanilla Finance launch a Task2Earn campaign with a prize pool of $80\,000 and airdrops.\n\nAssets: USDT\, Sugar\, TON\, GT\nMarkets: Spot\n\n80000\n\nUsers should follow Vanilla Finance on Twitter\, join their Telegram channel\, and open the Vanilla Finance Telegram Mini App to participate.\nhttps://www.gate.io/zh/web3/tasks/detail?id=150andnetwork=TON
+DTEND:20241122T003000Z
+LOCATION:Period Starts
+DTSTART:20241122T000000Z
+SUMMARY:Gate.io: Airdrop of USDT\, Sugar\, TON\, GT
+UID:be180e746f7bb4136113f29c0bb93c7a@1_start
+URL:https://www.gate.io/announcements/article/41005
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Streamer's Thanksgiving Gifts with hot MEME airdrops.\n\nAssets: GOAT\, APEPE\, PEPE\, BONK\, DOGE\n\nTune into live streams and interact to receive airdrop rewards.\nhttps://www.gate.io/live
+DTEND:20241102T150000Z
+LOCATION:Period Ends
+DTSTART:20241102T143000Z
+SUMMARY:Gate.io: Airdrop of GOAT\, APEPE\, PEPE\, BONK\, DOGE
+UID:f440f91daca69cbf436b530af3386994@4_end
+URL:https://www.gate.io/announcements/article/40986
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Thanksgiving Day $PEPE airdrop event with 100% claim chance.\n\nAssets: PEPE\n\nEnter any live room and tap the \\\\ud83e\\\\udde7 icon to claim $PEPE airdrops.\nhttps://www.gate.io/live
+DTEND:20241128T233000Z
+DTSTART:20241128T000000Z
+SUMMARY:Gate.io: Airdrop of PEPE
+UID:f440f91daca69cbf436b530af3386994@3
+URL:https://www.gate.io/announcements/article/40986
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io has added XDC/USDT perpetual contract trading with up to 50X leverage.\n\nAssets: XDC\, XDC/USDT\nMarkets: Perpetual\n\n50X leverage\,\n4-hour funding interval\,\n12% capped funding rate\n\nUsers can start trading the XDC/USDT perpetual contract with up to 50X leverage.\nhttps://www.gate.io/futures_info_new/futures/usdt/XDC_USDT#baseinfo
+DTEND:20241125T033000Z
+DTSTART:20241125T030000Z
+SUMMARY:Gate.io: Listing of XDC\, XDC/USDT
+UID:e9d5dca9d35013ce51095491e2ebeefe@1
+URL:https://www.gate.io/announcements/article/40987
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io lists multiple tokens in the Pilot trading market.\n\nAssets: OVERSEER\, BOP\, TERRY\, SQUID\, MIKE\, WALLY\, PIM\, GOUT\, PNUT\, BABYPNUT\, QUASAR\, MEEKA\, FRIC\, SOOTCASE\, DNA\, PURPE\, WAIN\, 1\, JUSTICE\nMarkets: Spot\n\nUsers should monitor the token list closely as there will be no prior announcement for new listings in Pilot. They must read and complete the Pilot Trading Disclaimer and sign the user agreement as instructed.\nhttps://www.gate.io/pilot
+DTEND:20241125T143000Z
+DTSTART:20241125T140000Z
+SUMMARY:Gate.io: Listing of Various Assets
+UID:f24cdeb467fa34862e13a8cdd2cbf2a7@1
+URL:https://www.gate.io/announcements/article/41013
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches a quiz event where participants can earn points by taking quizzes and completing tasks to win ATH prizes.\n\nAssets: ATH\, ATH/USDT\nMarkets: Spot\n\n2\,464 ATH prize pool\n\nUsers should visit the event page\, take the quiz\, complete tasks\, and invite friends to earn points and win prizes.\nhttps://www.gate.io/activities/answer-earn?period_num=238
+DTEND:20241125T003000Z
+LOCATION:Period Starts
+DTSTART:20241125T000000Z
+SUMMARY:Gate.io: Quiz Event of ATH\, ATH/USDT
+UID:916ae98583ccebc00f41655e596930e5@1_start
+URL:https://www.gate.io/announcements/article/40997
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io announces the delisting of Energo (TSL) from its platform.\n\nAssets: TSL\, TSL_USDT\nMarkets: Spot\, Grid_Trading\, Liquidity_Pools\n\nUsers should prepare for the delisting by withdrawing their Energo (TSL) holdings or participating in the buyback program.
+DTEND:20241125T053000Z
+DTSTART:20241125T050000Z
+SUMMARY:Gate.io: Delisting of TSL\, TSL_USDT
+UID:77fff505f39c136448c3cee40b40a062@1
+URL:https://www.gate.io/announcements/article/40991
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io will suspend trading services for Energo (TSL)\, including TSL_USDT spot trading pair\, quant grid trading\, and liquidity mining.\n\nAssets: TSL\, TSL_USDT\nMarkets: Spot\, Grid_Trading\, Liquidity_Pools\n\nUsers should adjust their trading strategies and withdraw liquidity before the suspension date.
+DTEND:20241202T033000Z
+DTSTART:20241202T030000Z
+SUMMARY:Gate.io: Suspend_Trading\, Delisting of TSL\, TSL_USDT
+UID:77fff505f39c136448c3cee40b40a062@2
+URL:https://www.gate.io/announcements/article/40991
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches the TonVibe2024 event\, allowing users to participate in a Task2Earn campaign with Memes Lab and share in an $80\,000 prize pool.\n\nAssets: TON\, GT\, USDT\n\n80000 USDT\n\nUsers should complete tasks such as following Memes Lab on Twitter\, joining their Telegram channel\, and using the Mini App to claim rewards.\nhttps://www.gate.io/zh/web3/tasks/detail?id=16andnetwork=TON
+DTEND:20241231T235959Z
+LOCATION:Period Ends
+DTSTART:20241231T232959Z
+SUMMARY:Gate.io: Airdrop of TON\, GT\, USDT
+UID:e50574df9c78c29ce0545a231be89973@1_end
+URL:https://www.gate.io/announcements/article/41002
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io will launch a live grid trading class on November 26 at 20:00 (UTC+8) for grid trading. This five-session hands-on course will guide you to experience the charm of stable profits without loss.\n\nAssets: USDT\nMarkets: Grid_Trading\n\n$10 Gate.io Bots Trail Funds\,\nVIP+1 Reward\n\nRegister for a Gate.io account\, complete KYC2 verification\, and watch the live stream for at least 10 minutes on the broadcast day to be eligible for rewards.\nhttps://www.gate.io/live/video/84151a3a2b9416393e20f255812cf6?type=live
+DTEND:20241126T123000Z
+DTSTART:20241126T120000Z
+SUMMARY:Gate.io: Live_Streaming of USDT
+UID:609e1b28131dba56c65502a24b1bd1f4@1
+URL:https://www.gate.io/announcements/article/41000
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Trading for Moongate (MGT) starts on Gate.io.\n\nAssets: MGT\, MGT/USDT\nMarkets: Spot\n\n\n\nUsers can start trading MGT/USDT from this time.\nhttps://www.gate.io/startup
+DTEND:20241128T123000Z
+DTSTART:20241128T120000Z
+SUMMARY:Gate.io: Listing of MGT\, MGT/USDT
+UID:3c4f9d45fc8a1abe252b9509f9121ae0@2
+URL:https://www.gate.io/announcements/article/41015
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io completed the ZRC PreToken minting order settlement.\n\nAssets: ZRC\nMarkets: Pre-Token_Spot\n\n1\,001\,285.8 ZRC distributed\,\n21\,064.020922 USDT pledges\n\nUsers should check their asset details in the Assets section under PreMint Settlement Token and Staked Assets Settlement.\nhttps://www.gate.io/help/guide/faq/38245
+DTEND:20241125T153000Z
+DTSTART:20241125T150000Z
+SUMMARY:Gate.io: Settling_Open_Positions of ZRC
+UID:3bf4aade73e6ed6a47c4e6e675fdfbb6@1
+URL:https://www.gate.io/announcements/article/41016
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io finalized the actual ZRC distribution and stake asset settlement.\n\nAssets: ZRC\nMarkets: Pre-Token_Spot\n\n1\,146\,240.04 ZRC minted\,\n152\,609.0081114 USDT staked\,\n1\,001\,285.8 ZRC delivered\,\n131\,544.981392 USDT returned\,\n21\,064.020922 USDT defaulted\n\nUsers should check their asset details in the Assets section under PreMint Settlement Token and Staked Assets Settlement.\nhttps://www.gate.io/help/guide/faq/38245
+DTEND:20241125T153000Z
+DTSTART:20241125T150000Z
+SUMMARY:Gate.io: Distribution of ZRC
+UID:3bf4aade73e6ed6a47c4e6e675fdfbb6@2
+URL:https://www.gate.io/announcements/article/41016
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches the Startup Project Free Airdrop Program for METAMAFIA (MAF) from November 2 to November 29\, 2024.\n\nAssets: MAF\nMarkets: Spot\n\n161\,031 MAF\n\nUsers must complete KYC2 verification and hold no less than 10 USD of spot assets to participate.
+DTEND:20241129T060000Z
+LOCATION:Period Ends
+DTSTART:20241129T053000Z
+SUMMARY:Gate.io: Airdrop of MAF
+UID:c5da3e620447e3cb68a5dd9fb60c373b@1_end
+URL:https://www.gate.io/announcements/article/41009
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches a new content series to explain Web3 concepts through adventure stories.\n\nUsers are encouraged to follow the series to learn about Web3 concepts.
+DTEND:20241125T033000Z
+DTSTART:20241125T030000Z
+SUMMARY:Gate.io: New_Feature_Launch
+UID:ee95d9d43035aa27b06e9c2f7b1e1ba6@1
+URL:https://www.gate.io/announcements/article/40989
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io will upgrade and optimize the spot trading engine\, causing partial service unavailability for about 30 minutes.\n\nAssets: All spot trading pairs\nMarkets: Spot\n\nTraders and API users should adjust their strategies beforehand due to potential trading and query interruptions.
+DTEND:20241125T163000Z
+DTSTART:20241125T160000Z
+SUMMARY:Gate.io: Exchange_Maintenance of All spot trading pairs
+UID:9645fe14bccf0d4d70154a1a234e980f@1
+URL:https://www.gate.io/announcements/article/40988
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Trading for PinGo (PINGO) against USDT starts on Gate.io on November 29\, 2024\, at 11:00 AM UTC.\n\nAssets: PINGO\, PINGO/USDT\nMarkets: Staking\n\nUsers can start trading PINGO/USDT from the specified time.\nhttps://www.gate.io/trade/PINGO_USDT
+DTEND:20241129T113000Z
+DTSTART:20241129T110000Z
+SUMMARY:Gate.io: Listing of PINGO\, PINGO/USDT
+UID:c800a07bd1039bcc214f3d98fb98f000@2
+URL:https://www.gate.io/announcements/article/41012
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io is holding a Maple (SYRUP) trading competition with a $21\,000 reward prize pool.\n\nAssets: SYRUP\, SYRUP/USDT\nMarkets: Spot\n\n$21\,000 total prize pool\,\n$15\,000 for task completion\,\n$6\,000 for new users\,\n90\,600 SYRUP total prize pool\n\nUsers should join the competition\, complete tasks\, and trade SYRUP/USDT to earn rewards. New users should register and complete tasks to earn additional rewards.
+DTEND:20241202T235900Z
+LOCATION:Period Ends
+DTSTART:20241202T232900Z
+SUMMARY:Gate.io: Trading_Competition of SYRUP\, SYRUP/USDT
+UID:20015472fd0e3428aad3e389f1c2edcf@1_end
+URL:https://www.gate.io/announcements/article/41010
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io is holding a Maple (SYRUP) trading competition with a $21\,000 reward prize pool.\n\nAssets: SYRUP\, SYRUP/USDT\nMarkets: Spot\n\n$21\,000 total prize pool\,\n$15\,000 for task completion\,\n$6\,000 for new users\,\n90\,600 SYRUP total prize pool\n\nUsers should join the competition\, complete tasks\, and trade SYRUP/USDT to earn rewards. New users should register and complete tasks to earn additional rewards.
+DTEND:20241125T083000Z
+LOCATION:Period Starts
+DTSTART:20241125T080000Z
+SUMMARY:Gate.io: Trading_Competition of SYRUP\, SYRUP/USDT
+UID:20015472fd0e3428aad3e389f1c2edcf@1_start
+URL:https://www.gate.io/announcements/article/41010
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches the TonVibe2024 event\, allowing users to participate in a Task2Earn campaign with Memes Lab and share in an $80\,000 prize pool.\n\nAssets: TON\, GT\, USDT\n\n80000 USDT\n\nUsers should complete tasks such as following Memes Lab on Twitter\, joining their Telegram channel\, and using the Mini App to claim rewards.\nhttps://www.gate.io/zh/web3/tasks/detail?id=16andnetwork=TON
+DTEND:20241122T003000Z
+LOCATION:Period Starts
+DTSTART:20241122T000000Z
+SUMMARY:Gate.io: Airdrop of TON\, GT\, USDT
+UID:e50574df9c78c29ce0545a231be89973@1_start
+URL:https://www.gate.io/announcements/article/41002
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io will conduct a 1-for-1000 reverse split for BAT3S ETF.\n\nAssets: BAT3S\, BAT3S\nMarkets: ETF\n\n1-for-1000 reverse split\n\nUsers should be aware that the number of BAT3S ETF shares will become 1/1000 of the original\, and the unit value will increase 1000 times. Monitor the market closely after the split.
+DTEND:20241126T063000Z
+DTSTART:20241126T060000Z
+SUMMARY:Gate.io: Reverse Split of BAT3S\, BAT3S
+UID:fb788754d1e4855b7e840ecf588f0409@1
+URL:https://www.gate.io/announcements/article/40990
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io will conduct a 1-for-100 reverse split for ONE3S ETF.\n\nAssets: ONE3S\, ONE3S\nMarkets: ETF\n\n1-for-100 reverse split\n\nUsers should be aware that the number of ONE3S ETF shares will become 1/100 of the original\, and the unit value will increase 100 times. Monitor the market closely after the split.
+DTEND:20241126T063000Z
+DTSTART:20241126T060000Z
+SUMMARY:Gate.io: Reverse Split of ONE3S\, ONE3S
+UID:fb788754d1e4855b7e840ecf588f0409@2
+URL:https://www.gate.io/announcements/article/40990
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches the TonVibe2024 event with a Task2Earn campaign featuring a reward pool of $80\,000 and airdrops of $TON and $GOATS.\n\nAssets: $TON\, $GOATS\, $GT\, $USDT\nMarkets: Spot\n\n80000 USDT\n\nUsers should follow Goats on Twitter\, join the Goats Telegram Announcement Channel\, and open the Goats Telegram Mini App to participate in the campaign and claim rewards.\nhttps://www.gate.io/zh/web3/tasks/detail?id=145andnetwork=TON
+DTEND:20241122T003000Z
+LOCATION:Period Starts
+DTSTART:20241122T000000Z
+SUMMARY:Gate.io: Airdrop of $TON\, $GOATS\, $GT\, $USDT
+UID:bb022c1438a254532f8c3404606856eb@1_start
+URL:https://www.gate.io/announcements/article/41001
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io will conduct a 1-for-100 reverse split for LIT3S ETF.\n\nAssets: LIT3S\, LIT3S\nMarkets: ETF\n\n1-for-100 reverse split\n\nUsers should be aware that the number of LIT3S ETF shares will become 1/100 of the original\, and the unit value will increase 100 times. Monitor the market closely after the split.
+DTEND:20241126T063000Z
+DTSTART:20241126T060000Z
+SUMMARY:Gate.io: Reverse Split of LIT3S\, LIT3S
+UID:fb788754d1e4855b7e840ecf588f0409@3
+URL:https://www.gate.io/announcements/article/40990
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io announces the GT Holder-Exclusive Airdrop for PinGo (PINGO) with a subscription period starting on November 2\, 2024\, and ending on November 29\, 2024.\n\nAssets: PINGO\, PINGO/USDT\nMarkets: Staking\n\n1\,600\,000 PINGO\n\nUsers should ensure they hold at least 10 GT to participate in the subscription during the specified period.\nhttps://www.gate.io/startup
+DTEND:20241102T003000Z
+LOCATION:Period Starts
+DTSTART:20241102T000000Z
+SUMMARY:Gate.io: Airdrop\, Subscription of PINGO\, PINGO/USDT
+UID:c800a07bd1039bcc214f3d98fb98f000@1_start
+URL:https://www.gate.io/announcements/article/41012
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io and LightLink are hosting a trading competition with a prize pool of 800\,000 LL. Users can participate in various challenges including trading and deposits to win rewards.\n\nAssets: LL\, LL/USDT\nMarkets: Spot\n\n800000\n\nUsers should register\, trade LL/USDT\, deposit LL\, and invite new users to participate in the event.
+DTEND:20241125T063000Z
+LOCATION:Period Starts
+DTSTART:20241125T060000Z
+SUMMARY:Gate.io: Trading_Competition of LL\, LL/USDT
+UID:618a8de0a65c38414090d172a9f091e9@1_start
+URL:https://www.gate.io/announcements/article/40992
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io will conduct a 1-for-100 reverse split for XTZ3S ETF.\n\nAssets: XTZ3S\, XTZ3S\nMarkets: ETF\n\n1-for-100 reverse split\n\nUsers should be aware that the number of XTZ3S ETF shares will become 1/100 of the original\, and the unit value will increase 100 times. Monitor the market closely after the split.
+DTEND:20241126T063000Z
+DTSTART:20241126T060000Z
+SUMMARY:Gate.io: Reverse Split of XTZ3S\, XTZ3S
+UID:fb788754d1e4855b7e840ecf588f0409@4
+URL:https://www.gate.io/announcements/article/40990
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io announces the result of the RWA Inc. (RWA) token airdrop.\n\nAssets: RWA\n\n3\,000\,000 RWA\,\n199\,484\,300 USDT\,\n199\,363\,40 USDT\,\n35 RWA\,\n6\,459\,\n62\,523\,\n92.68%\,\n99.94%\,\n0.000823198282363\n\nNo immediate action required from users regarding the airdrop result.
+DTEND:20241125T063000Z
+DTSTART:20241125T060000Z
+SUMMARY:Gate.io: Airdrop of RWA
+UID:440953f4116ec1ed9d0850a988614c2c@1
+URL:https://www.gate.io/announcements/article/40994
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io will commence RWA trading and enable withdrawal service.\n\nAssets: RWA\, RWA_USDT\nMarkets: Spot\n\nUsers can start trading RWA and make withdrawals after the listing time.
+DTEND:20241125T103000Z
+DTSTART:20241125T100000Z
+SUMMARY:Gate.io: Listing of RWA\, RWA_USDT
+UID:440953f4116ec1ed9d0850a988614c2c@2
+URL:https://www.gate.io/announcements/article/40994
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io has added RWA/USDT perpetual contract trading with up to 50X leverage and a funding interval of every 4 hours.\n\nAssets: RWA\, RWA/USDT\nMarkets: Perpetual\n\n50X leverage\,\n4-hour funding interval\,\n12% capped funding rate\n\nUsers can start trading the RWA/USDT perpetual contract with up to 50X leverage.\nhttps://www.gate.io/futures_info_new/futures/usdt/RWA_USDT#baseinfo
+DTEND:20241125T143000Z
+DTSTART:20241125T140000Z
+SUMMARY:Gate.io: Perpetual Contract Addition of RWA\, RWA/USDT
+UID:22ec83f8a276ae50a4362a1c80c73c5f@1
+URL:https://www.gate.io/announcements/article/41014
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io will conduct a 1-for-100 reverse split for ROSE3S ETF.\n\nAssets: ROSE3S\, ROSE3S\nMarkets: ETF\n\n1-for-100 reverse split\n\nUsers should be aware that the number of ROSE3S ETF shares will become 1/100 of the original\, and the unit value will increase 100 times. Monitor the market closely after the split.
+DTEND:20241126T063000Z
+DTSTART:20241126T060000Z
+SUMMARY:Gate.io: Reverse Split of ROSE3S\, ROSE3S
+UID:fb788754d1e4855b7e840ecf588f0409@5
+URL:https://www.gate.io/announcements/article/40990
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches new structured financial products including Daily BTC and USDT SharkFin\, Daily ETH SharkFin\, Double No-Touch\, DailySmile\, Bullish Shark Fin\, and Bearish Shark Fin\, offering up to 8% APR.\n\nAssets: BTC\, USDT\, ETH\, BTC/USDT\, ETH/USDT\nMarkets: Structured Products\n\n8% APR\,\n15% APR\,\n6.5% APR\,\n3% yield\,\n0.5% yield\n\nUsers are encouraged to participate in the subscription starting at 10:00 UTC on November 25\, 2024\, to earn potential returns.
+DTEND:20241125T103000Z
+DTSTART:20241125T100000Z
+SUMMARY:Gate.io: Product_Offering of BTC\, USDT\, ETH\, BTC/USDT\, ETH/USDT
+UID:b0c4ed30ea067592becae3c215558ea4@1
+URL:https://www.gate.io/announcements/article/40998
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Settlement for Zircuit(ZRC) Pre-Market OTC Trading starts and ends on November 25th\, 2024.\n\nAssets: ZRC\nMarkets: OTC_Trading\n\nZRC Token Max Supply: 10\,000\,000\,000\n\nUsers should complete settlement on time to avoid loss of collateral.
+DTEND:20241125T153000Z
+DTSTART:20241125T120000Z
+SUMMARY:Gate.io: Settling_Open_Positions of ZRC
+UID:44bc24cfd8151f1fa001d3d6353ef026@1
+URL:https://www.gate.io/announcements/article/40995
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Trading for Zircuit(ZRC) Pre-Market OTC ends on November 25th\, 2024.\n\nAssets: ZRC\nMarkets: OTC_Trading\n\nZRC Token Max Supply: 10\,000\,000\,000\n\nUsers should be aware that trading ends at 12:00 PM UTC.
+DTEND:20241125T123000Z
+DTSTART:20241125T120000Z
+SUMMARY:Gate.io: Termination_of_Trading of ZRC
+UID:44bc24cfd8151f1fa001d3d6353ef026@2
+URL:https://www.gate.io/announcements/article/40995
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate Learn launches a new course on Lumia (LUMIA)\, focusing on its architecture\, features\, and ecosystem.\n\nAssets: LUMIA\n\nUsers interested in learning about Lumia's blockchain technology should enroll in the course.
+DTEND:20241125T073000Z
+DTSTART:20241125T070000Z
+SUMMARY:Gate.io: Learning_and_Education of LUMIA
+UID:483892fe8e31aae024fa8dbe2b331450@1
+URL:https://www.gate.io/announcements/article/40996
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:GateLive launches a Thanksgiving reward event with various bonuses and airdrops.\n\nAssets: PEPE\, DOGE\, GOAT\, APEPE\, BONK\n\n$2\,500\n\nComplete tasks on GateLive to qualify for rewards.\nhttps://www.gate.io/live
+DTEND:20241125T023000Z
+LOCATION:Period Starts
+DTSTART:20241125T020000Z
+SUMMARY:Gate.io: Reward Event of PEPE\, DOGE\, GOAT\, APEPE\, BONK
+UID:f440f91daca69cbf436b530af3386994@1_start
+URL:https://www.gate.io/announcements/article/40986
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io offers a buyback program for Energo (TSL) at a price of 0.000014305 USDT\, with a maximum compensation limit of 100 USDT per user.\n\nAssets: TSL\n\n0.000014305 USDT\,\n100 USDT\n\nUsers holding Energo (TSL) after December 15\, 2024\, can apply for the buyback by filling out a form between December 15 and December 22\, 2024.\nhttps://www.gate.io/questionnaire/5580
+DTEND:20241215T163000Z
+LOCATION:Period Starts
+DTSTART:20241215T160000Z
+SUMMARY:Gate.io: Buyback of TSL
+UID:77fff505f39c136448c3cee40b40a062@3_start
+URL:https://www.gate.io/announcements/article/40991
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Daily bonus event where 100 users are chosen daily to win rewards.\n\n$2\,500\n\nComplete GateLive tasks to be eligible for daily rewards.\nhttps://www.gate.io/live
+DTEND:20241125T023000Z
+LOCATION:Period Starts
+DTSTART:20241125T020000Z
+SUMMARY:Gate.io: Daily Bonus
+UID:f440f91daca69cbf436b530af3386994@2_start
+URL:https://www.gate.io/announcements/article/40986
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Streamer's Thanksgiving Gifts with hot MEME airdrops.\n\nAssets: GOAT\, APEPE\, PEPE\, BONK\, DOGE\n\nTune into live streams and interact to receive airdrop rewards.\nhttps://www.gate.io/live
+DTEND:20241125T013000Z
+LOCATION:Period Starts
+DTSTART:20241125T010000Z
+SUMMARY:Gate.io: Airdrop of GOAT\, APEPE\, PEPE\, BONK\, DOGE
+UID:f440f91daca69cbf436b530af3386994@4_start
+URL:https://www.gate.io/announcements/article/40986
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches a Task2Earn campaign in collaboration with Hipo Gang\, offering a prize pool of $80\,000 and airdrops.\n\nAssets: $TON\, $GT\, $USDT\nMarkets: Spot\n\n80000 USDT\,\n500000 in-game coins\n\nUsers should follow Hipo Gang on Twitter\, join their Telegram channel\, and use the Mini App to participate.\nhttps://www.gate.io/zh/web3/tasks/detail?id=148andnetwork=TON
+DTEND:20241231T235959Z
+LOCATION:Period Ends
+DTSTART:20241231T232959Z
+SUMMARY:Gate.io: Airdrop of $TON\, $GT\, $USDT
+UID:527bea84804dea3357b7c51462a9a911@1_end
+URL:https://www.gate.io/announcements/article/41006
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches the TonVibe2024 event with a Task2Earn campaign featuring a reward pool of $80\,000 and airdrops of $TON and $GOATS.\n\nAssets: $TON\, $GOATS\, $GT\, $USDT\nMarkets: Spot\n\n80000 USDT\n\nUsers should follow Goats on Twitter\, join the Goats Telegram Announcement Channel\, and open the Goats Telegram Mini App to participate in the campaign and claim rewards.\nhttps://www.gate.io/zh/web3/tasks/detail?id=145andnetwork=TON
+DTEND:20241231T235959Z
+LOCATION:Period Ends
+DTSTART:20241231T232959Z
+SUMMARY:Gate.io: Airdrop of $TON\, $GOATS\, $GT\, $USDT
+UID:bb022c1438a254532f8c3404606856eb@1_end
+URL:https://www.gate.io/announcements/article/41001
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches a Task2Earn campaign in collaboration with Hipo Gang\, offering a prize pool of $80\,000 and airdrops.\n\nAssets: $TON\, $GT\, $USDT\nMarkets: Spot\n\n80000 USDT\,\n500000 in-game coins\n\nUsers should follow Hipo Gang on Twitter\, join their Telegram channel\, and use the Mini App to participate.\nhttps://www.gate.io/zh/web3/tasks/detail?id=148andnetwork=TON
+DTEND:20241122T003000Z
+LOCATION:Period Starts
+DTSTART:20241122T000000Z
+SUMMARY:Gate.io: Airdrop of $TON\, $GT\, $USDT
+UID:527bea84804dea3357b7c51462a9a911@1_start
+URL:https://www.gate.io/announcements/article/41006
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches the Startup Project Free Airdrop Program for ResearchCoin (RSC) from November 2 to November 29\, 2024.\n\nAssets: RSC\, RSC/USDT\nMarkets: Spot\n\nFundraising Goal: 30\,000 USDT\,\nStartup Supply: 45\,634 RSC\n\nUsers must complete KYC2 verification and hold at least 10 USD in spot assets to participate.
+DTEND:20241129T110000Z
+LOCATION:Period Ends
+DTSTART:20241129T103000Z
+SUMMARY:Gate.io: Airdrop of RSC\, RSC/USDT
+UID:6da9567af3305f4a6192847db18adcf4@1_end
+URL:https://www.gate.io/announcements/article/41011
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches the Startup Project Free Airdrop Program for ResearchCoin (RSC) from November 2 to November 29\, 2024.\n\nAssets: RSC\, RSC/USDT\nMarkets: Spot\n\nFundraising Goal: 30\,000 USDT\,\nStartup Supply: 45\,634 RSC\n\nUsers must complete KYC2 verification and hold at least 10 USD in spot assets to participate.
+DTEND:20241102T113000Z
+LOCATION:Period Starts
+DTSTART:20241102T110000Z
+SUMMARY:Gate.io: Airdrop of RSC\, RSC/USDT
+UID:6da9567af3305f4a6192847db18adcf4@1_start
+URL:https://www.gate.io/announcements/article/41011
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Trading for METAMAFIA (MAF) starts on Gate.io on November 29\, 2024.\n\nAssets: MAF\, MAF/USDT\nMarkets: Spot\n\nUsers can start trading MAF/USDT pair from 10:00 AM UTC on November 29\, 2024.
+DTEND:20241129T103000Z
+DTSTART:20241129T100000Z
+SUMMARY:Gate.io: Listing of MAF\, MAF/USDT
+UID:c5da3e620447e3cb68a5dd9fb60c373b@2
+URL:https://www.gate.io/announcements/article/41009
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches a quiz event where participants can earn points by taking quizzes and completing tasks to win ATH prizes.\n\nAssets: ATH\, ATH/USDT\nMarkets: Spot\n\n2\,464 ATH prize pool\n\nUsers should visit the event page\, take the quiz\, complete tasks\, and invite friends to earn points and win prizes.\nhttps://www.gate.io/activities/answer-earn?period_num=238
+DTEND:20241129T000000Z
+LOCATION:Period Ends
+DTSTART:20241128T233000Z
+SUMMARY:Gate.io: Quiz Event of ATH\, ATH/USDT
+UID:916ae98583ccebc00f41655e596930e5@1_end
+URL:https://www.gate.io/announcements/article/40997
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io has added ZRC/USDT perpetual contract trading with up to 50X leverage.\n\nAssets: ZRC\, ZRC/USDT\nMarkets: Perpetual\n\n50X leverage\,\n4-hour funding interval\,\n12% capped funding rate\n\nUsers can start trading the ZRC/USDT perpetual contract with up to 50X leverage.\nhttps://www.gate.io/futures/USDT/ZRC_USDT
+DTEND:20241125T103000Z
+DTSTART:20241125T100000Z
+SUMMARY:Gate.io: Listing of ZRC\, ZRC/USDT
+UID:da3031f23ed9b49dbef1666e8844a7c1@1
+URL:https://www.gate.io/announcements/article/41008
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io will launch Pre-Market OTC Trading for Holdcoin(HOLD) on November 25th\, 2024.\n\nAssets: HOLD\, HOLD/USDT\nMarkets: OTC_Trading\n\nHOLD Token Max Supply: 10\,000\,000\,000\n\nUsers should pay attention to the delivery schedule and complete delivery on time to avoid loss of collateral.\nhttps://www.gate.io/help/pre-market-trading/pre-market/35226/faq-about-pre-market-trading
+DTEND:20241125T103000Z
+DTSTART:20241125T100000Z
+SUMMARY:Gate.io: Pre-market_Listing of HOLD\, HOLD/USDT
+UID:5128ae9562f441896135d851fd3aee6a@1
+URL:https://www.gate.io/announcements/article/40993
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Gate.io launches Moongate (MGT) Startup Subscription for GT holders.\n\nAssets: MGT\, MGT/USDT\nMarkets: Launchpad/IEO\n\nSubscription Price: $0 GT\,\nSubscription Total: 6364 GT\,\nStartup Total Supply: 2\,000\,000 MGT\n\nUsers should ensure they hold at least 10 GT to participate in the subscription.\nhttps://www.gate.io/startup
+DTEND:20241128T080000Z
+LOCATION:Period Ends
+DTSTART:20241128T073000Z
+SUMMARY:Gate.io: Airdrop\, Token Offering of MGT\, MGT/USDT
+UID:3c4f9d45fc8a1abe252b9509f9121ae0@1_end
+URL:https://www.gate.io/announcements/article/41015
+END:VEVENT
+END:VCALENDAR
