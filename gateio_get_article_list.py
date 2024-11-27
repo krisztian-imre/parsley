@@ -28,8 +28,9 @@ def load_gateio_categories(filename = ARTICLE_CATEGORIES_FILE):
 def clean_title(title):
     title = re.sub(r'[\U0001F600-\U0001F64F\U0001F300-\U0001F5FF\U0001F680-\U0001F6FF\U0001F700-\U0001F77F\u2700-\u27BF\u2600-\u26FF\uFE0F]', '', title)
     title = re.sub(r'\u00A0', ' ', title)
-    title = re.sub(r'[\u25CB-\u25EF\u2B55\u1F9E7\u2B50]', '', title)
+    title = re.sub(r'[\u25CB-\u25EF\u2B50-\u2B55\u1F9E]', '', title)
 
+    title = re.sub(r'\u3001', ', ', title)
     title = re.sub(r'\uff1a', ': ', title)
     title = re.sub(r'\uff01', '! ', title)
     title = re.sub(r'\.\.', '.', title)
@@ -37,6 +38,7 @@ def clean_title(title):
     title = re.sub(r' :', ':', title)
 
     title = re.sub(r'\u2013', '-', title)  # Replaces en dash with a hyphen
+    title = re.sub(r'\u2014', '-', title)  # Replaces em dash with a hyphen
     title = re.sub(r'["\u201c\u201d\u2018\u2019]', '', title)
     title = re.sub(r'\t+', ' ', title)
     title = re.sub(r'&', 'and', title)

@@ -24,7 +24,7 @@ def timeout_handler(signum, frame):
     raise TimeoutException()
 
 # Function to interact with the LLM for a specific instruction using an existing assistant
-def get_llm_response(content, assistant_id, max_retries=3, backoff_factor=2, timeout=60):
+def get_llm_response(content, assistant_id, max_retries=3, backoff_factor=2, timeout=90):
     retries = 0
     thread = client.beta.threads.create()
     while retries < max_retries:
@@ -95,7 +95,7 @@ def get_json():
         logging.info(f"Response 1:\n{json.dumps(response, indent=4)}")
 
         if " ERROR" not in response:
-            if "Bi-Weekly Report" not in row['title']:
+            if "Bi-Weekly Report" not in row['title'] or "Gate Research" not in row['title']:
                 assistant_id = 'asst_CfFXkDtL6wiBKpPpIREesccm'
                 response = get_llm_response(f"JSON:\n{json.dumps(response, indent=4)}\n**Additional data:**\n{content}", assistant_id)
                 logging.info(f"Response 2:\n{json.dumps(response, indent=4)}")
@@ -152,8 +152,9 @@ def prepare_content(row):
 
 # Helper function to determine the assistant ID
 def determine_assistant(title):
-    return ('asst_Xk1XKciwc63DdjIHIO3ljfmH' if "Bi-Weekly Report" in title
+    return ('asst_Xk1XKciwc63DdjIHIO3ljfmH' if "Bi-Weekly Report" in title or "Gate Research" in title
             else 'asst_33sFfSIFStFOd5TPJvOKfy2h')
+
 
 # Modified save_json function to append data if the file already exists
 def save_json(parsed_responses):

@@ -1,0 +1,117 @@
+[
+    {
+        "events": [
+            {
+                "article_title": "Gate Research: BTC Nears $90K, Staked ETH on Beacon Chain Hits 34M",
+                "article_link": "https://www.gate.io/announcements/article/41092",
+                "UID": "de56ed75d80b64a45342f03f9b138974@1",
+                "publish_datetime": "2024-11-27 10:01:28 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-27 10:01:28 UTC",
+                "end_datetime": "2024-11-27 10:01:28 UTC",
+                "event_summary": "Over the past 24 hours, BTC fell 2.62%, testing $90,000. MEMEFI rose 85.22%. Staked ETH surpassed 34M. Supra's mainnet and TGE launch on Nov 27.",
+                "event_type": [
+                    "Gate Research"
+                ],
+                "user_action_required": "",
+                "separate_event_link": "",
+                "tokens": [
+                    ""
+                ],
+                "trading_pairs": [
+                    ""
+                ],
+                "markets": [
+                    ""
+                ],
+                "numerical_data": [
+                    "BTC fell 2.62%",
+                    "BTC low $90,800",
+                    "MEMEFI +85.22%",
+                    "Staked ETH >34M",
+                    "Uniswap bug bounty $15.5M"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate Research: Altcoins Rally Over the Weekend; First Spot Bitcoin ETF Options Set to Launch",
+                "article_link": "https://www.gate.io/announcements/article/41007",
+                "UID": "3281e1942344b4006d7d1a161321b9ef@1",
+                "publish_datetime": "2024-11-25 09:54:25 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-25 09:54:25 UTC",
+                "end_datetime": "2024-11-25 09:54:25 UTC",
+                "event_summary": "Report covers weekend performance of altcoins, upcoming Bitcoin ETF options launch on December 2, and institutional inflows from last Friday.",
+                "event_type": [
+                    "Gate Research"
+                ],
+                "user_action_required": "",
+                "separate_event_link": "",
+                "tokens": [
+                    ""
+                ],
+                "trading_pairs": [
+                    ""
+                ],
+                "markets": [
+                    "Spot"
+                ],
+                "numerical_data": [
+                    "BTC price: $97,900",
+                    "ETH price: $3,361",
+                    "Solana DEX volume: $6 billion",
+                    "Bitcoin ETF inflows: $490 million",
+                    "Ethereum ETF inflows: $91.21 million",
+                    "Altcoin liquidation volume: $988.6 billion"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    },
+    {
+        "events": [
+            {
+                "article_title": "Gate.io Bi-Weekly Report (November 1-15, 2024)",
+                "article_link": "https://www.gate.io/announcements/article/40773",
+                "UID": "bfe8cfcf2fa9395f266b20137782515e@1",
+                "publish_datetime": "2024-11-18 07:55:11 UTC",
+                "exchange_name": "Gate.io",
+                "start_datetime": "2024-11-18 07:55:11 UTC",
+                "end_datetime": "2024-11-18 07:55:11 UTC",
+                "event_summary": "Summary of events from November 1 to November 15, 2024, including 38 new projects, 36 Startup projects, $1,275,000 airdrop, 9 trading competitions with $145,000 prize pool, and financial products with up to 200% APR.",
+                "event_type": [
+                    "Report",
+                    "Gate Research"
+                ],
+                "user_action_required": "",
+                "separate_event_link": "https://www.gate.io/startup",
+                "tokens": [
+                    ""
+                ],
+                "trading_pairs": [
+                    ""
+                ],
+                "markets": [
+                    "Spot"
+                ],
+                "numerical_data": [
+                    "38 new projects",
+                    "36 Startup projects",
+                    "$1,275,000 airdrop value",
+                    "9 trading competitions",
+                    "$145,000 prize pool",
+                    "3 financial products",
+                    "200% APR"
+                ]
+            }
+        ],
+        "type": "object",
+        "properties": {}
+    }
+]
