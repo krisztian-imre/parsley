@@ -12,7 +12,7 @@ import logging
 import pandas as pd
 import openai
 from openai._exceptions import RateLimitError, APIConnectionError, OpenAIError
-import logger_setup
+import gateio_logger_setup
 
 ARTICLE_COLLECTION_FILE = 'Gateio_Files/Gateio_Article_Process/gateio_article_collection.tsv'
 
@@ -188,7 +188,7 @@ def save_json(parsed_responses):
 # Run the main function only when the script is executed directly
 if __name__ == "__main__":
     signal.signal(signal.SIGALRM, timeout_handler)
-    logger_setup.setup_logging()
+    gateio_logger_setup.setup_logging()
     logger = logging.getLogger()
 
     openai_api_key = os.getenv('OPENAI_API_KEY')

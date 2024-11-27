@@ -1,4 +1,4 @@
-# File: gateio_get_articles_refactor.py
+# File: gateio_get_articles.py
 
 import os
 import pandas as pd
@@ -7,35 +7,41 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 import re
 import time
+from datetime import datetime, timedelta, timezone
 import logging
-import logger_setup
+import gateio_logger_setup
 
 ARTICLE_COLLECTION_FILE = os.path.expanduser('~/parsley/Gateio_Files/Gateio_Article_Process/gateio_article_collection.tsv')
+HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
 
-# Function to get HTML content with retry mechanism
 def get_html(url, max_retries=3, backoff_factor=2):
-    retries = 0
-    while retries < max_retries:
+    """
+    Fetch HTML content with retry mechanism.
+
+    :param url: URL to fetch
+    :param max_retries: Maximum number of retries
+    :param backoff_factor: Backoff multiplier for retry delays
+    :return: HTML content as a string, or None if failed
+    """
+    for attempt in range(max_retries):
         try:
-            response = requests.get(url, headers=headers)
+            response = requests.get(url, headers=HEADERS)
             response.raise_for_status()
             return response.text
         except requests.exceptions.HTTPError as e:
             if response.status_code == 502:
-                retries += 1
-                wait_time = backoff_factor ** retries
-                logging.error(f"502 Server Error: Bad Gateway for url: {url}. Retrying in {wait_time} seconds...")
+                wait_time = backoff_factor ** (attempt + 1)
+                logging.error(f"502 Server Error for URL {url}. Retrying in {wait_time} seconds...")
                 time.sleep(wait_time)
             else:
-                logging.error(f"HTTP Error fetching {url}: {e}")
-                return None
+                logging.error(f"HTTP error fetching {url}: {e}")
+                break
         except requests.exceptions.RequestException as e:
-            logging.error(f"Error fetching {url}: {e}")
-            return None
+            logging.error(f"Request error fetching {url}: {e}")
+            break
     logging.error(f"Failed to fetch {url} after {max_retries} retries.")
     return None
 
-# Function to clean main_content (body) content using regex
 def clean_body(main_content):
     
     main_content = re.sub(r'\[([^\]]+)\]\(\s*(?:[^\s\)]+)(?:\s+"[^"]*")?\s*\)', r'\1', main_content) # Remove markdown links
@@ -76,40 +82,49 @@ def clean_body(main_content):
 
     return main_content #body
 
-# Function to parse article HTML content
 def parse_article_html(html):
+    """
+    Parse the article HTML content to extract the body and publish time.
+
+    :param html: HTML content as a string
+    :return: Tuple of (cleaned_body, publish_datetime)
+    """
     soup = BeautifulSoup(html, 'html.parser')
-
-    # Extract publish time
     article_details_box = soup.find('div', class_='article-details-box')
-    if not article_details_box:
-        logging.error(f"Article details box class not found in HTML")
-        return None, None
-    
-    publish_datetime = article_details_box.find('div', class_='article-details-base-info').find_all('span')[0].get_text(strip=True)
 
-    # Extract the main content within the article-details-main
+    if not article_details_box:
+        logging.error("Article details box not found in HTML.")
+        return None, None
+
+    try:
+        publish_datetime = article_details_box.find('div', class_='article-details-base-info') \
+                                              .find_all('span')[0].get_text(strip=True)
+    except (AttributeError, IndexError):
+        logging.error("Failed to extract publish datetime.")
+        publish_datetime = None
+
     main_content_div = article_details_box.find('div', class_='article-details-main')
     main_content = main_content_div.get_text(strip=True, separator='\n') if main_content_div else ''
-
-    # Clean the content using the new clean_body function
     main_content = clean_body(main_content)
-    
+
     return main_content, publish_datetime
 
-# Function to process articles from gateio_article_list.tsv
 def get_articles():
-    
-    # Load the article list
-    article_list_df = pd.read_csv(ARTICLE_COLLECTION_FILE, sep='\t')
+    """
+    Process articles from the article list and update missing fields.
+    """
+    try:
+        article_list_df = pd.read_csv(ARTICLE_COLLECTION_FILE, sep='\t')
+    except FileNotFoundError:
+        logging.error(f"Article collection file not found: {ARTICLE_COLLECTION_FILE}")
+        return
 
     # Ensure the correct data types for the 'body' and 'publish_datetime' columns
     if 'body' in article_list_df.columns:
-        article_list_df['body'] = article_list_df['body'].astype('object')  # Ensure 'body' is of type string (object)
+        article_list_df['body'] = article_list_df['body'].astype('object')
 
-    # No need to convert 'publish_datetime' since it's already in the correct format
     if 'publish_datetime' in article_list_df.columns:
-        article_list_df['publish_datetime'] = article_list_df['publish_datetime'].astype('object')  # Ensure 'publish_datetime' is treated as string
+        article_list_df['publish_datetime'] = article_list_df['publish_datetime'].astype('object')
 
     # Keep records where 'publish_datetime' or 'body' or both are missing (NaN)
     articles_to_process = article_list_df[pd.isna(article_list_df['publish_datetime']) | pd.isna(article_list_df['body'])]
@@ -118,31 +133,37 @@ def get_articles():
         logging.info("No new articles to process.")
         return
 
-    # Process each article
+    # Older publish_datetime does not go to LLM
+    current_date = datetime.now(timezone.utc)
+    threshold_date = current_date - timedelta(days=1)
+
     for _, row in articles_to_process.iterrows():
+        
         url = row['link']
         html = get_html(url)
-        
+
         if html:
             body, publish_datetime = parse_article_html(html)
             if body and publish_datetime:
-                # Update the DataFrame with the new values
-                article_list_df.at[row.name, 'body'] = str(body)  # Ensure 'body' is explicitly converted to string
-                article_list_df.at[row.name, 'publish_datetime'] = publish_datetime  # Keep 'publish_datetime' as string            
+                article_list_df.at[row.name, 'body'] = body
+                article_list_df.at[row.name, 'publish_datetime'] = publish_datetime
 
-    # Save the updated article list with the processed information
+                # Check if 'publish_datetime' is older than the threshold
+                try:
+                    # Parse `publish_datetime` and make it offset-aware
+                    publish_date = datetime.strptime(publish_datetime, "%Y-%m-%d %H:%M:%S UTC").replace(tzinfo=timezone.utc)
+                    print(f"Parsed publish_date: {publish_date}, Threshold: {threshold_date}")
+                    
+                    # Check if the date is older than the threshold
+                    if publish_date < threshold_date:
+                        article_list_df.at[row.name, 'llm_processed'] = 'Yes'
+                except ValueError as e:
+                    print(f"Error parsing publish_datetime for row {row.name}: {e}")
+
+
     article_list_df.to_csv(ARTICLE_COLLECTION_FILE, sep='\t', index=False)
     logging.info(f"Updated {ARTICLE_COLLECTION_FILE} with processed articles.")
 
 if __name__ == '__main__':
-    
-    # Set up logging
-    logger_setup.setup_logging()
-    logger = logging.getLogger()
-
-    # Set headers to mimic a browser
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-    }
-
+    gateio_logger_setup.setup_logging()
     get_articles()

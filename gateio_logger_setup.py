@@ -1,4 +1,4 @@
-#File: log_setup.py
+#File: gateio_logger_setup.py
 
 import os
 import logging

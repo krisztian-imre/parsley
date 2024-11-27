@@ -2,7 +2,7 @@
 
 import os
 import logging
-from logger_setup import setup_logging
+from gateio_logger_setup import setup_logging
 
 def create_directory_structure(base_path):
     # Define the desired directory structure

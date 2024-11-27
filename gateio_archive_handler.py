@@ -4,10 +4,10 @@ import os
 import shutil
 import logging
 from datetime import datetime
-import logger_setup
+import gateio_logger_setup
 
 def setup_logger():
-    logger_setup.setup_logging()
+    gateio_logger_setup.setup_logging()
     return logging.getLogger()
 
 logger = setup_logger()

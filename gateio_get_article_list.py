@@ -10,10 +10,10 @@ from urllib.parse import urljoin
 from datetime import datetime, timezone
 import re
 import logging
-import logger_setup
+import gateio_logger_setup
 
 ARTICLE_COLLECTION_FILE = os.path.expanduser('~/parsley/Gateio_Files/Gateio_Article_Process/gateio_article_collection.tsv')
-ARTICLE_CATEGORIES_FILE = os.path.expanduser('~/parsley/gateio_categories.txt')
+ARTICLE_CATEGORIES_FILE = os.path.expanduser('~/parsley/gateio_categories.tsv')
 
 # Function to load URLs and categories from the txt file
 def load_gateio_categories(filename = ARTICLE_CATEGORIES_FILE):
@@ -173,7 +173,7 @@ def get_article_list(filename):
 if __name__ == '__main__':
 
     # Set up logging
-    logger_setup.setup_logging()
+    gateio_logger_setup.setup_logging()
     logger = logging.getLogger()
 
     # Set headers to mimic a browser
