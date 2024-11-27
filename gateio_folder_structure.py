@@ -9,7 +9,6 @@ def create_directory_structure(base_path):
     directories = [
         "Gateio_Files/Gateio_Article_Archive",
         "Gateio_Files/Gateio_Article_Process",
-        "Gateio_Files/Gateio_Backup_Files",
         "Gateio_Files/Gateio_JSON_Archive",
         "Gateio_Files/Gateio_JSON_Process",
         "Gateio_Files/Gateio_Logs",
