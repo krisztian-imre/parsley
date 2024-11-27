@@ -7,3 +7,6 @@ __pycache__/
 
 # Ignore the entire Data Folder  files
 Gateio_Files/
+
+# Ignore the entire Data Folder  files
+Gateio_System_Settings/
