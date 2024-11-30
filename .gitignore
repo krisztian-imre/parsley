@@ -5,6 +5,8 @@ __pycache__/
 # Ignore system files
 .DS_Store
 
+parsley.pem
+
 # Ignore the entire Data Folder  files
 Gateio_Files/
 
