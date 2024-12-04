@@ -14,7 +14,7 @@ import openai
 from openai._exceptions import RateLimitError, APIConnectionError, OpenAIError
 import gateio_logger_setup
 
-ARTICLE_COLLECTION_FILE = 'Gateio_Files/Gateio_Article_Process/gateio_article_collection.tsv'
+ARTICLE_COLLECTION_FILE = os.path.expanduser('~/parsley/Gateio_Files/Gateio_Article_Process/gateio_article_collection.tsv')
 
 # Timeout handler to catch unresponsive scripts
 class TimeoutException(Exception):
