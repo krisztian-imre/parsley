@@ -137,7 +137,7 @@ def get_articles():
 
     # Older publish_datetime does not go to LLM
     current_date = datetime.now(timezone.utc)
-    threshold_date = current_date - timedelta(days=1)
+    threshold_date = current_date - timedelta(days=5)
 
     for _, row in articles_to_process.iterrows():
         

@@ -16,7 +16,7 @@ logger = logging.getLogger()
 # Constants
 JSON_FILE_PATH = os.path.expanduser('~/parsley/Gateio_Files/Gateio_JSON_Process/gateio_structured.json')
 OUTPUT_DIR = os.path.expanduser('~/parsley/Gateio_Files/Gateio_Subscribe')
-THRESHOLD_DATE = datetime.now(timezone.utc) - timedelta(days=3)
+THRESHOLD_DATE = datetime.now(timezone.utc) - timedelta(days=5)
 
 # Load JSON data
 def load_json_data(file_path):

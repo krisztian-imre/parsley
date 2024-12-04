@@ -7,6 +7,8 @@ __pycache__/
 
 parsley.pem
 
+run_gateio.sh
+
 # Ignore the entire Data Folder  files
 Gateio_Files/
 
