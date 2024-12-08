@@ -1,0 +1,26 @@
+{
+        "request1": {
+            "event_type": ["Listing"],
+            "tokens": [],
+            "trading_pairs": [],
+            "markets": []
+        },
+        "request2": {
+            "event_type": ["Delisting"],
+            "tokens": [],
+            "trading_pairs": [],
+            "markets": []
+        },
+        "request3": {
+            "event_type": ["Pre-market Listing"],
+            "tokens": [],
+            "trading_pairs": [],
+            "markets": []
+        },
+        "request4": {
+            "event_type": ["Airdrop"],
+            "tokens": [],
+            "trading_pairs": [],
+            "markets": []
+        }
+    }

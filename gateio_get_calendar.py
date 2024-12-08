@@ -15,8 +15,9 @@ logger = logging.getLogger()
 
 # Constants
 JSON_FILE_PATH = os.path.expanduser('~/parsley/Gateio_Files/Gateio_JSON_Process/gateio_structured.json')
+REQUESTS_FILE_PATH = os.path.expanduser('~/parsley/gateio_calendar_requests.json')
 OUTPUT_DIR = os.path.expanduser('~/parsley/Gateio_Files/Gateio_Subscribe')
-THRESHOLD_DATE = datetime.now(timezone.utc) - timedelta(days=5)
+THRESHOLD_DATE = datetime.now(timezone.utc) - timedelta(days=15)
 
 # Load JSON data
 def load_json_data(file_path):
@@ -140,20 +141,7 @@ def save_calendar(events, event_type):
 # Main function
 def main():
     data = load_json_data(JSON_FILE_PATH)
-    requests = {
-        "request1": {
-            "event_type": ["Listing"],
-            "tokens": [],
-            "trading_pairs": [],
-            "markets": []
-        },
-        "request2": {
-            "event_type": ["Delisting"],
-            "tokens": [],
-            "trading_pairs": [],
-            "markets": []
-        }
-    }
+    requests = load_json_data(REQUESTS_FILE_PATH)
 
     for req_name, req in requests.items():
         filtered_events = filter_events(data, req)
@@ -164,3 +152,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
